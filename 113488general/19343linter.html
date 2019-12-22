@@ -1,0 +1,90 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: archive/113488general/19343linter.html
+---
+
+<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/19343linter.html">linter</a></h3>
+
+<hr>
+
+<base href="https://leanprover.zulipchat.com">
+
+<head><link href="/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="180209336"></a>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/linter/near/180209336" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/113488general/19343linter#180209336">(Nov 08 2019 at 07:56)</a>:</h4>
+<p>I am just compiling the latest mathlib. I got an error</p>
+<div class="codehilite"><pre><span></span><span class="err">\</span><span class="n">mathlib</span><span class="err">\</span><span class="n">scripts</span><span class="err">\</span><span class="n">mk_nolint</span><span class="bp">.</span><span class="n">lean</span><span class="o">:</span><span class="mi">8</span><span class="o">:</span><span class="mi">0</span><span class="o">:</span> <span class="n">error</span><span class="o">:</span> <span class="n">invalid</span> <span class="kn">import</span><span class="o">:</span> <span class="n">allKK</span><span class="err"></span><span class="o">[</span><span class="mi">2</span><span class="n">K</span>
+<span class="n">could</span> <span class="n">not</span> <span class="n">resolve</span> <span class="kn">import</span><span class="o">:</span> <span class="n">all</span>
+</pre></div>
+
+
+
+<a name="180209494"></a>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/linter/near/180209494" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/113488general/19343linter#180209494">(Nov 08 2019 at 08:00)</a>:</h4>
+<p>Never mind, I should just <code>make src</code>.</p>
+
+
+
+<a name="180213362"></a>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/linter/near/180213362" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/19343linter#180213362">(Nov 08 2019 at 09:14)</a>:</h4>
+<p>Edit - never mind, I misread this, sorry.</p>
+
+
+
+<a name="180213388"></a>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/linter/near/180213388" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/19343linter#180213388">(Nov 08 2019 at 09:14)</a>:</h4>
+<p>(deleted)</p>
+
+
+
+<a name="182788778"></a>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/linter/near/182788778" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/113488general/19343linter#182788778">(Dec 06 2019 at 18:25)</a>:</h4>
+<p><a href="https://github.com/leanprover-community/mathlib/issues/1786" target="_blank" title="https://github.com/leanprover-community/mathlib/issues/1786">#1786</a> has just been merged, and it contains the following line:</p>
+<div class="codehilite"><pre><span></span><span class="kn">instance</span> <span class="n">fintype</span><span class="bp">.</span><span class="n">compact_space</span> <span class="o">[</span><span class="n">fintype</span> <span class="n">α</span><span class="o">]</span> <span class="o">:</span> <span class="n">compact_space</span> <span class="n">α</span>
+</pre></div>
+
+
+<p>I thought that the linter was supposed to ask for a reduced priority on this kind of instance. Has it been deactivated?</p>
+
+
+
+<a name="182793450"></a>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/linter/near/182793450" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/113488general/19343linter#182793450">(Dec 06 2019 at 19:15)</a>:</h4>
+<p>I think the instance checker is not yet one of the active linters:<br>
+<a href="https://github.com/leanprover-community/mathlib/blob/827e78b1638868734de786baac70b5d3f1d5118e/scripts/mk_nolint.lean#L28" target="_blank" title="https://github.com/leanprover-community/mathlib/blob/827e78b1638868734de786baac70b5d3f1d5118e/scripts/mk_nolint.lean#L28">https://github.com/leanprover-community/mathlib/blob/827e78b1638868734de786baac70b5d3f1d5118e/scripts/mk_nolint.lean#L28</a><br>
+<a href="https://github.com/leanprover-community/mathlib/blob/740168bf22c86e2d83b98e069b85ac7360dbba8c/scripts/mk_all.sh#L42" target="_blank" title="https://github.com/leanprover-community/mathlib/blob/740168bf22c86e2d83b98e069b85ac7360dbba8c/scripts/mk_all.sh#L42">https://github.com/leanprover-community/mathlib/blob/740168bf22c86e2d83b98e069b85ac7360dbba8c/scripts/mk_all.sh#L42</a></p>
+
+
+
+<a name="182793496"></a>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/linter/near/182793496" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/113488general/19343linter#182793496">(Dec 06 2019 at 19:15)</a>:</h4>
+<p>(not sure which of these lists is the relevant one, or whether it is necessary that those two lists are the same at all time)</p>
+
+
+
+<a name="182794781"></a>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/linter/near/182794781" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/19343linter#182794781">(Dec 06 2019 at 19:28)</a>:</h4>
+<p>The second is the relevant one, and it's most important that the second is a subset of the first. It should be safe to add the priority check back to CI now. With Floris' PRs, I guess almost all of mathlib is passing now. So there should be very few changes to <code>nolints.txt</code>, or none if we update the remaining failures.</p>
+
+
+
+<a name="182796917"></a>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/linter/near/182796917" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/113488general/19343linter#182796917">(Dec 06 2019 at 19:48)</a>:</h4>
+<p>I vote for enabling it, as this is really a useful check.</p>
+
+
+
+<a name="182807502"></a>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/linter/near/182807502" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/19343linter#182807502">(Dec 06 2019 at 21:36)</a>:</h4>
+<p><a href="https://github.com/leanprover-community/mathlib/issues/1787" target="_blank" title="https://github.com/leanprover-community/mathlib/issues/1787">#1787</a> passed. Luckily the <code>fintype.compact_space</code> instance was the only bad one that snuck in.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Dec 21 2019 at 16:56 UTC</p>
