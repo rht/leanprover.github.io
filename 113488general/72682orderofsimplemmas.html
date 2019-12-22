@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/72682orderofsimplemmas.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/72682orderofsimplemmas.html">order of simp lemmas</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/72682orderofsimplemmas.html">order of simp lemmas</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/72682orderofsimplemmas.html
 {% raw %}
 
 <a name="148324441"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/order%20of%20simp%20lemmas/near/148324441" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/113488general/72682orderofsimplemmas#148324441">(Nov 25 2018 at 16:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/order%20of%20simp%20lemmas/near/148324441" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="https://rht.github.io/archive/113488general/72682orderofsimplemmas#148324441">(Nov 25 2018 at 16:38)</a>:</h4>
 <p>There are in <code>data/set/basic.lean</code> the following two simp lemmas, in this order:</p>
 <div class="codehilite"><pre><span></span><span class="bp">@</span><span class="o">[</span><span class="n">simp</span><span class="o">]</span> <span class="kn">theorem</span> <span class="n">mem_image</span> <span class="o">(</span><span class="n">f</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">β</span><span class="o">)</span> <span class="o">(</span><span class="n">s</span> <span class="o">:</span> <span class="n">set</span> <span class="n">α</span><span class="o">)</span> <span class="o">(</span><span class="n">y</span> <span class="o">:</span> <span class="n">β</span><span class="o">)</span> <span class="o">:</span> <span class="n">y</span> <span class="err">∈</span> <span class="n">f</span> <span class="err">&#39;&#39;</span> <span class="n">s</span> <span class="bp">↔</span> <span class="bp">∃</span> <span class="n">x</span><span class="o">,</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">s</span> <span class="bp">∧</span> <span class="n">f</span> <span class="n">x</span> <span class="bp">=</span> <span class="n">y</span>
 <span class="bp">@</span><span class="o">[</span><span class="n">simp</span><span class="o">]</span> <span class="kn">theorem</span> <span class="n">ball_image_iff</span> <span class="o">{</span><span class="n">f</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">β</span><span class="o">}</span> <span class="o">{</span><span class="n">s</span> <span class="o">:</span> <span class="n">set</span> <span class="n">α</span><span class="o">}</span> <span class="o">{</span><span class="n">p</span> <span class="o">:</span> <span class="n">β</span> <span class="bp">→</span> <span class="kt">Prop</span><span class="o">}</span> <span class="o">:</span> <span class="o">(</span><span class="bp">∀</span> <span class="n">y</span> <span class="err">∈</span> <span class="n">f</span> <span class="err">&#39;&#39;</span> <span class="n">s</span><span class="o">,</span> <span class="n">p</span> <span class="n">y</span><span class="o">)</span> <span class="bp">↔</span> <span class="o">(</span><span class="bp">∀</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">s</span><span class="o">,</span> <span class="n">p</span> <span class="o">(</span><span class="n">f</span> <span class="n">x</span><span class="o">))</span>

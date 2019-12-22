@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/67601intdivnateqfloorrat.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/67601intdivnateqfloorrat.html">int div nat eq floor rat</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/67601intdivnateqfloorrat.html">int div nat eq floor rat</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/67601intdivnateqfloorrat.html
 {% raw %}
 
 <a name="165607438"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/int%20div%20nat%20eq%20floor%20rat/near/165607438" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="http://127.0.0.1:4000/archive/113489newmembers/67601intdivnateqfloorrat#165607438">(May 14 2019 at 09:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/int%20div%20nat%20eq%20floor%20rat/near/165607438" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="https://rht.github.io/archive/113489newmembers/67601intdivnateqfloorrat#165607438">(May 14 2019 at 09:39)</a>:</h4>
 <p>Hi, I am a bit stuck proving the following lemma and was wondering if anyone has a clever idea how to solve it:</p>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">div_eq_rat_floor</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="bp">ℤ</span><span class="o">)</span> <span class="o">(</span><span class="n">d</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">/</span> <span class="n">d</span> <span class="bp">=</span> <span class="err">⌊</span><span class="n">rat</span><span class="bp">.</span><span class="n">mk</span> <span class="n">n</span> <span class="n">d</span><span class="err">⌋</span> <span class="o">:=</span>
 <span class="n">sorry</span>
@@ -32,7 +32,7 @@ permalink: archive/113489newmembers/67601intdivnateqfloorrat.html
 
 
 <a name="165608951"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/int%20div%20nat%20eq%20floor%20rat/near/165608951" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113489newmembers/67601intdivnateqfloorrat#165608951">(May 14 2019 at 10:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/int%20div%20nat%20eq%20floor%20rat/near/165608951" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113489newmembers/67601intdivnateqfloorrat#165608951">(May 14 2019 at 10:02)</a>:</h4>
 <p>Perhaps this lemma in mathlib might be helpful?  </p>
 <div class="codehilite"><pre><span></span>theorem div_eq_div_of_mul_eq_mul {a b c d : ℤ} (H1 : b ∣ a) (H2 : d ∣ c) (H3 : b ≠ 0)
     (H4 : d ≠ 0) (H5 : a * d = b * c) :
@@ -45,25 +45,25 @@ permalink: archive/113489newmembers/67601intdivnateqfloorrat.html
 
 
 <a name="165609125"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/int%20div%20nat%20eq%20floor%20rat/near/165609125" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="http://127.0.0.1:4000/archive/113489newmembers/67601intdivnateqfloorrat#165609125">(May 14 2019 at 10:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/int%20div%20nat%20eq%20floor%20rat/near/165609125" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="https://rht.github.io/archive/113489newmembers/67601intdivnateqfloorrat#165609125">(May 14 2019 at 10:05)</a>:</h4>
 <p>I don't know that <code>q.denom | n</code> for example. I think I sorted it out using <code>rat.num_denom_mk</code> now. I can post the code in a few mins :)</p>
 
 
 
 <a name="165609550"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/int%20div%20nat%20eq%20floor%20rat/near/165609550" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/67601intdivnateqfloorrat#165609550">(May 14 2019 at 10:12)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/int%20div%20nat%20eq%20floor%20rat/near/165609550" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/67601intdivnateqfloorrat#165609550">(May 14 2019 at 10:12)</a>:</h4>
 <p>How far are the CS people from being able to prove this sort of thing using an all-purpose tactic?</p>
 
 
 
 <a name="165609574"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/int%20div%20nat%20eq%20floor%20rat/near/165609574" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/67601intdivnateqfloorrat#165609574">(May 14 2019 at 10:13)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/int%20div%20nat%20eq%20floor%20rat/near/165609574" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/67601intdivnateqfloorrat#165609574">(May 14 2019 at 10:13)</a>:</h4>
 <p>this is a lemma not a tactic</p>
 
 
 
 <a name="165616519"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/int%20div%20nat%20eq%20floor%20rat/near/165616519" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="http://127.0.0.1:4000/archive/113489newmembers/67601intdivnateqfloorrat#165616519">(May 14 2019 at 12:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/int%20div%20nat%20eq%20floor%20rat/near/165616519" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="https://rht.github.io/archive/113489newmembers/67601intdivnateqfloorrat#165616519">(May 14 2019 at 12:15)</a>:</h4>
 <p>My not so short but I'd say rather comprehensible solution:</p>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">div_nat_int_eq_div_rat_num_denom</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="bp">ℤ</span><span class="o">)</span> <span class="o">(</span><span class="n">d</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">)</span> <span class="o">:</span>
   <span class="n">n</span> <span class="bp">/</span> <span class="n">d</span> <span class="bp">=</span> <span class="o">(</span><span class="n">rat</span><span class="bp">.</span><span class="n">mk</span> <span class="n">n</span> <span class="n">d</span><span class="o">)</span><span class="bp">.</span><span class="n">num</span> <span class="bp">/</span> <span class="o">(</span><span class="n">rat</span><span class="bp">.</span><span class="n">mk</span> <span class="n">n</span> <span class="n">d</span><span class="o">)</span><span class="bp">.</span><span class="n">denom</span> <span class="o">:=</span>

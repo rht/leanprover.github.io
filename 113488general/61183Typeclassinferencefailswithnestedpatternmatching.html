@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching.html">Typeclass inference fails with nested pattern matching</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching.html">Typeclass inference fails with nested pattern matching</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/61183Typeclassinferencefailswithnestedpatternma
 {% raw %}
 
 <a name="158945966"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20inference%20fails%20with%20nested%20pattern%20matching/near/158945966" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Seul Baek <a href="http://127.0.0.1:4000/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching#158945966">(Feb 20 2019 at 04:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20inference%20fails%20with%20nested%20pattern%20matching/near/158945966" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Seul Baek <a href="https://rht.github.io/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching#158945966">(Feb 20 2019 at 04:49)</a>:</h4>
 <p>Lean has no problems with</p>
 <div class="codehilite"><pre><span></span>def foo : nat → unit
 | 0 := ()
@@ -58,13 +58,13 @@ permalink: archive/113488general/61183Typeclassinferencefailswithnestedpatternma
 
 
 <a name="158946699"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20inference%20fails%20with%20nested%20pattern%20matching/near/158946699" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching#158946699">(Feb 20 2019 at 05:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20inference%20fails%20with%20nested%20pattern%20matching/near/158946699" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching#158946699">(Feb 20 2019 at 05:04)</a>:</h4>
 <p>I think the main problem there is that the type of <code>0</code> in the match is not known</p>
 
 
 
 <a name="158946864"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20inference%20fails%20with%20nested%20pattern%20matching/near/158946864" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Seul Baek <a href="http://127.0.0.1:4000/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching#158946864">(Feb 20 2019 at 05:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20inference%20fails%20with%20nested%20pattern%20matching/near/158946864" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Seul Baek <a href="https://rht.github.io/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching#158946864">(Feb 20 2019 at 05:08)</a>:</h4>
 <p>If I modify <code>bar</code> to</p>
 <div class="codehilite"><pre><span></span>def bar&#39; : nat → unit
 | (k+2) :=
@@ -84,7 +84,7 @@ permalink: archive/113488general/61183Typeclassinferencefailswithnestedpatternma
 
 
 <a name="158947045"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20inference%20fails%20with%20nested%20pattern%20matching/near/158947045" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching#158947045">(Feb 20 2019 at 05:13)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20inference%20fails%20with%20nested%20pattern%20matching/near/158947045" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching#158947045">(Feb 20 2019 at 05:13)</a>:</h4>
 <p>It's some race condition, I think. I've got it down to this:</p>
 <div class="codehilite"><pre><span></span><span class="kn">set_option</span> <span class="n">trace</span><span class="bp">.</span><span class="n">class_instances</span> <span class="n">true</span>
 <span class="kn">set_option</span> <span class="n">pp</span><span class="bp">.</span><span class="n">all</span> <span class="n">true</span>
@@ -97,13 +97,13 @@ permalink: archive/113488general/61183Typeclassinferencefailswithnestedpatternma
 
 
 <a name="158947093"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20inference%20fails%20with%20nested%20pattern%20matching/near/158947093" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching#158947093">(Feb 20 2019 at 05:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20inference%20fails%20with%20nested%20pattern%20matching/near/158947093" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching#158947093">(Feb 20 2019 at 05:14)</a>:</h4>
 <p>filling any of the underscores makes it work</p>
 
 
 
 <a name="158947757"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20inference%20fails%20with%20nested%20pattern%20matching/near/158947757" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Seul Baek <a href="http://127.0.0.1:4000/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching#158947757">(Feb 20 2019 at 05:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20inference%20fails%20with%20nested%20pattern%20matching/near/158947757" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Seul Baek <a href="https://rht.github.io/archive/113488general/61183Typeclassinferencefailswithnestedpatternmatching#158947757">(Feb 20 2019 at 05:31)</a>:</h4>
 <p>Thanks. I guess the rule of thumb is to supply more explicit type information whenever something like this happens</p>
 
 

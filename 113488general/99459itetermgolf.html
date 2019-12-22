@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/99459itetermgolf.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/99459itetermgolf.html">ite term golf</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/99459itetermgolf.html">ite term golf</a></h3>
 
 <hr>
 
@@ -16,19 +16,19 @@ permalink: archive/113488general/99459itetermgolf.html
 {% raw %}
 
 <a name="127155648"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127155648" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="http://127.0.0.1:4000/archive/113488general/99459itetermgolf#127155648">(May 27 2018 at 07:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127155648" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="https://rht.github.io/archive/113488general/99459itetermgolf#127155648">(May 27 2018 at 07:28)</a>:</h4>
 <p>Suppose I need to prove <code>ite (x = y) tt ff = tt → x = y</code> and <code>x = y → ite (x = y) tt ff = tt</code>. Is there a succint way to do this in term mode? (I know <code>simp</code> and <code>split_ifs</code> is amazing here, but I'd like to do inversion by hand if possible)</p>
 
 
 
 <a name="127156020"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127156020" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="http://127.0.0.1:4000/archive/113488general/99459itetermgolf#127156020">(May 27 2018 at 07:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127156020" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="https://rht.github.io/archive/113488general/99459itetermgolf#127156020">(May 27 2018 at 07:43)</a>:</h4>
 <p>this should take care of the second part: <a href="https://github.com/leanprover/lean/blob/master/library/init/logic.lean#L839" target="_blank" title="https://github.com/leanprover/lean/blob/master/library/init/logic.lean#L839">https://github.com/leanprover/lean/blob/master/library/init/logic.lean#L839</a></p>
 
 
 
 <a name="127156150"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127156150" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="http://127.0.0.1:4000/archive/113488general/99459itetermgolf#127156150">(May 27 2018 at 07:48)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127156150" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="https://rht.github.io/archive/113488general/99459itetermgolf#127156150">(May 27 2018 at 07:48)</a>:</h4>
 <p>for the first part I wonder if something like the following would work (untested):</p>
 <div class="codehilite"><pre><span></span>λ h,
 if p : (x = y) then p else
@@ -41,31 +41,31 @@ if p : (x = y) then p else
 
 
 <a name="127156160"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127156160" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="http://127.0.0.1:4000/archive/113488general/99459itetermgolf#127156160">(May 27 2018 at 07:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127156160" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="https://rht.github.io/archive/113488general/99459itetermgolf#127156160">(May 27 2018 at 07:50)</a>:</h4>
 <p>maybe this is easier than no_confusion: <a href="https://github.com/leanprover/lean/blob/master/library/init/logic.lean" target="_blank" title="https://github.com/leanprover/lean/blob/master/library/init/logic.lean">https://github.com/leanprover/lean/blob/master/library/init/logic.lean</a></p>
 
 
 
 <a name="127156203"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127156203" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="http://127.0.0.1:4000/archive/113488general/99459itetermgolf#127156203">(May 27 2018 at 07:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127156203" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="https://rht.github.io/archive/113488general/99459itetermgolf#127156203">(May 27 2018 at 07:50)</a>:</h4>
 <p><code>absurd (eq.symm (eq.trans .....)) bool.ff_ne_tt</code></p>
 
 
 
 <a name="127156220"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127156220" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="http://127.0.0.1:4000/archive/113488general/99459itetermgolf#127156220">(May 27 2018 at 07:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127156220" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="https://rht.github.io/archive/113488general/99459itetermgolf#127156220">(May 27 2018 at 07:51)</a>:</h4>
 <p>btw I think this is just <code>if p then tt else ff</code>: <a href="https://github.com/leanprover/lean/blob/master/library/init/logic.lean#L590" target="_blank" title="https://github.com/leanprover/lean/blob/master/library/init/logic.lean#L590">https://github.com/leanprover/lean/blob/master/library/init/logic.lean#L590</a></p>
 
 
 
 <a name="127164043"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127164043" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/99459itetermgolf#127164043">(May 27 2018 at 13:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127164043" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/99459itetermgolf#127164043">(May 27 2018 at 13:11)</a>:</h4>
 <p>use <code>to_bool</code>, it has lots of lemmas for this</p>
 
 
 
 <a name="127165905"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127165905" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="http://127.0.0.1:4000/archive/113488general/99459itetermgolf#127165905">(May 27 2018 at 14:19)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/ite%20term%20golf/near/127165905" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="https://rht.github.io/archive/113488general/99459itetermgolf#127165905">(May 27 2018 at 14:19)</a>:</h4>
 <p>thanks Nicholas / Mario for the pointers</p>
 
 

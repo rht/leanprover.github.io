@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/19802HeterogeneousList.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/19802HeterogeneousList.html">Heterogeneous List</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/19802HeterogeneousList.html">Heterogeneous List</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/19802HeterogeneousList.html
 {% raw %}
 
 <a name="168704562"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168704562" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="http://127.0.0.1:4000/archive/113488general/19802HeterogeneousList#168704562">(Jun 21 2019 at 18:29)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168704562" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="https://rht.github.io/archive/113488general/19802HeterogeneousList#168704562">(Jun 21 2019 at 18:29)</a>:</h4>
 <p>Are there any attempts at heterogeneous lists in mathlib? These would be lists which admit elements of varying types, presumably with some constraint on the element types, otherwise you couldn't do much with such a thing. The use case I envision is to make using type classes more ergonomic, e.g. when I want to map a typeclass function over values of different types, all of which are in the class. For example, for pretty-printing:</p>
 <div class="codehilite"><pre><span></span><span class="c">/-</span><span class="cm">- Typeclass-requiring, heterogeneous list. -/</span>
 <span class="kn">inductive</span> <span class="n">thlist</span> <span class="o">(</span><span class="n">cl</span><span class="o">:</span> <span class="n">Sort</span> <span class="n">u</span> <span class="bp">→</span> <span class="n">Sort</span> <span class="n">v</span><span class="o">):</span> <span class="n">Sort</span> <span class="n">max</span> <span class="o">(</span><span class="n">u</span><span class="bp">+</span><span class="mi">1</span><span class="o">)</span> <span class="n">v</span>
@@ -43,31 +43,31 @@ permalink: archive/113488general/19802HeterogeneousList.html
 
 
 <a name="168706919"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168706919" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/19802HeterogeneousList#168706919">(Jun 21 2019 at 18:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168706919" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/19802HeterogeneousList#168706919">(Jun 21 2019 at 18:58)</a>:</h4>
 <p>For this you could just use a <code>list</code> whose element type is a sigma type, right?</p>
 
 
 
 <a name="168708573"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168708573" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="http://127.0.0.1:4000/archive/113488general/19802HeterogeneousList#168708573">(Jun 21 2019 at 19:17)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168708573" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="https://rht.github.io/archive/113488general/19802HeterogeneousList#168708573">(Jun 21 2019 at 19:17)</a>:</h4>
 <p>Hm, that might also work, thanks! Some universe errors appear when I try it with the same definition of <code>cl</code>, but it's probably possible.</p>
 
 
 
 <a name="168743283"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168743283" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/113488general/19802HeterogeneousList#168743283">(Jun 22 2019 at 08:56)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168743283" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/113488general/19802HeterogeneousList#168743283">(Jun 22 2019 at 08:56)</a>:</h4>
 <p>Maybe <code>d_array</code> is useful? It is a sequence of a fixed length where you can specify the type of the <code>i</code>-th element.</p>
 
 
 
 <a name="168743673"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168743673" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/19802HeterogeneousList#168743673">(Jun 22 2019 at 09:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168743673" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/19802HeterogeneousList#168743673">(Jun 22 2019 at 09:10)</a>:</h4>
 <p>I once tried to write heterogeneous lists but they didn't make anything easier. I found the problem was I didn't have an application</p>
 
 
 
 <a name="168743678"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168743678" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/19802HeterogeneousList#168743678">(Jun 22 2019 at 09:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168743678" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/19802HeterogeneousList#168743678">(Jun 22 2019 at 09:11)</a>:</h4>
 <p>The example can be done more simply:</p>
 <div class="codehilite"><pre><span></span><span class="n">meta</span> <span class="n">def</span> <span class="n">fmt_cons</span> <span class="o">{</span><span class="n">α</span><span class="o">}</span> <span class="o">[</span><span class="n">has_to_format</span> <span class="n">α</span><span class="o">]</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">α</span><span class="o">)</span> <span class="o">:</span> <span class="n">list</span> <span class="n">format</span> <span class="bp">→</span> <span class="n">list</span> <span class="n">format</span> <span class="o">:=</span>
 <span class="n">list</span><span class="bp">.</span><span class="n">cons</span> <span class="o">(</span><span class="n">has_to_format</span><span class="bp">.</span><span class="n">to_format</span> <span class="n">h</span><span class="o">)</span>
@@ -80,7 +80,7 @@ permalink: archive/113488general/19802HeterogeneousList.html
 
 
 <a name="168752300"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168752300" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> matt rice <a href="http://127.0.0.1:4000/archive/113488general/19802HeterogeneousList#168752300">(Jun 22 2019 at 14:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168752300" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> matt rice <a href="https://rht.github.io/archive/113488general/19802HeterogeneousList#168752300">(Jun 22 2019 at 14:00)</a>:</h4>
 <p>not really heterogeneus list i imagine, but over here I was playing with a qpf datatype like list of sigma,<br>
 <a href="#narrow/stream/113488-general/topic/qpf.20and.20type.20class.20instances" title="#narrow/stream/113488-general/topic/qpf.20and.20type.20class.20instances">https://leanprover.zulipchat.com/#narrow/stream/113488-general/topic/qpf.20and.20type.20class.20instances</a></p>
 <p>if we change that last line from eval to check:<br>
@@ -90,7 +90,7 @@ permalink: archive/113488general/19802HeterogeneousList.html
 
 
 <a name="168752500"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168752500" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> matt rice <a href="http://127.0.0.1:4000/archive/113488general/19802HeterogeneousList#168752500">(Jun 22 2019 at 14:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Heterogeneous%20List/near/168752500" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> matt rice <a href="https://rht.github.io/archive/113488general/19802HeterogeneousList#168752500">(Jun 22 2019 at 14:08)</a>:</h4>
 <p>This can kind of be annoying if you want a list of a bunch of types because you end up with list (alt ℕ (alt bool string)) etc...</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/116395maths/18750hasmulinstanceforoption.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/116395maths/index.html">maths</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/116395maths/18750hasmulinstanceforoption.html">has_mul instance for option?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/116395maths/index.html">maths</a>
+<h3>Topic: <a href="https://rht.github.io/archive/116395maths/18750hasmulinstanceforoption.html">has_mul instance for option?</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/116395maths/18750hasmulinstanceforoption.html
 {% raw %}
 
 <a name="170579000"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/has_mul%20instance%20for%20option%3F/near/170579000" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Koundinya Vajjha <a href="http://127.0.0.1:4000/archive/116395maths/18750hasmulinstanceforoption#170579000">(Jul 10 2019 at 20:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/has_mul%20instance%20for%20option%3F/near/170579000" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Koundinya Vajjha <a href="https://rht.github.io/archive/116395maths/18750hasmulinstanceforoption#170579000">(Jul 10 2019 at 20:55)</a>:</h4>
 <p>Does <code>option</code> have a <code>has_mul</code> instance?</p>
 <p>I've been trying to prove the following:</p>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">to_nnreal_mul</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ennreal</span><span class="o">)</span> <span class="o">:</span> <span class="n">ennreal</span><span class="bp">.</span><span class="n">to_nnreal</span> <span class="o">(</span><span class="n">a</span> <span class="bp">*</span> <span class="n">b</span><span class="o">)</span> <span class="bp">=</span> <span class="o">(</span><span class="n">ennreal</span><span class="bp">.</span><span class="n">to_nnreal</span> <span class="n">a</span><span class="o">)</span><span class="bp">*</span><span class="o">(</span><span class="n">ennreal</span><span class="bp">.</span><span class="n">to_nnreal</span> <span class="n">b</span><span class="o">)</span> <span class="o">:=</span> <span class="n">sorry</span>
@@ -28,19 +28,19 @@ permalink: archive/116395maths/18750hasmulinstanceforoption.html
 
 
 <a name="170579915"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/has_mul%20instance%20for%20option%3F/near/170579915" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/116395maths/18750hasmulinstanceforoption#170579915">(Jul 10 2019 at 21:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/has_mul%20instance%20for%20option%3F/near/170579915" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/116395maths/18750hasmulinstanceforoption#170579915">(Jul 10 2019 at 21:09)</a>:</h4>
 <p><code>none</code> is defeq to <code>\top</code>, and there should be lemmas about that. Probably <code>rfl</code> will prove it. There might be a special version of <code>cases</code> for <code>ennreal</code></p>
 
 
 
 <a name="170580713"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/has_mul%20instance%20for%20option%3F/near/170580713" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Koundinya Vajjha <a href="http://127.0.0.1:4000/archive/116395maths/18750hasmulinstanceforoption#170580713">(Jul 10 2019 at 21:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/has_mul%20instance%20for%20option%3F/near/170580713" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Koundinya Vajjha <a href="https://rht.github.io/archive/116395maths/18750hasmulinstanceforoption#170580713">(Jul 10 2019 at 21:21)</a>:</h4>
 <p>I'm stuck on <code>ennreal.to_nnreal (some a * some b) = a * b</code>.</p>
 
 
 
 <a name="170581925"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/has_mul%20instance%20for%20option%3F/near/170581925" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/116395maths/18750hasmulinstanceforoption#170581925">(Jul 10 2019 at 21:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/has_mul%20instance%20for%20option%3F/near/170581925" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="https://rht.github.io/archive/116395maths/18750hasmulinstanceforoption#170581925">(Jul 10 2019 at 21:43)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">to_nnreal_mul</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ennreal</span><span class="o">)</span> <span class="o">:</span>
   <span class="n">ennreal</span><span class="bp">.</span><span class="n">to_nnreal</span> <span class="o">(</span><span class="n">a</span> <span class="bp">*</span> <span class="n">b</span><span class="o">)</span> <span class="bp">=</span> <span class="o">(</span><span class="n">ennreal</span><span class="bp">.</span><span class="n">to_nnreal</span> <span class="n">a</span><span class="o">)</span> <span class="bp">*</span> <span class="o">(</span><span class="n">ennreal</span><span class="bp">.</span><span class="n">to_nnreal</span> <span class="n">b</span><span class="o">)</span> <span class="o">:=</span>
 <span class="k">begin</span>

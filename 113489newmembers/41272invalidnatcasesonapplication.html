@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/41272invalidnatcasesonapplication.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication.html">invalid nat.cases_on application</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication.html">invalid nat.cases_on application</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/41272invalidnatcasesonapplication.html
 {% raw %}
 
 <a name="179237461"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179237461" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Julian Gilbey <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179237461">(Oct 28 2019 at 14:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179237461" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Julian Gilbey <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179237461">(Oct 28 2019 at 14:47)</a>:</h4>
 <p>Hi, I'm just getting my head around Lean 3, and working through the Logic and Proof book on the Lean github page.  I'm trying to prove that \le is a total order on the naturals, but my code gives an error which I'm struggling to make sense of.  Any help would be much appreciated!   The code is below.  (Yes, I know my coding style is very rudimentary, and I haven't yet learnt how to use rw effectively.  I'll get there!  Any pointers in that direction would be helpful, but in the meantime, what is this bizarre error?  It would be good to have a "minimal example", but I don't know how to trim this one down, I'm afraid.)</p>
 <p>The error message reads:</p>
 <div class="codehilite"><pre><span></span>error: invalid &#39;nat.cases_on&#39; application, elaborator has special support for this kind of application (it is handled as an &quot;eliminator&quot;), but expected type must not contain metavariables
@@ -76,7 +76,7 @@ permalink: archive/113489newmembers/41272invalidnatcasesonapplication.html
 
 
 <a name="179240233"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179240233" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179240233">(Oct 28 2019 at 15:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179240233" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179240233">(Oct 28 2019 at 15:15)</a>:</h4>
 <p>The step where you use <code>or.elim</code> looks wrong to me. If I insert <code>by {}; exact</code> before <code>or.elim</code> (a handy trick from <span class="user-mention" data-user-id="110049">@Mario Carneiro</span> to inspect the goal in "term-mode" proofs), I see:</p>
 <div class="codehilite"><pre><span></span>1 goal
 m n n : ℕ,
@@ -92,19 +92,19 @@ ih : n ≼ m ∨ m ≼ n
 
 
 <a name="179241079"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179241079" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179241079">(Oct 28 2019 at 15:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179241079" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179241079">(Oct 28 2019 at 15:23)</a>:</h4>
 <p>This is just horrible. Beginners writing their proofs with all that have, show, assume stuff. Tactic mode is absolutely the canonical way to prove something like this. This exercise makes a beginner think that using a theorem prover is hell.</p>
 
 
 
 <a name="179241561"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179241561" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179241561">(Oct 28 2019 at 15:27)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179241561" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179241561">(Oct 28 2019 at 15:27)</a>:</h4>
 <p><span class="user-mention" data-user-id="242660">@Julian Gilbey</span> the line <code>or.elim</code> (L17) should be <code>or.elim ih</code></p>
 
 
 
 <a name="179241570"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179241570" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179241570">(Oct 28 2019 at 15:27)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179241570" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179241570">(Oct 28 2019 at 15:27)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">interactive</span> <span class="c1">-- mathlib tactics</span>
 
 <span class="kn">open</span> <span class="n">nat</span>
@@ -145,19 +145,19 @@ ih : n ≼ m ∨ m ≼ n
 
 
 <a name="179241613"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179241613" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179241613">(Oct 28 2019 at 15:27)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179241613" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179241613">(Oct 28 2019 at 15:27)</a>:</h4>
 <p><span class="user-mention" data-user-id="242660">@Julian Gilbey</span> the real problem is that the entire thing should be in tactic mode so you can see what you're doing.</p>
 
 
 
 <a name="179241698"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179241698" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179241698">(Oct 28 2019 at 15:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179241698" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179241698">(Oct 28 2019 at 15:28)</a>:</h4>
 <p>Check out chapter 5 of Theorem Proving In Lean to get you out of this assume, show, have hell.</p>
 
 
 
 <a name="179242163"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242163" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179242163">(Oct 28 2019 at 15:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242163" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179242163">(Oct 28 2019 at 15:32)</a>:</h4>
 <p><span class="user-mention" data-user-id="242660">@Julian Gilbey</span> and if you insist using term mode you can use some syntactic sugars to make it look nicer:</p>
 <div class="codehilite"><pre><span></span><span class="kn">open</span> <span class="n">nat</span>
 
@@ -179,7 +179,7 @@ ih : n ≼ m ∨ m ≼ n
 
 
 <a name="179242432"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242432" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Julian Gilbey <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179242432">(Oct 28 2019 at 15:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242432" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Julian Gilbey <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179242432">(Oct 28 2019 at 15:35)</a>:</h4>
 <blockquote>
 <p>This is just horrible. Beginners writing their proofs with all that have, show, assume stuff. Tactic mode is absolutely the canonical way to prove something like this. This exercise makes a beginner think that using a theorem prover is hell.</p>
 </blockquote>
@@ -188,7 +188,7 @@ ih : n ≼ m ∨ m ≼ n
 
 
 <a name="179242486"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242486" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Julian Gilbey <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179242486">(Oct 28 2019 at 15:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242486" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Julian Gilbey <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179242486">(Oct 28 2019 at 15:35)</a>:</h4>
 <blockquote>
 <p><span class="user-mention silent" data-user-id="242660">Julian Gilbey</span> the line <code>or.elim</code> (L17) should be <code>or.elim ih</code></p>
 </blockquote>
@@ -197,49 +197,49 @@ ih : n ≼ m ∨ m ≼ n
 
 
 <a name="179242493"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242493" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179242493">(Oct 28 2019 at 15:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242493" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179242493">(Oct 28 2019 at 15:35)</a>:</h4>
 <p>In tactic mode you can see all goals at all times and exactly what you are assuming.</p>
 
 
 
 <a name="179242578"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242578" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179242578">(Oct 28 2019 at 15:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242578" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179242578">(Oct 28 2019 at 15:36)</a>:</h4>
 <p>Let me stress that this is not your fault! This is just the method that Avigad uses to teach people, perhaps because it's more suited to the kind of elementary questions that beginner CS people have.</p>
 
 
 
 <a name="179242604"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242604" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179242604">(Oct 28 2019 at 15:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242604" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179242604">(Oct 28 2019 at 15:36)</a>:</h4>
 <p>But you're working on a very natural maths question so you should try tactic mode.</p>
 
 
 
 <a name="179242627"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242627" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179242627">(Oct 28 2019 at 15:37)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242627" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179242627">(Oct 28 2019 at 15:37)</a>:</h4>
 <p>I think this question is somewhere in world 5 on <a href="http://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/" target="_blank" title="http://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/">http://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/</a></p>
 
 
 
 <a name="179242658"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242658" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179242658">(Oct 28 2019 at 15:37)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179242658" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179242658">(Oct 28 2019 at 15:37)</a>:</h4>
 <p>oh no it's not quite there yet. It's coming up in v1.1, to be released this weekend.</p>
 
 
 
 <a name="179243217"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243217" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179243217">(Oct 28 2019 at 15:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243217" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179243217">(Oct 28 2019 at 15:43)</a>:</h4>
 <p>Inequality world DLC</p>
 
 
 
 <a name="179243417"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243417" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179243417">(Oct 28 2019 at 15:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243417" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179243417">(Oct 28 2019 at 15:45)</a>:</h4>
 <p>I think the use of this style in Jeremy's proofs reflects influence from the Isar proofs in Isabelle</p>
 
 
 
 <a name="179243437"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243437" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179243437">(Oct 28 2019 at 15:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243437" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179243437">(Oct 28 2019 at 15:45)</a>:</h4>
 <p>If you really really want to use <code>cases_on</code>: The error comes from the fact that the elaborator can't figure out the motive because it doesn't appear in the type signature. You need to perform <code>cases_on</code> <em>before</em>  <code>assume (hc : n + c = m)</code> so that <code>c</code> can be replaced by zero or <code>succ c</code> in the two case branches.</p>
 <div class="codehilite"><pre><span></span>        <span class="k">assume</span> <span class="n">c</span><span class="o">,</span>
         <span class="bp">@</span><span class="n">nat</span><span class="bp">.</span><span class="n">cases_on</span> <span class="o">(</span><span class="bp">λ</span> <span class="n">c</span><span class="o">,</span> <span class="n">n</span> <span class="bp">+</span> <span class="n">c</span> <span class="bp">=</span> <span class="n">m</span> <span class="bp">→</span> <span class="n">succ</span> <span class="n">n</span> <span class="err">≼</span> <span class="n">m</span> <span class="bp">∨</span> <span class="n">m</span> <span class="err">≼</span> <span class="n">succ</span> <span class="n">n</span><span class="o">)</span> <span class="n">c</span>
@@ -250,7 +250,7 @@ ih : n ≼ m ∨ m ≼ n
 
 
 <a name="179243499"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243499" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179243499">(Oct 28 2019 at 15:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243499" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179243499">(Oct 28 2019 at 15:46)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">interactive</span>
 
 <span class="kn">open</span> <span class="n">nat</span>
@@ -318,19 +318,19 @@ ih : n ≼ m ∨ m ≼ n
 
 
 <a name="179243521"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243521" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179243521">(Oct 28 2019 at 15:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243521" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179243521">(Oct 28 2019 at 15:46)</a>:</h4>
 <p>(deleted)</p>
 
 
 
 <a name="179243526"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243526" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179243526">(Oct 28 2019 at 15:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243526" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179243526">(Oct 28 2019 at 15:46)</a>:</h4>
 <p><span class="user-mention" data-user-id="242660">@Julian Gilbey</span> annotated tactics</p>
 
 
 
 <a name="179243957"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243957" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Julian Gilbey <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179243957">(Oct 28 2019 at 15:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243957" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Julian Gilbey <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179243957">(Oct 28 2019 at 15:50)</a>:</h4>
 <blockquote>
 <p><span class="user-mention silent" data-user-id="242660">Julian Gilbey</span> annotated tactics</p>
 </blockquote>
@@ -339,31 +339,31 @@ ih : n ≼ m ∨ m ≼ n
 
 
 <a name="179243964"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243964" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179243964">(Oct 28 2019 at 15:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179243964" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179243964">(Oct 28 2019 at 15:50)</a>:</h4>
 <p>Thanks Kenny! Julian -- I hope this is giving you some indication that this sort of question can actually be worked on in Lean using a much easier-to-use framework than the one you are attempting to use, where 9 times out of 10 the error is "missing comma" and the user never recovers</p>
 
 
 
 <a name="179244323"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179244323" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179244323">(Oct 28 2019 at 15:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179244323" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179244323">(Oct 28 2019 at 15:54)</a>:</h4>
 <p>To counter Kevin's negativity, I would like to say that your initial proof is very nicely formatted</p>
 
 
 
 <a name="179244387"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179244387" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179244387">(Oct 28 2019 at 15:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179244387" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179244387">(Oct 28 2019 at 15:54)</a>:</h4>
 <p>Also you can also always see the goals in term mode by using underscores</p>
 
 
 
 <a name="179244446"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179244446" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179244446">(Oct 28 2019 at 15:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179244446" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179244446">(Oct 28 2019 at 15:55)</a>:</h4>
 <p>All this is true, but it's still completely impossible for a beginner to debug. That's why he's asking the question in the first place.</p>
 
 
 
 <a name="179245778"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179245778" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/41272invalidnatcasesonapplication#179245778">(Oct 28 2019 at 16:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/invalid%20nat.cases_on%20application/near/179245778" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/41272invalidnatcasesonapplication#179245778">(Oct 28 2019 at 16:06)</a>:</h4>
 <p>Ah, I answered way too hastily. <span aria-label="face palm" class="emoji emoji-1f926" role="img" title="face palm">:face_palm:</span>‍♂️ Sorry for posting nonsense and thanks to everyone else for jumping in with great explanations!</p>
 
 

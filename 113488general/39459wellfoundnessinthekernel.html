@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/39459wellfoundnessinthekernel.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/39459wellfoundnessinthekernel.html">well foundness in the kernel</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/39459wellfoundnessinthekernel.html">well foundness in the kernel</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/39459wellfoundnessinthekernel.html
 {% raw %}
 
 <a name="171166383"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well%20foundness%20in%20the%20kernel/near/171166383" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Paul-Nicolas Madelaine <a href="http://127.0.0.1:4000/archive/113488general/39459wellfoundnessinthekernel#171166383">(Jul 18 2019 at 12:52)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well%20foundness%20in%20the%20kernel/near/171166383" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Paul-Nicolas Madelaine <a href="https://rht.github.io/archive/113488general/39459wellfoundnessinthekernel#171166383">(Jul 18 2019 at 12:52)</a>:</h4>
 <p>Hi everyone,</p>
 <p>I'm running in some issues with well foundness. I defined a function using the using_well_founded key word and a well founded relation that I defined.<br>
 My function is running fine in the VM, but it seems like the kernel is not computing the function at all, for instance when I'm applying reflexivity.<br>
@@ -26,7 +26,7 @@ I don't even get a timeout, the elaborator just fails immediatly.</p>
 
 
 <a name="171180078"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well%20foundness%20in%20the%20kernel/near/171180078" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="http://127.0.0.1:4000/archive/113488general/39459wellfoundnessinthekernel#171180078">(Jul 18 2019 at 15:16)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well%20foundness%20in%20the%20kernel/near/171180078" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="https://rht.github.io/archive/113488general/39459wellfoundnessinthekernel#171180078">(Jul 18 2019 at 15:16)</a>:</h4>
 <p>Yep, I just ran into this - see Mario's answer in ( <a href="#narrow/stream/113489-new-members/topic/noob.20question%28s%29/near/170801612" title="#narrow/stream/113489-new-members/topic/noob.20question%28s%29/near/170801612">https://leanprover.zulipchat.com/#narrow/stream/113489-new-members/topic/noob.20question%28s%29/near/170801612</a> ). The kernel will properly reduce structurally recursive calls, but not ones using <code>well_founded.fix</code>.</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/116395maths/96722continuousofconst.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/116395maths/index.html">maths</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst.html">continuous_of_const</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/116395maths/index.html">maths</a>
+<h3>Topic: <a href="https://rht.github.io/archive/116395maths/96722continuousofconst.html">continuous_of_const</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/116395maths/96722continuousofconst.html
 {% raw %}
 
 <a name="152017837"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152017837" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152017837">(Dec 17 2018 at 10:34)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152017837" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152017837">(Dec 17 2018 at 10:34)</a>:</h4>
 <p>This is very much related to my question in the <a href="#narrow/stream/113488-general/subject/Empty.20or.20not.20empty/near/152017713" title="#narrow/stream/113488-general/subject/Empty.20or.20not.20empty/near/152017713">https://leanprover.zulipchat.com/#narrow/stream/113488-general/subject/Empty.20or.20not.20empty/near/152017713</a>, but has some (tiny) math content. Can anyone golf the following ridiculous lemma?</p>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">continuous_of_const</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="kt">Type</span><span class="bp">*</span><span class="o">}</span> <span class="o">{</span><span class="n">β</span> <span class="o">:</span> <span class="kt">Type</span><span class="bp">*</span><span class="o">}</span> <span class="o">[</span><span class="n">topological_space</span> <span class="n">α</span><span class="o">]</span> <span class="o">[</span><span class="n">topological_space</span> <span class="n">β</span><span class="o">]</span> <span class="o">{</span><span class="n">f</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">β</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="bp">∀</span><span class="n">a</span> <span class="n">b</span><span class="o">,</span> <span class="n">f</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">f</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span>
   <span class="n">continuous</span> <span class="n">f</span> <span class="o">:=</span>
@@ -40,19 +40,19 @@ permalink: archive/116395maths/96722continuousofconst.html
 
 
 <a name="152017862"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152017862" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152017862">(Dec 17 2018 at 10:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152017862" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152017862">(Dec 17 2018 at 10:35)</a>:</h4>
 <p>Of course you need to import <code>analysis.topology.topological_space</code></p>
 
 
 
 <a name="152018202"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152018202" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152018202">(Dec 17 2018 at 10:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152018202" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152018202">(Dec 17 2018 at 10:43)</a>:</h4>
 <p>I don't think I can do much regarding axiom of choice</p>
 
 
 
 <a name="152018645"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152018645" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152018645">(Dec 17 2018 at 10:52)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152018645" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152018645">(Dec 17 2018 at 10:52)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">analysis</span><span class="bp">.</span><span class="n">topology</span><span class="bp">.</span><span class="n">continuity</span>
 
 <span class="kn">lemma</span> <span class="n">continuous_of_const</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="kt">Type</span><span class="bp">*</span><span class="o">}</span> <span class="o">{</span><span class="n">β</span> <span class="o">:</span> <span class="kt">Type</span><span class="bp">*</span><span class="o">}</span> <span class="o">[</span><span class="n">topological_space</span> <span class="n">α</span><span class="o">]</span> <span class="o">[</span><span class="n">topological_space</span> <span class="n">β</span><span class="o">]</span> <span class="o">{</span><span class="n">f</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">β</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="bp">∀</span><span class="n">a</span> <span class="n">b</span><span class="o">,</span> <span class="n">f</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">f</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span>
@@ -68,43 +68,43 @@ permalink: archive/116395maths/96722continuousofconst.html
 
 
 <a name="152018872"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152018872" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152018872">(Dec 17 2018 at 10:57)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152018872" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152018872">(Dec 17 2018 at 10:57)</a>:</h4>
 <p>Nice effort, but it doesn't change much (about the same length, same axioms)</p>
 
 
 
 <a name="152018977"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152018977" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152018977">(Dec 17 2018 at 10:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152018977" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152018977">(Dec 17 2018 at 10:59)</a>:</h4>
 <p>isn't there a lemma that says a constant proposition is open?</p>
 
 
 
 <a name="152018987"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152018987" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152018987">(Dec 17 2018 at 10:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152018987" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152018987">(Dec 17 2018 at 10:59)</a>:</h4>
 <p><code>is_open_const</code></p>
 
 
 
 <a name="152019040"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019040" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152019040">(Dec 17 2018 at 11:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019040" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152019040">(Dec 17 2018 at 11:00)</a>:</h4>
 <p>but this is a different formulation of "constant"</p>
 
 
 
 <a name="152019054"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019054" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152019054">(Dec 17 2018 at 11:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019054" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152019054">(Dec 17 2018 at 11:00)</a>:</h4>
 <p>right, but it is the one you want here, I think</p>
 
 
 
 <a name="152019083"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019083" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152019083">(Dec 17 2018 at 11:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019083" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152019083">(Dec 17 2018 at 11:01)</a>:</h4>
 <p>it doesn't avoid LEM (because it's used in the proof) but you can defer the case splitting to it</p>
 
 
 
 <a name="152019353"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019353" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152019353">(Dec 17 2018 at 11:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019353" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152019353">(Dec 17 2018 at 11:07)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">continuous_of_const</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="kt">Type</span><span class="bp">*</span><span class="o">}</span> <span class="o">{</span><span class="n">β</span> <span class="o">:</span> <span class="kt">Type</span><span class="bp">*</span><span class="o">}</span>
   <span class="o">[</span><span class="n">topological_space</span> <span class="n">α</span><span class="o">]</span> <span class="o">[</span><span class="n">topological_space</span> <span class="n">β</span><span class="o">]</span>
   <span class="o">{</span><span class="n">f</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">β</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="bp">∀</span><span class="n">a</span> <span class="n">b</span><span class="o">,</span> <span class="n">f</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">f</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span>
@@ -117,19 +117,19 @@ permalink: archive/116395maths/96722continuousofconst.html
 
 
 <a name="152019362"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019362" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152019362">(Dec 17 2018 at 11:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019362" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152019362">(Dec 17 2018 at 11:07)</a>:</h4>
 <p>nice</p>
 
 
 
 <a name="152019456"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019456" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152019456">(Dec 17 2018 at 11:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019456" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152019456">(Dec 17 2018 at 11:09)</a>:</h4>
 <p>I have a long way to go before becoming a true obfuscation master...</p>
 
 
 
 <a name="152019513"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019513" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/116395maths/96722continuousofconst#152019513">(Dec 17 2018 at 11:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/continuous_of_const/near/152019513" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/116395maths/96722continuousofconst#152019513">(Dec 17 2018 at 11:10)</a>:</h4>
 <p>Thanks anyway!</p>
 
 

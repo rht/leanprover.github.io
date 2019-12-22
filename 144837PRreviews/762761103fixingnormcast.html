@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/144837PRreviews/762761103fixingnormcast.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/144837PRreviews/index.html">PR reviews</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/144837PRreviews/762761103fixingnormcast.html">#1103 fixing norm_cast</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/144837PRreviews/index.html">PR reviews</a>
+<h3>Topic: <a href="https://rht.github.io/archive/144837PRreviews/762761103fixingnormcast.html">#1103 fixing norm_cast</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/144837PRreviews/762761103fixingnormcast.html
 {% raw %}
 
 <a name="168500679"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231103%20fixing%20norm_cast/near/168500679" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Paul-Nicolas Madelaine <a href="http://127.0.0.1:4000/archive/144837PRreviews/762761103fixingnormcast#168500679">(Jun 19 2019 at 12:18)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231103%20fixing%20norm_cast/near/168500679" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Paul-Nicolas Madelaine <a href="https://rht.github.io/archive/144837PRreviews/762761103fixingnormcast#168500679">(Jun 19 2019 at 12:18)</a>:</h4>
 <p>I initially posted this on general, but I think it's more suited to this stream:</p>
 <p>Hi everyone,</p>
 <p>I'm was working on fixing a problem with the norm_cast tactic, and it seems like I broke something in data/list.<br>
@@ -28,13 +28,13 @@ Here is the incriminated commit: <a href="https://github.com/leanprover-communit
 
 
 <a name="168510091"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231103%20fixing%20norm_cast/near/168510091" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Paul-Nicolas Madelaine <a href="http://127.0.0.1:4000/archive/144837PRreviews/762761103fixingnormcast#168510091">(Jun 19 2019 at 14:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231103%20fixing%20norm_cast/near/168510091" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Paul-Nicolas Madelaine <a href="https://rht.github.io/archive/144837PRreviews/762761103fixingnormcast#168510091">(Jun 19 2019 at 14:11)</a>:</h4>
 <p>you can see the log from travis here: <a href="https://travis-ci.org/leanprover-community/mathlib/jobs/547657998" target="_blank" title="https://travis-ci.org/leanprover-community/mathlib/jobs/547657998">https://travis-ci.org/leanprover-community/mathlib/jobs/547657998</a></p>
 
 
 
 <a name="168601250"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231103%20fixing%20norm_cast/near/168601250" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Paul-Nicolas Madelaine <a href="http://127.0.0.1:4000/archive/144837PRreviews/762761103fixingnormcast#168601250">(Jun 20 2019 at 14:37)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231103%20fixing%20norm_cast/near/168601250" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Paul-Nicolas Madelaine <a href="https://rht.github.io/archive/144837PRreviews/762761103fixingnormcast#168601250">(Jun 20 2019 at 14:37)</a>:</h4>
 <p>okay so it appears I was importing data.num that was itself importing data.vector,<br>
 and list/basic must import my tactic at some point even so it doesn't use it.<br>
 this creates an ambiguity aroun the '::' notation.<br>

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/16952Propclass.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/16952Propclass.html">Prop class</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/16952Propclass.html">Prop class</a></h3>
 
 <hr>
 
@@ -16,44 +16,44 @@ permalink: archive/113488general/16952Propclass.html
 {% raw %}
 
 <a name="177999868"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/177999868" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/16952Propclass#177999868">(Oct 12 2019 at 18:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/177999868" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/16952Propclass#177999868">(Oct 12 2019 at 18:04)</a>:</h4>
 <p>If we have <code>class C a : Prop := (...)</code>, and then <code>instance foo : C bar := (...)</code>, I guess Lean treats <code>foo</code> as a <code>def</code> not a <code>lemma</code>, right?<br>
 Is there ever an argument for writing <code>@[instance] lemma foo : C bar := (...)</code>?</p>
 
 
 
 <a name="178003126"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/178003126" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Miguel Raz Guzmán Macedo <a href="http://127.0.0.1:4000/archive/113488general/16952Propclass#178003126">(Oct 12 2019 at 19:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/178003126" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Miguel Raz Guzmán Macedo <a href="https://rht.github.io/archive/113488general/16952Propclass#178003126">(Oct 12 2019 at 19:31)</a>:</h4>
 <p>How much breakage of user code that doesn't use internals is expected in the lean 3 -&gt; lean 4 transition?</p>
 
 
 
 <a name="178003268"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/178003268" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/16952Propclass#178003268">(Oct 12 2019 at 19:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/178003268" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/16952Propclass#178003268">(Oct 12 2019 at 19:35)</a>:</h4>
 <p>My impressions was about 86.4%</p>
 
 
 
 <a name="178003271"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/178003271" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/16952Propclass#178003271">(Oct 12 2019 at 19:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/178003271" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/16952Propclass#178003271">(Oct 12 2019 at 19:35)</a>:</h4>
 <p>No seriously... I think we shouldn't expect any compatibility</p>
 
 
 
 <a name="178003316"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/178003316" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/16952Propclass#178003316">(Oct 12 2019 at 19:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/178003316" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/16952Propclass#178003316">(Oct 12 2019 at 19:36)</a>:</h4>
 <p>But some people on the chat, who are a lot more skilled than I am, might be able to convert huge bunches of code using fancy metaprogramming trick plus Perl regexes.</p>
 
 
 
 <a name="178003387"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/178003387" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Miguel Raz Guzmán Macedo <a href="http://127.0.0.1:4000/archive/113488general/16952Propclass#178003387">(Oct 12 2019 at 19:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/178003387" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Miguel Raz Guzmán Macedo <a href="https://rht.github.io/archive/113488general/16952Propclass#178003387">(Oct 12 2019 at 19:38)</a>:</h4>
 <p>Got it...</p>
 
 
 
 <a name="178003459"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/178003459" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/113488general/16952Propclass#178003459">(Oct 12 2019 at 19:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Prop%20class/near/178003459" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/113488general/16952Propclass#178003459">(Oct 12 2019 at 19:41)</a>:</h4>
 <blockquote>
 <p>If we have <code>class C a : Prop := (...)</code>, and then <code>instance foo : C bar := (...)</code>, I guess Lean treats <code>foo</code> as a <code>def</code> not a <code>lemma</code>, right?<br>
 Is there ever an argument for writing <code>@[instance] lemma foo : C bar := (...)</code>?</p>

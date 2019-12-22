@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/32934Prooftermsize2200.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/32934Prooftermsize2200.html">Proof term size * 2^200</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/32934Prooftermsize2200.html">Proof term size * 2^200</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/32934Prooftermsize2200.html
 {% raw %}
 
 <a name="154864164"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20term%20size%20%2A%202%5E200/near/154864164" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Seul Baek <a href="http://127.0.0.1:4000/archive/113488general/32934Prooftermsize2200#154864164">(Jan 10 2019 at 19:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20term%20size%20%2A%202%5E200/near/154864164" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Seul Baek <a href="https://rht.github.io/archive/113488general/32934Prooftermsize2200#154864164">(Jan 10 2019 at 19:21)</a>:</h4>
 <p>I became curious how sizes of proof terms affect speed, so I ran a quick experiment: </p>
 <div class="codehilite"><pre><span></span>def foo : nat → Prop
 | 0 := true
@@ -52,19 +52,19 @@ by show_foo
 
 
 <a name="154868623"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20term%20size%20%2A%202%5E200/near/154868623" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Gabriel Ebner <a href="http://127.0.0.1:4000/archive/113488general/32934Prooftermsize2200#154868623">(Jan 10 2019 at 20:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20term%20size%20%2A%202%5E200/near/154868623" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Gabriel Ebner <a href="https://rht.github.io/archive/113488general/32934Prooftermsize2200#154868623">(Jan 10 2019 at 20:26)</a>:</h4>
 <p>To a certain degree, Lean can handle terms with dag-like sharing (your term is very small when viewed as a dag).  This happens e.g. because type inference and whnf and unifiability are cached, i.e., only evaluated once for every subterm (there are only few subterms).</p>
 
 
 
 <a name="154868637"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20term%20size%20%2A%202%5E200/near/154868637" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Gabriel Ebner <a href="http://127.0.0.1:4000/archive/113488general/32934Prooftermsize2200#154868637">(Jan 10 2019 at 20:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20term%20size%20%2A%202%5E200/near/154868637" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Gabriel Ebner <a href="https://rht.github.io/archive/113488general/32934Prooftermsize2200#154868637">(Jan 10 2019 at 20:26)</a>:</h4>
 <p>See also <a href="https://github.com/leanprover/tc/issues/8" target="_blank" title="https://github.com/leanprover/tc/issues/8">https://github.com/leanprover/tc/issues/8</a></p>
 
 
 
 <a name="154876865"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20term%20size%20%2A%202%5E200/near/154876865" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Seul Baek <a href="http://127.0.0.1:4000/archive/113488general/32934Prooftermsize2200#154876865">(Jan 10 2019 at 22:18)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20term%20size%20%2A%202%5E200/near/154876865" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Seul Baek <a href="https://rht.github.io/archive/113488general/32934Prooftermsize2200#154876865">(Jan 10 2019 at 22:18)</a>:</h4>
 <p>I see. Thanks!</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/48560environmentsandparameters.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/48560environmentsandparameters.html">environments and parameters</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/48560environmentsandparameters.html">environments and parameters</a></h3>
 
 <hr>
 
@@ -16,49 +16,49 @@ permalink: archive/113488general/48560environmentsandparameters.html
 {% raw %}
 
 <a name="125449732"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125449732" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jakob von Raumer <a href="http://127.0.0.1:4000/archive/113488general/48560environmentsandparameters#125449732">(Apr 20 2018 at 13:48)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125449732" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jakob von Raumer <a href="https://rht.github.io/archive/113488general/48560environmentsandparameters#125449732">(Apr 20 2018 at 13:48)</a>:</h4>
 <p>So I want to emulate inductive types defined in some section with parameters (or variables, I don't care). Can I do that by adding the paramters as local consts to some evironment <code>e</code> and then use <code>e.add_inductive</code>?</p>
 
 
 
 <a name="125449994"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125449994" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/48560environmentsandparameters#125449994">(Apr 20 2018 at 13:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125449994" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/48560environmentsandparameters#125449994">(Apr 20 2018 at 13:55)</a>:</h4>
 <p>You would need to make it a proper constant I think. I assume you're writing a user command?</p>
 
 
 
 <a name="125450242"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125450242" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastian Ullrich <a href="http://127.0.0.1:4000/archive/113488general/48560environmentsandparameters#125450242">(Apr 20 2018 at 14:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125450242" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastian Ullrich <a href="https://rht.github.io/archive/113488general/48560environmentsandparameters#125450242">(Apr 20 2018 at 14:00)</a>:</h4>
 <p>There is no list of local consts in an environment, it's all in the parser (unexposed to Lean)</p>
 
 
 
 <a name="125450717"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125450717" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jakob von Raumer <a href="http://127.0.0.1:4000/archive/113488general/48560environmentsandparameters#125450717">(Apr 20 2018 at 14:12)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125450717" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jakob von Raumer <a href="https://rht.github.io/archive/113488general/48560environmentsandparameters#125450717">(Apr 20 2018 at 14:12)</a>:</h4>
 <p><span class="user-mention" data-user-id="110026">@Simon Hudon</span> Yes, I am... I'll just take a look at environments...</p>
 
 
 
 <a name="125450747"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125450747" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jakob von Raumer <a href="http://127.0.0.1:4000/archive/113488general/48560environmentsandparameters#125450747">(Apr 20 2018 at 14:13)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125450747" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jakob von Raumer <a href="https://rht.github.io/archive/113488general/48560environmentsandparameters#125450747">(Apr 20 2018 at 14:13)</a>:</h4>
 <p><span class="user-mention" data-user-id="110024">@Sebastian Ullrich</span> I don't necessarily need a list of them. So far I get around using parameters by just adding them as parameters to the inductive types I'm constructing and to every function I'm defining.</p>
 
 
 
 <a name="125450823"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125450823" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastian Ullrich <a href="http://127.0.0.1:4000/archive/113488general/48560environmentsandparameters#125450823">(Apr 20 2018 at 14:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125450823" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastian Ullrich <a href="https://rht.github.io/archive/113488general/48560environmentsandparameters#125450823">(Apr 20 2018 at 14:14)</a>:</h4>
 <p>Yes, that's what Lean itself does. It also creates aliases for the applied definitions in the parser, but you can't do that.</p>
 
 
 
 <a name="125450856"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125450856" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jakob von Raumer <a href="http://127.0.0.1:4000/archive/113488general/48560environmentsandparameters#125450856">(Apr 20 2018 at 14:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125450856" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jakob von Raumer <a href="https://rht.github.io/archive/113488general/48560environmentsandparameters#125450856">(Apr 20 2018 at 14:15)</a>:</h4>
 <p>Do you have an idea how to solve that annoyance? Because it really makes my code very messy.</p>
 
 
 
 <a name="125451136"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125451136" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jakob von Raumer <a href="http://127.0.0.1:4000/archive/113488general/48560environmentsandparameters#125451136">(Apr 20 2018 at 14:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/environments%20and%20parameters/near/125451136" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jakob von Raumer <a href="https://rht.github.io/archive/113488general/48560environmentsandparameters#125451136">(Apr 20 2018 at 14:23)</a>:</h4>
 <p>It sometimes seems a bit arbitrary what's exposed as meta constants and what isn't...</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/36642Proofsize.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/36642Proofsize.html">Proof size</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/36642Proofsize.html">Proof size</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/36642Proofsize.html
 {% raw %}
 
 <a name="182374889"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182374889" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/36642Proofsize#182374889">(Dec 02 2019 at 18:33)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182374889" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/36642Proofsize#182374889">(Dec 02 2019 at 18:33)</a>:</h4>
 <p>This is a meta-question. How would you measure the size of a proof? Consider for instance <code>rat.mul_one</code>, from <code>data/rat/basic.lean</code>. This is a two lines, 111 characters long tactic proof, including a call to <code>simp</code>. </p>
 <div class="codehilite"><pre><span></span><span class="kn">protected</span> <span class="kn">theorem</span> <span class="n">mul_one</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">*</span> <span class="mi">1</span> <span class="bp">=</span> <span class="n">a</span> <span class="o">:=</span>
 <span class="n">num_denom_cases_on&#39;</span> <span class="n">a</span> <span class="err">$</span> <span class="bp">λ</span> <span class="n">n</span> <span class="n">d</span> <span class="n">h</span><span class="o">,</span>
@@ -44,19 +44,19 @@ permalink: archive/113488general/36642Proofsize.html
 
 
 <a name="182392920"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182392920" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/36642Proofsize#182392920">(Dec 02 2019 at 21:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182392920" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/36642Proofsize#182392920">(Dec 02 2019 at 21:39)</a>:</h4>
 <p>I think the best measure would be something like "number of nodes in the <code>expr</code>"</p>
 
 
 
 <a name="182393012"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182393012" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/36642Proofsize#182393012">(Dec 02 2019 at 21:40)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182393012" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/36642Proofsize#182393012">(Dec 02 2019 at 21:40)</a>:</h4>
 <p>And how would you compute that?</p>
 
 
 
 <a name="182393549"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182393549" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/36642Proofsize#182393549">(Dec 02 2019 at 21:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182393549" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/36642Proofsize#182393549">(Dec 02 2019 at 21:46)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">namespace</span> <span class="n">level</span>
 <span class="n">meta</span> <span class="n">def</span> <span class="n">size</span> <span class="o">:</span> <span class="n">level</span> <span class="bp">→</span> <span class="bp">ℕ</span>
 <span class="bp">|</span> <span class="o">(</span><span class="n">succ</span> <span class="n">l</span><span class="o">)</span>     <span class="o">:=</span> <span class="n">size</span> <span class="n">l</span> <span class="bp">+</span> <span class="mi">1</span>
@@ -87,19 +87,19 @@ permalink: archive/113488general/36642Proofsize.html
 
 
 <a name="182393595"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182393595" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/36642Proofsize#182393595">(Dec 02 2019 at 21:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182393595" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/36642Proofsize#182393595">(Dec 02 2019 at 21:47)</a>:</h4>
 <p>Then again, this has a tendency to overcount duplicate subproofs. A better count would deduplicate those</p>
 
 
 
 <a name="182393809"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182393809" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/36642Proofsize#182393809">(Dec 02 2019 at 21:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182393809" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/36642Proofsize#182393809">(Dec 02 2019 at 21:50)</a>:</h4>
 <p>Would it be easy to deduplicate these? Maybe using Simon's traversing technology and collecting a list of subproofs? I don't know what I'm talking about.</p>
 
 
 
 <a name="182395471"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182395471" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/36642Proofsize#182395471">(Dec 02 2019 at 22:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182395471" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/36642Proofsize#182395471">(Dec 02 2019 at 22:10)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">rat</span>
 
 <span class="kn">namespace</span> <span class="n">level</span>
@@ -207,7 +207,7 @@ permalink: archive/113488general/36642Proofsize.html
 
 
 <a name="182397164"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182397164" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/36642Proofsize#182397164">(Dec 02 2019 at 22:33)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Proof%20size/near/182397164" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/36642Proofsize#182397164">(Dec 02 2019 at 22:33)</a>:</h4>
 <p>Thank you very much! I'll need time to decipher this, but first I must sleep...</p>
 
 

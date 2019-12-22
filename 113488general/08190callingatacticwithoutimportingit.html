@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/08190callingatacticwithoutimportingit.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/08190callingatacticwithoutimportingit.html">calling a tactic without importing it</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/08190callingatacticwithoutimportingit.html">calling a tactic without importing it</a></h3>
 
 <hr>
 
@@ -16,25 +16,25 @@ permalink: archive/113488general/08190callingatacticwithoutimportingit.html
 {% raw %}
 
 <a name="163304043"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304043" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/08190callingatacticwithoutimportingit#163304043">(Apr 14 2019 at 06:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304043" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/08190callingatacticwithoutimportingit#163304043">(Apr 14 2019 at 06:46)</a>:</h4>
 <p>I am trying to write a tactic that will invoke <code>norm_num</code>, if it has otherwise been imported, and otherwise fail. I need this to work without actually importing <code>norm_num</code>.</p>
 
 
 
 <a name="163304044"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304044" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/08190callingatacticwithoutimportingit#163304044">(Apr 14 2019 at 06:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304044" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/08190callingatacticwithoutimportingit#163304044">(Apr 14 2019 at 06:46)</a>:</h4>
 <p>Any suggestions?</p>
 
 
 
 <a name="163304201"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304201" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/08190callingatacticwithoutimportingit#163304201">(Apr 14 2019 at 06:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304201" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/08190callingatacticwithoutimportingit#163304201">(Apr 14 2019 at 06:51)</a>:</h4>
 <p>search for <code>norm_num</code> in the environment and call <code>eval_expr</code> on it</p>
 
 
 
 <a name="163304396"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304396" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/08190callingatacticwithoutimportingit#163304396">(Apr 14 2019 at 06:57)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304396" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/08190callingatacticwithoutimportingit#163304396">(Apr 14 2019 at 06:57)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">norm_num</span> <span class="c1">-- remove me</span>
 
 <span class="kn">open</span> <span class="n">tactic</span> <span class="n">interactive</span>
@@ -48,49 +48,49 @@ permalink: archive/113488general/08190callingatacticwithoutimportingit.html
 
 
 <a name="163304523"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304523" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/08190callingatacticwithoutimportingit#163304523">(Apr 14 2019 at 07:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304523" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/08190callingatacticwithoutimportingit#163304523">(Apr 14 2019 at 07:00)</a>:</h4>
 <p>Thanks.</p>
 
 
 
 <a name="163304526"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304526" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/08190callingatacticwithoutimportingit#163304526">(Apr 14 2019 at 07:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304526" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/08190callingatacticwithoutimportingit#163304526">(Apr 14 2019 at 07:01)</a>:</h4>
 <p>It would be nice if <code>norm_num</code> didn't have to import <code>tactic.interactive</code>. :-)</p>
 
 
 
 <a name="163304537"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304537" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/08190callingatacticwithoutimportingit#163304537">(Apr 14 2019 at 07:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304537" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/08190callingatacticwithoutimportingit#163304537">(Apr 14 2019 at 07:01)</a>:</h4>
 <p>I've just been looking; that seems rather unlikely.</p>
 
 
 
 <a name="163304672"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304672" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Keeley Hoek <a href="http://127.0.0.1:4000/archive/113488general/08190callingatacticwithoutimportingit#163304672">(Apr 14 2019 at 07:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163304672" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Keeley Hoek <a href="https://rht.github.io/archive/113488general/08190callingatacticwithoutimportingit#163304672">(Apr 14 2019 at 07:05)</a>:</h4>
 <p>Stuff importing <code>tactic.interactive</code> has been a problem for me before too---is there scope for putting all of the real defs in <code>tactic.interactive</code> somewhere else (maybe <code>tactic.interactive.basic</code>?) and making <code>tactic.interactive</code> just a stub which conveniently includes most of mathlib's interactive stuff?</p>
 
 
 
 <a name="163314651"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163314651" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/08190callingatacticwithoutimportingit#163314651">(Apr 14 2019 at 12:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163314651" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/08190callingatacticwithoutimportingit#163314651">(Apr 14 2019 at 12:14)</a>:</h4>
 <p>I suggested decoupling some of those dependencies in <a href="https://github.com/leanprover-community/mathlib/issues/878" target="_blank" title="https://github.com/leanprover-community/mathlib/issues/878">#878</a> but it did not seem like a popular suggestion</p>
 
 
 
 <a name="163315568"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163315568" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/08190callingatacticwithoutimportingit#163315568">(Apr 14 2019 at 12:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163315568" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/08190callingatacticwithoutimportingit#163315568">(Apr 14 2019 at 12:42)</a>:</h4>
 <p>I think this is a great idea. <code>tactic.basic</code> and <code>tactic.interactive</code> should both be chopped up into tiny pieces. :-)</p>
 
 
 
 <a name="163315653"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163315653" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/08190callingatacticwithoutimportingit#163315653">(Apr 14 2019 at 12:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163315653" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/08190callingatacticwithoutimportingit#163315653">(Apr 14 2019 at 12:45)</a>:</h4>
 <p>Sounds pretty gory :P</p>
 
 
 
 <a name="163315854"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163315854" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/08190callingatacticwithoutimportingit#163315854">(Apr 14 2019 at 12:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calling%20a%20tactic%20without%20importing%20it/near/163315854" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/08190callingatacticwithoutimportingit#163315854">(Apr 14 2019 at 12:51)</a>:</h4>
 <p>In general, I'd like a tool to analyze the dependencies of mathlib and detect the needless imports</p>
 
 

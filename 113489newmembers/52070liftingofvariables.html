@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/52070liftingofvariables.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/52070liftingofvariables.html">%% lifting of variables</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/52070liftingofvariables.html">%% lifting of variables</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/52070liftingofvariables.html
 {% raw %}
 
 <a name="130095457"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/%25%25%20lifting%20of%20variables/near/130095457" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Ken Roe <a href="http://127.0.0.1:4000/archive/113489newmembers/52070liftingofvariables#130095457">(Jul 22 2018 at 12:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/%25%25%20lifting%20of%20variables/near/130095457" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Ken Roe <a href="https://rht.github.io/archive/113489newmembers/52070liftingofvariables#130095457">(Jul 22 2018 at 12:08)</a>:</h4>
 <p>I've discovered that %% automatically lifts bound variables as shown in the following example:</p>
 <div class="codehilite"><pre><span></span><span class="n">meta</span> <span class="n">def</span> <span class="n">test_dummy</span> <span class="o">:</span> <span class="n">tactic</span> <span class="n">unit</span> <span class="o">:=</span>
 <span class="n">do</span> <span class="o">{</span>
@@ -42,7 +42,7 @@ permalink: archive/113489newmembers/52070liftingofvariables.html
 
 
 <a name="130101029"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/%25%25%20lifting%20of%20variables/near/130101029" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113489newmembers/52070liftingofvariables#130101029">(Jul 22 2018 at 14:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/%25%25%20lifting%20of%20variables/near/130101029" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113489newmembers/52070liftingofvariables#130101029">(Jul 22 2018 at 14:45)</a>:</h4>
 <p>I recommend you not to use <code>var</code> directly because much of the Lean API assumes that your expressions are closed (not <code>var</code> without their binders). What you can do is:</p>
 <div class="codehilite"><pre><span></span><span class="n">do</span> <span class="n">my_var</span> <span class="bp">&lt;-</span> <span class="n">mk_local_def</span> <span class="bp">`</span><span class="n">my_var</span> <span class="bp">`</span><span class="o">(</span><span class="n">nat</span><span class="o">),</span>
    <span class="n">e</span> <span class="bp">&lt;-</span> <span class="n">to_expr</span> <span class="bp">``</span><span class="o">((</span><span class="bp">λ</span> <span class="o">(</span><span class="n">v</span><span class="o">:</span><span class="bp">ℕ</span><span class="o">),</span><span class="n">v</span><span class="bp">=</span><span class="err">%%</span><span class="n">my_var</span><span class="o">)</span> <span class="mi">3</span><span class="o">),</span>

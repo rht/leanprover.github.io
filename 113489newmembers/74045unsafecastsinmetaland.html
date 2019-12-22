@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/74045unsafecastsinmetaland.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/74045unsafecastsinmetaland.html">unsafe casts in meta land?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/74045unsafecastsinmetaland.html">unsafe casts in meta land?</a></h3>
 
 <hr>
 
@@ -16,31 +16,31 @@ permalink: archive/113489newmembers/74045unsafecastsinmetaland.html
 {% raw %}
 
 <a name="154389422"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/unsafe%20casts%20in%20meta%20land%3F/near/154389422" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113489newmembers/74045unsafecastsinmetaland#154389422">(Jan 04 2019 at 05:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/unsafe%20casts%20in%20meta%20land%3F/near/154389422" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113489newmembers/74045unsafecastsinmetaland#154389422">(Jan 04 2019 at 05:03)</a>:</h4>
 <p>In a meta function, is there some way to do "unsafe casts"?</p>
 
 
 
 <a name="154389993"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/unsafe%20casts%20in%20meta%20land%3F/near/154389993" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/74045unsafecastsinmetaland#154389993">(Jan 04 2019 at 05:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/unsafe%20casts%20in%20meta%20land%3F/near/154389993" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/74045unsafecastsinmetaland#154389993">(Jan 04 2019 at 05:20)</a>:</h4>
 <p><code>unchecked_cast</code></p>
 
 
 
 <a name="154389995"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/unsafe%20casts%20in%20meta%20land%3F/near/154389995" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/74045unsafecastsinmetaland#154389995">(Jan 04 2019 at 05:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/unsafe%20casts%20in%20meta%20land%3F/near/154389995" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/74045unsafecastsinmetaland#154389995">(Jan 04 2019 at 05:21)</a>:</h4>
 <p>it's just <code>cast</code> with a fake proof</p>
 
 
 
 <a name="154390017"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/unsafe%20casts%20in%20meta%20land%3F/near/154390017" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/74045unsafecastsinmetaland#154390017">(Jan 04 2019 at 05:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/unsafe%20casts%20in%20meta%20land%3F/near/154390017" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/74045unsafecastsinmetaland#154390017">(Jan 04 2019 at 05:21)</a>:</h4>
 <p>But it's not recommended. There are very few safe but type incorrect casts</p>
 
 
 
 <a name="154390060"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/unsafe%20casts%20in%20meta%20land%3F/near/154390060" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/74045unsafecastsinmetaland#154390060">(Jan 04 2019 at 05:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/unsafe%20casts%20in%20meta%20land%3F/near/154390060" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/74045unsafecastsinmetaland#154390060">(Jan 04 2019 at 05:22)</a>:</h4>
 <p>and the ones that exist already have names, like <code>unquot</code></p>
 
 

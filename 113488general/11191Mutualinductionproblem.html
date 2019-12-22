@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/11191Mutualinductionproblem.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem.html">Mutual induction problem</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem.html">Mutual induction problem</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/11191Mutualinductionproblem.html
 {% raw %}
 
 <a name="137068101"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137068101" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137068101">(Nov 02 2018 at 17:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137068101" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137068101">(Nov 02 2018 at 17:08)</a>:</h4>
 <p>Here is an attempt at a mutually inductive definition, which is a bit more intricate than the ones in the book.  </p>
 <div class="codehilite"><pre><span></span><span class="kn">open</span> <span class="n">nat</span>
 
@@ -46,14 +46,14 @@ universe level of type_of(arg #3) of &#39;partition._mut_.join_0&#39; is too big
 
 
 <a name="137068768"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137068768" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137068768">(Nov 02 2018 at 17:18)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137068768" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137068768">(Nov 02 2018 at 17:18)</a>:</h4>
 <p>I think this is an <a href="https://ncatlab.org/nlab/show/inductive-inductive+type" target="_blank" title="https://ncatlab.org/nlab/show/inductive-inductive+type">inductive-inductive type</a>, which I think Lean doesn't support.<br>
 Sometimes you get that error about universe levels when the real issue is that Lean got confused for another reason--here there's also an error on the use of <code>partition</code> in the declaration of <code>blocks</code>; it looks like Lean doesn't know what <code>partition</code> is yet.</p>
 
 
 
 <a name="137068999"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137068999" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137068999">(Nov 02 2018 at 17:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137068999" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137068999">(Nov 02 2018 at 17:23)</a>:</h4>
 <p>A less innocuous-looking example of an inductive-inductive type:</p>
 <div class="codehilite"><pre><span></span><span class="n">mutual</span> <span class="kn">inductive</span> <span class="n">code</span><span class="o">,</span><span class="n">el</span>
 <span class="k">with</span> <span class="n">code</span> <span class="o">:</span> <span class="kt">Type</span>
@@ -70,25 +70,25 @@ Sometimes you get that error about universe levels when the real issue is that L
 
 
 <a name="137069482"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137069482" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137069482">(Nov 02 2018 at 17:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137069482" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137069482">(Nov 02 2018 at 17:31)</a>:</h4>
 <p>Though my example involves recursion in negative positions in a few places, so maybe I've got the example wrong</p>
 
 
 
 <a name="137071550"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137071550" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137071550">(Nov 02 2018 at 18:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137071550" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137071550">(Nov 02 2018 at 18:03)</a>:</h4>
 <p>I tried defining <code>partition</code> and <code>blocks</code> by mutual recursion, rather than making them inductive types, but Lean wasn't happy with my attempt either.</p>
 
 
 
 <a name="137071648"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137071648" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137071648">(Nov 02 2018 at 18:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137071648" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137071648">(Nov 02 2018 at 18:04)</a>:</h4>
 <p>I think the best you can do is define the types by some other means and then try to approximate the interface you would get from an inductive definition, for example by defining your own "induction principle".</p>
 
 
 
 <a name="137077383"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137077383" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137077383">(Nov 02 2018 at 19:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137077383" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137077383">(Nov 02 2018 at 19:35)</a>:</h4>
 <p><span class="user-mention" data-user-id="130308">@Neil Strickland</span> Another way to read "this is inductive-inductive" is "lean does not have the axioms to justify that this is a valid construction". So you have to find another way to justify it to lean. In this case, the important part is that <code>n</code> increases in all the constructors, so this is actually a mutually recursive definition of a family of types, which lean can do well enough. We have</p>
 <div class="codehilite"><pre><span></span>partition 0 = unit
 partition (succ n) = partition n + Σ p : partition n, blocks n p
@@ -100,25 +100,25 @@ blocks (succ n) (inr &lt;p, b&gt;) = blocks n p
 
 
 <a name="137077658"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137077658" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137077658">(Nov 02 2018 at 19:40)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137077658" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137077658">(Nov 02 2018 at 19:40)</a>:</h4>
 <p>This looks a lot like my attempt which Lean rejected, so I'm curious to see how you convince it the definition is valid...</p>
 
 
 
 <a name="137077666"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137077666" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137077666">(Nov 02 2018 at 19:40)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137077666" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137077666">(Nov 02 2018 at 19:40)</a>:</h4>
 <p>and you can define the pair &lt;partition n, blocks n&gt; by plain primitive recursion</p>
 
 
 
 <a name="137078327"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137078327" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137078327">(Nov 02 2018 at 19:52)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137078327" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137078327">(Nov 02 2018 at 19:52)</a>:</h4>
 <p>Thanks, I will try that approach.</p>
 
 
 
 <a name="137078422"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137078422" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137078422">(Nov 02 2018 at 19:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137078422" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137078422">(Nov 02 2018 at 19:55)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">partblock</span> <span class="o">:</span> <span class="bp">ℕ</span> <span class="bp">→</span> <span class="err">Σ</span> <span class="n">T</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">,</span> <span class="n">T</span> <span class="bp">→</span> <span class="kt">Type</span>
 <span class="bp">|</span> <span class="mi">0</span> <span class="o">:=</span> <span class="bp">⟨</span><span class="n">unit</span><span class="o">,</span> <span class="bp">λ</span> <span class="bp">_</span><span class="o">,</span> <span class="n">empty</span><span class="bp">⟩</span>
 <span class="bp">|</span> <span class="o">(</span><span class="n">n</span><span class="bp">+</span><span class="mi">1</span><span class="o">)</span> <span class="o">:=</span> <span class="bp">⟨</span><span class="o">(</span><span class="n">partblock</span> <span class="n">n</span><span class="o">)</span><span class="bp">.</span><span class="mi">1</span> <span class="err">⊕</span> <span class="err">Σ</span> <span class="n">p</span> <span class="o">:</span> <span class="o">(</span><span class="n">partblock</span> <span class="n">n</span><span class="o">)</span><span class="bp">.</span><span class="mi">1</span><span class="o">,</span> <span class="o">(</span><span class="n">partblock</span> <span class="n">n</span><span class="o">)</span><span class="bp">.</span><span class="mi">2</span> <span class="n">p</span><span class="o">,</span>
@@ -139,25 +139,25 @@ blocks (succ n) (inr &lt;p, b&gt;) = blocks n p
 
 
 <a name="137078448"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137078448" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137078448">(Nov 02 2018 at 19:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137078448" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137078448">(Nov 02 2018 at 19:55)</a>:</h4>
 <p>the recursion principle is left as an exercise for the reader ;)</p>
 
 
 
 <a name="137078522"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137078522" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137078522">(Nov 02 2018 at 19:56)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137078522" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137078522">(Nov 02 2018 at 19:56)</a>:</h4>
 <p>Interesting--I wonder if eliminating the mutual recursion by hand is essential, then</p>
 
 
 
 <a name="137078554"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137078554" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137078554">(Nov 02 2018 at 19:57)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137078554" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137078554">(Nov 02 2018 at 19:57)</a>:</h4>
 <p>Unfortunately, since <code>blocks n</code> refers to <code>partitions n</code> the default well founded metric for mutual recursion fails</p>
 
 
 
 <a name="137078619"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137078619" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/11191Mutualinductionproblem#137078619">(Nov 02 2018 at 19:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Mutual%20induction%20problem/near/137078619" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/11191Mutualinductionproblem#137078619">(Nov 02 2018 at 19:58)</a>:</h4>
 <p>you can hack together the right well founded relation, but dealing with that relation will dominate the size of the definition itself</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/02723nthappend.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/02723nthappend.html">nth append</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/02723nthappend.html">nth append</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/02723nthappend.html
 {% raw %}
 
 <a name="180202955"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180202955" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eamon Barrett <a href="http://127.0.0.1:4000/archive/113489newmembers/02723nthappend#180202955">(Nov 08 2019 at 04:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180202955" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eamon Barrett <a href="https://rht.github.io/archive/113489newmembers/02723nthappend#180202955">(Nov 08 2019 at 04:59)</a>:</h4>
 <p>Is there was a lemma like this in mathlib or any ideas for a simple proof?</p>
 <div class="codehilite"><pre><span></span>lemma nth_gt_append_right {α : Type}  (L M : list α) (k : ℕ) (h₁) (h₂) :
   (L ++ M).nth_le k h₁ = M.nth_le (k - L.length) h₂ := sorry
@@ -25,13 +25,13 @@ permalink: archive/113489newmembers/02723nthappend.html
 
 
 <a name="180214856"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180214856" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/02723nthappend#180214856">(Nov 08 2019 at 09:40)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180214856" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/02723nthappend#180214856">(Nov 08 2019 at 09:40)</a>:</h4>
 <p>I can't see it in data.list.basic; <code>nth_le_append</code> only deals with the n'th element of L equalling the n'th element of L++M</p>
 
 
 
 <a name="180296456"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180296456" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113489newmembers/02723nthappend#180296456">(Nov 09 2019 at 04:48)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180296456" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113489newmembers/02723nthappend#180296456">(Nov 09 2019 at 04:48)</a>:</h4>
 <p><span class="user-mention" data-user-id="232998">@Eamon Barrett</span></p>
 <div class="codehilite"><pre><span></span>import data.nat.basic
 
@@ -49,19 +49,19 @@ lemma nth_le_append_right {α : Type} : Π (L M : list α) (k : ℕ) (h₀ : L.l
 
 
 <a name="180296462"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180296462" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113489newmembers/02723nthappend#180296462">(Nov 09 2019 at 04:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180296462" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113489newmembers/02723nthappend#180296462">(Nov 09 2019 at 04:49)</a>:</h4>
 <p>(This isn't exactly what you asked for, which I think wasn't true.)</p>
 
 
 
 <a name="180296723"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180296723" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113489newmembers/02723nthappend#180296723">(Nov 09 2019 at 04:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180296723" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113489newmembers/02723nthappend#180296723">(Nov 09 2019 at 04:58)</a>:</h4>
 <p>You can eliminate h2 here, which is a consequence of h0 and h1.</p>
 
 
 
 <a name="180297095"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180297095" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113489newmembers/02723nthappend#180297095">(Nov 09 2019 at 05:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180297095" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113489newmembers/02723nthappend#180297095">(Nov 09 2019 at 05:10)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">nat</span><span class="bp">.</span><span class="n">basic</span>
 
 <span class="kn">lemma</span> <span class="n">nth_le_append_right_aux</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">}</span> <span class="o">{</span><span class="n">L</span> <span class="n">M</span> <span class="o">:</span> <span class="n">list</span> <span class="n">α</span><span class="o">}</span> <span class="o">{</span><span class="n">k</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">}</span>
@@ -86,13 +86,13 @@ lemma nth_le_append_right {α : Type} : Π (L M : list α) (k : ℕ) (h₀ : L.l
 
 
 <a name="180297398"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180297398" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113489newmembers/02723nthappend#180297398">(Nov 09 2019 at 05:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180297398" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113489newmembers/02723nthappend#180297398">(Nov 09 2019 at 05:20)</a>:</h4>
 <p><a href="https://github.com/leanprover-community/mathlib/pull/1662" target="_blank" title="https://github.com/leanprover-community/mathlib/pull/1662">https://github.com/leanprover-community/mathlib/pull/1662</a></p>
 
 
 
 <a name="180385160"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180385160" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eamon Barrett <a href="http://127.0.0.1:4000/archive/113489newmembers/02723nthappend#180385160">(Nov 10 2019 at 23:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/nth%20append/near/180385160" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eamon Barrett <a href="https://rht.github.io/archive/113489newmembers/02723nthappend#180385160">(Nov 10 2019 at 23:01)</a>:</h4>
 <p>Thank you Scott!</p>
 
 

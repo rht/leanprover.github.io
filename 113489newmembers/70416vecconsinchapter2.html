@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/70416vecconsinchapter2.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/70416vecconsinchapter2.html">vec.cons in chapter 2</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/70416vecconsinchapter2.html">vec.cons in chapter 2</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/70416vecconsinchapter2.html
 {% raw %}
 
 <a name="182852276"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/vec.cons%20in%20chapter%202/near/182852276" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kritixi Lithos <a href="http://127.0.0.1:4000/archive/113489newmembers/70416vecconsinchapter2#182852276">(Dec 07 2019 at 16:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/vec.cons%20in%20chapter%202/near/182852276" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kritixi Lithos <a href="https://rht.github.io/archive/113489newmembers/70416vecconsinchapter2#182852276">(Dec 07 2019 at 16:47)</a>:</h4>
 <p>Hi, from chapter 2, vec.cons is defined as <code>constant cons : Π {α : Type u} {n : ℕ}, α → vec α n → vec α (n + 1)</code> (I made the args optional). Trying <code>#check cons 5</code> works as expected, but doing <code>#check cons 5 (vec nat 10)</code> gives an error</p>
 <div class="codehilite"><pre><span></span>error: type mismatch at application
   cons 5 (vec ℕ 10)
@@ -34,14 +34,14 @@ but is expected to have type
 
 
 <a name="182852782"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/vec.cons%20in%20chapter%202/near/182852782" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="http://127.0.0.1:4000/archive/113489newmembers/70416vecconsinchapter2#182852782">(Dec 07 2019 at 17:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/vec.cons%20in%20chapter%202/near/182852782" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="https://rht.github.io/archive/113489newmembers/70416vecconsinchapter2#182852782">(Dec 07 2019 at 17:01)</a>:</h4>
 <p>the definition of <code>cons</code> should be read as follows: given a value of type <code>α</code> and a value of type <code>vec α n</code>, you get a value of type <code>vec α (n + 1)</code>. you are passing <code>vec nat 10</code>, which is a type itself, not a value of type <code>vec α n</code> (similar to how ℕ is a type while 5 is a value of type ℕ).<br>
 an example that would work is <code>#check cons 5 empty</code>, for instance.</p>
 
 
 
 <a name="182853067"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/vec.cons%20in%20chapter%202/near/182853067" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kritixi Lithos <a href="http://127.0.0.1:4000/archive/113489newmembers/70416vecconsinchapter2#182853067">(Dec 07 2019 at 17:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/vec.cons%20in%20chapter%202/near/182853067" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kritixi Lithos <a href="https://rht.github.io/archive/113489newmembers/70416vecconsinchapter2#182853067">(Dec 07 2019 at 17:09)</a>:</h4>
 <p>Thank you, I understand better now. So then to test with my own examples, I'd have to create vectors using these elementary functions</p>
 
 

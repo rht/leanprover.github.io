@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/82169inductionargument2notavariable.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/82169inductionargument2notavariable.html">induction: "argument 2 not a variable"</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/82169inductionargument2notavariable.html">induction: "argument 2 not a variable"</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/82169inductionargument2notavariable.html
 {% raw %}
 
 <a name="154266676"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154266676" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sarah Mameche <a href="http://127.0.0.1:4000/archive/113489newmembers/82169inductionargument2notavariable#154266676">(Jan 03 2019 at 21:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154266676" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sarah Mameche <a href="https://rht.github.io/archive/113489newmembers/82169inductionargument2notavariable#154266676">(Jan 03 2019 at 21:11)</a>:</h4>
 <p>Hi, I have an inductive predicate SN that takes a relation as argument (here eval), see the code snippet below. An induction over the statement <code>SN eval st</code>gives me the error: induction tactic failed, argument <a href="https://github.com/leanprover/mathlib/issues/2" target="_blank" title="https://github.com/leanprover/mathlib/issues/2">#2</a> of major premise type SN eval st is not a variable. </p>
 <p>Is it a problem that SN takes eval as an argument? </p>
 <div class="codehilite"><pre><span></span>inductive tm  : nat -&gt; Type
@@ -46,13 +46,13 @@ begin
 
 
 <a name="154268520"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154268520" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113489newmembers/82169inductionargument2notavariable#154268520">(Jan 03 2019 at 21:40)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154268520" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113489newmembers/82169inductionargument2notavariable#154268520">(Jan 03 2019 at 21:40)</a>:</h4>
 <p>I get a different error on this example, <code>generalize tactic failed, failed to find expression in the target</code>, which is solved by unfolding <code>SNe</code> at <code>h1</code>. Is this the right code snippet?</p>
 
 
 
 <a name="154269026"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154269026" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sarah Mameche <a href="http://127.0.0.1:4000/archive/113489newmembers/82169inductionargument2notavariable#154269026">(Jan 03 2019 at 21:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154269026" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sarah Mameche <a href="https://rht.github.io/archive/113489newmembers/82169inductionargument2notavariable#154269026">(Jan 03 2019 at 21:49)</a>:</h4>
 <p>Oh, I still get the induction error (on the example alone)...<br>
 Unfolding <code>SNe</code> at <code>h1</code> makes the induction tactic work, but gives me this induction hypothesis:<br>
 <code>ih_1 :
@@ -63,37 +63,37 @@ Unfolding <code>SNe</code> at <code>h1</code> makes the induction tactic work, b
 
 
 <a name="154269337"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154269337" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113489newmembers/82169inductionargument2notavariable#154269337">(Jan 03 2019 at 21:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154269337" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113489newmembers/82169inductionargument2notavariable#154269337">(Jan 03 2019 at 21:54)</a>:</h4>
 <p>Can you make <code>R</code> a parameter to <code>SN</code>? (Move it to the left of the colon in the definition of <code>SN</code>, that is.)</p>
 
 
 
 <a name="154269789"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154269789" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sarah Mameche <a href="http://127.0.0.1:4000/archive/113489newmembers/82169inductionargument2notavariable#154269789">(Jan 03 2019 at 22:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154269789" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sarah Mameche <a href="https://rht.github.io/archive/113489newmembers/82169inductionargument2notavariable#154269789">(Jan 03 2019 at 22:02)</a>:</h4>
 <p>That produces the same induction hypothesis (but unfolding <code>SNe</code> is not needed anymore)</p>
 
 
 
 <a name="154269844"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154269844" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113489newmembers/82169inductionargument2notavariable#154269844">(Jan 03 2019 at 22:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154269844" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113489newmembers/82169inductionargument2notavariable#154269844">(Jan 03 2019 at 22:03)</a>:</h4>
 <p>I think we're either using different versions of Lean, or working on different examples.</p>
 
 
 
 <a name="154270131"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154270131" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sarah Mameche <a href="http://127.0.0.1:4000/archive/113489newmembers/82169inductionargument2notavariable#154270131">(Jan 03 2019 at 22:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154270131" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sarah Mameche <a href="https://rht.github.io/archive/113489newmembers/82169inductionargument2notavariable#154270131">(Jan 03 2019 at 22:09)</a>:</h4>
 <p>Ok, maybe my version is too old, I'm using 3-3-0</p>
 
 
 
 <a name="154273397"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154273397" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/82169inductionargument2notavariable#154273397">(Jan 03 2019 at 23:12)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154273397" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/82169inductionargument2notavariable#154273397">(Jan 03 2019 at 23:12)</a>:</h4>
 <p>I guess most people here use 3.4.1.</p>
 
 
 
 <a name="154274246"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154274246" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sarah Mameche <a href="http://127.0.0.1:4000/archive/113489newmembers/82169inductionargument2notavariable#154274246">(Jan 03 2019 at 23:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154274246" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sarah Mameche <a href="https://rht.github.io/archive/113489newmembers/82169inductionargument2notavariable#154274246">(Jan 03 2019 at 23:26)</a>:</h4>
 <p>Yeah sorry, I switched versions now and the tip with <code>R</code>as parameter works for the induction tactic. But there are problems for <code>cases</code> and <code>constructor</code>with this definiton, for example:</p>
 <div class="codehilite"><pre><span></span>inductive tm  : nat -&gt; Type
   | app : Π {ntm : nat}, tm ntm -&gt; tm ntm -&gt; tm ntm
@@ -130,7 +130,7 @@ end
 
 
 <a name="154386747"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154386747" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/82169inductionargument2notavariable#154386747">(Jan 04 2019 at 03:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/induction%3A%20%22argument%202%20not%20a%20variable%22/near/154386747" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/82169inductionargument2notavariable#154386747">(Jan 04 2019 at 03:42)</a>:</h4>
 <p>you have <code>R</code> in the <code>sn_step</code> constructor even though it's already declared, so it's a different <code>R</code></p>
 
 

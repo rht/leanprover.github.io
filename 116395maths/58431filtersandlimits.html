@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/116395maths/58431filtersandlimits.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/116395maths/index.html">maths</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/116395maths/58431filtersandlimits.html">filters and limits</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/116395maths/index.html">maths</a>
+<h3>Topic: <a href="https://rht.github.io/archive/116395maths/58431filtersandlimits.html">filters and limits</a></h3>
 
 <hr>
 
@@ -16,13 +16,13 @@ permalink: archive/116395maths/58431filtersandlimits.html
 {% raw %}
 
 <a name="182642873"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182642873" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/116395maths/58431filtersandlimits#182642873">(Dec 05 2019 at 09:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182642873" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/116395maths/58431filtersandlimits#182642873">(Dec 05 2019 at 09:46)</a>:</h4>
 <p>I have a way of attaching an <code>nnreal</code> to every set in the neighbourhood filter of some point in some space. Now I would like to express the predicate that these <code>nnreal</code>s converge to some limit point for smaller and smaller nhds. The usual <code>tendsto</code> language doesn't seem built for this purpose. How should I do this?</p>
 
 
 
 <a name="182642936"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182642936" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/116395maths/58431filtersandlimits#182642936">(Dec 05 2019 at 09:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182642936" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/116395maths/58431filtersandlimits#182642936">(Dec 05 2019 at 09:47)</a>:</h4>
 <p>Short piece of code:</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">relative_index</span> <span class="o">(</span><span class="n">K</span> <span class="o">:</span> <span class="n">set</span> <span class="n">G</span><span class="o">)</span> <span class="o">(</span><span class="n">hK</span> <span class="o">:</span> <span class="n">compact</span> <span class="n">K</span><span class="o">)</span> <span class="o">(</span><span class="n">U</span> <span class="o">:</span> <span class="n">set</span> <span class="n">G</span><span class="o">)</span> <span class="o">(</span><span class="n">hU</span> <span class="o">:</span> <span class="n">U</span> <span class="err">∈</span> <span class="err">𝓝</span> <span class="o">(</span><span class="mi">1</span><span class="o">:</span><span class="n">G</span><span class="o">))</span> <span class="o">:</span> <span class="n">nnreal</span> <span class="o">:=</span>
 <span class="o">(</span><span class="n">index</span> <span class="n">U</span> <span class="n">K</span> <span class="n">hU</span> <span class="n">hK</span> <span class="o">:</span> <span class="n">nnreal</span><span class="o">)</span> <span class="bp">/</span> <span class="o">(</span><span class="n">index</span> <span class="n">U</span> <span class="n">A</span> <span class="n">hU</span> <span class="n">hA</span> <span class="o">:</span> <span class="n">nnreal</span><span class="o">)</span>
@@ -31,7 +31,7 @@ permalink: archive/116395maths/58431filtersandlimits.html
 
 
 <a name="182642989"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182642989" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/116395maths/58431filtersandlimits#182642989">(Dec 05 2019 at 09:48)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182642989" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/116395maths/58431filtersandlimits#182642989">(Dec 05 2019 at 09:48)</a>:</h4>
 <p>My file so far:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">topology</span><span class="bp">.</span><span class="n">algebra</span><span class="bp">.</span><span class="n">group</span>
 <span class="kn">import</span> <span class="n">measure_theory</span><span class="bp">.</span><span class="n">borel_space</span>
@@ -141,7 +141,7 @@ permalink: archive/116395maths/58431filtersandlimits.html
 
 
 <a name="182684389"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182684389" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/116395maths/58431filtersandlimits#182684389">(Dec 05 2019 at 17:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182684389" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/116395maths/58431filtersandlimits#182684389">(Dec 05 2019 at 17:49)</a>:</h4>
 <p>I'm not sure what you are trying to express. You seem to be in a topological group context, so I assume that "smaller and smaller neighborhood" refers to the left or right uniform structure. Then you could write something like:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">topology</span><span class="bp">.</span><span class="n">algebra</span><span class="bp">.</span><span class="n">group</span>
 <span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">real</span><span class="bp">.</span><span class="n">nnreal</span>
@@ -160,19 +160,19 @@ permalink: archive/116395maths/58431filtersandlimits.html
 
 
 <a name="182684499"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182684499" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/116395maths/58431filtersandlimits#182684499">(Dec 05 2019 at 17:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182684499" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/116395maths/58431filtersandlimits#182684499">(Dec 05 2019 at 17:50)</a>:</h4>
 <p>About your <code>is_left_invariant</code> definition, I think you are missing a great opportunity to use the Giry monad!</p>
 
 
 
 <a name="182684571"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182684571" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/116395maths/58431filtersandlimits#182684571">(Dec 05 2019 at 17:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182684571" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/116395maths/58431filtersandlimits#182684571">(Dec 05 2019 at 17:51)</a>:</h4>
 <p>I'll see if I can make that work</p>
 
 
 
 <a name="182684701"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182684701" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/116395maths/58431filtersandlimits#182684701">(Dec 05 2019 at 17:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/filters%20and%20limits/near/182684701" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/116395maths/58431filtersandlimits#182684701">(Dec 05 2019 at 17:53)</a>:</h4>
 <p>My <code>phi</code> isn't currently defined on all sets...</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/116395maths/43468degreesofpolynomials.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/116395maths/index.html">maths</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/116395maths/43468degreesofpolynomials.html">degrees of polynomials</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/116395maths/index.html">maths</a>
+<h3>Topic: <a href="https://rht.github.io/archive/116395maths/43468degreesofpolynomials.html">degrees of polynomials</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/116395maths/43468degreesofpolynomials.html
 {% raw %}
 
 <a name="133505238"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/degrees%20of%20polynomials/near/133505238" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/43468degreesofpolynomials#133505238">(Sep 07 2018 at 11:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/degrees%20of%20polynomials/near/133505238" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/43468degreesofpolynomials#133505238">(Sep 07 2018 at 11:46)</a>:</h4>
 <p><span class="user-mention" data-user-id="110044">@Chris Hughes</span> told me a while ago that the degree of a polynomial is a bit of a nightmare, because the zero polynomial has degree -1 or -infinity or something, and these are not nats. It seems that he went with <code>degree</code> into <code>with_bot nat</code> and <code>nat_degree</code> into <code>nat</code> (with nat_degree of 0 being 0). I am now faced with goals like</p>
 <div class="codehilite"><pre><span></span>hf : ¬f = 0,
 hg : ¬g = 0,
@@ -30,13 +30,13 @@ hd : nat_degree f &lt; nat_degree g,
 
 
 <a name="133505345"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/degrees%20of%20polynomials/near/133505345" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/116395maths/43468degreesofpolynomials#133505345">(Sep 07 2018 at 11:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/degrees%20of%20polynomials/near/133505345" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/116395maths/43468degreesofpolynomials#133505345">(Sep 07 2018 at 11:49)</a>:</h4>
 <p>I think <code>with_bot.coe_add</code> is the lemma you need.</p>
 
 
 
 <a name="133505354"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/degrees%20of%20polynomials/near/133505354" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/43468degreesofpolynomials#133505354">(Sep 07 2018 at 11:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/degrees%20of%20polynomials/near/133505354" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/43468degreesofpolynomials#133505354">(Sep 07 2018 at 11:49)</a>:</h4>
 <p>oh boy -- so I'm right but they're already there? Thanks Chris!</p>
 
 

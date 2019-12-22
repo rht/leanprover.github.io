@@ -4,7 +4,7 @@ title: Zulip Chat Archive
 permalink: archive/208328IMOgrandchallenge/index.html
 ---
 
-## Stream: [IMO-grand-challenge](http://127.0.0.1:4000/archive/208328IMOgrandchallenge/index.html)
+## Stream: [IMO-grand-challenge](https://rht.github.io/archive/208328IMOgrandchallenge/index.html)
 ---
 
 ### Topics:

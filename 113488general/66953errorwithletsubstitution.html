@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/66953errorwithletsubstitution.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/66953errorwithletsubstitution.html">error with let substitution</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/66953errorwithletsubstitution.html">error with let substitution</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/66953errorwithletsubstitution.html
 {% raw %}
 
 <a name="127518930"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127518930" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mohammed Eyad Kurd-Misto <a href="http://127.0.0.1:4000/archive/113488general/66953errorwithletsubstitution#127518930">(Jun 03 2018 at 23:18)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127518930" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mohammed Eyad Kurd-Misto <a href="https://rht.github.io/archive/113488general/66953errorwithletsubstitution#127518930">(Jun 03 2018 at 23:18)</a>:</h4>
 <p>Hello, I'm not sure if this is the correct place to post this. I am Mohammed Eyad Kurd-Misto, a PhD student at Chapman university. I am having an issue with a proof where the let construct does not seem to be working the way I would think. For two steps of the proof, I am simply substituting portions of the current statement from the let, and in one instance there is no issue but in another I am getting an error. The main relevant code is:</p>
 <p><code>lemma flat_sharp {B : Type} : Π {n : ℕ}, ∀ (ps: @datum_or_data B ff n), (♭ (♯ ps)) = ps
 | 0   datum_or_data.nil := rfl 
@@ -82,37 +82,37 @@ let ⟨as, h⟩ := ♯ ps, a := ♮⁻¹ p in  --let (⟨as, h⟩ : vector B n) 
 
 
 <a name="127519048"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127519048" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/66953errorwithletsubstitution#127519048">(Jun 03 2018 at 23:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127519048" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/66953errorwithletsubstitution#127519048">(Jun 03 2018 at 23:22)</a>:</h4>
 <p>The way you use the let is more like a match statement than a local definition. It works but it makes definitional equality a bit weird.</p>
 
 
 
 <a name="127519100"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127519100" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/66953errorwithletsubstitution#127519100">(Jun 03 2018 at 23:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127519100" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/66953errorwithletsubstitution#127519100">(Jun 03 2018 at 23:24)</a>:</h4>
 <p>You might need to use an actual match statement an include an equality lemma in the match expression. I'll just try something and get back to you.</p>
 
 
 
 <a name="127519118"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127519118" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/66953errorwithletsubstitution#127519118">(Jun 03 2018 at 23:25)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127519118" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/66953errorwithletsubstitution#127519118">(Jun 03 2018 at 23:25)</a>:</h4>
 <p>Btw, you might like to know that it's possible to have nice formatting of Lean code by enclosing it in backticks</p>
 
 
 
 <a name="127519350"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127519350" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mohammed Eyad Kurd-Misto <a href="http://127.0.0.1:4000/archive/113488general/66953errorwithletsubstitution#127519350">(Jun 03 2018 at 23:33)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127519350" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mohammed Eyad Kurd-Misto <a href="https://rht.github.io/archive/113488general/66953errorwithletsubstitution#127519350">(Jun 03 2018 at 23:33)</a>:</h4>
 <p>Thank you, I reformatted the initial post (though the notation portions actually contain backticks in the lean code so I left them as is).</p>
 
 
 
 <a name="127519412"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127519412" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/66953errorwithletsubstitution#127519412">(Jun 03 2018 at 23:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127519412" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/66953errorwithletsubstitution#127519412">(Jun 03 2018 at 23:35)</a>:</h4>
 <p>If you put three ticks before the first line and three after the last, you don't need to format it line by line. Even better: if you put three ticks followed by <code>lean</code>, you get syntax highlighting</p>
 
 
 
 <a name="127519472"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127519472" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/66953errorwithletsubstitution#127519472">(Jun 03 2018 at 23:37)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127519472" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/66953errorwithletsubstitution#127519472">(Jun 03 2018 at 23:37)</a>:</h4>
 <p>What I think you should do is:</p>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">flat_sharp</span> <span class="o">{</span><span class="n">B</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">}</span> <span class="o">:</span> <span class="bp">Π</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">},</span> <span class="bp">∀</span> <span class="o">(</span><span class="n">ps</span><span class="o">:</span> <span class="bp">@</span><span class="n">datum_or_data</span> <span class="n">B</span> <span class="n">ff</span> <span class="n">n</span><span class="o">),</span> <span class="o">(</span><span class="err">♭</span> <span class="o">(</span><span class="err">♯</span> <span class="n">ps</span><span class="o">))</span> <span class="bp">=</span> <span class="n">ps</span>
 <span class="bp">|</span> <span class="mi">0</span>   <span class="n">datum_or_data</span><span class="bp">.</span><span class="n">nil</span> <span class="o">:=</span> <span class="n">rfl</span>
@@ -129,7 +129,7 @@ let ⟨as, h⟩ := ♯ ps, a := ♮⁻¹ p in  --let (⟨as, h⟩ : vector B n) 
 
 
 <a name="127520031"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127520031" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mohammed Eyad Kurd-Misto <a href="http://127.0.0.1:4000/archive/113488general/66953errorwithletsubstitution#127520031">(Jun 03 2018 at 23:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/error%20with%20let%20substitution/near/127520031" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mohammed Eyad Kurd-Misto <a href="https://rht.github.io/archive/113488general/66953errorwithletsubstitution#127520031">(Jun 03 2018 at 23:55)</a>:</h4>
 <p>Thank you, I'll look at continuing the proof using cases/rw instead.</p>
 
 

@@ -4,7 +4,7 @@ title: Zulip Chat Archive
 permalink: archive/179818LeanTogether2019/index.html
 ---
 
-## Stream: [Lean Together 2019](http://127.0.0.1:4000/archive/179818LeanTogether2019/index.html)
+## Stream: [Lean Together 2019](https://rht.github.io/archive/179818LeanTogether2019/index.html)
 ---
 
 ### Topics:

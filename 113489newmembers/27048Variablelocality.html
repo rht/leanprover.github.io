@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/27048Variablelocality.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/27048Variablelocality.html">Variable locality</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/27048Variablelocality.html">Variable locality</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/27048Variablelocality.html
 {% raw %}
 
 <a name="158052845"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Variable%20locality/near/158052845" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="http://127.0.0.1:4000/archive/113489newmembers/27048Variablelocality#158052845">(Feb 11 2019 at 18:37)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Variable%20locality/near/158052845" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="https://rht.github.io/archive/113489newmembers/27048Variablelocality#158052845">(Feb 11 2019 at 18:37)</a>:</h4>
 <p>I noticed that using a <code>variable</code> declaration in inductive type constructors makes them "non-local", in the sense that they apply to the whole type rather than just the constructor, even though they are irrelevant to the type. For example:</p>
 <div class="codehilite"><pre><span></span><span class="kn">section</span> <span class="n">have_this</span>
 <span class="kn">variable</span> <span class="o">{</span><span class="n">a</span><span class="o">:</span> <span class="bp">ℕ</span><span class="o">}</span>
@@ -50,25 +50,25 @@ permalink: archive/113489newmembers/27048Variablelocality.html
 
 
 <a name="158054671"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Variable%20locality/near/158054671" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="http://127.0.0.1:4000/archive/113489newmembers/27048Variablelocality#158054671">(Feb 11 2019 at 18:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Variable%20locality/near/158054671" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="https://rht.github.io/archive/113489newmembers/27048Variablelocality#158054671">(Feb 11 2019 at 18:59)</a>:</h4>
 <p>don't use variable names that overlap?</p>
 
 
 
 <a name="158054781"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Variable%20locality/near/158054781" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="http://127.0.0.1:4000/archive/113489newmembers/27048Variablelocality#158054781">(Feb 11 2019 at 19:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Variable%20locality/near/158054781" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="https://rht.github.io/archive/113489newmembers/27048Variablelocality#158054781">(Feb 11 2019 at 19:00)</a>:</h4>
 <p>alternatively, you might be able to use <code>omit a</code>, but I don't have lean in front of me to check</p>
 
 
 
 <a name="158055162"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Variable%20locality/near/158055162" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="http://127.0.0.1:4000/archive/113489newmembers/27048Variablelocality#158055162">(Feb 11 2019 at 19:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Variable%20locality/near/158055162" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="https://rht.github.io/archive/113489newmembers/27048Variablelocality#158055162">(Feb 11 2019 at 19:06)</a>:</h4>
 <p>I'm not sure what you mean by overlap? There is no overlap, I simply want <code>a</code> to be added as a Pi-variable to the type of <code>of_nat</code> but not to the type <code>Foo</code>. <code>omit</code> undoes <code>include</code>, but I never had <code>include</code> in the first place. Just to clarify, <code>Foo</code> and <code>Foo'</code> are separate examples - I edited the code to show this.</p>
 
 
 
 <a name="158055561"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Variable%20locality/near/158055561" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="http://127.0.0.1:4000/archive/113489newmembers/27048Variablelocality#158055561">(Feb 11 2019 at 19:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Variable%20locality/near/158055561" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="https://rht.github.io/archive/113489newmembers/27048Variablelocality#158055561">(Feb 11 2019 at 19:10)</a>:</h4>
 <p>ah. I don't know the solution to your problem. fixed parameters to the left of the colon ala variable apply to all constructors, so to work around I always explicitly specified the pi type as you did</p>
 
 

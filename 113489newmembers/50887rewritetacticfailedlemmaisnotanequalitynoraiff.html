@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff.html">rewrite tactic failed, lemma is not an equality nor a iff</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff.html">rewrite tactic failed, lemma is not an equality nor a iff</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequality
 {% raw %}
 
 <a name="164706079"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164706079" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164706079">(May 02 2019 at 13:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164706079" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164706079">(May 02 2019 at 13:07)</a>:</h4>
 <p>Hi, I am having some rewriting issues. When I try to rewrite an obtained equality without explicitly re-stating the type, the rewriter fails returning <code>rewrite tactic failed, lemma is not an equality nor a iff</code>. However, when I explicitly re-state the type, the rewriter succeeds. Here is an example:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">algebra</span><span class="bp">.</span><span class="n">archimedean</span>
 
@@ -46,27 +46,27 @@ permalink: archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequality
 
 
 <a name="164706383"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164706383" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164706383">(May 02 2019 at 13:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164706383" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164706383">(May 02 2019 at 13:10)</a>:</h4>
 <p>Oops, gimme a second, some typos in the example.<br>
 Edit: Fixed it.</p>
 
 
 
 <a name="164706775"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164706775" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164706775">(May 02 2019 at 13:16)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164706775" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164706775">(May 02 2019 at 13:16)</a>:</h4>
 <p>If I replace the line by <code>have my_eq := my_eq_lemma a b hyp</code> the small example work for me. Does this work in the actual use case?<br>
 I don't know what is going on though.</p>
 
 
 
 <a name="164707127"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164707127" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164707127">(May 02 2019 at 13:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164707127" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164707127">(May 02 2019 at 13:21)</a>:</h4>
 <p>That's a nice one. Using <code>set option pp.all true</code> shows 100% same tactic state in both example</p>
 
 
 
 <a name="164707303"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164707303" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164707303">(May 02 2019 at 13:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164707303" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164707303">(May 02 2019 at 13:23)</a>:</h4>
 <blockquote>
 <p>I would like to avoid re-stating the type as in my actual use case, the type is even longer. Any ideas? </p>
 </blockquote>
@@ -75,7 +75,7 @@ I don't know what is going on though.</p>
 
 
 <a name="164707586"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164707586" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164707586">(May 02 2019 at 13:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164707586" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164707586">(May 02 2019 at 13:26)</a>:</h4>
 <p>They are different with the option <code>set_option pp.instantiate_mvars false</code>.</p>
 <p>This gives a clue of what is going on. If you say <code>have my_eq, from my_eq_lemma a b hyp</code> then you are doing two steps: first you add a new fact whose type and definition are metavariables, and then you provide the definition, while with the <code>have my_eq := ...</code> notation this is one step. Somehow the type of <code>my_eq</code> is not updated (enough) when doing two steps. </p>
 <p>Probably the rewrite tactic needs to call <code>instantiate_mvars</code> on the type of the expression it is rewriting with.</p>
@@ -83,7 +83,7 @@ I don't know what is going on though.</p>
 
 
 <a name="164707626"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164707626" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164707626">(May 02 2019 at 13:27)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164707626" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164707626">(May 02 2019 at 13:27)</a>:</h4>
 <blockquote>
 <p>If I replace the line by <code>have my_eq := my_eq_lemma a b hyp</code> the small example work for me. Does this work in the actual use case?<br>
 I don't know what is going on though.</p>
@@ -93,31 +93,31 @@ I don't know what is going on though.</p>
 
 
 <a name="164707866"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164707866" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164707866">(May 02 2019 at 13:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164707866" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164707866">(May 02 2019 at 13:30)</a>:</h4>
 <p>Interestingly, <code>have my_eq : a + _ = _, from my_eq_lemma a b hyp, </code> works but <code>have my_eq : a_ = _, from my_eq_lemma a b hyp, </code> doesn't work for me. The error being <code>rewrite tactic failed, lemma lhs is a metavariable</code></p>
 
 
 
 <a name="164707938"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164707938" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164707938">(May 02 2019 at 13:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164707938" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164707938">(May 02 2019 at 13:31)</a>:</h4>
 <p>So I think the problem is that <code>rw x</code> is not instantiating the metavariables on <code>x</code> before trying to rewrite with it.</p>
 
 
 
 <a name="164708120"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164708120" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164708120">(May 02 2019 at 13:33)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164708120" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164708120">(May 02 2019 at 13:33)</a>:</h4>
 <p>ah floris beat me</p>
 
 
 
 <a name="164708356"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164708356" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164708356">(May 02 2019 at 13:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164708356" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164708356">(May 02 2019 at 13:36)</a>:</h4>
 <p>Seems a shame that <code>rw</code> doesn't automatically try to instantiate mvars.</p>
 
 
 
 <a name="164978212"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164978212" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164978212">(May 06 2019 at 12:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164978212" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164978212">(May 06 2019 at 12:36)</a>:</h4>
 <p>I keep on running into this issue btw. Another example: </p>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">rat_num_lt_denom</span> <span class="o">(</span><span class="n">q</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">)</span> <span class="o">(</span><span class="n">q_lt_one</span> <span class="o">:</span> <span class="n">q</span> <span class="bp">&lt;</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:</span> <span class="n">q</span><span class="bp">.</span><span class="n">num</span> <span class="bp">&lt;</span> <span class="n">q</span><span class="bp">.</span><span class="n">denom</span> <span class="o">:=</span>
 <span class="k">begin</span>
@@ -133,37 +133,37 @@ I don't know what is going on though.</p>
 
 
 <a name="164978361"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164978361" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164978361">(May 06 2019 at 12:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164978361" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164978361">(May 06 2019 at 12:38)</a>:</h4>
 <p>you should always use <code>:=</code> for tactic have unless you have a particular reason to do it in two stages</p>
 
 
 
 <a name="164978389"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164978389" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164978389">(May 06 2019 at 12:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164978389" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164978389">(May 06 2019 at 12:39)</a>:</h4>
 <p>despite the visual resemblance it's two tactics and that causes some information to not get around</p>
 
 
 
 <a name="164978402"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164978402" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164978402">(May 06 2019 at 12:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164978402" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164978402">(May 06 2019 at 12:39)</a>:</h4>
 <p>That said, this is a bug in <code>rw</code></p>
 
 
 
 <a name="164978566"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164978566" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164978566">(May 06 2019 at 12:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164978566" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164978566">(May 06 2019 at 12:42)</a>:</h4>
 <p>I should use it because of this bug or is there any other reason?</p>
 
 
 
 <a name="164979309"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164979309" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164979309">(May 06 2019 at 12:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164979309" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164979309">(May 06 2019 at 12:54)</a>:</h4>
 <p>it has more information available for elaboration in one place, so you (usually) get a more accurate result</p>
 
 
 
 <a name="164979375"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164979375" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164979375">(May 06 2019 at 12:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/rewrite%20tactic%20failed%2C%20lemma%20is%20not%20an%20equality%20nor%20a%20iff/near/164979375" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/50887rewritetacticfailedlemmaisnotanequalitynoraiff#164979375">(May 06 2019 at 12:55)</a>:</h4>
 <p>it's also probably slightly faster</p>
 
 

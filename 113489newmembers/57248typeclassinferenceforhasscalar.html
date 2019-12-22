@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/57248typeclassinferenceforhasscalar.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/57248typeclassinferenceforhasscalar.html">type class inference for has_scalar</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/57248typeclassinferenceforhasscalar.html">type class inference for has_scalar</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/57248typeclassinferenceforhasscalar.html
 {% raw %}
 
 <a name="146801378"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/type%20class%20inference%20for%20has_scalar/near/146801378" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jan-David Salchow <a href="http://127.0.0.1:4000/archive/113489newmembers/57248typeclassinferenceforhasscalar#146801378">(Nov 05 2018 at 15:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/type%20class%20inference%20for%20has_scalar/near/146801378" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jan-David Salchow <a href="https://rht.github.io/archive/113489newmembers/57248typeclassinferenceforhasscalar#146801378">(Nov 05 2018 at 15:07)</a>:</h4>
 <p>The type class mechanism doesn't seem be able to figure out that functions to a normed space can be multiplied by scalars. Does anybody know why?</p>
 <div class="codehilite"><pre><span></span>import analysis.normed_space algebra.pi_instances
 
@@ -35,13 +35,13 @@ example {α E : Type*} [normed_space ℝ E] (c : ℝ) (f : α → E) : ∀ x : �
 
 
 <a name="146801595"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/type%20class%20inference%20for%20has_scalar/near/146801595" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/57248typeclassinferenceforhasscalar#146801595">(Nov 05 2018 at 15:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/type%20class%20inference%20for%20has_scalar/near/146801595" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/57248typeclassinferenceforhasscalar#146801595">(Nov 05 2018 at 15:10)</a>:</h4>
 <p>what is <code>c • f</code>?</p>
 
 
 
 <a name="146801642"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/type%20class%20inference%20for%20has_scalar/near/146801642" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/57248typeclassinferenceforhasscalar#146801642">(Nov 05 2018 at 15:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/type%20class%20inference%20for%20has_scalar/near/146801642" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/57248typeclassinferenceforhasscalar#146801642">(Nov 05 2018 at 15:10)</a>:</h4>
 <p>oh I see it's the pi instance</p>
 
 

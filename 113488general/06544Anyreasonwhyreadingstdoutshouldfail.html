@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/06544Anyreasonwhyreadingstdoutshouldfail.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/06544Anyreasonwhyreadingstdoutshouldfail.html">Any reason why reading stdout should fail?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/06544Anyreasonwhyreadingstdoutshouldfail.html">Any reason why reading stdout should fail?</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/06544Anyreasonwhyreadingstdoutshouldfail.html
 {% raw %}
 
 <a name="182622543"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Any%20reason%20why%20reading%20stdout%20should%20fail%3F/near/182622543" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Donnelly <a href="http://127.0.0.1:4000/archive/113488general/06544Anyreasonwhyreadingstdoutshouldfail#182622543">(Dec 05 2019 at 02:40)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Any%20reason%20why%20reading%20stdout%20should%20fail%3F/near/182622543" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Donnelly <a href="https://rht.github.io/archive/113488general/06544Anyreasonwhyreadingstdoutshouldfail#182622543">(Dec 05 2019 at 02:40)</a>:</h4>
 <div class="codehilite"><pre><span></span>        elif self.state == self.AwaitingResponse:
             for line in self._proc.stdout:
                self.check_pause()
@@ -45,7 +45,7 @@ permalink: archive/113488general/06544Anyreasonwhyreadingstdoutshouldfail.html
 
 
 <a name="182623218"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Any%20reason%20why%20reading%20stdout%20should%20fail%3F/near/182623218" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Donnelly <a href="http://127.0.0.1:4000/archive/113488general/06544Anyreasonwhyreadingstdoutshouldfail#182623218">(Dec 05 2019 at 02:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Any%20reason%20why%20reading%20stdout%20should%20fail%3F/near/182623218" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Donnelly <a href="https://rht.github.io/archive/113488general/06544Anyreasonwhyreadingstdoutshouldfail#182623218">(Dec 05 2019 at 02:58)</a>:</h4>
 <p>The solution is to use <code>communicate()</code>:</p>
 <div class="codehilite"><pre><span></span>            stdout, stderr = self._proc.communicate()
             print(stdout)

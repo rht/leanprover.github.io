@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/05940Whatisthetactictogeneratedreccasesonetc.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc.html">What is the tactic to generate`drec`, `cases_on`, etc?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc.html">What is the tactic to generate`drec`, `cases_on`, etc?</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/05940Whatisthetactictogeneratedreccasesonetc.ht
 {% raw %}
 
 <a name="171682415"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171682415" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171682415">(Jul 25 2019 at 11:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171682415" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171682415">(Jul 25 2019 at 11:24)</a>:</h4>
 <p>In interactive mode, <code>drec</code>, <code>cases_on</code>,... are generated at inductive declaration</p>
 <div class="codehilite"><pre><span></span><span class="kn">inductive</span> <span class="n">myeq1</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="n">Sort</span> <span class="n">u</span><span class="o">}</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">α</span> <span class="bp">→</span> <span class="kt">Prop</span> <span class="bp">|</span> <span class="n">refl</span> <span class="o">(</span><span class="n">a</span> <span class="o">:</span> <span class="n">α</span><span class="o">)</span> <span class="o">:</span> <span class="n">myeq1</span> <span class="n">a</span> <span class="n">a</span>
 <span class="bp">#</span><span class="kn">print</span> <span class="n">myeq1</span><span class="bp">.</span><span class="n">drec</span>
@@ -51,19 +51,19 @@ permalink: archive/113488general/05940Whatisthetactictogeneratedreccasesonetc.ht
 
 
 <a name="171684868"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171684868" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171684868">(Jul 25 2019 at 12:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171684868" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171684868">(Jul 25 2019 at 12:07)</a>:</h4>
 <p>There is a community lean tactic for this</p>
 
 
 
 <a name="171685014"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171685014" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171685014">(Jul 25 2019 at 12:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171685014" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171685014">(Jul 25 2019 at 12:09)</a>:</h4>
 <p><a href="https://github.com/leanprover-community/lean/blob/master/library/init/meta/environment.lean#L91-L107" target="_blank" title="https://github.com/leanprover-community/lean/blob/master/library/init/meta/environment.lean#L91-L107">https://github.com/leanprover-community/lean/blob/master/library/init/meta/environment.lean#L91-L107</a></p>
 
 
 
 <a name="171687013"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171687013" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171687013">(Jul 25 2019 at 12:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171687013" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171687013">(Jul 25 2019 at 12:38)</a>:</h4>
 <blockquote>
 <p>There is a community lean tactic for this</p>
 </blockquote>
@@ -72,49 +72,49 @@ permalink: archive/113488general/05940Whatisthetactictogeneratedreccasesonetc.ht
 
 
 <a name="171687049"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171687049" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171687049">(Jul 25 2019 at 12:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171687049" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171687049">(Jul 25 2019 at 12:39)</a>:</h4>
 <p>I think there are nightlies</p>
 
 
 
 <a name="171687164"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171687164" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171687164">(Jul 25 2019 at 12:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171687164" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171687164">(Jul 25 2019 at 12:41)</a>:</h4>
 <p><a href="https://github.com/leanprover-community/lean-nightly/releases/tag/nightly-2019-07-15" target="_blank" title="https://github.com/leanprover-community/lean-nightly/releases/tag/nightly-2019-07-15">https://github.com/leanprover-community/lean-nightly/releases/tag/nightly-2019-07-15</a></p>
 
 
 
 <a name="171687345"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171687345" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171687345">(Jul 25 2019 at 12:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171687345" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171687345">(Jul 25 2019 at 12:43)</a>:</h4>
 <p>The alternative for stock lean is to produce the necessary <code>inductive</code> command as a text expression and call a parser command to splice it into the file</p>
 
 
 
 <a name="171687967"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171687967" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171687967">(Jul 25 2019 at 12:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171687967" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171687967">(Jul 25 2019 at 12:51)</a>:</h4>
 <p>Thanks</p>
 
 
 
 <a name="171688283"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688283" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688283">(Jul 25 2019 at 12:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688283" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688283">(Jul 25 2019 at 12:55)</a>:</h4>
 <p>Is mathlib supposed to be built on top of lean 3.4.2 or lean-community/lean master?</p>
 
 
 
 <a name="171688303"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688303" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688303">(Jul 25 2019 at 12:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688303" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688303">(Jul 25 2019 at 12:55)</a>:</h4>
 <p>both</p>
 
 
 
 <a name="171688374"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688374" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688374">(Jul 25 2019 at 12:56)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688374" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688374">(Jul 25 2019 at 12:56)</a>:</h4>
 <p>we haven't made any backwards incompatible changes yet</p>
 
 
 
 <a name="171688395"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688395" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688395">(Jul 25 2019 at 12:56)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688395" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688395">(Jul 25 2019 at 12:56)</a>:</h4>
 <blockquote>
 <p>both</p>
 </blockquote>
@@ -123,25 +123,25 @@ permalink: archive/113488general/05940Whatisthetactictogeneratedreccasesonetc.ht
 
 
 <a name="171688445"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688445" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688445">(Jul 25 2019 at 12:57)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688445" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688445">(Jul 25 2019 at 12:57)</a>:</h4>
 <p>not in any mathlib tactics</p>
 
 
 
 <a name="171688460"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688460" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688460">(Jul 25 2019 at 12:57)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688460" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688460">(Jul 25 2019 at 12:57)</a>:</h4>
 <p>ok...</p>
 
 
 
 <a name="171688480"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688480" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688480">(Jul 25 2019 at 12:57)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171688480" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171688480">(Jul 25 2019 at 12:57)</a>:</h4>
 <p>Right now most people still use 3.4.2. We want to make it worth switching</p>
 
 
 
 <a name="171698559"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171698559" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171698559">(Jul 25 2019 at 14:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171698559" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171698559">(Jul 25 2019 at 14:55)</a>:</h4>
 <p>OK... now this makes my community lean master crash...</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">tactic</span>
 <span class="kn">open</span> <span class="n">expr</span> <span class="n">native</span> <span class="n">tactic</span>
@@ -162,13 +162,13 @@ permalink: archive/113488general/05940Whatisthetactictogeneratedreccasesonetc.ht
 
 
 <a name="171707642"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171707642" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171707642">(Jul 25 2019 at 16:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171707642" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171707642">(Jul 25 2019 at 16:59)</a>:</h4>
 <p>My debug build says that <a href="https://github.com/leanprover-community/lean/blob/master/src/kernel/abstract.cpp#L33" target="_blank" title="https://github.com/leanprover-community/lean/blob/master/src/kernel/abstract.cpp#L33">this assert</a> is failing before it crashes.</p>
 
 
 
 <a name="171757994"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171757994" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171757994">(Jul 26 2019 at 08:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171757994" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Cyril Cohen <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171757994">(Jul 26 2019 at 08:53)</a>:</h4>
 <p>I reduced the crash to this,</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">tactic</span>
 <span class="kn">open</span> <span class="n">expr</span> <span class="n">native</span> <span class="n">tactic</span>
@@ -199,31 +199,31 @@ cannot parse: bar foo bar
 
 
 <a name="171758615"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171758615" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171758615">(Jul 26 2019 at 09:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171758615" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171758615">(Jul 26 2019 at 09:03)</a>:</h4>
 <p>lol did someone leave some debug code in the build?</p>
 
 
 
 <a name="171782494"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171782494" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171782494">(Jul 26 2019 at 15:19)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171782494" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171782494">(Jul 26 2019 at 15:19)</a>:</h4>
 <p>Looks like the foo bar stuff is coming from <a href="https://github.com/leanprover-community/lean/blob/d31cc181ba8c9d022b3f5a933eb97e8d8d6d6e6d/src/library/vm/vm_environment.cpp#L142" target="_blank" title="https://github.com/leanprover-community/lean/blob/d31cc181ba8c9d022b3f5a933eb97e8d8d6d6e6d/src/library/vm/vm_environment.cpp#L142">here</a>.</p>
 
 
 
 <a name="171790478"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171790478" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171790478">(Jul 26 2019 at 17:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171790478" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171790478">(Jul 26 2019 at 17:08)</a>:</h4>
 <p>oh dear it was me</p>
 
 
 
 <a name="171806854"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171806854" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171806854">(Jul 26 2019 at 20:16)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171806854" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171806854">(Jul 26 2019 at 20:16)</a>:</h4>
 <p>there is a new nightly out at <a href="https://github.com/leanprover-community/lean-nightly/releases/tag/nightly-2019-07-26" target="_blank" title="https://github.com/leanprover-community/lean-nightly/releases/tag/nightly-2019-07-26">https://github.com/leanprover-community/lean-nightly/releases/tag/nightly-2019-07-26</a> without the foo bar</p>
 
 
 
 <a name="171807048"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171807048" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="http://127.0.0.1:4000/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171807048">(Jul 26 2019 at 20:19)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/What%20is%20the%20tactic%20to%20generate%60drec%60%2C%20%60cases_on%60%2C%20etc%3F/near/171807048" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="https://rht.github.io/archive/113488general/05940Whatisthetactictogeneratedreccasesonetc#171807048">(Jul 26 2019 at 20:19)</a>:</h4>
 <p><a href="/user_uploads/3121/Db3thHT8S6SXeHQrWtG9JPqa/Spider-Man-meme.jpeg" target="_blank" title="Spider-Man-meme.jpeg">Spider-Man-meme.jpeg</a></p>
 <div class="message_inline_image"><a href="/user_uploads/3121/Db3thHT8S6SXeHQrWtG9JPqa/Spider-Man-meme.jpeg" target="_blank" title="Spider-Man-meme.jpeg"><img src="/user_uploads/3121/Db3thHT8S6SXeHQrWtG9JPqa/Spider-Man-meme.jpeg"></a></div>
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/70935Howtodestructurefinusingpatternmatching.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching.html">How to destructure `fin` using pattern matching?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching.html">How to destructure `fin` using pattern matching?</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/70935Howtodestructurefinusingpatternmatching
 {% raw %}
 
 <a name="178470157"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178470157" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="http://127.0.0.1:4000/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178470157">(Oct 18 2019 at 12:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178470157" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="https://rht.github.io/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178470157">(Oct 18 2019 at 12:51)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="c1">-- def nat.foldl.fin {α : Type} (n&#39; : nat) : ∀ (n : fin n&#39;) (s : α) (f : fin n&#39; → α → α), α</span>
 <span class="c1">--     | 0 s f := s</span>
 <span class="c1">--     | (n+1) s f := f n (nat.foldl.fin n s f)</span>
@@ -38,19 +38,19 @@ permalink: archive/113489newmembers/70935Howtodestructurefinusingpatternmatching
 
 
 <a name="178470275"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178470275" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="http://127.0.0.1:4000/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178470275">(Oct 18 2019 at 12:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178470275" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="https://rht.github.io/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178470275">(Oct 18 2019 at 12:53)</a>:</h4>
 <p>As an aside, does Lean have any special syntax for monadic computations like Haskell or Idris for example?</p>
 
 
 
 <a name="178470401"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178470401" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tim Baanen <a href="http://127.0.0.1:4000/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178470401">(Oct 18 2019 at 12:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178470401" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tim Baanen <a href="https://rht.github.io/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178470401">(Oct 18 2019 at 12:54)</a>:</h4>
 <p>There is <code>do</code> notation, described here: <a href="https://leanprover.github.io/programming_in_lean/#07_Monads.html" target="_blank" title="https://leanprover.github.io/programming_in_lean/#07_Monads.html">https://leanprover.github.io/programming_in_lean/#07_Monads.html</a></p>
 
 
 
 <a name="178471000"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178471000" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tim Baanen <a href="http://127.0.0.1:4000/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178471000">(Oct 18 2019 at 13:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178471000" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tim Baanen <a href="https://rht.github.io/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178471000">(Oct 18 2019 at 13:01)</a>:</h4>
 <p>Pointy brackets <code>⟨_, _, _, ...⟩</code> work for con-/destructing any structure:</p>
 <div class="codehilite"><pre><span></span>def nat.foldl.fin {α : Type} (n&#39; : nat) : ∀ (n : fin n&#39;) (s : α) (f : fin n&#39; → α → α), α
 | ⟨0, _⟩ s f := s
@@ -60,7 +60,7 @@ permalink: archive/113489newmembers/70935Howtodestructurefinusingpatternmatching
 
 
 <a name="178472642"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178472642" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="http://127.0.0.1:4000/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178472642">(Oct 18 2019 at 13:19)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178472642" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="https://rht.github.io/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178472642">(Oct 18 2019 at 13:19)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">nat</span><span class="bp">.</span><span class="n">foldl</span><span class="bp">.</span><span class="n">fin</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">}</span> <span class="o">(</span><span class="n">n&#39;</span> <span class="o">:</span> <span class="n">nat</span><span class="o">)</span> <span class="o">:</span> <span class="bp">∀</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">fin</span> <span class="n">n&#39;</span><span class="o">)</span> <span class="o">(</span><span class="n">s</span> <span class="o">:</span> <span class="n">α</span><span class="o">)</span> <span class="o">(</span><span class="n">f</span> <span class="o">:</span> <span class="n">fin</span> <span class="n">n&#39;</span> <span class="bp">→</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">α</span><span class="o">),</span> <span class="n">α</span>
 <span class="bp">|</span> <span class="bp">⟨</span><span class="mi">0</span><span class="o">,</span> <span class="bp">_⟩</span> <span class="n">s</span> <span class="n">f</span> <span class="o">:=</span> <span class="n">s</span>
 <span class="bp">|</span> <span class="bp">⟨</span><span class="n">n</span><span class="bp">+</span><span class="mi">1</span><span class="o">,</span> <span class="n">lt</span><span class="bp">⟩</span> <span class="n">s</span> <span class="n">f</span> <span class="o">:=</span> <span class="k">let</span> <span class="n">n&#39;</span> <span class="o">:</span> <span class="n">fin</span> <span class="n">n&#39;</span> <span class="o">:=</span> <span class="bp">⟨</span><span class="n">n</span><span class="o">,</span> <span class="n">buffer</span><span class="bp">.</span><span class="n">lt_aux_1</span> <span class="n">lt</span> <span class="bp">⟩</span> <span class="k">in</span> <span class="n">f</span> <span class="n">n&#39;</span> <span class="o">(</span><span class="n">nat</span><span class="bp">.</span><span class="n">foldl</span><span class="bp">.</span><span class="n">fin</span> <span class="n">n&#39;</span> <span class="n">s</span> <span class="n">f</span><span class="o">)</span>
@@ -79,31 +79,31 @@ permalink: archive/113489newmembers/70935Howtodestructurefinusingpatternmatching
 
 
 <a name="178472968"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178472968" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178472968">(Oct 18 2019 at 13:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178472968" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178472968">(Oct 18 2019 at 13:22)</a>:</h4>
 <p>I guess the trouble is that <code>fin</code> is not an inductive type... but maybe there are ways to deal with that.</p>
 
 
 
 <a name="178473154"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178473154" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178473154">(Oct 18 2019 at 13:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178473154" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178473154">(Oct 18 2019 at 13:24)</a>:</h4>
 <p>No, the problem is that using <code>have</code> hides the definitional content of <code>n'</code>. If you do that, <code>n'</code> is just an arbitrary term of type <code>fin n'</code>, and Lean can't confirm that it's structurally smaller than <code>&lt;n+1, lt&gt;</code>.</p>
 
 
 
 <a name="178473197"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178473197" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178473197">(Oct 18 2019 at 13:25)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178473197" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178473197">(Oct 18 2019 at 13:25)</a>:</h4>
 <p>(Careful with duplicating the variable name <code>n'</code>, by the way!)</p>
 
 
 
 <a name="178473342"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178473342" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178473342">(Oct 18 2019 at 13:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178473342" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178473342">(Oct 18 2019 at 13:26)</a>:</h4>
 <p>In general, you should use <code>have</code> for propositions and <code>let</code> for data.</p>
 
 
 
 <a name="178474186"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178474186" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="http://127.0.0.1:4000/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178474186">(Oct 18 2019 at 13:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178474186" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="https://rht.github.io/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178474186">(Oct 18 2019 at 13:36)</a>:</h4>
 <p>I see.</p>
 <blockquote>
 <p>(Careful with duplicating the variable name n', by the way!)</p>
@@ -113,13 +113,13 @@ permalink: archive/113489newmembers/70935Howtodestructurefinusingpatternmatching
 
 
 <a name="178474969"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178474969" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178474969">(Oct 18 2019 at 13:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178474969" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178474969">(Oct 18 2019 at 13:46)</a>:</h4>
 <p>It's strict, and <code>let</code> is nonrecursive.</p>
 
 
 
 <a name="178480349"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178480349" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="http://127.0.0.1:4000/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178480349">(Oct 18 2019 at 14:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20destructure%20%60fin%60%20using%20pattern%20matching%3F/near/178480349" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="https://rht.github.io/archive/113489newmembers/70935Howtodestructurefinusingpatternmatching#178480349">(Oct 18 2019 at 14:42)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">nat</span><span class="bp">.</span><span class="n">foldl</span><span class="bp">.</span><span class="n">fin_template</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="n">nat</span> <span class="bp">→</span> <span class="kt">Type</span><span class="o">}</span> <span class="o">(</span><span class="n">n&#39;</span> <span class="o">:</span> <span class="n">nat</span><span class="o">)</span>
     <span class="o">:</span> <span class="bp">∀</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">fin</span> <span class="n">n&#39;</span><span class="o">)</span> <span class="o">(</span><span class="n">s</span> <span class="o">:</span> <span class="n">α</span> <span class="mi">0</span><span class="o">)</span> <span class="o">(</span><span class="n">f</span> <span class="o">:</span> <span class="bp">∀</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">fin</span> <span class="n">n&#39;</span><span class="o">),</span> <span class="o">(</span><span class="n">α</span> <span class="n">n</span><span class="bp">.</span><span class="n">val</span><span class="o">)</span> <span class="bp">→</span> <span class="n">α</span> <span class="o">(</span><span class="n">n</span><span class="bp">.</span><span class="n">val</span><span class="bp">+</span><span class="mi">1</span><span class="o">)),</span> <span class="n">α</span> <span class="n">n</span><span class="bp">.</span><span class="n">val</span>
 <span class="bp">|</span> <span class="bp">⟨</span><span class="mi">0</span><span class="o">,</span> <span class="bp">_⟩</span> <span class="n">s</span> <span class="n">f</span> <span class="o">:=</span> <span class="n">s</span>

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/81843categorytheoryuniverseissue.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/81843categorytheoryuniverseissue.html">category theory universe issue?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/81843categorytheoryuniverseissue.html">category theory universe issue?</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/81843categorytheoryuniverseissue.html
 {% raw %}
 
 <a name="163327617"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/category%20theory%20universe%20issue%3F/near/163327617" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/81843categorytheoryuniverseissue#163327617">(Apr 14 2019 at 18:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/category%20theory%20universe%20issue%3F/near/163327617" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/81843categorytheoryuniverseissue#163327617">(Apr 14 2019 at 18:15)</a>:</h4>
 <p><strong>question in progress -- ignore for now unless you're Scott</strong></p>
 <p>I am using a slightly modified mathlib but I am hoping this isn't the issue [update: it is]. The following innocuous-looking code:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">topology</span><span class="bp">.</span><span class="n">opens</span>
@@ -122,31 +122,31 @@ but is expected to have type
 
 
 <a name="163327825"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/category%20theory%20universe%20issue%3F/near/163327825" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/81843categorytheoryuniverseissue#163327825">(Apr 14 2019 at 18:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/category%20theory%20universe%20issue%3F/near/163327825" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/81843categorytheoryuniverseissue#163327825">(Apr 14 2019 at 18:21)</a>:</h4>
 <p>Oh <em>boggle</em> I just checked with a vanilla mathlib and <code>category_theory.instances.Top</code> isn't there. That'll teach me to listen to Scott.</p>
 
 
 
 <a name="163328042"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/category%20theory%20universe%20issue%3F/near/163328042" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/81843categorytheoryuniverseissue#163328042">(Apr 14 2019 at 18:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/category%20theory%20universe%20issue%3F/near/163328042" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/81843categorytheoryuniverseissue#163328042">(Apr 14 2019 at 18:26)</a>:</h4>
 <p><span class="user-mention" data-user-id="110087">@Scott Morrison</span> is this something to do with your modification <code>category_theory.instances.Top</code> of <code>category_theory.instances.topological_spaces</code> in your branch? I switched back to <code>topological_spaces</code> and now I see ulifts and plifts when I try to define the functor.</p>
 
 
 
 <a name="163328224"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/category%20theory%20universe%20issue%3F/near/163328224" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/81843categorytheoryuniverseissue#163328224">(Apr 14 2019 at 18:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/category%20theory%20universe%20issue%3F/near/163328224" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/81843categorytheoryuniverseissue#163328224">(Apr 14 2019 at 18:31)</a>:</h4>
 <p>This is all something to do with turning hom sets from Type v into Prop.</p>
 
 
 
 <a name="163328349"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/category%20theory%20universe%20issue%3F/near/163328349" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/81843categorytheoryuniverseissue#163328349">(Apr 14 2019 at 18:34)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/category%20theory%20universe%20issue%3F/near/163328349" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/81843categorytheoryuniverseissue#163328349">(Apr 14 2019 at 18:34)</a>:</h4>
 <p>Sorry, this is an issue with some of Scott's work in progress; I'll take it to github. I can get this to with in regular mathlib.</p>
 
 
 
 <a name="163338785"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/category%20theory%20universe%20issue%3F/near/163338785" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/81843categorytheoryuniverseissue#163338785">(Apr 14 2019 at 22:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/category%20theory%20universe%20issue%3F/near/163338785" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/81843categorytheoryuniverseissue#163338785">(Apr 14 2019 at 22:46)</a>:</h4>
 <p>Sorry! :-) There is a big queue of PRs in category theory at the moment, making things a bit confusing.</p>
 
 

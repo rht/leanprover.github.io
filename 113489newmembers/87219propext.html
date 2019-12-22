@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/87219propext.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext.html">propext</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/87219propext.html">propext</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/87219propext.html
 {% raw %}
 
 <a name="173435119"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435119" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435119">(Aug 17 2019 at 09:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435119" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435119">(Aug 17 2019 at 09:42)</a>:</h4>
 <p>Good morning, I'm working my way through the tutorial and I've stumbled across something I don't get. <br>
 In chapter 11.2, you are encouraged to prove a certain theorem without propext, or more specifically, to prove that it's equivalent to the axiom.</p>
 <p>Here's the proof:</p>
@@ -42,7 +42,7 @@ In chapter 11.2, you are encouraged to prove a certain theorem without propext, 
 
 
 <a name="173435423"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435423" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joe <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435423">(Aug 17 2019 at 09:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435423" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joe <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435423">(Aug 17 2019 at 09:53)</a>:</h4>
 <p>You can prove <code>propext</code> directly using rewrite, so I guess <code>rw</code> must assume <code>propext</code>.</p>
 <div class="codehilite"><pre><span></span><span class="kn">theorem</span> <span class="n">propext&#39;</span> <span class="o">:</span> <span class="o">(</span><span class="n">a</span> <span class="bp">↔</span> <span class="n">b</span><span class="o">)</span> <span class="bp">→</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span> <span class="o">:=</span> <span class="bp">λ</span><span class="n">h</span><span class="o">,</span> <span class="k">by</span> <span class="n">rw</span> <span class="n">h</span>
 </pre></div>
@@ -50,7 +50,7 @@ In chapter 11.2, you are encouraged to prove a certain theorem without propext, 
 
 
 <a name="173435425"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435425" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joe <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435425">(Aug 17 2019 at 09:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435425" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joe <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435425">(Aug 17 2019 at 09:53)</a>:</h4>
 <p>Also the theorem you want to prove should be</p>
 <div class="codehilite"><pre><span></span><span class="kn">theorem</span> <span class="n">thm₃</span> <span class="o">:</span> <span class="o">(</span><span class="bp">∀</span> <span class="o">(</span><span class="n">p</span> <span class="o">:</span> <span class="kt">Prop</span> <span class="bp">→</span> <span class="kt">Prop</span><span class="o">),</span> <span class="o">(</span><span class="n">a</span> <span class="bp">↔</span> <span class="n">b</span><span class="o">)</span> <span class="bp">→</span> <span class="n">p</span> <span class="n">a</span> <span class="bp">→</span> <span class="n">p</span> <span class="n">b</span><span class="o">)</span> <span class="bp">↔</span> <span class="o">((</span><span class="n">a</span> <span class="bp">↔</span> <span class="n">b</span><span class="o">)</span> <span class="bp">→</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span><span class="o">)</span> <span class="o">:=</span>
 </pre></div>
@@ -58,7 +58,7 @@ In chapter 11.2, you are encouraged to prove a certain theorem without propext, 
 
 
 <a name="173435531"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435531" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joe <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435531">(Aug 17 2019 at 09:57)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435531" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joe <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435531">(Aug 17 2019 at 09:57)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">theorem</span> <span class="n">thm₃</span> <span class="o">:</span> <span class="o">(</span><span class="bp">∀</span> <span class="o">{</span><span class="n">p</span> <span class="o">:</span> <span class="kt">Prop</span> <span class="bp">→</span> <span class="kt">Prop</span><span class="o">},</span> <span class="o">(</span><span class="n">a</span> <span class="bp">↔</span> <span class="n">b</span><span class="o">)</span> <span class="bp">→</span> <span class="n">p</span> <span class="n">a</span> <span class="bp">→</span> <span class="n">p</span> <span class="n">b</span><span class="o">)</span> <span class="bp">↔</span> <span class="o">((</span><span class="n">a</span> <span class="bp">↔</span> <span class="n">b</span><span class="o">)</span> <span class="bp">→</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span><span class="o">)</span> <span class="o">:=</span>
 <span class="n">iff</span><span class="bp">.</span><span class="n">intro</span>
   <span class="o">(</span><span class="bp">λ</span><span class="n">h</span> <span class="n">hab</span><span class="o">,</span> <span class="n">h</span> <span class="n">hab</span> <span class="n">rfl</span><span class="o">)</span>
@@ -68,31 +68,31 @@ In chapter 11.2, you are encouraged to prove a certain theorem without propext, 
 
 
 <a name="173435584"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435584" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435584">(Aug 17 2019 at 09:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435584" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435584">(Aug 17 2019 at 09:58)</a>:</h4>
 <p>well, I have a <code>variable p : Prop -&gt; Prop</code></p>
 
 
 
 <a name="173435591"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435591" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435591">(Aug 17 2019 at 09:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435591" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435591">(Aug 17 2019 at 09:59)</a>:</h4>
 <p>the version you stated isn't true</p>
 
 
 
 <a name="173435593"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435593" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435593">(Aug 17 2019 at 09:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435593" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435593">(Aug 17 2019 at 09:59)</a>:</h4>
 <p>if <code>p</code> is always true then the LHS is trivial</p>
 
 
 
 <a name="173435638"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435638" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435638">(Aug 17 2019 at 10:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435638" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435638">(Aug 17 2019 at 10:00)</a>:</h4>
 <p>it is important that the quantifier appear on the LHS as in Joe's version</p>
 
 
 
 <a name="173435653"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435653" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435653">(Aug 17 2019 at 10:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435653" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435653">(Aug 17 2019 at 10:01)</a>:</h4>
 <p>this is the full code:</p>
 <div class="codehilite"><pre><span></span>section
   variables a b c d e : Prop
@@ -121,37 +121,37 @@ end
 
 
 <a name="173435696"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435696" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435696">(Aug 17 2019 at 10:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435696" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435696">(Aug 17 2019 at 10:02)</a>:</h4>
 <p>from what I understand about the syntax, <code>p</code> from the section is passed as an argument to thm_3, correct?</p>
 
 
 
 <a name="173435697"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435697" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435697">(Aug 17 2019 at 10:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435697" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435697">(Aug 17 2019 at 10:02)</a>:</h4>
 <p>it is</p>
 
 
 
 <a name="173435702"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435702" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435702">(Aug 17 2019 at 10:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435702" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435702">(Aug 17 2019 at 10:02)</a>:</h4>
 <p>but it is quantified at the top level, rather than on the LHS of the iff only</p>
 
 
 
 <a name="173435703"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435703" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435703">(Aug 17 2019 at 10:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435703" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435703">(Aug 17 2019 at 10:03)</a>:</h4>
 <p>i see</p>
 
 
 
 <a name="173435757"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435757" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173435757">(Aug 17 2019 at 10:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173435757" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="https://rht.github.io/archive/113489newmembers/87219propext#173435757">(Aug 17 2019 at 10:04)</a>:</h4>
 <p>i'm re-trying the proof with that different quantification, now</p>
 
 
 
 <a name="173436259"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173436259" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="http://127.0.0.1:4000/archive/113489newmembers/87219propext#173436259">(Aug 17 2019 at 10:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/propext/near/173436259" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="https://rht.github.io/archive/113489newmembers/87219propext#173436259">(Aug 17 2019 at 10:23)</a>:</h4>
 <p>thanks, got it working!</p>
 
 

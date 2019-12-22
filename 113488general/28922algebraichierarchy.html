@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/28922algebraichierarchy.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/28922algebraichierarchy.html">algebraic hierarchy</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/28922algebraichierarchy.html">algebraic hierarchy</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/28922algebraichierarchy.html
 {% raw %}
 
 <a name="177994467"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/algebraic%20hierarchy/near/177994467" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jeremy Avigad <a href="http://127.0.0.1:4000/archive/113488general/28922algebraichierarchy#177994467">(Oct 12 2019 at 15:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/algebraic%20hierarchy/near/177994467" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jeremy Avigad <a href="https://rht.github.io/archive/113488general/28922algebraichierarchy#177994467">(Oct 12 2019 at 15:49)</a>:</h4>
 <p>I am picking up here on the discussion in visualizations (<a href="#narrow/stream/113488-general/topic/visualizations/near/177991983" title="#narrow/stream/113488-general/topic/visualizations/near/177991983">https://leanprover.zulipchat.com/#narrow/stream/113488-general/topic/visualizations/near/177991983</a>) but I renamed the thread. I'd like to expand on my concerns about our coding of the algebraic hierarchy.</p>
 <p>Recently I went back to look at the Mathematical Components library, and I was struck by how carefully the library is designed to avoid any search at all when it comes to working with structures. The algebraic hierarchy is mostly here:</p>
 <p><a href="https://github.com/math-comp/math-comp/blob/master/mathcomp/algebra/ssralg.v" target="_blank" title="https://github.com/math-comp/math-comp/blob/master/mathcomp/algebra/ssralg.v">https://github.com/math-comp/math-comp/blob/master/mathcomp/algebra/ssralg.v</a><br>
@@ -38,19 +38,19 @@ permalink: archive/113488general/28922algebraichierarchy.html
 
 
 <a name="177994958"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/algebraic%20hierarchy/near/177994958" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/28922algebraichierarchy#177994958">(Oct 12 2019 at 16:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/algebraic%20hierarchy/near/177994958" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/28922algebraichierarchy#177994958">(Oct 12 2019 at 16:00)</a>:</h4>
 <p>I really wish we could add shortcuts through the hierarchy, but shortcuts mean more paths and everything gets worse</p>
 
 
 
 <a name="177999031"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/algebraic%20hierarchy/near/177999031" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Selsam <a href="http://127.0.0.1:4000/archive/113488general/28922algebraichierarchy#177999031">(Oct 12 2019 at 17:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/algebraic%20hierarchy/near/177999031" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Selsam <a href="https://rht.github.io/archive/113488general/28922algebraichierarchy#177999031">(Oct 12 2019 at 17:42)</a>:</h4>
 <p><span class="user-mention" data-user-id="110865">@Jeremy Avigad</span> <span class="user-mention" data-user-id="110038">@Kevin Buzzard</span> I recommend against pre-emptively refactoring the hierarchy without evidence that it will still be problematic in Lean4. <span class="user-mention" data-user-id="110024">@Sebastian Ullrich</span> is working on automatically porting typeclass queries from Mathlib to Lean4 in order to assess this. Also, as Kevin points out, in the unlikely case that there is still a problem, it might be addressable by some very simple heuristics.</p>
 
 
 
 <a name="178010981"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/algebraic%20hierarchy/near/178010981" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jeremy Avigad <a href="http://127.0.0.1:4000/archive/113488general/28922algebraichierarchy#178010981">(Oct 12 2019 at 23:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/algebraic%20hierarchy/near/178010981" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jeremy Avigad <a href="https://rht.github.io/archive/113488general/28922algebraichierarchy#178010981">(Oct 12 2019 at 23:22)</a>:</h4>
 <p>Sounds good. I am happy to know that you guys are on it!</p>
 
 

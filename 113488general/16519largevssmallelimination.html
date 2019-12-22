@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/16519largevssmallelimination.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/16519largevssmallelimination.html">large vs small elimination</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/16519largevssmallelimination.html">large vs small elimination</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/16519largevssmallelimination.html
 {% raw %}
 
 <a name="162083803"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162083803" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/16519largevssmallelimination#162083803">(Mar 29 2019 at 21:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162083803" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/16519largevssmallelimination#162083803">(Mar 29 2019 at 21:05)</a>:</h4>
 <p>For each inductive type or structure Lean has to decide whether to generate large or small eliminators (eliminating to a type in an arbitrary universe, or only to a proposition). As I understand it, the algorithm is something like this.</p>
 <ul>
 <li>If the target universe of the inductive type is a Type (<code>Sort u</code> for <code>u &gt;= 1</code>), then always generate a large eliminator.</li>
@@ -40,19 +40,19 @@ permalink: archive/113488general/16519largevssmallelimination.html
 
 
 <a name="162086079"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086079" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/16519largevssmallelimination#162086079">(Mar 29 2019 at 21:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086079" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/16519largevssmallelimination#162086079">(Mar 29 2019 at 21:42)</a>:</h4>
 <p>This would obviously require a modification to lean's kernel, but I can confirm soundness against the paper proof.</p>
 
 
 
 <a name="162086113"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086113" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/16519largevssmallelimination#162086113">(Mar 29 2019 at 21:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086113" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/16519largevssmallelimination#162086113">(Mar 29 2019 at 21:43)</a>:</h4>
 <p>I think lean will accept inductive types in <code>Sort u</code> under some circumstances; there are weird consequences in general, but it should be fine for large eliminating inductives</p>
 
 
 
 <a name="162086209"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086209" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/16519largevssmallelimination#162086209">(Mar 29 2019 at 21:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086209" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/16519largevssmallelimination#162086209">(Mar 29 2019 at 21:45)</a>:</h4>
 <p>In particular, lean seems to have no trouble with the structure you gave, if you use an inductive instead:</p>
 <div class="codehilite"><pre><span></span><span class="kn">inductive</span> <span class="o">{</span><span class="n">u</span><span class="o">}</span> <span class="n">foo</span> <span class="o">(</span><span class="n">α</span> <span class="o">:</span> <span class="n">Sort</span> <span class="n">u</span><span class="o">)</span> <span class="o">:</span> <span class="n">Sort</span> <span class="n">u</span>
 <span class="bp">|</span> <span class="n">mk</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">foo</span>
@@ -61,25 +61,25 @@ permalink: archive/113488general/16519largevssmallelimination.html
 
 
 <a name="162086231"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086231" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/16519largevssmallelimination#162086231">(Mar 29 2019 at 21:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086231" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/16519largevssmallelimination#162086231">(Mar 29 2019 at 21:45)</a>:</h4>
 <p>Oh interesting</p>
 
 
 
 <a name="162086337"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086337" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/16519largevssmallelimination#162086337">(Mar 29 2019 at 21:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086337" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/16519largevssmallelimination#162086337">(Mar 29 2019 at 21:47)</a>:</h4>
 <p>It only generates a small eliminator, though</p>
 
 
 
 <a name="162086517"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086517" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/16519largevssmallelimination#162086517">(Mar 29 2019 at 21:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086517" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/16519largevssmallelimination#162086517">(Mar 29 2019 at 21:50)</a>:</h4>
 <p>ah yes, that's the weird consequence</p>
 
 
 
 <a name="162086552"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086552" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/16519largevssmallelimination#162086552">(Mar 29 2019 at 21:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/large%20vs%20small%20elimination/near/162086552" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/16519largevssmallelimination#162086552">(Mar 29 2019 at 21:51)</a>:</h4>
 <p>that's why the <code>structure</code> won't work, of course</p>
 
 

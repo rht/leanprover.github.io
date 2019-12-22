@@ -4,7 +4,7 @@ title: Zulip Chat Archive
 permalink: archive/113538travis/index.html
 ---
 
-## Stream: [travis](http://127.0.0.1:4000/archive/113538travis/index.html)
+## Stream: [travis](https://rht.github.io/archive/113538travis/index.html)
 ---
 
 ### Topics:

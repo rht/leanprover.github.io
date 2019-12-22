@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/90448leakyoption.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption.html">leaky option</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/90448leakyoption.html">leaky option</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/90448leakyoption.html
 {% raw %}
 
 <a name="167027258"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027258" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027258">(May 31 2019 at 19:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027258" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027258">(May 31 2019 at 19:39)</a>:</h4>
 <p><span class="user-mention" data-user-id="118107">@Amelia Livingston</span> asked why this doesn't work:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">real</span><span class="bp">.</span><span class="n">basic</span> <span class="n">order</span><span class="bp">.</span><span class="n">bounded_lattice</span>
 
@@ -44,85 +44,85 @@ permalink: archive/113488general/90448leakyoption.html
 
 
 <a name="167027517"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027517" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027517">(May 31 2019 at 19:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027517" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027517">(May 31 2019 at 19:42)</a>:</h4>
 <p>shouldn't you use <code>bot</code> instead of <code>none</code>?</p>
 
 
 
 <a name="167027524"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027524" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027524">(May 31 2019 at 19:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027524" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027524">(May 31 2019 at 19:42)</a>:</h4>
 <p>it's because you used <code>none</code></p>
 
 
 
 <a name="167027528"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027528" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027528">(May 31 2019 at 19:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027528" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027528">(May 31 2019 at 19:42)</a>:</h4>
 <p>Patrick, Johan and I had troubles with <code>option</code> leaking out like this when we were using <code>with_zero</code>. We even considered writing our own <code>with_zero</code> which wasn't just a copy of <code>option</code> -- Patrick pointed out that we might not really be using any of the constructions which had been made for <code>option</code> anyway. In Edinburgh Patrick even suggested just writing our own class for totally ordered groups with a zero, and I am very much coming round to his way of thinking.</p>
 
 
 
 <a name="167027531"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027531" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027531">(May 31 2019 at 19:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027531" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027531">(May 31 2019 at 19:42)</a>:</h4>
 <p>I don't know if that helps... but <code>tropical</code> is defined as <code>with_bot ...</code></p>
 
 
 
 <a name="167027568"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027568" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027568">(May 31 2019 at 19:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027568" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027568">(May 31 2019 at 19:42)</a>:</h4>
 <p><code>(none : 𝕋)</code> doesn't say "none, of type T", it says "none" and checks that this has type defeq to T</p>
 
 
 
 <a name="167027603"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027603" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027603">(May 31 2019 at 19:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027603" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027603">(May 31 2019 at 19:43)</a>:</h4>
 <p>Oh!</p>
 
 
 
 <a name="167027606"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027606" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027606">(May 31 2019 at 19:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027606" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027606">(May 31 2019 at 19:43)</a>:</h4>
 <p><code>show 𝕋, from none</code> has type T</p>
 
 
 
 <a name="167027620"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027620" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027620">(May 31 2019 at 19:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027620" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027620">(May 31 2019 at 19:43)</a>:</h4>
 <p>or <code>@id 𝕋 none</code></p>
 
 
 
 <a name="167027631"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027631" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027631">(May 31 2019 at 19:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027631" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027631">(May 31 2019 at 19:43)</a>:</h4>
 <p>but these options leave a trace in the term</p>
 
 
 
 <a name="167027730"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027730" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027730">(May 31 2019 at 19:44)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027730" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027730">(May 31 2019 at 19:44)</a>:</h4>
 <p>Oh this is a subtlety of which I was not at all aware, but am finally perhaps in a position to understand.</p>
 
 
 
 <a name="167027751"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027751" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027751">(May 31 2019 at 19:44)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027751" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027751">(May 31 2019 at 19:44)</a>:</h4>
 <p>I think <code>((+) : 𝕋 -&gt; 𝕋 -&gt; 𝕋) none x</code> might work</p>
 
 
 
 <a name="167027825"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027825" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027825">(May 31 2019 at 19:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027825" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027825">(May 31 2019 at 19:45)</a>:</h4>
 <p>or <code>(none + x :  𝕋)</code></p>
 
 
 
 <a name="167027827"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027827" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027827">(May 31 2019 at 19:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027827" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027827">(May 31 2019 at 19:45)</a>:</h4>
 <p>So when Lean is trying to figure out what is going on with <code>(none : \bbT) + x</code> it decides that <code>none</code> has type <code>option ?m</code>, tries to unify <code>option ?m</code> with <code>\bbT</code>, decides that <code>?m</code> is <code>real</code>, but then leaves <code>none</code> as type <code>option real</code>?</p>
 
 
 
 <a name="167027842"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027842" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027842">(May 31 2019 at 19:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027842" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027842">(May 31 2019 at 19:45)</a>:</h4>
 <blockquote>
 <p>or <code>(none + x :  𝕋)</code></p>
 </blockquote>
@@ -131,19 +131,19 @@ permalink: archive/113488general/90448leakyoption.html
 
 
 <a name="167027927"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027927" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027927">(May 31 2019 at 19:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027927" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027927">(May 31 2019 at 19:46)</a>:</h4>
 <p>right</p>
 
 
 
 <a name="167027959"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027959" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027959">(May 31 2019 at 19:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027959" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027959">(May 31 2019 at 19:47)</a>:</h4>
 <p>more importantly, the <code>option ?m</code>  is the type that it's going to search for a + instance</p>
 
 
 
 <a name="167027961"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027961" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167027961">(May 31 2019 at 19:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167027961" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/90448leakyoption#167027961">(May 31 2019 at 19:47)</a>:</h4>
 <blockquote>
 <p>right</p>
 </blockquote>
@@ -152,37 +152,37 @@ permalink: archive/113488general/90448leakyoption.html
 
 
 <a name="167028004"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028004" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167028004">(May 31 2019 at 19:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028004" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167028004">(May 31 2019 at 19:47)</a>:</h4>
 <p>You are right, it will find the + on with_bot in that case</p>
 
 
 
 <a name="167028075"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028075" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167028075">(May 31 2019 at 19:48)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028075" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167028075">(May 31 2019 at 19:48)</a>:</h4>
 <p>or if there is no such thing it will also fail</p>
 
 
 
 <a name="167028115"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028115" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167028115">(May 31 2019 at 19:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028115" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167028115">(May 31 2019 at 19:49)</a>:</h4>
 <p>But because has_bot is a typeclass you can give an instance of <code>has_bot 𝕋</code> and then it will work</p>
 
 
 
 <a name="167028156"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028156" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167028156">(May 31 2019 at 19:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028156" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167028156">(May 31 2019 at 19:49)</a>:</h4>
 <p>more precisely, it won't be able to figure out the type at all looking at the + or bot, so it will find the x and get the type there</p>
 
 
 
 <a name="167028266"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028266" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167028266">(May 31 2019 at 19:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028266" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167028266">(May 31 2019 at 19:50)</a>:</h4>
 <p>aha, actually that will happen regardless... so you won't find the bot of <code>with_bot real</code></p>
 
 
 
 <a name="167028895"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028895" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167028895">(May 31 2019 at 19:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028895" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/90448leakyoption#167028895">(May 31 2019 at 19:58)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">real</span><span class="bp">.</span><span class="n">basic</span> <span class="n">order</span><span class="bp">.</span><span class="n">bounded_lattice</span>
 
 <span class="n">def</span> <span class="n">tropical</span> <span class="o">:=</span> <span class="n">with_bot</span> <span class="n">ℝ</span>
@@ -204,31 +204,31 @@ permalink: archive/113488general/90448leakyoption.html
 
 
 <a name="167028909"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028909" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167028909">(May 31 2019 at 19:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167028909" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/90448leakyoption#167028909">(May 31 2019 at 19:58)</a>:</h4>
 <p>Aah, of course it compiles.</p>
 
 
 
 <a name="167029011"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029011" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167029011">(May 31 2019 at 19:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029011" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/90448leakyoption#167029011">(May 31 2019 at 19:59)</a>:</h4>
 <p>I had no idea that the elaborator did not read <code>(x : t)</code> as "this term must have type <code>t</code>" -- my understanding now is that it says "this term has some type which Lean can prove is definitionally equal to <code>t</code> but the elaborator reserves the right to insist that it has another type when trying to figure out some other types of other things later on in its elaboration journey"</p>
 
 
 
 <a name="167029323"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029323" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167029323">(May 31 2019 at 20:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029323" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167029323">(May 31 2019 at 20:03)</a>:</h4>
 <p>Note that the elaborator does get some information from <code>(x : t)</code>, because it produces the goal "(expected type of x) =?= t" which may cause metavariables to be instantiated</p>
 
 
 
 <a name="167029364"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029364" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167029364">(May 31 2019 at 20:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029364" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167029364">(May 31 2019 at 20:03)</a>:</h4>
 <p>and then after that it continues with checking "x :? expected type"</p>
 
 
 
 <a name="167029682"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029682" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167029682">(May 31 2019 at 20:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029682" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/90448leakyoption#167029682">(May 31 2019 at 20:07)</a>:</h4>
 <blockquote>
 <p>Note that the elaborator does get some information from <code>(x : t)</code>, because it produces the goal "(expected type of x) =?= t" which may cause metavariables to be instantiated</p>
 </blockquote>
@@ -237,37 +237,37 @@ permalink: archive/113488general/90448leakyoption.html
 
 
 <a name="167029796"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029796" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167029796">(May 31 2019 at 20:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029796" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167029796">(May 31 2019 at 20:08)</a>:</h4>
 <p>ah, you are right, that description has the order wrong</p>
 
 
 
 <a name="167029839"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029839" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167029839">(May 31 2019 at 20:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029839" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167029839">(May 31 2019 at 20:08)</a>:</h4>
 <p>it first uses the expected type to elaborate x, then does "(expected type of x) =?= t"</p>
 
 
 
 <a name="167029981"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029981" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167029981">(May 31 2019 at 20:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167029981" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/90448leakyoption#167029981">(May 31 2019 at 20:10)</a>:</h4>
 <p>Is there no way I can work out exactly what the elaborator is doing, short of reading the C++ (which I am not capable of doing, of course) or asking here?</p>
 
 
 
 <a name="167030000"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167030000" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167030000">(May 31 2019 at 20:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167030000" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/90448leakyoption#167030000">(May 31 2019 at 20:11)</a>:</h4>
 <p>Maybe there is some weird <code>meta</code> hack</p>
 
 
 
 <a name="167032248"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167032248" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167032248">(May 31 2019 at 20:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167032248" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/90448leakyoption#167032248">(May 31 2019 at 20:36)</a>:</h4>
 <p>you can infer the behavior from various real and toy examples; that's what I do</p>
 
 
 
 <a name="167063864"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167063864" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/90448leakyoption#167063864">(Jun 01 2019 at 09:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/leaky%20option/near/167063864" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/90448leakyoption#167063864">(Jun 01 2019 at 09:11)</a>:</h4>
 <blockquote>
 <p>Patrick, Johan and I had troubles with <code>option</code> leaking out like this when we were using <code>with_zero</code>. We even considered writing our own <code>with_zero</code> which wasn't just a copy of <code>option</code> -- Patrick pointed out that we might not really be using any of the constructions which had been made for <code>option</code> anyway. In Edinburgh Patrick even suggested just writing our own class for totally ordered groups with a zero, and I am very much coming round to his way of thinking.</p>
 </blockquote>

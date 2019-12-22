@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/40361Custominduction.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/40361Custominduction.html">Custom induction</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/40361Custominduction.html">Custom induction</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/40361Custominduction.html
 {% raw %}
 
 <a name="173687879"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Custom%20induction/near/173687879" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="http://127.0.0.1:4000/archive/113489newmembers/40361Custominduction#173687879">(Aug 20 2019 at 19:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Custom%20induction/near/173687879" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="https://rht.github.io/archive/113489newmembers/40361Custominduction#173687879">(Aug 20 2019 at 19:26)</a>:</h4>
 <p>Good evening,</p>
 <p>As an exercise, I'm trying to formalize a piece of math that I have around Cartesian products. Because I need to know each component involved in the product, I don't think I can rely on the built-in notion of Cartesian products. E.g. <code>Nat * Nat * Nat</code> is not the same as <code>(Nat * Nat) * Nat</code> or <code>Nat * (Nat * Nat)</code> w.r.t. the theorems I want to talk about.</p>
 <p>To formalize that, I tried to do it using a heterogeneous list and attach a count to get pretty much the same behavior as a Cartesian product. Here's my code I'm playing with:</p>
@@ -79,14 +79,14 @@ end tuple
 
 
 <a name="173688491"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Custom%20induction/near/173688491" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113489newmembers/40361Custominduction#173688491">(Aug 20 2019 at 19:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Custom%20induction/near/173688491" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113489newmembers/40361Custominduction#173688491">(Aug 20 2019 at 19:35)</a>:</h4>
 <p>Your code strikes me as having a lot of dependent types. If you need them to be this dependent, you might find all that you need in <code>data.vector</code>. Your <code>tuple</code> construction can be defined as <code>def tuple (n : nat) := vector (Σ t : Type u, t) n</code>. </p>
 <p>You might find that reasoning in terms of <code>list (Σ t : Type u, t)</code> will be good enough for most of your theorems. Having the length in the type gets very annoying when the length varies</p>
 
 
 
 <a name="173688904"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Custom%20induction/near/173688904" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="http://127.0.0.1:4000/archive/113489newmembers/40361Custominduction#173688904">(Aug 20 2019 at 19:40)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Custom%20induction/near/173688904" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="https://rht.github.io/archive/113489newmembers/40361Custominduction#173688904">(Aug 20 2019 at 19:40)</a>:</h4>
 <p>Ok, thanks for the hints</p>
 
 

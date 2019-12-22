@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/36603simplemmaspriority.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/36603simplemmaspriority.html">simp lemmas priority</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/36603simplemmaspriority.html">simp lemmas priority</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/36603simplemmaspriority.html
 {% raw %}
 
 <a name="180476873"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/simp%20lemmas%20priority/near/180476873" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Yury G. Kudryashov <a href="http://127.0.0.1:4000/archive/113488general/36603simplemmaspriority#180476873">(Nov 12 2019 at 02:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/simp%20lemmas%20priority/near/180476873" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Yury G. Kudryashov <a href="https://rht.github.io/archive/113488general/36603simplemmaspriority#180476873">(Nov 12 2019 at 02:43)</a>:</h4>
 <p>Hi, how does Lean decide which simp lemma to apply? I'm trying to add</p>
 <div class="codehilite"><pre><span></span><span class="bp">@</span><span class="o">[</span><span class="n">simp</span><span class="o">]</span> <span class="kn">theorem</span> <span class="n">ball_image_iff</span> <span class="o">{</span><span class="n">f</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">β</span><span class="o">}</span> <span class="o">{</span><span class="n">s</span> <span class="o">:</span> <span class="n">set</span> <span class="n">α</span><span class="o">}</span> <span class="o">{</span><span class="n">p</span> <span class="o">:</span> <span class="n">β</span> <span class="bp">→</span> <span class="kt">Prop</span><span class="o">}</span> <span class="o">:</span>
   <span class="o">(</span><span class="bp">∀</span> <span class="n">y</span> <span class="err">∈</span> <span class="n">f</span> <span class="err">&#39;&#39;</span> <span class="n">s</span><span class="o">,</span> <span class="n">p</span> <span class="n">y</span><span class="o">)</span> <span class="bp">↔</span> <span class="o">(</span><span class="bp">∀</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">s</span><span class="o">,</span> <span class="n">p</span> <span class="o">(</span><span class="n">f</span> <span class="n">x</span><span class="o">))</span> <span class="o">:=</span>
@@ -31,7 +31,7 @@ permalink: archive/113488general/36603simplemmaspriority.html
 
 
 <a name="180542751"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/simp%20lemmas%20priority/near/180542751" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/113488general/36603simplemmaspriority#180542751">(Nov 12 2019 at 17:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/simp%20lemmas%20priority/near/180542751" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/113488general/36603simplemmaspriority#180542751">(Nov 12 2019 at 17:58)</a>:</h4>
 <p>I think <code>simp</code> simplifies starting at the leaves (atomic expressions) and then building up. So it will always simplify subexpressions of <code>t</code> before simplifying <code>t</code>. You probably get the desired behavior if you put the LHS of the above theorem in simp-normal form.</p>
 
 

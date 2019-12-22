@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/44348Problemwithtypeclasssearch.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch.html">Problem with type class search</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch.html">Problem with type class search</a></h3>
 
 <hr>
 
@@ -16,58 +16,58 @@ permalink: archive/113488general/44348Problemwithtypeclasssearch.html
 {% raw %}
 
 <a name="161435867"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161435867" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161435867">(Mar 22 2019 at 10:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161435867" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161435867">(Mar 22 2019 at 10:22)</a>:</h4>
 <p>Question: how much instances of <code>decidable (fin n)</code> are found by Lean? And why does it matter? Answer: <a href="https://github.com/johoelzl/tc-log-parser/blob/master/problem.md#answer" target="_blank" title="https://github.com/johoelzl/tc-log-parser/blob/master/problem.md#answer">https://github.com/johoelzl/tc-log-parser/blob/master/problem.md#answer</a></p>
 <p><code>fin n</code> is just an example, even <code>decidable</code> is not the problem in itself. The problem will happen with each diamond where we have two ways to construct the same instance.</p>
 
 
 
 <a name="161435923"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161435923" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161435923">(Mar 22 2019 at 10:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161435923" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161435923">(Mar 22 2019 at 10:23)</a>:</h4>
 <p>It looks like this is something we cannot solve in mathlib, but requires changes in Lean. <span class="user-mention" data-user-id="110024">@Sebastian Ullrich</span>: the type class search in Lean 4 will be the same as in Lean 3? So it would make sense to improve it in Lean 3 and then port it to Lean 4?</p>
 
 
 
 <a name="161436171"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161436171" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastian Ullrich <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161436171">(Mar 22 2019 at 10:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161436171" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastian Ullrich <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161436171">(Mar 22 2019 at 10:28)</a>:</h4>
 <p>Semantically it will probably stay the same, but Leo wants to look into possible optimizations. I will note this as one potential optimization opportunity, thanks for the write-up. No promises though.</p>
 
 
 
 <a name="161436237"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161436237" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161436237">(Mar 22 2019 at 10:29)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161436237" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161436237">(Mar 22 2019 at 10:29)</a>:</h4>
 <p>Good to hear!</p>
 
 
 
 <a name="161446859"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161446859" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161446859">(Mar 22 2019 at 13:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161446859" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161446859">(Mar 22 2019 at 13:23)</a>:</h4>
 <p><span class="user-mention" data-user-id="110294">@Johannes Hölzl</span> Could you tell us more about this repository?</p>
 
 
 
 <a name="161446963"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161446963" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161446963">(Mar 22 2019 at 13:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161446963" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161446963">(Mar 22 2019 at 13:24)</a>:</h4>
 <p><span class="user-mention" data-user-id="110024">@Sebastian Ullrich</span> I think you should ask <span class="user-mention" data-user-id="110193">@Cyril Cohen</span> about ideas to improve the type class search semantic. In Amsterdam he told several things that got added to Coq recently and seemed like they could be very useful for large scale type class search</p>
 
 
 
 <a name="161534653"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161534653" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161534653">(Mar 23 2019 at 17:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161534653" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161534653">(Mar 23 2019 at 17:22)</a>:</h4>
 <p>The idea is to have a parser for the log produced by Lean when searching for type class instances. All it currently does is to outpute the computed instances until a <code>mark ff</code> instance is looked up. This was the essential information I needed. </p>
 <p>But I'm sure it can be used to analyse other problems too</p>
 
 
 
 <a name="161692440"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161692440" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161692440">(Mar 25 2019 at 22:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161692440" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161692440">(Mar 25 2019 at 22:05)</a>:</h4>
 <p>Hm, this problem seams to be even worse: <code>is_add_monoid_hom (coe : ℤ → ℤ)</code> does not terminate. Now <code>is_ring_hom (coe : ℤ → ℤ)</code> doesn't work due to some unification problems. But <code> is_ring_hom.is_semiring_hom</code> <code>is_semiring_hom.is_add_monoid_hom</code> is looking for a <code>ring</code> instance and then for the <code>is_ring_hom</code> instance. The <code>is_ring_hom</code> instance is not found, hence it starts to enumerate all the ways to construct <code>ring</code> for <code>int</code>. </p>
 <p>Maybe a solution would be to annotate <code>class</code> constants with a attribute, saying that there should be no backtracking, i.e. there should be only one canonical instance.</p>
 
 
 
 <a name="161737408"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161737408" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161737408">(Mar 26 2019 at 07:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161737408" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161737408">(Mar 26 2019 at 07:14)</a>:</h4>
 <blockquote>
 <p>Maybe a solution would be to annotate <code>class</code> constants with a attribute, saying that there should be no backtracking, i.e. there should be only one canonical instance.</p>
 </blockquote>
@@ -76,19 +76,19 @@ permalink: archive/113488general/44348Problemwithtypeclasssearch.html
 
 
 <a name="161740631"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161740631" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161740631">(Mar 26 2019 at 08:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161740631" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161740631">(Mar 26 2019 at 08:23)</a>:</h4>
 <p>Right, it should be the default behaviour.</p>
 
 
 
 <a name="161740635"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161740635" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161740635">(Mar 26 2019 at 08:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161740635" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161740635">(Mar 26 2019 at 08:23)</a>:</h4>
 <p>Or even not configurable</p>
 
 
 
 <a name="161848744"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161848744" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161848744">(Mar 27 2019 at 11:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161848744" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161848744">(Mar 27 2019 at 11:06)</a>:</h4>
 <p><span class="user-mention" data-user-id="213273">@Paul-Nicolas Madelaine</span>  and I came across a problem that I've seen before. Because of left-to-right elaboration, Lean won't coerce <code>n</code> to <code>ℤ</code> here:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">int</span><span class="bp">.</span><span class="n">basic</span>
 <span class="kn">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">)</span> <span class="o">(</span><span class="n">z</span> <span class="o">:</span> <span class="bp">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">&lt;</span> <span class="n">z</span> <span class="o">:=</span>
@@ -102,19 +102,19 @@ permalink: archive/113488general/44348Problemwithtypeclasssearch.html
 
 
 <a name="161851148"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161851148" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161851148">(Mar 27 2019 at 11:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161851148" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161851148">(Mar 27 2019 at 11:47)</a>:</h4>
 <p>Good idea. I'll try to keep it in mind while writing code.</p>
 
 
 
 <a name="161894979"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161894979" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161894979">(Mar 27 2019 at 19:56)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161894979" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161894979">(Mar 27 2019 at 19:56)</a>:</h4>
 <p>So today will be remembered as the day that the age old question of why Lean times out when failing to coerce from int to nat is solved! <span class="user-mention" data-user-id="110294">@Johannes Hölzl</span> <span class="user-mention" data-user-id="110024">@Sebastian Ullrich</span> this trips up beginner mathematicians and is hard for them to debug. I think Johannes has found a fundamental issue which needs some serious thought.</p>
 
 
 
 <a name="161895570"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895570" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161895570">(Mar 27 2019 at 20:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895570" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161895570">(Mar 27 2019 at 20:03)</a>:</h4>
 <p>So what Rob is saying, I think, is that in <code>data.int.basic</code> in mathlib, one of the lines here</p>
 <div class="codehilite"><pre><span></span><span class="kn">section</span> <span class="n">cast</span>
 <span class="kn">variables</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="kt">Type</span><span class="bp">*</span><span class="o">}</span>
@@ -136,61 +136,61 @@ permalink: archive/113488general/44348Problemwithtypeclasssearch.html
 
 
 <a name="161895583"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895583" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161895583">(Mar 27 2019 at 20:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895583" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161895583">(Mar 27 2019 at 20:03)</a>:</h4>
 <p>Yes</p>
 
 
 
 <a name="161895711"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895711" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161895711">(Mar 27 2019 at 20:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895711" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161895711">(Mar 27 2019 at 20:05)</a>:</h4>
 <p>That seems like an easy PR <span aria-label="grinning" class="emoji emoji-1f600" role="img" title="grinning">:grinning:</span></p>
 
 
 
 <a name="161895757"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895757" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161895757">(Mar 27 2019 at 20:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895757" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161895757">(Mar 27 2019 at 20:05)</a>:</h4>
 <p>Could even do that from the Github editor (-;</p>
 
 
 
 <a name="161895819"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895819" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161895819">(Mar 27 2019 at 20:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895819" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161895819">(Mar 27 2019 at 20:06)</a>:</h4>
 <p>Another thing we need to change is actually Lean 3. We could fork Lean 3 and remove the ability to backtrack in Lean 3 and see what breaks in mathlib. This would make the type class search much easier.</p>
 
 
 
 <a name="161895885"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895885" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161895885">(Mar 27 2019 at 20:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895885" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161895885">(Mar 27 2019 at 20:07)</a>:</h4>
 <p>Who is keeping track of all the benefits of forking?</p>
 
 
 
 <a name="161895892"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895892" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161895892">(Mar 27 2019 at 20:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895892" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161895892">(Mar 27 2019 at 20:07)</a>:</h4>
 <p>There was a thread about this somewhere, right?</p>
 
 
 
 <a name="161895908"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895908" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161895908">(Mar 27 2019 at 20:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895908" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161895908">(Mar 27 2019 at 20:07)</a>:</h4>
 <p>This is an edit to mathlib we're talking about here</p>
 
 
 
 <a name="161895967"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895967" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161895967">(Mar 27 2019 at 20:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161895967" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161895967">(Mar 27 2019 at 20:08)</a>:</h4>
 <p>Oh I see, Johannes is suggesting changing the C++ code?</p>
 
 
 
 <a name="161896211"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161896211" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161896211">(Mar 27 2019 at 20:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161896211" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161896211">(Mar 27 2019 at 20:11)</a>:</h4>
 <p>The edit to mathlib should happen. And it seems worthwhile to experiment with a different type class search in a forked Lean. I would not want to port mathlib to this forked Lean 3, at least not without more knowledge of the Lean 4 type class mechanism.</p>
 
 
 
 <a name="161899676"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161899676" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161899676">(Mar 27 2019 at 20:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161899676" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161899676">(Mar 27 2019 at 20:55)</a>:</h4>
 <p>Results of a completely unscientific test; on this desktop, it took just under 15 minutes to compile mathlib HEAD, and then with the variable line in <code>data/int/basic.lean</code> changed to</p>
 <div class="codehilite"><pre><span></span><span class="kn">variables</span> <span class="o">[</span><span class="n">has_neg</span> <span class="n">α</span><span class="o">]</span> <span class="o">[</span><span class="n">has_add</span> <span class="n">α</span><span class="o">]</span> <span class="o">[</span><span class="n">has_one</span> <span class="n">α</span><span class="o">]</span> <span class="o">[</span><span class="n">has_zero</span> <span class="n">α</span><span class="o">]</span>
 </pre></div>
@@ -201,19 +201,19 @@ permalink: archive/113488general/44348Problemwithtypeclasssearch.html
 
 
 <a name="161899966"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161899966" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161899966">(Mar 27 2019 at 20:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161899966" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161899966">(Mar 27 2019 at 20:59)</a>:</h4>
 <p>and <code>example : has_coe ℤ ℕ := by apply_instance</code> now fails instantly! I have never seen that before!</p>
 
 
 
 <a name="161903595"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161903595" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161903595">(Mar 27 2019 at 21:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161903595" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161903595">(Mar 27 2019 at 21:50)</a>:</h4>
 <p>We should make a Lean 4 todo list.</p>
 
 
 
 <a name="161905685"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161905685" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161905685">(Mar 27 2019 at 22:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161905685" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161905685">(Mar 27 2019 at 22:23)</a>:</h4>
 <div class="codehilite"><pre><span></span>[class_instances]  class-instance resolution trace
 [class_instances] (0) ?x_0 : has_one ℕ := @with_top.has_one ?x_1 ?x_2 ?x_3
 failed is_def_eq
@@ -240,7 +240,7 @@ failed is_def_eq
 
 
 <a name="161905782"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161905782" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161905782">(Mar 27 2019 at 22:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161905782" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161905782">(Mar 27 2019 at 22:24)</a>:</h4>
 <div class="codehilite"><pre><span></span>[class_instances]  class-instance resolution trace
 [class_instances] (0) ?x_0 : has_to_format tactic_state := int.has_to_format
 failed is_def_eq
@@ -271,13 +271,13 @@ failed is_def_eq
 
 
 <a name="161905805"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161905805" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161905805">(Mar 27 2019 at 22:25)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161905805" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161905805">(Mar 27 2019 at 22:25)</a>:</h4>
 <p><code>with_top</code> very popular I see.</p>
 
 
 
 <a name="161905935"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161905935" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161905935">(Mar 27 2019 at 22:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161905935" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161905935">(Mar 27 2019 at 22:28)</a>:</h4>
 <p>All from the output of</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">int</span><span class="bp">.</span><span class="n">basic</span>
 
@@ -289,19 +289,19 @@ failed is_def_eq
 
 
 <a name="161906005"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161906005" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161906005">(Mar 27 2019 at 22:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161906005" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johannes Hölzl <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161906005">(Mar 27 2019 at 22:28)</a>:</h4>
 <p>The instances added last get checked first. But this is usually not a problem, unification fails fast in these cases. The problem is if they match and the instance search runs in the wrong direction...</p>
 
 
 
 <a name="161906035"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161906035" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161906035">(Mar 27 2019 at 22:29)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161906035" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161906035">(Mar 27 2019 at 22:29)</a>:</h4>
 <p>Aah I see.</p>
 
 
 
 <a name="161986165"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161986165" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Alexander Bentkamp <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#161986165">(Mar 28 2019 at 19:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/161986165" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Alexander Bentkamp <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#161986165">(Mar 28 2019 at 19:46)</a>:</h4>
 <p>I had the same issue here:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">algebra</span><span class="bp">.</span><span class="n">module</span> <span class="n">analysis</span><span class="bp">.</span><span class="n">normed_space</span><span class="bp">.</span><span class="n">basic</span> <span class="n">data</span><span class="bp">.</span><span class="n">real</span><span class="bp">.</span><span class="n">basic</span>
 
@@ -336,7 +336,7 @@ failed is_def_eq
 
 
 <a name="162106045"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/162106045" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#162106045">(Mar 30 2019 at 05:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/162106045" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#162106045">(Mar 30 2019 at 05:39)</a>:</h4>
 <blockquote>
 <p>Another thing we need to change is actually Lean 3. We could fork Lean 3 and remove the ability to backtrack in Lean 3 and see what breaks in mathlib. This would make the type class search much easier.</p>
 </blockquote>
@@ -345,7 +345,7 @@ failed is_def_eq
 
 
 <a name="162387567"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/162387567" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/44348Problemwithtypeclasssearch#162387567">(Apr 03 2019 at 00:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Problem%20with%20type%20class%20search/near/162387567" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/44348Problemwithtypeclasssearch#162387567">(Apr 03 2019 at 00:41)</a>:</h4>
 <blockquote>
 <p>Results of a completely unscientific test; on this desktop, it took just under 15 minutes to compile mathlib HEAD, and then with the variable line in <code>data/int/basic.lean</code> changed to</p>
 <div class="codehilite"><pre><span></span><span class="kn">variables</span> <span class="o">[</span><span class="n">has_neg</span> <span class="n">α</span><span class="o">]</span> <span class="o">[</span><span class="n">has_add</span> <span class="n">α</span><span class="o">]</span> <span class="o">[</span><span class="n">has_one</span> <span class="n">α</span><span class="o">]</span> <span class="o">[</span><span class="n">has_zero</span> <span class="n">α</span><span class="o">]</span>

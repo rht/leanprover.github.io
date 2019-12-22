@@ -4,7 +4,7 @@ title: Zulip Chat Archive
 permalink: archive/144837PRreviews/index.html
 ---
 
-## Stream: [PR reviews](http://127.0.0.1:4000/archive/144837PRreviews/index.html)
+## Stream: [PR reviews](https://rht.github.io/archive/144837PRreviews/index.html)
 ---
 
 ### Topics:

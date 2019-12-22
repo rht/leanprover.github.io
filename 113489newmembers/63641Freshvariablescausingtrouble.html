@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/63641Freshvariablescausingtrouble.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/63641Freshvariablescausingtrouble.html">Fresh variables causing trouble</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/63641Freshvariablescausingtrouble.html">Fresh variables causing trouble</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/63641Freshvariablescausingtrouble.html
 {% raw %}
 
 <a name="136386136"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Fresh%20variables%20causing%20trouble/near/136386136" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jack Crawford <a href="http://127.0.0.1:4000/archive/113489newmembers/63641Freshvariablescausingtrouble#136386136">(Oct 24 2018 at 04:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Fresh%20variables%20causing%20trouble/near/136386136" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jack Crawford <a href="https://rht.github.io/archive/113489newmembers/63641Freshvariablescausingtrouble#136386136">(Oct 24 2018 at 04:32)</a>:</h4>
 <p>I'm in a bit of a pickle right now trying to deal with one of those messy <code>__mlocal__fresh__1234_56789</code> variables.</p>
 <p>I have the following relevant lines in my tactic state:<br>
 <code>M N __mlocal__fresh_9046_21051 : matrix (fin m) (fin n) α,
@@ -42,13 +42,13 @@ end</code></p>
 
 
 <a name="136388270"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Fresh%20variables%20causing%20trouble/near/136388270" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/63641Freshvariablescausingtrouble#136388270">(Oct 24 2018 at 05:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Fresh%20variables%20causing%20trouble/near/136388270" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/63641Freshvariablescausingtrouble#136388270">(Oct 24 2018 at 05:42)</a>:</h4>
 <p>You should use <code>| _ _ (@row_equivalent.cons M N L r₁ r₂)</code> in the pattern match</p>
 
 
 
 <a name="136394125"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Fresh%20variables%20causing%20trouble/near/136394125" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jack Crawford <a href="http://127.0.0.1:4000/archive/113489newmembers/63641Freshvariablescausingtrouble#136394125">(Oct 24 2018 at 08:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Fresh%20variables%20causing%20trouble/near/136394125" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jack Crawford <a href="https://rht.github.io/archive/113489newmembers/63641Freshvariablescausingtrouble#136394125">(Oct 24 2018 at 08:24)</a>:</h4>
 <p>Ah yes, I don't know why I didn't think of this myself -- silly question!<br>
 Thanks @Mario!</p>
 

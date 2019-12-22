@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/116395maths/55997defineafunctionbycases.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/116395maths/index.html">maths</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases.html">define a function by cases</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/116395maths/index.html">maths</a>
+<h3>Topic: <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases.html">define a function by cases</a></h3>
 
 <hr>
 
@@ -16,13 +16,13 @@ permalink: archive/116395maths/55997defineafunctionbycases.html
 {% raw %}
 
 <a name="163091613"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163091613" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163091613">(Apr 11 2019 at 11:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163091613" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163091613">(Apr 11 2019 at 11:39)</a>:</h4>
 <p>I know about <code>function.restrict</code>, which allows me to take a function and look at it over a subtype, but what about going the other way, and building up a function from components?  E.g., suppose I want to define <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>χ</mi><mrow><mo>[</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo>]</mo></mrow></msub></mrow><annotation encoding="application/x-tex">\chi_{[0,1]}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.7857599999999999em;vertical-align:-0.3551999999999999em;"></span><span class="base"><span class="mord"><span class="mord mathit">χ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.34480000000000005em;"><span style="top:-2.5198em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">[</span><span class="mord mathrm mtight">0</span><span class="mpunct mtight">,</span><span class="mord mathrm mtight">1</span><span class="mclose mtight">]</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3551999999999999em;"></span></span></span></span></span></span></span></span> which is 1 on <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>[</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo>]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mopen">[</span><span class="mord mathrm">0</span><span class="mpunct">,</span><span class="mord mathrm">1</span><span class="mclose">]</span></span></span></span> and 0 elsewhere?</p>
 
 
 
 <a name="163091778"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163091778" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163091778">(Apr 11 2019 at 11:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163091778" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163091778">(Apr 11 2019 at 11:42)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">real</span><span class="bp">.</span><span class="n">basic</span> <span class="n">data</span><span class="bp">.</span><span class="n">set</span><span class="bp">.</span><span class="n">intervals</span>
 
 <span class="n">def</span> <span class="n">f</span> <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">)</span> <span class="o">:</span> <span class="n">ℝ</span> <span class="o">:=</span>
@@ -32,25 +32,25 @@ permalink: archive/116395maths/55997defineafunctionbycases.html
 
 
 <a name="163091888"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163091888" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163091888">(Apr 11 2019 at 11:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163091888" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163091888">(Apr 11 2019 at 11:45)</a>:</h4>
 <p>thanks</p>
 
 
 
 <a name="163092066"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163092066" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163092066">(Apr 11 2019 at 11:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163092066" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163092066">(Apr 11 2019 at 11:49)</a>:</h4>
 <p>I wonder why I did not retain this information after reading TIPL.</p>
 
 
 
 <a name="163092104"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163092104" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163092104">(Apr 11 2019 at 11:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163092104" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163092104">(Apr 11 2019 at 11:50)</a>:</h4>
 <p>Probably it was a case of too much new stuff all at once.</p>
 
 
 
 <a name="163092261"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163092261" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163092261">(Apr 11 2019 at 11:52)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163092261" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163092261">(Apr 11 2019 at 11:52)</a>:</h4>
 <p>Actually, Lean complains about the code above:</p>
 <div class="codehilite"><pre><span></span>failed to synthesize type class instance for
 x : ℝ
@@ -60,26 +60,26 @@ x : ℝ
 
 
 <a name="163092300"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163092300" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163092300">(Apr 11 2019 at 11:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163092300" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163092300">(Apr 11 2019 at 11:53)</a>:</h4>
 <p>Put this at the start of your file.<br>
 <code>local attribute [instance] classical.prop_decidable</code></p>
 
 
 
 <a name="163092491"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163092491" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163092491">(Apr 11 2019 at 11:56)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163092491" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163092491">(Apr 11 2019 at 11:56)</a>:</h4>
 <p>Nice, it works now.</p>
 
 
 
 <a name="163092505"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163092505" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163092505">(Apr 11 2019 at 11:57)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163092505" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163092505">(Apr 11 2019 at 11:57)</a>:</h4>
 <p>Thanks Chris.</p>
 
 
 
 <a name="163093281"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163093281" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163093281">(Apr 11 2019 at 12:12)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163093281" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163093281">(Apr 11 2019 at 12:12)</a>:</h4>
 <p>Maybe you can guess what my next question is.  I'm stuck again.</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">real</span><span class="bp">.</span><span class="n">basic</span> <span class="n">data</span><span class="bp">.</span><span class="n">set</span><span class="bp">.</span><span class="n">intervals</span> <span class="n">topology</span><span class="bp">.</span><span class="n">basic</span> <span class="n">analysis</span><span class="bp">.</span><span class="n">exponential</span>
 <span class="n">local</span> <span class="n">attribute</span> <span class="o">[</span><span class="kn">instance</span><span class="o">]</span> <span class="n">classical</span><span class="bp">.</span><span class="n">prop_decidable</span>
@@ -98,7 +98,7 @@ x : ℝ
 
 
 <a name="163093584"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163093584" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163093584">(Apr 11 2019 at 12:17)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163093584" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163093584">(Apr 11 2019 at 12:17)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">on_unit_eq_one</span> <span class="o">:</span> <span class="n">on_unit</span> <span class="bp">=</span> <span class="o">(</span><span class="bp">λ</span> <span class="n">x</span><span class="o">,</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:=</span> <span class="n">funext</span> <span class="o">(</span><span class="bp">λ</span> <span class="n">x</span><span class="o">,</span> <span class="n">if_pos</span> <span class="n">x</span><span class="bp">.</span><span class="n">property</span><span class="o">)</span>
 
 <span class="kn">lemma</span> <span class="n">on_unit_cont</span> <span class="o">:</span> <span class="n">continuous</span> <span class="n">on_unit</span> <span class="o">:=</span>
@@ -112,19 +112,19 @@ x : ℝ
 
 
 <a name="163093683"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163093683" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163093683">(Apr 11 2019 at 12:19)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163093683" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163093683">(Apr 11 2019 at 12:19)</a>:</h4>
 <p>Aha, "function extensionality" is great</p>
 
 
 
 <a name="163093785"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163093785" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163093785">(Apr 11 2019 at 12:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163093785" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163093785">(Apr 11 2019 at 12:20)</a>:</h4>
 <p>Denied by Haskellists IIUC</p>
 
 
 
 <a name="163112482"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163112482" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163112482">(Apr 11 2019 at 15:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163112482" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163112482">(Apr 11 2019 at 15:54)</a>:</h4>
 <p>Here's another related question.  Why can't I unfold <code>fake_abs</code> here? </p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">real</span><span class="bp">.</span><span class="n">basic</span> <span class="n">data</span><span class="bp">.</span><span class="n">set</span><span class="bp">.</span><span class="n">intervals</span> <span class="n">topology</span><span class="bp">.</span><span class="n">basic</span> <span class="n">analysis</span><span class="bp">.</span><span class="n">exponential</span>
 <span class="n">local</span> <span class="n">attribute</span> <span class="o">[</span><span class="kn">instance</span><span class="o">]</span> <span class="n">classical</span><span class="bp">.</span><span class="n">prop_decidable</span>
@@ -150,7 +150,7 @@ state:
 
 
 <a name="163112816"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163112816" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163112816">(Apr 11 2019 at 15:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163112816" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163112816">(Apr 11 2019 at 15:58)</a>:</h4>
 <p><code>unfold</code> does <code>simp</code> using the equation lemmas. Try looking at the output of this</p>
 <div class="codehilite"><pre><span></span><span class="n">noncomputable</span> <span class="n">def</span> <span class="n">fake_abs</span> <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">)</span> <span class="o">:</span> <span class="n">ℝ</span> <span class="o">:=</span> <span class="k">if</span> <span class="n">x</span> <span class="bp">≤</span> <span class="mi">0</span> <span class="k">then</span> <span class="bp">-</span><span class="n">x</span> <span class="k">else</span> <span class="n">x</span>
 
@@ -167,7 +167,7 @@ state:
 
 
 <a name="163114241"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163114241" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163114241">(Apr 11 2019 at 16:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163114241" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163114241">(Apr 11 2019 at 16:14)</a>:</h4>
 <p>This also makes progress:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">real</span><span class="bp">.</span><span class="n">basic</span> <span class="n">data</span><span class="bp">.</span><span class="n">set</span><span class="bp">.</span><span class="n">intervals</span> <span class="n">topology</span><span class="bp">.</span><span class="n">basic</span> <span class="n">analysis</span><span class="bp">.</span><span class="n">exponential</span>
 <span class="n">local</span> <span class="n">attribute</span> <span class="o">[</span><span class="kn">instance</span><span class="o">]</span> <span class="n">classical</span><span class="bp">.</span><span class="n">prop_decidable</span>
@@ -190,13 +190,13 @@ state:
 
 
 <a name="163114301"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163114301" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163114301">(Apr 11 2019 at 16:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163114301" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163114301">(Apr 11 2019 at 16:15)</a>:</h4>
 <p>The way you set it up, <code>unfold</code> can only make progress when faced with something of the form <code>fake_abs x</code> (and not just <code>fakeabs</code>); this is what the functional extensionality tactic gives you.</p>
 
 
 
 <a name="163122618"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163122618" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163122618">(Apr 11 2019 at 17:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163122618" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163122618">(Apr 11 2019 at 17:58)</a>:</h4>
 <p>I could prove that <code>fake_abs</code> is equal to <code>abs</code>, but I've gotten stuck with the continuity part of the exercise.</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">real</span><span class="bp">.</span><span class="n">basic</span> <span class="n">data</span><span class="bp">.</span><span class="n">set</span><span class="bp">.</span><span class="n">intervals</span> <span class="n">topology</span><span class="bp">.</span><span class="n">basic</span> <span class="n">analysis</span><span class="bp">.</span><span class="n">exponential</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">fin_cases</span>
 <span class="n">local</span> <span class="n">attribute</span> <span class="o">[</span><span class="kn">instance</span><span class="o">]</span> <span class="n">classical</span><span class="bp">.</span><span class="n">prop_decidable</span>
@@ -233,49 +233,49 @@ state:
 
 
 <a name="163123189"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123189" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163123189">(Apr 11 2019 at 18:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123189" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163123189">(Apr 11 2019 at 18:04)</a>:</h4>
 <p>I guess I could break this down into two lemmas, each similar to <code>on_unit_eq_one</code> from before.</p>
 
 
 
 <a name="163123349"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123349" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163123349">(Apr 11 2019 at 18:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123349" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163123349">(Apr 11 2019 at 18:06)</a>:</h4>
 <p>You could try <code>apply continuous_if</code>--now you'll have several more things to prove</p>
 
 
 
 <a name="163123451"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123451" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Olson <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163123451">(Apr 11 2019 at 18:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123451" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Olson <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163123451">(Apr 11 2019 at 18:07)</a>:</h4>
 <p>I'm assuming it's against the spirit of the exercise to <code>rw fake_abs_is_abs, apply continuous_abs</code>?</p>
 
 
 
 <a name="163123480"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123480" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163123480">(Apr 11 2019 at 18:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123480" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163123480">(Apr 11 2019 at 18:07)</a>:</h4>
 <p>Right, and here I was thinking that <code>continuous_if</code> would be too much magic because the boundary would be in general too complicated.</p>
 
 
 
 <a name="163123638"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123638" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163123638">(Apr 11 2019 at 18:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123638" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163123638">(Apr 11 2019 at 18:09)</a>:</h4>
 <p><span class="user-mention" data-user-id="130491">@Scott Olson</span>   <span aria-label="grinning face with smiling eyes" class="emoji emoji-1f601" role="img" title="grinning face with smiling eyes">:grinning_face_with_smiling_eyes:</span></p>
 
 
 
 <a name="163123831"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123831" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163123831">(Apr 11 2019 at 18:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123831" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163123831">(Apr 11 2019 at 18:11)</a>:</h4>
 <p>Identifying the boundary is the main work that you will have to do</p>
 
 
 
 <a name="163123836"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123836" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163123836">(Apr 11 2019 at 18:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163123836" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163123836">(Apr 11 2019 at 18:11)</a>:</h4>
 <p>although I think it's also not that hard</p>
 
 
 
 <a name="163124072"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163124072" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="http://127.0.0.1:4000/archive/116395maths/55997defineafunctionbycases#163124072">(Apr 11 2019 at 18:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/define%20a%20function%20by%20cases/near/163124072" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joseph Corneli <a href="https://rht.github.io/archive/116395maths/55997defineafunctionbycases#163124072">(Apr 11 2019 at 18:14)</a>:</h4>
 <p>It should be interesting... a bit of topology sneaks in after all.  Time for dinner here; thanks for the help.</p>
 
 

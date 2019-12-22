@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/24852finsetology.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/24852finsetology.html">finsetology</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/24852finsetology.html">finsetology</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/24852finsetology.html
 {% raw %}
 
 <a name="161333215"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/finsetology/near/161333215" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/24852finsetology#161333215">(Mar 21 2019 at 10:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/finsetology/near/161333215" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/24852finsetology#161333215">(Mar 21 2019 at 10:39)</a>:</h4>
 <p>Are things like</p>
 <div class="codehilite"><pre><span></span><span class="kn">variables</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="kt">Type</span><span class="bp">*</span><span class="o">}</span> <span class="o">{</span><span class="n">β</span> <span class="o">:</span> <span class="kt">Type</span><span class="bp">*</span><span class="o">}</span> <span class="o">(</span><span class="n">t</span> <span class="o">:</span> <span class="n">finset</span> <span class="n">β</span><span class="o">)</span> <span class="o">(</span><span class="n">f</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">β</span><span class="o">)</span>
 
@@ -29,13 +29,13 @@ permalink: archive/113488general/24852finsetology.html
 
 
 <a name="161333329"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/finsetology/near/161333329" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/24852finsetology#161333329">(Mar 21 2019 at 10:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/finsetology/near/161333329" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/24852finsetology#161333329">(Mar 21 2019 at 10:41)</a>:</h4>
 <p><del>Whoops, missing the assumption that <code>t ⊆ range f</code></del> fixed</p>
 
 
 
 <a name="161676631"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/finsetology/near/161676631" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/113488general/24852finsetology#161676631">(Mar 25 2019 at 19:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/finsetology/near/161676631" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/113488general/24852finsetology#161676631">(Mar 25 2019 at 19:02)</a>:</h4>
 <p>I don't think so. A very similar lemma is proved here:<br>
 <a href="https://github.com/flypitch/flypitch/blob/master/src/to_mathlib.lean#L536" target="_blank" title="https://github.com/flypitch/flypitch/blob/master/src/to_mathlib.lean#L536">https://github.com/flypitch/flypitch/blob/master/src/to_mathlib.lean#L536</a></p>
 <div class="codehilite"><pre><span></span>lemma exists_of_subset_image {f : α → β} {s : finset β} {t : set α} (h : ↑s ⊆ f &#39;&#39; t) :

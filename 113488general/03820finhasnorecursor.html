@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/03820finhasnorecursor.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/03820finhasnorecursor.html">fin has no recursor</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/03820finhasnorecursor.html">fin has no recursor</a></h3>
 
 <hr>
 
@@ -16,25 +16,25 @@ permalink: archive/113488general/03820finhasnorecursor.html
 {% raw %}
 
 <a name="124402350"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/fin%20has%20no%20recursor/near/124402350" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113488general/03820finhasnorecursor#124402350">(Mar 30 2018 at 07:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/fin%20has%20no%20recursor/near/124402350" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113488general/03820finhasnorecursor#124402350">(Mar 30 2018 at 07:07)</a>:</h4>
 <p>fin doesn’t have the morally correct recursor. we should prove it maybe.</p>
 
 
 
 <a name="124402455"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/fin%20has%20no%20recursor/near/124402455" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/03820finhasnorecursor#124402455">(Mar 30 2018 at 07:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/fin%20has%20no%20recursor/near/124402455" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/03820finhasnorecursor#124402455">(Mar 30 2018 at 07:10)</a>:</h4>
 <p>There are two obvious approaches: using <code>fz</code> and <code>fs</code> like in <code>fin2</code>, or by peeling off the right end instead, with <code>raise_fin</code> and <code>last</code> or whatever you want to call them</p>
 
 
 
 <a name="124402457"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/fin%20has%20no%20recursor/near/124402457" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/03820finhasnorecursor#124402457">(Mar 30 2018 at 07:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/fin%20has%20no%20recursor/near/124402457" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/03820finhasnorecursor#124402457">(Mar 30 2018 at 07:10)</a>:</h4>
 <p>there should be more consistent naming here...</p>
 
 
 
 <a name="124402660"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/fin%20has%20no%20recursor/near/124402660" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/03820finhasnorecursor#124402660">(Mar 30 2018 at 07:18)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/fin%20has%20no%20recursor/near/124402660" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/03820finhasnorecursor#124402660">(Mar 30 2018 at 07:18)</a>:</h4>
 <div class="codehilite"><pre><span></span>@[elab_as_eliminator] def fin.succ_rec
   {C : ∀ n, fin n → Sort*}
   (H0 : ∀ n, C (succ n) 0)

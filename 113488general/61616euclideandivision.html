@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/61616euclideandivision.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/61616euclideandivision.html">euclidean division</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/61616euclideandivision.html">euclidean division</a></h3>
 
 <hr>
 
@@ -16,26 +16,26 @@ permalink: archive/113488general/61616euclideandivision.html
 {% raw %}
 
 <a name="124205800"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/euclidean%20division/near/124205800" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="http://127.0.0.1:4000/archive/113488general/61616euclideandivision#124205800">(Mar 26 2018 at 00:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/euclidean%20division/near/124205800" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="https://rht.github.io/archive/113488general/61616euclideandivision#124205800">(Mar 26 2018 at 00:59)</a>:</h4>
 <p>Is there a proof of Euclidean division (divmod) in the libraries somewhere? I've been looking around for theorems with <code>mod</code> in the core library and mathlib but couldn't find anything ...</p>
 
 
 
 <a name="124206823"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/euclidean%20division/near/124206823" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/61616euclideandivision#124206823">(Mar 26 2018 at 01:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/euclidean%20division/near/124206823" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/61616euclideandivision#124206823">(Mar 26 2018 at 01:41)</a>:</h4>
 <p>Have you looked in <code>init.data.nat.lemmas</code> in the core library?</p>
 <p><a href="https://github.com/leanprover/lean/blob/master/library/init/data/nat/lemmas.lean#L660-L740" target="_blank" title="https://github.com/leanprover/lean/blob/master/library/init/data/nat/lemmas.lean#L660-L740">https://github.com/leanprover/lean/blob/master/library/init/data/nat/lemmas.lean#L660-L740</a></p>
 
 
 
 <a name="124207213"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/euclidean%20division/near/124207213" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="http://127.0.0.1:4000/archive/113488general/61616euclideandivision#124207213">(Mar 26 2018 at 01:57)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/euclidean%20division/near/124207213" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nicholas Scheel <a href="https://rht.github.io/archive/113488general/61616euclideandivision#124207213">(Mar 26 2018 at 01:57)</a>:</h4>
 <p>ahh that makes sense now, thanks! I must have glossed over it earlier</p>
 
 
 
 <a name="124207315"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/euclidean%20division/near/124207315" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/61616euclideandivision#124207315">(Mar 26 2018 at 02:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/euclidean%20division/near/124207315" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/61616euclideandivision#124207315">(Mar 26 2018 at 02:00)</a>:</h4>
 <p>No problems! The naming scheme is fairly regular so if you search for <code>_mod_</code> in the core library or mathlib, it should give you a good list of available lemmas. If you miss any, they're usually close to the ones you do find</p>
 
 

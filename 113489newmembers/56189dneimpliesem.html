@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/56189dneimpliesem.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/56189dneimpliesem.html">dne implies em</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/56189dneimpliesem.html">dne implies em</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/56189dneimpliesem.html
 {% raw %}
 
 <a name="178614962"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178614962" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Luis O'Shea <a href="http://127.0.0.1:4000/archive/113489newmembers/56189dneimpliesem#178614962">(Oct 20 2019 at 23:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178614962" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Luis O'Shea <a href="https://rht.github.io/archive/113489newmembers/56189dneimpliesem#178614962">(Oct 20 2019 at 23:20)</a>:</h4>
 <p>TPiL 3.5 suggests proving em (excluded middle) using dne (double-negation elimination).  I found this trickier than expected (as a Lean noob) and was wondering what tricks I'm missing. Below is my attempt. Some concrete questions include: Did I really need to define <code>demorgan_nor</code>? Do I need to use the inference symbol (<code>_</code>) so much? Is my attempt too long?</p>
 <div class="codehilite"><pre><span></span><span class="kn">variables</span> <span class="n">p</span> <span class="n">q</span> <span class="o">:</span> <span class="kt">Prop</span>
 
@@ -45,19 +45,19 @@ permalink: archive/113489newmembers/56189dneimpliesem.html
 
 
 <a name="178615355"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615355" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/56189dneimpliesem#178615355">(Oct 20 2019 at 23:34)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615355" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/56189dneimpliesem#178615355">(Oct 20 2019 at 23:34)</a>:</h4>
 <p>you shouldn't use <code>classical</code> because that is the point, I think.</p>
 
 
 
 <a name="178615365"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615365" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/56189dneimpliesem#178615365">(Oct 20 2019 at 23:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615365" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/56189dneimpliesem#178615365">(Oct 20 2019 at 23:35)</a>:</h4>
 <p>you don't need <code>_</code> if you make the variables implicit</p>
 
 
 
 <a name="178615366"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615366" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Luis O'Shea <a href="http://127.0.0.1:4000/archive/113489newmembers/56189dneimpliesem#178615366">(Oct 20 2019 at 23:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615366" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Luis O'Shea <a href="https://rht.github.io/archive/113489newmembers/56189dneimpliesem#178615366">(Oct 20 2019 at 23:35)</a>:</h4>
 <blockquote>
 <p>you shouldn't use <code>classical</code> because that is the point, I think.</p>
 </blockquote>
@@ -66,13 +66,13 @@ permalink: archive/113489newmembers/56189dneimpliesem.html
 
 
 <a name="178615408"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615408" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/56189dneimpliesem#178615408">(Oct 20 2019 at 23:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615408" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/56189dneimpliesem#178615408">(Oct 20 2019 at 23:36)</a>:</h4>
 <p>you should be able to prove <code>nnem</code> without dne or any classical stuff</p>
 
 
 
 <a name="178615458"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615458" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/56189dneimpliesem#178615458">(Oct 20 2019 at 23:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615458" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/56189dneimpliesem#178615458">(Oct 20 2019 at 23:38)</a>:</h4>
 <p>Spoilers:<br>
 .<br>
 .<br>
@@ -128,7 +128,7 @@ permalink: archive/113489newmembers/56189dneimpliesem.html
 
 
 <a name="178615467"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615467" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Luis O'Shea <a href="http://127.0.0.1:4000/archive/113489newmembers/56189dneimpliesem#178615467">(Oct 20 2019 at 23:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615467" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Luis O'Shea <a href="https://rht.github.io/archive/113489newmembers/56189dneimpliesem#178615467">(Oct 20 2019 at 23:39)</a>:</h4>
 <blockquote>
 <p>you should be able to prove <code>nnem</code> without dne or any classical stuff</p>
 </blockquote>
@@ -142,7 +142,7 @@ permalink: archive/113489newmembers/56189dneimpliesem.html
 
 
 <a name="178615468"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615468" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/56189dneimpliesem#178615468">(Oct 20 2019 at 23:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615468" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/56189dneimpliesem#178615468">(Oct 20 2019 at 23:39)</a>:</h4>
 <p>Golfed version:<br>
 .<br>
 .<br>
@@ -176,13 +176,13 @@ permalink: archive/113489newmembers/56189dneimpliesem.html
 
 
 <a name="178615701"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615701" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Luis O'Shea <a href="http://127.0.0.1:4000/archive/113489newmembers/56189dneimpliesem#178615701">(Oct 20 2019 at 23:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615701" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Luis O'Shea <a href="https://rht.github.io/archive/113489newmembers/56189dneimpliesem#178615701">(Oct 20 2019 at 23:46)</a>:</h4>
 <p>Thanks! So regarding  avoiding <code>_</code>s, is it generally preferable to write <code>variable {p : Prop}</code> rather than <code>variable p : Prop</code>? (Or if not when is one preferred over the other?)</p>
 
 
 
 <a name="178615773"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615773" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/56189dneimpliesem#178615773">(Oct 20 2019 at 23:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/dne%20implies%20em/near/178615773" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/56189dneimpliesem#178615773">(Oct 20 2019 at 23:49)</a>:</h4>
 <p>The braces mean "let lean figure it out", i.e. always put a <code>_</code> in that slot. The convention is to make the variable implicit if it can be deduced from the type of later assumptions (not counting the conclusion). So that means <code>dne</code> should have <code>p</code> implicit but <code>em</code> should have it explicit</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/67120isatypewithparametersinjective.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/67120isatypewithparametersinjective.html">is a type with parameters injective?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/67120isatypewithparametersinjective.html">is a type with parameters injective?</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/67120isatypewithparametersinjective.html
 {% raw %}
 
 <a name="125994740"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/is%20a%20type%20with%20parameters%20injective%3F/near/125994740" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Buckley <a href="http://127.0.0.1:4000/archive/113488general/67120isatypewithparametersinjective#125994740">(May 02 2018 at 14:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/is%20a%20type%20with%20parameters%20injective%3F/near/125994740" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Buckley <a href="https://rht.github.io/archive/113488general/67120isatypewithparametersinjective#125994740">(May 02 2018 at 14:02)</a>:</h4>
 <p>forgive me for perhaps not using the correct terminology. what i want to know is similar to below:</p>
 <div class="codehilite"><pre><span></span>lemma type_something_injectivity: ∀ {T1 T2:Type} {l1:list T1} {l2:list T2},
   l1 == l2 -&gt;
@@ -34,13 +34,13 @@ end
 
 
 <a name="125998623"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/is%20a%20type%20with%20parameters%20injective%3F/near/125998623" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/67120isatypewithparametersinjective#125998623">(May 02 2018 at 15:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/is%20a%20type%20with%20parameters%20injective%3F/near/125998623" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/67120isatypewithparametersinjective#125998623">(May 02 2018 at 15:28)</a>:</h4>
 <p>Yes it makes sense to ask this question, and the answer is that it is usually independent in lean and sometimes provably false</p>
 
 
 
 <a name="125998731"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/is%20a%20type%20with%20parameters%20injective%3F/near/125998731" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/67120isatypewithparametersinjective#125998731">(May 02 2018 at 15:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/is%20a%20type%20with%20parameters%20injective%3F/near/125998731" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/67120isatypewithparametersinjective#125998731">(May 02 2018 at 15:30)</a>:</h4>
 <div class="codehilite"><pre><span></span>import logic.function
 
 inductive noninj (T : set Type) : Type
@@ -53,7 +53,7 @@ function.cantor_injective _
 
 
 <a name="126023472"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/is%20a%20type%20with%20parameters%20injective%3F/near/126023472" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Buckley <a href="http://127.0.0.1:4000/archive/113488general/67120isatypewithparametersinjective#126023472">(May 03 2018 at 01:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/is%20a%20type%20with%20parameters%20injective%3F/near/126023472" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Buckley <a href="https://rht.github.io/archive/113488general/67120isatypewithparametersinjective#126023472">(May 03 2018 at 01:38)</a>:</h4>
 <p>I thought that may be the case, however I couldn't understand why, but your example makes it clear. Thanks very much! :)</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/144837PRreviews/788371493.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/144837PRreviews/index.html">PR reviews</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493.html">#1493</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/144837PRreviews/index.html">PR reviews</a>
+<h3>Topic: <a href="https://rht.github.io/archive/144837PRreviews/788371493.html">#1493</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/144837PRreviews/788371493.html
 {% raw %}
 
 <a name="176750009"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176750009" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176750009">(Sep 27 2019 at 14:19)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176750009" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/144837PRreviews/788371493#176750009">(Sep 27 2019 at 14:19)</a>:</h4>
 <p>This seems like it might speed up some of our instance searches for <code>has_coe_to_fun</code>. I changed the definition of <code>linear_map.has_coe_to_fun</code> to </p>
 <div class="codehilite"><pre><span></span><span class="kn">instance</span> <span class="o">{</span><span class="n">α</span> <span class="n">β</span> <span class="n">γ</span> <span class="o">:</span> <span class="kt">Type</span><span class="bp">*</span><span class="o">}</span> <span class="o">{</span><span class="n">r</span> <span class="o">:</span> <span class="n">ring</span> <span class="n">α</span><span class="o">}</span> <span class="o">{</span><span class="n">gβ</span> <span class="o">:</span> <span class="n">add_comm_group</span> <span class="n">β</span><span class="o">}</span> <span class="o">{</span><span class="n">gγ</span> <span class="o">:</span> <span class="n">add_comm_group</span> <span class="n">γ</span><span class="o">}</span>
   <span class="o">{</span><span class="n">mβ</span> <span class="o">:</span> <span class="n">module</span> <span class="n">α</span> <span class="n">β</span><span class="o">}</span> <span class="o">{</span><span class="n">mγ</span> <span class="o">:</span> <span class="n">module</span> <span class="n">α</span> <span class="n">γ</span><span class="o">}</span> <span class="o">:</span> <span class="n">has_coe_to_fun</span> <span class="o">(</span><span class="n">β</span> <span class="bp">→</span><span class="err">ₗ</span><span class="o">[</span><span class="n">α</span><span class="o">]</span> <span class="n">γ</span><span class="o">)</span> <span class="o">:=</span> <span class="bp">⟨_</span><span class="o">,</span> <span class="n">to_fun</span><span class="bp">⟩</span>
@@ -28,75 +28,75 @@ permalink: archive/144837PRreviews/788371493.html
 
 
 <a name="176751340"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176751340" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176751340">(Sep 27 2019 at 14:33)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176751340" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/144837PRreviews/788371493#176751340">(Sep 27 2019 at 14:33)</a>:</h4>
 <p>I guess one cannot answer without trying, and seeing what breaks (if anything breaks).</p>
 
 
 
 <a name="176751631"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176751631" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176751631">(Sep 27 2019 at 14:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176751631" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/144837PRreviews/788371493#176751631">(Sep 27 2019 at 14:36)</a>:</h4>
 <p>This <code>[]</code> to <code>{}</code> change could possibly be made in many more places, right? Like <code>linear_map.map_add</code>?</p>
 
 
 
 <a name="176756725"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176756725" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176756725">(Sep 27 2019 at 15:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176756725" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="https://rht.github.io/archive/144837PRreviews/788371493#176756725">(Sep 27 2019 at 15:30)</a>:</h4>
 <p>I am not sure I understand what is going on here: if you replace square brackets by curly brackets, then how does the coercion find the implicit arguments?</p>
 
 
 
 <a name="176757488"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176757488" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176757488">(Sep 27 2019 at 15:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176757488" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/144837PRreviews/788371493#176757488">(Sep 27 2019 at 15:38)</a>:</h4>
 <p>In stead of going on a type class hunt, it just infers them from the type right under its nose</p>
 
 
 
 <a name="176760917"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176760917" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176760917">(Sep 27 2019 at 16:17)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176760917" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/144837PRreviews/788371493#176760917">(Sep 27 2019 at 16:17)</a>:</h4>
 <p>Recall <code>β →ₗ[α] γ</code> really means <code>@linear_map α β γ rα gβ gγ mαβ mαγ</code> where <code>rα : ring α</code>, <code>gβ : add_comm_group β</code>, etc., so if you have <code>f : β →ₗ[α] γ</code> to provide to <code>coe</code>, then the instances<code>rα</code>, <code>gβ</code>, ... can be read off from the type of <code>f</code>.</p>
 
 
 
 <a name="176760988"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176760988" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176760988">(Sep 27 2019 at 16:18)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176760988" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/144837PRreviews/788371493#176760988">(Sep 27 2019 at 16:18)</a>:</h4>
 <p>This is hilarious. Well spotted Chris!</p>
 
 
 
 <a name="176761364"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176761364" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176761364">(Sep 27 2019 at 16:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176761364" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/144837PRreviews/788371493#176761364">(Sep 27 2019 at 16:22)</a>:</h4>
 <p>Can we extract some general principle?<br>
 I remember this also happened with some functions like <code>quotient.lift</code></p>
 
 
 
 <a name="176762315"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176762315" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176762315">(Sep 27 2019 at 16:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176762315" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/144837PRreviews/788371493#176762315">(Sep 27 2019 at 16:35)</a>:</h4>
 <p>I think that as soon as we bundle things we can use this principle</p>
 
 
 
 <a name="176763183"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176763183" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176763183">(Sep 27 2019 at 16:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176763183" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/144837PRreviews/788371493#176763183">(Sep 27 2019 at 16:49)</a>:</h4>
 <p>Well I was hoping for a syntactic criterion, which could be checked automatically.<br>
 Something like "if an argument <code>x</code> is mentioned in the type of a later <code>()</code> or <code>{}</code> argument, don't use <code>[]</code>s for <code>x</code>"</p>
 
 
 
 <a name="176764785"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176764785" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176764785">(Sep 27 2019 at 17:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176764785" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/144837PRreviews/788371493#176764785">(Sep 27 2019 at 17:07)</a>:</h4>
 <p>Aah, you want <code>#sanity_check</code> to catch these...</p>
 
 
 
 <a name="176764865"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176764865" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176764865">(Sep 27 2019 at 17:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176764865" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/144837PRreviews/788371493#176764865">(Sep 27 2019 at 17:08)</a>:</h4>
 <p>That would be nice!</p>
 
 
 
 <a name="176771332"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176771332" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176771332">(Sep 27 2019 at 18:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176771332" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/144837PRreviews/788371493#176771332">(Sep 27 2019 at 18:15)</a>:</h4>
 <p>One potential syntactic criterion is:</p>
 <blockquote>
 <p>If a type-class argument occurs in the conclusion of a declaration, then we should make it implicit (in curly braces instead of square brackets)</p>
@@ -125,7 +125,7 @@ Note that this excludes the last example, since <code>h</code> is an argument on
 
 
 <a name="176772434"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176772434" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176772434">(Sep 27 2019 at 18:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176772434" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/144837PRreviews/788371493#176772434">(Sep 27 2019 at 18:28)</a>:</h4>
 <p>Here is a more compelling case where you could have metavariables in the conclusion, and you might want type-class inference to find them (the "disadvantage" of my previous post -- This is also a problem with the restricted syntactic criterion).</p>
 <p>Consider:</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">finset</span><span class="bp">.</span><span class="n">prod</span> <span class="o">:</span> <span class="bp">Π</span> <span class="o">{</span><span class="n">α</span> <span class="n">β</span><span class="o">}</span> <span class="o">[</span><span class="n">h</span> <span class="o">:</span> <span class="n">comm_monoid</span> <span class="n">β</span><span class="o">],</span> <span class="n">finset</span> <span class="n">α</span> <span class="bp">→</span> <span class="o">(</span><span class="n">α</span> <span class="bp">→</span> <span class="n">β</span><span class="o">)</span> <span class="bp">→</span> <span class="n">β</span>
@@ -138,61 +138,61 @@ Note that this excludes the last example, since <code>h</code> is an argument on
 
 
 <a name="176772646"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176772646" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176772646">(Sep 27 2019 at 18:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176772646" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/144837PRreviews/788371493#176772646">(Sep 27 2019 at 18:30)</a>:</h4>
 <p>this seems to be basically the same criterion that explains why equalities use explicit args</p>
 
 
 
 <a name="176772697"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176772697" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176772697">(Sep 27 2019 at 18:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176772697" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/144837PRreviews/788371493#176772697">(Sep 27 2019 at 18:30)</a>:</h4>
 <p>The problem in my last example is that the expression we have here is <code>?m = f a</code>, and so the type class argument doesn't occur.</p>
 
 
 
 <a name="176772731"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176772731" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176772731">(Sep 27 2019 at 18:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176772731" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/144837PRreviews/788371493#176772731">(Sep 27 2019 at 18:30)</a>:</h4>
 <p>if you want to rewrite with it, then you can infer stuff, but if you just want to state it (or rewrite the wrong direction) then less can be inferred</p>
 
 
 
 <a name="176773039"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176773039" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176773039">(Sep 27 2019 at 18:34)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176773039" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/144837PRreviews/788371493#176773039">(Sep 27 2019 at 18:34)</a>:</h4>
 <p>But I want to sometimes rewrite in the wrong(?) direction. Do we need a separate lemma for rewriting in the wrong direction?</p>
 
 
 
 <a name="176773106"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176773106" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176773106">(Sep 27 2019 at 18:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176773106" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/144837PRreviews/788371493#176773106">(Sep 27 2019 at 18:35)</a>:</h4>
 <p>The existing convention already handles this</p>
 
 
 
 <a name="176773139"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176773139" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176773139">(Sep 27 2019 at 18:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176773139" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/144837PRreviews/788371493#176773139">(Sep 27 2019 at 18:35)</a>:</h4>
 <p><code>finset.prod_singleton</code> is breaking the convention and making too much stuff implicit</p>
 
 
 
 <a name="176773246"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176773246" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176773246">(Sep 27 2019 at 18:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176773246" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/144837PRreviews/788371493#176773246">(Sep 27 2019 at 18:36)</a>:</h4>
 <p><code>a</code> and <code>f</code> should be explicit; given these arguments the comm_monoid instance is inferrable</p>
 
 
 
 <a name="176773450"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176773450" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176773450">(Sep 27 2019 at 18:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176773450" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/144837PRreviews/788371493#176773450">(Sep 27 2019 at 18:38)</a>:</h4>
 <p>But you can still make typeclass arguments implicit when they would be implicit as regular args. That is, if they appear in the type of a hypothesis</p>
 
 
 
 <a name="176773594"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176773594" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176773594">(Sep 27 2019 at 18:40)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176773594" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/144837PRreviews/788371493#176773594">(Sep 27 2019 at 18:40)</a>:</h4>
 <p>which covers your <code>f : β →ₗ[α] γ</code> example</p>
 
 
 
 <a name="176774300"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176774300" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176774300">(Sep 27 2019 at 18:48)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176774300" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/144837PRreviews/788371493#176774300">(Sep 27 2019 at 18:48)</a>:</h4>
 <blockquote>
 <p><code>finset.prod_singleton</code> is breaking the convention and making too much stuff implicit</p>
 </blockquote>
@@ -213,13 +213,13 @@ which covers your <code>f : β →ₗ[α] γ</code> example</p>
 
 
 <a name="176775277"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176775277" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176775277">(Sep 27 2019 at 18:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176775277" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/144837PRreviews/788371493#176775277">(Sep 27 2019 at 18:58)</a>:</h4>
 <p>That's true. I guess coercions are special, in that they never fire anyway unless the types are already pretty well pinned down</p>
 
 
 
 <a name="176776778"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176776778" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176776778">(Sep 27 2019 at 19:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176776778" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/144837PRreviews/788371493#176776778">(Sep 27 2019 at 19:11)</a>:</h4>
 <p>I agree that the problem is basically the same as the convention which non-type-class arguments should be explicit and which should be implicit. Unfortunately I think that covers <em>very</em> few cases. In something like</p>
 <div class="codehilite"><pre><span></span>def gpowers : Π {α : Type u_1} [_inst_1 : group α], α → set α
 theorem gpowers_subset : ∀ {α : Type u_1} [_inst_1 : group α] {a : α} {s : set α} [_inst_3 : is_subgroup s], a ∈ s → gpowers a ⊆ s
@@ -231,31 +231,31 @@ theorem gpowers_subset : ∀ {α : Type u_1} [_inst_1 : group α] {a : α} {s : 
 
 
 <a name="176777906"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176777906" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176777906">(Sep 27 2019 at 19:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176777906" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/144837PRreviews/788371493#176777906">(Sep 27 2019 at 19:22)</a>:</h4>
 <p>If you interpret the subset as an implication, then you could make the group A argument implicit</p>
 
 
 
 <a name="176777955"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176777955" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176777955">(Sep 27 2019 at 19:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176777955" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/144837PRreviews/788371493#176777955">(Sep 27 2019 at 19:23)</a>:</h4>
 <p>but that's basically saying that we don't intend to use the other form</p>
 
 
 
 <a name="176778733"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176778733" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176778733">(Sep 27 2019 at 19:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176778733" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/144837PRreviews/788371493#176778733">(Sep 27 2019 at 19:31)</a>:</h4>
 <p>I think what is special about the coercion here is that in <code>has_coe_to_fun (β →ₗ[α] γ)</code>, <code>β →ₗ[α] γ</code> is basically an argument because it's the argument of the <code>coe</code> field</p>
 
 
 
 <a name="176778744"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176778744" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176778744">(Sep 27 2019 at 19:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176778744" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/144837PRreviews/788371493#176778744">(Sep 27 2019 at 19:31)</a>:</h4>
 <p>but you'd have to look at <code>has_coe_to_fun</code> to know that</p>
 
 
 
 <a name="176791129"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176791129" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/144837PRreviews/788371493#176791129">(Sep 27 2019 at 22:27)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/144837-PR%20reviews/topic/%231493/near/176791129" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/144837PRreviews/788371493#176791129">(Sep 27 2019 at 22:27)</a>:</h4>
 <p>Well, even if the general case is hard, I don't want to derail Chris's original suggestion. How about we just change all the relevant <code>has_coe_to_fun</code> instances for now?</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/19365anunsafeversionoftactic.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic.html">an unsafe version of tactic</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic.html">an unsafe version of tactic</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/19365anunsafeversionoftactic.html
 {% raw %}
 
 <a name="166077591"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166077591" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166077591">(May 20 2019 at 11:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166077591" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166077591">(May 20 2019 at 11:41)</a>:</h4>
 <p>Hello all, I've been playing with Lean 3's source a lot recently and I am toying with exposing some of the datastructures that Lean uses to implement the <code>tactic</code> monad. For example <code>metavar_context</code>, <code>local_context</code>, <code>type_context_old</code>.</p>
 <p>Afaik, the reason why these are not available in the Lean VM is:<br>
 1. there are some caching optimisations in <code>tactic</code> that will be hard to get right if you are allowed to see its guts.<br>
@@ -31,37 +31,37 @@ See <a href="https://github.com/leanprover-community/lean/commit/e63221a527ac485
 
 
 <a name="166096747"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166096747" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166096747">(May 20 2019 at 15:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166096747" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166096747">(May 20 2019 at 15:59)</a>:</h4>
 <p>Do you think this low-level kind of manipulation could be encapsulated in a different monad than tactic, something unoriginally called <code>lowlevel_tactic</code> for instance?</p>
 
 
 
 <a name="166097814"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166097814" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166097814">(May 20 2019 at 16:12)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166097814" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166097814">(May 20 2019 at 16:12)</a>:</h4>
 <p>was thinking <code>tactic.unsafe</code></p>
 
 
 
 <a name="166097921"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166097921" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166097921">(May 20 2019 at 16:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166097921" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166097921">(May 20 2019 at 16:14)</a>:</h4>
 <p>But it's a different monad to <code>tactic</code>.</p>
 
 
 
 <a name="166098360"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166098360" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166098360">(May 20 2019 at 16:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166098360" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166098360">(May 20 2019 at 16:21)</a>:</h4>
 <p>Yeah it would be a monad without <code>alternative</code> so that there are no headscratchers with getting the cache to behave nicely.</p>
 
 
 
 <a name="166101546"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166101546" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166101546">(May 20 2019 at 17:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166101546" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166101546">(May 20 2019 at 17:03)</a>:</h4>
 <p>That sounds like an interesting idea. How hard will it be to build and what are the benefit beside distinguishing temporary meta-variables?</p>
 
 
 
 <a name="166174248"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166174248" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166174248">(May 21 2019 at 13:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166174248" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166174248">(May 21 2019 at 13:55)</a>:</h4>
 <p>Benefits:</p>
 <ul>
 <li>can implement many builtins within Lean. eg <code>intro</code>. An example tactic that I find myself wanting is one that solves the goal <code>Type u</code> with the expression <code>Pi x : X, ?m[x]</code>. Maybe one could even reimplement more complicated ones like <code>simp</code> within lean. Would be interesting to see perf differences.</li>
@@ -77,31 +77,31 @@ See <a href="https://github.com/leanprover-community/lean/commit/e63221a527ac485
 
 
 <a name="166174557"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166174557" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166174557">(May 21 2019 at 13:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166174557" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166174557">(May 21 2019 at 13:58)</a>:</h4>
 <p>I'm definitely sold, but it sounds like a lot of work</p>
 
 
 
 <a name="166174705"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166174705" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166174705">(May 21 2019 at 13:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166174705" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166174705">(May 21 2019 at 13:59)</a>:</h4>
 <p>Your first example can be achieved by <code>refine</code> btw. That doesn't address the rest of it or efficiency though</p>
 
 
 
 <a name="166174800"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166174800" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166174800">(May 21 2019 at 14:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166174800" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166174800">(May 21 2019 at 14:00)</a>:</h4>
 <p><code>simp</code> in lean is a non-starter, I think. It's not a question of capabilities, it's an efficiency problem</p>
 
 
 
 <a name="166174825"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166174825" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166174825">(May 21 2019 at 14:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166174825" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166174825">(May 21 2019 at 14:00)</a>:</h4>
 <p>You would have to do this via code generation, JIT, or lean 4</p>
 
 
 
 <a name="166175343"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175343" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166175343">(May 21 2019 at 14:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175343" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166175343">(May 21 2019 at 14:05)</a>:</h4>
 <blockquote>
 <p>Your first example can be achieved by <code>refine</code> btw. That doesn't address the rest of it or efficiency though</p>
 </blockquote>
@@ -110,43 +110,43 @@ See <a href="https://github.com/leanprover-community/lean/commit/e63221a527ac485
 
 
 <a name="166175460"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175460" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166175460">(May 21 2019 at 14:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175460" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166175460">(May 21 2019 at 14:06)</a>:</h4>
 <p>I mean <code>refine \Pi x, _</code>, since that's your goal</p>
 
 
 
 <a name="166175463"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175463" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166175463">(May 21 2019 at 14:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175463" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166175463">(May 21 2019 at 14:06)</a>:</h4>
 <p>Ah no you mean the <code>Pi x, ?m</code> thing</p>
 
 
 
 <a name="166175516"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175516" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166175516">(May 21 2019 at 14:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175516" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166175516">(May 21 2019 at 14:07)</a>:</h4>
 <p>You can use <code>refine</code> with a placeholder</p>
 
 
 
 <a name="166175544"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175544" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166175544">(May 21 2019 at 14:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175544" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166175544">(May 21 2019 at 14:07)</a>:</h4>
 <p>as in construct <code>\Pi x, _</code> as a pexpr</p>
 
 
 
 <a name="166175558"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175558" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166175558">(May 21 2019 at 14:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175558" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166175558">(May 21 2019 at 14:07)</a>:</h4>
 <p>yep</p>
 
 
 
 <a name="166175636"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175636" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166175636">(May 21 2019 at 14:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175636" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166175636">(May 21 2019 at 14:08)</a>:</h4>
 <p>I think your way is better though</p>
 
 
 
 <a name="166175970"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175970" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166175970">(May 21 2019 at 14:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166175970" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166175970">(May 21 2019 at 14:11)</a>:</h4>
 <blockquote>
 <p><code>simp</code> in lean is a non-starter, I think. It's not a question of capabilities, it's an efficiency problem</p>
 </blockquote>
@@ -155,7 +155,7 @@ See <a href="https://github.com/leanprover-community/lean/commit/e63221a527ac485
 
 
 <a name="166600842"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166600842" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/19365anunsafeversionoftactic#166600842">(May 27 2019 at 01:18)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/an%20unsafe%20version%20of%20tactic/near/166600842" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/19365anunsafeversionoftactic#166600842">(May 27 2019 at 01:18)</a>:</h4>
 <p>I got a minimal prototype working at <a href="https://github.com/leanprover-community/lean/tree/ctxt_manip" target="_blank" title="https://github.com/leanprover-community/lean/tree/ctxt_manip">https://github.com/leanprover-community/lean/tree/ctxt_manip</a><br>
 Look at the <code>tests/lean/tco.lean</code> for some examples.</p>
 

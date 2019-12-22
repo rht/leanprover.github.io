@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/68526typeresizing.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/68526typeresizing.html">type resizing</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/68526typeresizing.html">type resizing</a></h3>
 
 <hr>
 
@@ -16,31 +16,31 @@ permalink: archive/113488general/68526typeresizing.html
 {% raw %}
 
 <a name="127424550"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/type%20resizing/near/127424550" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/68526typeresizing#127424550">(Jun 01 2018 at 16:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/type%20resizing/near/127424550" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/68526typeresizing#127424550">(Jun 01 2018 at 16:30)</a>:</h4>
 <p>Suppose I have a type <code>α : Type (u+1)</code> and I know <code>∃ β : Type u, nonempty (β ≃ α)</code>. Is there a "canonical" (= without choice, I guess?) way to obtain a type <code>α' : Type u</code> and an equivalence <code>α ≃ α'</code>?</p>
 
 
 
 <a name="127424655"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/type%20resizing/near/127424655" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/68526typeresizing#127424655">(Jun 01 2018 at 16:33)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/type%20resizing/near/127424655" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/68526typeresizing#127424655">(Jun 01 2018 at 16:33)</a>:</h4>
 <p>I think you would be able to prove the axiom of choice if you had that</p>
 
 
 
 <a name="127424744"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/type%20resizing/near/127424744" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/68526typeresizing#127424744">(Jun 01 2018 at 16:34)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/type%20resizing/near/127424744" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/68526typeresizing#127424744">(Jun 01 2018 at 16:34)</a>:</h4>
 <p>Sorry, I take it back, you could pick <code>α</code> and <code>α ≃ α'</code> as the identity equivalence</p>
 
 
 
 <a name="127425203"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/type%20resizing/near/127425203" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/68526typeresizing#127425203">(Jun 01 2018 at 16:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/type%20resizing/near/127425203" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/68526typeresizing#127425203">(Jun 01 2018 at 16:45)</a>:</h4>
 <p>You could use <code>ordinal</code> to give it a kind of canonicity, but that doesn't really avoid choice, it's nonconstructive all over the place.</p>
 
 
 
 <a name="127425253"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/type%20resizing/near/127425253" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/68526typeresizing#127425253">(Jun 01 2018 at 16:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/type%20resizing/near/127425253" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/68526typeresizing#127425253">(Jun 01 2018 at 16:46)</a>:</h4>
 <p>Also that doesn't provide the equiv itself, just a proof of existence; only the type is canonical</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/41425natlecases.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/41425natlecases.html">nat.le_cases</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/41425natlecases.html">nat.le_cases</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/41425natlecases.html
 {% raw %}
 
 <a name="175791365"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175791365" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/41425natlecases#175791365">(Sep 16 2019 at 08:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175791365" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/41425natlecases#175791365">(Sep 16 2019 at 08:04)</a>:</h4>
 <p>Is the following snippet useful enough to PR to mathlib?</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">nat</span><span class="bp">.</span><span class="n">basic</span>
 <span class="kn">import</span> <span class="n">tactic</span>
@@ -51,7 +51,7 @@ permalink: archive/113488general/41425natlecases.html
 
 
 <a name="175793114"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175793114" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/41425natlecases#175793114">(Sep 16 2019 at 08:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175793114" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113488general/41425natlecases#175793114">(Sep 16 2019 at 08:31)</a>:</h4>
 <p>That was Scott's plan, but I don't think it's materialized yet. He did do <code>fin_cases</code> which you can force to work here. Not the most elegant way.</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">fin_cases</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">linarith</span>
 
@@ -66,31 +66,31 @@ permalink: archive/113488general/41425natlecases.html
 
 
 <a name="175793746"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175793746" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/41425natlecases#175793746">(Sep 16 2019 at 08:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175793746" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/41425natlecases#175793746">(Sep 16 2019 at 08:42)</a>:</h4>
 <p>Aha, that already a useful start. I guess that is already good enough to not PR <code>nat.le_cases</code> to mathlib.</p>
 
 
 
 <a name="175794264"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175794264" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/41425natlecases#175794264">(Sep 16 2019 at 08:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175794264" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/41425natlecases#175794264">(Sep 16 2019 at 08:51)</a>:</h4>
 <p>I think there's still an branch <code>nat_cases</code> that contains most of the tactic you're looking for.</p>
 
 
 
 <a name="175794276"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175794276" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/41425natlecases#175794276">(Sep 16 2019 at 08:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175794276" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/41425natlecases#175794276">(Sep 16 2019 at 08:51)</a>:</h4>
 <p>It would be good to finish that off!</p>
 
 
 
 <a name="175794286"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175794286" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/41425natlecases#175794286">(Sep 16 2019 at 08:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175794286" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/41425natlecases#175794286">(Sep 16 2019 at 08:51)</a>:</h4>
 <p>Similarly our <code>hom</code> tactic, <span class="user-mention" data-user-id="112680">@Johan Commelin</span>!</p>
 
 
 
 <a name="175795303"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175795303" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/41425natlecases#175795303">(Sep 16 2019 at 09:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/nat.le_cases/near/175795303" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/41425natlecases#175795303">(Sep 16 2019 at 09:05)</a>:</h4>
 <p><span class="user-mention" data-user-id="110087">@Scott Morrison</span> Yeah, you are right... with the move to bundled homs the <code>hom</code> tactic is getting less urgent every day, but still...</p>
 
 

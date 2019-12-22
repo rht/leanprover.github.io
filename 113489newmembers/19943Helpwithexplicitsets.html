@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/19943Helpwithexplicitsets.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/19943Helpwithexplicitsets.html">Help with explicit sets</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/19943Helpwithexplicitsets.html">Help with explicit sets</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/19943Helpwithexplicitsets.html
 {% raw %}
 
 <a name="162833839"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162833839" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="http://127.0.0.1:4000/archive/113489newmembers/19943Helpwithexplicitsets#162833839">(Apr 08 2019 at 16:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162833839" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="https://rht.github.io/archive/113489newmembers/19943Helpwithexplicitsets#162833839">(Apr 08 2019 at 16:42)</a>:</h4>
 <p>I've been battling a while now with <code>set</code>s, <code>finset</code>s, <code>fintype</code>s and such forth for a while now.  I have many questions, but as way of a first one I have this.</p>
 <p>Given the following definition of a quiver:</p>
 <div class="codehilite"><pre><span></span><span class="kn">variables</span> <span class="o">{</span><span class="n">α</span> <span class="n">β</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">}</span>
@@ -58,7 +58,7 @@ but is expected to have type
 
 
 <a name="162834048"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162834048" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113489newmembers/19943Helpwithexplicitsets#162834048">(Apr 08 2019 at 16:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162834048" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113489newmembers/19943Helpwithexplicitsets#162834048">(Apr 08 2019 at 16:45)</a>:</h4>
 <p>You've defined "a quiver whose vertices are a subset of α and whose edges are a subset of β". Unless you really meant to do this for some reason, it would probably make things a lot easier to define</p>
 <div class="codehilite"><pre><span></span><span class="kn">structure</span> <span class="n">quiver</span> <span class="o">:=</span>
   <span class="o">(</span><span class="n">vertices</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">)</span>
@@ -70,31 +70,31 @@ but is expected to have type
 
 
 <a name="162834401"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162834401" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="http://127.0.0.1:4000/archive/113489newmembers/19943Helpwithexplicitsets#162834401">(Apr 08 2019 at 16:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162834401" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="https://rht.github.io/archive/113489newmembers/19943Helpwithexplicitsets#162834401">(Apr 08 2019 at 16:50)</a>:</h4>
 <p>Ok, sure: I suppose that makes a little more sense (and coercion will convert any subsets of type  α to a type when I need to define a quiver on a subset of  α?)</p>
 
 
 
 <a name="162834421"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162834421" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="http://127.0.0.1:4000/archive/113489newmembers/19943Helpwithexplicitsets#162834421">(Apr 08 2019 at 16:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162834421" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="https://rht.github.io/archive/113489newmembers/19943Helpwithexplicitsets#162834421">(Apr 08 2019 at 16:50)</a>:</h4>
 <p>The question then changes to "how do I make a Type with exactly three named elements in it"</p>
 
 
 
 <a name="162834480"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162834480" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113489newmembers/19943Helpwithexplicitsets#162834480">(Apr 08 2019 at 16:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162834480" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113489newmembers/19943Helpwithexplicitsets#162834480">(Apr 08 2019 at 16:51)</a>:</h4>
 <p><a href="https://leanprover.github.io/theorem_proving_in_lean/inductive_types.html#enumerated-types" target="_blank" title="https://leanprover.github.io/theorem_proving_in_lean/inductive_types.html#enumerated-types">https://leanprover.github.io/theorem_proving_in_lean/inductive_types.html#enumerated-types</a></p>
 
 
 
 <a name="162834591"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162834591" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113489newmembers/19943Helpwithexplicitsets#162834591">(Apr 08 2019 at 16:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162834591" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113489newmembers/19943Helpwithexplicitsets#162834591">(Apr 08 2019 at 16:53)</a>:</h4>
 <p>To answer your original question, <code>↥{A, B}</code> is the type <code>subtype {A, B}</code>. To give a value of this type you need to give a value of the underlying type <code>α</code> together with a proof that the value belongs to the subset <code>{A, B}</code>--I assume <code>by simp</code> will do it for you.</p>
 
 
 
 <a name="162834757"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162834757" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="http://127.0.0.1:4000/archive/113489newmembers/19943Helpwithexplicitsets#162834757">(Apr 08 2019 at 16:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Help%20with%20explicit%20sets/near/162834757" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="https://rht.github.io/archive/113489newmembers/19943Helpwithexplicitsets#162834757">(Apr 08 2019 at 16:55)</a>:</h4>
 <p>Ahhhh.   Sigh.  Obvious now.  Thank you for your time!</p>
 
 

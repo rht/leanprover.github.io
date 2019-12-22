@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/22886Typeclassstrangeness.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/22886Typeclassstrangeness.html">Typeclass strangeness</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/22886Typeclassstrangeness.html">Typeclass strangeness</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/22886Typeclassstrangeness.html
 {% raw %}
 
 <a name="159241177"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20strangeness/near/159241177" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="http://127.0.0.1:4000/archive/113488general/22886Typeclassstrangeness#159241177">(Feb 23 2019 at 19:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20strangeness/near/159241177" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="https://rht.github.io/archive/113488general/22886Typeclassstrangeness#159241177">(Feb 23 2019 at 19:01)</a>:</h4>
 <p>Can anyone suggest how to fix this?</p>
 <div class="codehilite"><pre><span></span><span class="kn">namespace</span> <span class="n">lattice</span>
 <span class="kn">open</span> <span class="n">lattice</span>
@@ -38,19 +38,19 @@ permalink: archive/113488general/22886Typeclassstrangeness.html
 
 
 <a name="159241245"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20strangeness/near/159241245" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113488general/22886Typeclassstrangeness#159241245">(Feb 23 2019 at 19:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20strangeness/near/159241245" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113488general/22886Typeclassstrangeness#159241245">(Feb 23 2019 at 19:02)</a>:</h4>
 <p>The order in <code>[decidable_linear_order \a]</code> and the order in <code>[order_bot \a]</code> and the order in <code>[order_top \a]</code> are not the same</p>
 
 
 
 <a name="159242204"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20strangeness/near/159242204" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="http://127.0.0.1:4000/archive/113488general/22886Typeclassstrangeness#159242204">(Feb 23 2019 at 19:25)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20strangeness/near/159242204" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="https://rht.github.io/archive/113488general/22886Typeclassstrangeness#159242204">(Feb 23 2019 at 19:25)</a>:</h4>
 <p>OK, I see that I was confused: the <code>order_bot</code> instance is not dependent on the <code>decidable_linear_order</code> instance and contains its own order relation that is completely independent of the previous one.  So I'm not sure what's the best thing to do about that.  One could define a <code>bounded_decidable_linear_order</code> class extending  <code>decidable_linear_order</code>, and then define an instance to convert one of those to a <code>bounded_distrib_lattice</code>.  But this seems to be asking for diamond problems, and I am sure that other people know better than me how to think about that.</p>
 
 
 
 <a name="159243625"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20strangeness/near/159243625" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/113488general/22886Typeclassstrangeness#159243625">(Feb 23 2019 at 20:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Typeclass%20strangeness/near/159243625" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="https://rht.github.io/archive/113488general/22886Typeclassstrangeness#159243625">(Feb 23 2019 at 20:05)</a>:</h4>
 <p>I think <code>order_bot</code> should be modified, to be an additional property of a given <code>preorder</code> instead of containing an order by itself. Then the current theorems about <code>order_bot</code> would have a slightly more complicated statement since they would need two assumptions <code>[preorder α] [order_bot α]</code>, but on the other hand it would be much more convenient to define new properties of orders.</p>
 
 

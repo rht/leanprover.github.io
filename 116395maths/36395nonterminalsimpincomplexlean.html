@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/116395maths/36395nonterminalsimpincomplexlean.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/116395maths/index.html">maths</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/116395maths/36395nonterminalsimpincomplexlean.html">non-terminal simp in complex.lean</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/116395maths/index.html">maths</a>
+<h3>Topic: <a href="https://rht.github.io/archive/116395maths/36395nonterminalsimpincomplexlean.html">non-terminal simp in complex.lean</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/116395maths/36395nonterminalsimpincomplexlean.html
 {% raw %}
 
 <a name="166539332"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/non-terminal%20simp%20in%20complex.lean/near/166539332" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/36395nonterminalsimpincomplexlean#166539332">(May 25 2019 at 18:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/non-terminal%20simp%20in%20complex.lean/near/166539332" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/36395nonterminalsimpincomplexlean#166539332">(May 25 2019 at 18:54)</a>:</h4>
 <p>The proof that the complex numbers form a ring here</p>
 <p><a href="https://github.com/leanprover-community/mathlib/blob/c6a7f300ea43cfc0478e3ee81a141d5288d90df6/src/data/complex/basic.lean#L190" target="_blank" title="https://github.com/leanprover-community/mathlib/blob/c6a7f300ea43cfc0478e3ee81a141d5288d90df6/src/data/complex/basic.lean#L190">https://github.com/leanprover-community/mathlib/blob/c6a7f300ea43cfc0478e3ee81a141d5288d90df6/src/data/complex/basic.lean#L190</a></p>
 <p>goes "to check all the axioms, it suffices to show the real and imaginary parts are equal, which we do by <code>ring</code>; however to get the real and imaginary parts into a form where <code>ring</code> will work, we use a non-terminating <code>simp</code>".</p>
@@ -25,19 +25,19 @@ permalink: archive/116395maths/36395nonterminalsimpincomplexlean.html
 
 
 <a name="166539426"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/non-terminal%20simp%20in%20complex.lean/near/166539426" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/116395maths/36395nonterminalsimpincomplexlean#166539426">(May 25 2019 at 18:57)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/non-terminal%20simp%20in%20complex.lean/near/166539426" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/116395maths/36395nonterminalsimpincomplexlean#166539426">(May 25 2019 at 18:57)</a>:</h4>
 <p>What does <code>squeeze_simp</code> say?</p>
 
 
 
 <a name="166539585"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/non-terminal%20simp%20in%20complex.lean/near/166539585" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/116395maths/36395nonterminalsimpincomplexlean#166539585">(May 25 2019 at 19:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/non-terminal%20simp%20in%20complex.lean/near/166539585" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/116395maths/36395nonterminalsimpincomplexlean#166539585">(May 25 2019 at 19:01)</a>:</h4>
 <p>Personally I think stuff like <code>simp, refl</code> or <code>simp, ring</code> or <code>simp, cc</code> is fine. It could break, but if it does it will probably be obvious how to repair it.</p>
 
 
 
 <a name="166540192"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/non-terminal%20simp%20in%20complex.lean/near/166540192" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/116395maths/36395nonterminalsimpincomplexlean#166540192">(May 25 2019 at 19:19)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/non-terminal%20simp%20in%20complex.lean/near/166540192" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/116395maths/36395nonterminalsimpincomplexlean#166540192">(May 25 2019 at 19:19)</a>:</h4>
 <p>The slogan is "avoid nonterminal <code>simp</code>," but the intention is to avoid following a <code>simp</code> call with a tactic that's sensitive to the exact shape of the goal. Minor changes to the simp set are less likely to break <code>ring</code> than <code>rw</code>, <code>apply</code>, etc.</p>
 
 

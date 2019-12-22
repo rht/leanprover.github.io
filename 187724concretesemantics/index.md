@@ -4,7 +4,7 @@ title: Zulip Chat Archive
 permalink: archive/187724concretesemantics/index.html
 ---
 
-## Stream: [concrete semantics](http://127.0.0.1:4000/archive/187724concretesemantics/index.html)
+## Stream: [concrete semantics](https://rht.github.io/archive/187724concretesemantics/index.html)
 ---
 
 ### Topics:

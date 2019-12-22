@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/20220Alternativestoevalexpr.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/20220Alternativestoevalexpr.html">Alternatives to eval_expr</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/20220Alternativestoevalexpr.html">Alternatives to eval_expr</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/20220Alternativestoevalexpr.html
 {% raw %}
 
 <a name="163462746"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Alternatives%20to%20eval_expr/near/163462746" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Michael Howes <a href="http://127.0.0.1:4000/archive/113488general/20220Alternativestoevalexpr#163462746">(Apr 16 2019 at 12:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Alternatives%20to%20eval_expr/near/163462746" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Michael Howes <a href="https://rht.github.io/archive/113488general/20220Alternativestoevalexpr#163462746">(Apr 16 2019 at 12:04)</a>:</h4>
 <p>Hi all, does anyone know of functions that are similar to <code>eval_expr</code> but can handle local variables? I have tried to write a tactic that is similar to ring but commutative semigroups. It uses <code>eval_expr</code> to map expressions representing products in the semigroup into a type I can work with. The tactic is working when asked to prove an equality such as <code>example : 3*((2*3)*3)=(2*3)*(3*3)</code> but not when asked to prove a statement such as <code>example (n m : ℕ) : n*((m*n)*n) = (m*n)*(n*n)</code>. In the second case I get the error <code>invalid eval_expr, expression must be closed</code>. </p>
 <p>Here is a minimal working example that gives the same error </p>
 <div class="codehilite"><pre><span></span>import tactic.interactive
@@ -38,13 +38,13 @@ Thanks!</p>
 
 
 <a name="163463142"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Alternatives%20to%20eval_expr/near/163463142" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/20220Alternativestoevalexpr#163463142">(Apr 16 2019 at 12:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Alternatives%20to%20eval_expr/near/163463142" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113488general/20220Alternativestoevalexpr#163463142">(Apr 16 2019 at 12:11)</a>:</h4>
 <p>What do you expect the tactic to do here? <code>eval_expr</code> will try to produce a value of type <code>nat</code>, like 0, 1, 2, ... If you just give it a variable <code>n</code>, it can't turn it into a value.</p>
 
 
 
 <a name="163463201"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Alternatives%20to%20eval_expr/near/163463201" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/20220Alternativestoevalexpr#163463201">(Apr 16 2019 at 12:12)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Alternatives%20to%20eval_expr/near/163463201" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113488general/20220Alternativestoevalexpr#163463201">(Apr 16 2019 at 12:12)</a>:</h4>
 <p>In your example, you can work entirely at the <code>expr</code> level, no need to evaluate anything.</p>
 <div class="codehilite"><pre><span></span><span class="kn">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="bp">ℕ</span> <span class="o">:=</span>
 <span class="k">begin</span>
@@ -56,13 +56,13 @@ Thanks!</p>
 
 
 <a name="163463304"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Alternatives%20to%20eval_expr/near/163463304" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/20220Alternativestoevalexpr#163463304">(Apr 16 2019 at 12:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Alternatives%20to%20eval_expr/near/163463304" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113488general/20220Alternativestoevalexpr#163463304">(Apr 16 2019 at 12:14)</a>:</h4>
 <p>Does something like this work in your real application?</p>
 
 
 
 <a name="163464125"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Alternatives%20to%20eval_expr/near/163464125" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Michael Howes <a href="http://127.0.0.1:4000/archive/113488general/20220Alternativestoevalexpr#163464125">(Apr 16 2019 at 12:27)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Alternatives%20to%20eval_expr/near/163464125" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Michael Howes <a href="https://rht.github.io/archive/113488general/20220Alternativestoevalexpr#163464125">(Apr 16 2019 at 12:27)</a>:</h4>
 <p>I think something like this doesn't work in the application I am trying. This is the function I've defined which used <code>eval_expr</code>:</p>
 <div class="codehilite"><pre><span></span>meta def reflect_expr (α : Type) [reflected α] : expr → tactic (csge α)
 | `(%%e₁ * %%e₂) := do

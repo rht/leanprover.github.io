@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/116395maths/55969Transitiveclassesfor3isothm.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/116395maths/index.html">maths</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/116395maths/55969Transitiveclassesfor3isothm.html">Transitive classes for 3ʳᵈ iso thm</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/116395maths/index.html">maths</a>
+<h3>Topic: <a href="https://rht.github.io/archive/116395maths/55969Transitiveclassesfor3isothm.html">Transitive classes for 3ʳᵈ iso thm</a></h3>
 
 <hr>
 
@@ -16,13 +16,13 @@ permalink: archive/116395maths/55969Transitiveclassesfor3isothm.html
 {% raw %}
 
 <a name="177520138"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Transitive%20classes%20for%203%CA%B3%E1%B5%88%20iso%20thm/near/177520138" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Visa <a href="http://127.0.0.1:4000/archive/116395maths/55969Transitiveclassesfor3isothm#177520138">(Oct 07 2019 at 13:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Transitive%20classes%20for%203%CA%B3%E1%B5%88%20iso%20thm/near/177520138" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Visa <a href="https://rht.github.io/archive/116395maths/55969Transitiveclassesfor3isothm#177520138">(Oct 07 2019 at 13:43)</a>:</h4>
 <p>Hi, I post here outcomes of my attempts to formalize the third isomorphism theorem (see <a href="/user_uploads/3121/IjuEtpbhqgkszSrmWewa1tIi/Problems-with-3rd-iso-thm.lean" target="_blank" title="Problems-with-3rd-iso-thm.lean">Problems-with-3rd-iso-thm.lean</a>). The idea was to encode substructure relation as a type class constraint. This raised multiple elaboration issues which could be useful to take into account in Lean 4. Especially inferring transitive classes could make this a compelling approach to use heavily in the algebra library. As such none of the attempts was really satisfactory.</p>
 
 
 
 <a name="177521031"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Transitive%20classes%20for%203%CA%B3%E1%B5%88%20iso%20thm/near/177521031" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/116395maths/55969Transitiveclassesfor3isothm#177521031">(Oct 07 2019 at 13:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Transitive%20classes%20for%203%CA%B3%E1%B5%88%20iso%20thm/near/177521031" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/116395maths/55969Transitiveclassesfor3isothm#177521031">(Oct 07 2019 at 13:53)</a>:</h4>
 <p>For convenience, here's the file inline in a post:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">group_theory</span><span class="bp">.</span><span class="n">coset</span> <span class="n">ring_theory</span><span class="bp">.</span><span class="n">matrix</span> <span class="n">ring_theory</span><span class="bp">.</span><span class="n">determinant</span> <span class="n">ring_theory</span><span class="bp">.</span><span class="n">ideals</span> <span class="n">algebra</span><span class="bp">.</span><span class="n">gcd_domain</span> <span class="n">algebra</span><span class="bp">.</span><span class="n">euclidean_domain</span> <span class="n">data</span><span class="bp">.</span><span class="n">int</span><span class="bp">.</span><span class="n">modeq</span> <span class="n">group_theory</span><span class="bp">.</span><span class="n">quotient_group</span> <span class="n">data</span><span class="bp">.</span><span class="n">equiv</span><span class="bp">.</span><span class="n">algebra</span> <span class="n">group_theory</span><span class="bp">.</span><span class="n">subgroup</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">ring</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">fin_cases</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">tidy</span> <span class="n">data</span><span class="bp">.</span><span class="n">lazy_list</span> <span class="n">category</span><span class="bp">.</span><span class="n">monad</span><span class="bp">.</span><span class="n">cont</span> <span class="n">data</span><span class="bp">.</span><span class="n">real</span><span class="bp">.</span><span class="n">basic</span>
 <span class="kn">open</span> <span class="n">function</span> <span class="n">quotient_group</span> <span class="n">group</span> <span class="n">is_group_hom</span> <span class="n">set</span> <span class="n">classical</span> <span class="n">tactic</span>

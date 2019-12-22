@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/18025Ringtactic.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/18025Ringtactic.html">Ring tactic</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/18025Ringtactic.html">Ring tactic</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/18025Ringtactic.html
 {% raw %}
 
 <a name="172570556"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Ring%20tactic/near/172570556" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="http://127.0.0.1:4000/archive/113488general/18025Ringtactic#172570556">(Aug 06 2019 at 08:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Ring%20tactic/near/172570556" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="https://rht.github.io/archive/113488general/18025Ringtactic#172570556">(Aug 06 2019 at 08:50)</a>:</h4>
 <p>Hi, I am writing a tutorial for computations in Lean, and I was surprised that <code>ring</code> fails in this case:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">ring</span>
 <span class="kn">variables</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="kt">Type</span><span class="bp">*</span><span class="o">}</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">α</span><span class="o">}</span> <span class="o">[</span><span class="n">ring</span> <span class="n">α</span><span class="o">]</span>
@@ -40,19 +40,19 @@ permalink: archive/113488general/18025Ringtactic.html
 
 
 <a name="172570768"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Ring%20tactic/near/172570768" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/18025Ringtactic#172570768">(Aug 06 2019 at 08:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Ring%20tactic/near/172570768" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/18025Ringtactic#172570768">(Aug 06 2019 at 08:53)</a>:</h4>
 <p>Does it work for <code>comm_ring</code>?</p>
 
 
 
 <a name="172570773"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Ring%20tactic/near/172570773" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/18025Ringtactic#172570773">(Aug 06 2019 at 08:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Ring%20tactic/near/172570773" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/18025Ringtactic#172570773">(Aug 06 2019 at 08:53)</a>:</h4>
 <p>I think the ring tactic only works in the commutative case.</p>
 
 
 
 <a name="172571053"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Ring%20tactic/near/172571053" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="http://127.0.0.1:4000/archive/113488general/18025Ringtactic#172571053">(Aug 06 2019 at 08:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Ring%20tactic/near/172571053" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="https://rht.github.io/archive/113488general/18025Ringtactic#172571053">(Aug 06 2019 at 08:59)</a>:</h4>
 <p>Yep, it does work for <code>comm_ring</code>. In fact, <code>ring</code> already fails for this example:</p>
 <div class="codehilite"><pre><span></span><span class="kn">example</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">b</span> <span class="bp">=</span> <span class="n">b</span> <span class="bp">+</span> <span class="n">a</span> <span class="o">:=</span> <span class="k">by</span> <span class="n">ring</span> <span class="c1">-- fails</span>
 <span class="kn">example</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">b</span> <span class="bp">=</span> <span class="n">b</span> <span class="bp">+</span> <span class="n">a</span> <span class="o">:=</span> <span class="k">by</span> <span class="n">rw</span> <span class="n">add_comm</span>
@@ -64,7 +64,7 @@ permalink: archive/113488general/18025Ringtactic.html
 
 
 <a name="172575202"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Ring%20tactic/near/172575202" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="http://127.0.0.1:4000/archive/113488general/18025Ringtactic#172575202">(Aug 06 2019 at 10:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Ring%20tactic/near/172575202" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="https://rht.github.io/archive/113488general/18025Ringtactic#172575202">(Aug 06 2019 at 10:04)</a>:</h4>
 <p>Currently it requires <a href="https://github.com/leanprover-community/mathlib/blob/master/src/tactic/ring.lean#L48" target="_blank" title="https://github.com/leanprover-community/mathlib/blob/master/src/tactic/ring.lean#L48">an instance of</a> <code>comm_semiring</code>, which a <code>ring</code> is not.</p>
 
 

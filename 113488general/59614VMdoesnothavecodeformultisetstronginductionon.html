@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon.html">VM does not have code for 'multiset.strong_induction_on'</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon.html">VM does not have code for 'multiset.strong_induction_on'</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/59614VMdoesnothavecodeformultisetstronginductio
 {% raw %}
 
 <a name="129309672"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129309672" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129309672">(Jul 08 2018 at 18:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129309672" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129309672">(Jul 08 2018 at 18:30)</a>:</h4>
 <p>What's happening here? I'm defining a map from <code>multiset nat</code> to <code>nat</code> :</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">multiset</span>
 
@@ -45,43 +45,43 @@ permalink: archive/113488general/59614VMdoesnothavecodeformultisetstronginductio
 
 
 <a name="129309806"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129309806" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="http://127.0.0.1:4000/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129309806">(Jul 08 2018 at 18:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129309806" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="https://rht.github.io/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129309806">(Jul 08 2018 at 18:35)</a>:</h4>
 <p>does <code>#reduce</code> produce the same error message?</p>
 
 
 
 <a name="129309871"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129309871" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129309871">(Jul 08 2018 at 18:37)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129309871" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129309871">(Jul 08 2018 at 18:37)</a>:</h4>
 <p><code>multiset.strong_induction_on</code> should not have been marked a <code>lemma</code> instead of a <code>def</code></p>
 
 
 
 <a name="129309913"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129309913" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129309913">(Jul 08 2018 at 18:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129309913" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129309913">(Jul 08 2018 at 18:38)</a>:</h4>
 <p>because it produces elements of type <code>p s : Sort*</code></p>
 
 
 
 <a name="129309917"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129309917" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129309917">(Jul 08 2018 at 18:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129309917" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129309917">(Jul 08 2018 at 18:38)</a>:</h4>
 <p>Oh! :-)</p>
 
 
 
 <a name="129309929"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129309929" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129309929">(Jul 08 2018 at 18:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129309929" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129309929">(Jul 08 2018 at 18:39)</a>:</h4>
 <p>I should really add this to my list of "basic checks when something isn't working". I've been caught out in the past myself writing <code>have</code> instead of <code>let</code> and then wondering why something won't unfold.</p>
 
 
 
 <a name="129310102"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129310102" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129310102">(Jul 08 2018 at 18:44)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129310102" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129310102">(Jul 08 2018 at 18:44)</a>:</h4>
 <p>This is a different issue. The VM constructs code for all definitions that are not <code>noncomputable</code>; this is what enables the use of <code>#eval</code> to run functions. But <code>lemma</code> and <code>theorem</code> definitions do not have code generated, which is usually okay since these are usually propositions which do not have any computational content anyway, but it causes problems if data is marked like this</p>
 
 
 
 <a name="129310119"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129310119" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129310119">(Jul 08 2018 at 18:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/VM%20does%20not%20have%20code%20for%20%27multiset.strong_induction_on%27/near/129310119" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/59614VMdoesnothavecodeformultisetstronginductionon#129310119">(Jul 08 2018 at 18:45)</a>:</h4>
 <p>This can cause issues even if you don't use <code>#eval</code> at all:</p>
 <div class="codehilite"><pre><span></span>lemma A : nat := 42
 def B : nat := A

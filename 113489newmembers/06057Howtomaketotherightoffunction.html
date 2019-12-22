@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/06057Howtomaketotherightoffunction.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/06057Howtomaketotherightoffunction.html">How to make `to_the_right_of` function?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/06057Howtomaketotherightoffunction.html">How to make `to_the_right_of` function?</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/06057Howtomaketotherightoffunction.html
 {% raw %}
 
 <a name="178937164"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178937164" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="http://127.0.0.1:4000/archive/113489newmembers/06057Howtomaketotherightoffunction#178937164">(Oct 24 2019 at 10:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178937164" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="https://rht.github.io/archive/113489newmembers/06057Howtomaketotherightoffunction#178937164">(Oct 24 2019 at 10:03)</a>:</h4>
 <p>The following is in F#.</p>
 <div class="codehilite"><pre><span></span><span class="k">let</span> <span class="nv">claims</span><span class="o">:</span> <span class="o">(</span><span class="n">int</span> <span class="o">*</span> <span class="n">int</span><span class="o">)</span> <span class="bp">[]</span> <span class="o">=</span> <span class="o">[|</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">;</span> <span class="mi">1</span><span class="o">,</span><span class="mi">3</span><span class="o">;</span> <span class="mi">1</span><span class="o">,</span><span class="mi">4</span><span class="o">;</span> <span class="mi">1</span><span class="o">,</span><span class="mi">5</span><span class="o">;</span> <span class="mi">1</span><span class="o">,</span><span class="mi">6</span><span class="o">;</span> <span class="mi">1</span><span class="o">,</span><span class="mi">1</span><span class="o">;</span> <span class="mi">2</span><span class="o">,</span><span class="mi">2</span><span class="o">;</span> <span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">;</span> <span class="mi">2</span><span class="o">,</span><span class="mi">4</span><span class="o">;</span> <span class="mi">2</span><span class="o">,</span><span class="mi">5</span><span class="o">;</span> <span class="mi">2</span><span class="o">,</span><span class="mi">6</span><span class="o">;</span> <span class="mi">2</span><span class="o">,</span><span class="mi">1</span><span class="o">|]</span>
 <span class="k">let</span> <span class="nv">to_the_right_of</span> <span class="n">x</span> <span class="o">=</span> <span class="n">claims</span><span class="o">.[</span><span class="nn">Array</span><span class="p">.</span><span class="n">findIndex</span> <span class="o">((=)</span> <span class="n">x</span><span class="o">)</span> <span class="n">claims</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">..]</span>
@@ -55,25 +55,25 @@ permalink: archive/113489newmembers/06057Howtomaketotherightoffunction.html
 
 
 <a name="178939279"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178939279" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/06057Howtomaketotherightoffunction#178939279">(Oct 24 2019 at 10:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178939279" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/06057Howtomaketotherightoffunction#178939279">(Oct 24 2019 at 10:41)</a>:</h4>
 <p>That doesn't seem to be the same as the F# code</p>
 
 
 
 <a name="178939283"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178939283" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/06057Howtomaketotherightoffunction#178939283">(Oct 24 2019 at 10:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178939283" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/06057Howtomaketotherightoffunction#178939283">(Oct 24 2019 at 10:41)</a>:</h4>
 <p>why do you have the attach stuff?</p>
 
 
 
 <a name="178939362"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178939362" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/06057Howtomaketotherightoffunction#178939362">(Oct 24 2019 at 10:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178939362" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/06057Howtomaketotherightoffunction#178939362">(Oct 24 2019 at 10:42)</a>:</h4>
 <p>By the way, the sigma over array is defined and called <code>buffer</code></p>
 
 
 
 <a name="178939518"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178939518" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/06057Howtomaketotherightoffunction#178939518">(Oct 24 2019 at 10:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178939518" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/06057Howtomaketotherightoffunction#178939518">(Oct 24 2019 at 10:45)</a>:</h4>
 <p>Here's the list version:</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">after_first</span> <span class="o">{</span><span class="n">α</span><span class="o">}</span> <span class="o">(</span><span class="n">p</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">[</span><span class="n">decidable_pred</span> <span class="n">p</span><span class="o">]</span> <span class="o">:</span> <span class="n">list</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">list</span> <span class="n">α</span>
 <span class="bp">|</span> <span class="o">[]</span> <span class="o">:=</span> <span class="o">[]</span>
@@ -88,7 +88,7 @@ permalink: archive/113489newmembers/06057Howtomaketotherightoffunction.html
 
 
 <a name="178940266"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178940266" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/06057Howtomaketotherightoffunction#178940266">(Oct 24 2019 at 10:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178940266" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/06057Howtomaketotherightoffunction#178940266">(Oct 24 2019 at 10:58)</a>:</h4>
 <p>and the buffer version:</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">array</span><span class="bp">.</span><span class="n">find_index</span> <span class="o">{</span><span class="n">α</span><span class="o">}</span> <span class="o">(</span><span class="n">p</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">[</span><span class="n">decidable_pred</span> <span class="n">p</span><span class="o">]</span>
   <span class="o">{</span><span class="n">n</span><span class="o">}</span> <span class="o">(</span><span class="n">arr</span> <span class="o">:</span> <span class="n">array</span> <span class="n">n</span> <span class="n">α</span><span class="o">)</span> <span class="o">:</span> <span class="n">option</span> <span class="o">(</span><span class="n">fin</span> <span class="n">n</span><span class="o">)</span> <span class="o">:=</span>
@@ -109,7 +109,7 @@ permalink: archive/113489newmembers/06057Howtomaketotherightoffunction.html
 
 
 <a name="178946720"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178946720" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="http://127.0.0.1:4000/archive/113489newmembers/06057Howtomaketotherightoffunction#178946720">(Oct 24 2019 at 12:34)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178946720" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="https://rht.github.io/archive/113489newmembers/06057Howtomaketotherightoffunction#178946720">(Oct 24 2019 at 12:34)</a>:</h4>
 <blockquote>
 <p>That doesn't seem to be the same as the F# code</p>
 </blockquote>
@@ -140,7 +140,7 @@ permalink: archive/113489newmembers/06057Howtomaketotherightoffunction.html
 
 
 <a name="178956738"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178956738" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="http://127.0.0.1:4000/archive/113489newmembers/06057Howtomaketotherightoffunction#178956738">(Oct 24 2019 at 14:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178956738" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="https://rht.github.io/archive/113489newmembers/06057Howtomaketotherightoffunction#178956738">(Oct 24 2019 at 14:20)</a>:</h4>
 <p>Since when I will be indexing into the array in the Lean version, the inputs will be of the form <code>{n // n ∈ list_claim}</code>, meaning they will have proof of membership I would like to take advantage of that.</p>
 <div class="codehilite"><pre><span></span>def after_first : ∀ (l : list (nat × nat)) (x : {x // x ∈ l}), {ll // {lr // ll ++ [x.1] ++ lr = l}}
 </pre></div>
@@ -188,13 +188,13 @@ induction tactic failed, recursor &#39;Exists.dcases_on&#39; can only eliminate 
 
 
 <a name="178957361"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178957361" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="http://127.0.0.1:4000/archive/113489newmembers/06057Howtomaketotherightoffunction#178957361">(Oct 24 2019 at 14:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/178957361" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="https://rht.github.io/archive/113489newmembers/06057Howtomaketotherightoffunction#178957361">(Oct 24 2019 at 14:26)</a>:</h4>
 <p>oof, that's a lot of dependent types</p>
 
 
 
 <a name="179030731"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/179030731" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="http://127.0.0.1:4000/archive/113489newmembers/06057Howtomaketotherightoffunction#179030731">(Oct 25 2019 at 08:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20to%20make%20%60to_the_right_of%60%20function%3F/near/179030731" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marko Grdinić <a href="https://rht.github.io/archive/113489newmembers/06057Howtomaketotherightoffunction#179030731">(Oct 25 2019 at 08:21)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">dice</span> <span class="o">:=</span> <span class="n">list</span><span class="bp">.</span><span class="n">to_buffer</span> <span class="o">[</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span><span class="mi">4</span><span class="o">,</span><span class="mi">5</span><span class="o">,</span><span class="mi">6</span><span class="o">]</span>
 <span class="n">def</span> <span class="n">claims</span> <span class="o">:=</span> <span class="n">list</span><span class="bp">.</span><span class="n">to_buffer</span> <span class="o">[(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">),</span> <span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">3</span><span class="o">),</span> <span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">4</span><span class="o">),</span> <span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">5</span><span class="o">),</span> <span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">6</span><span class="o">),</span> <span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">1</span><span class="o">),</span> <span class="o">(</span><span class="mi">2</span><span class="o">,</span><span class="mi">2</span><span class="o">),</span> <span class="o">(</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">),</span> <span class="o">(</span><span class="mi">2</span><span class="o">,</span><span class="mi">4</span><span class="o">),</span> <span class="o">(</span><span class="mi">2</span><span class="o">,</span><span class="mi">5</span><span class="o">),</span> <span class="o">(</span><span class="mi">2</span><span class="o">,</span><span class="mi">6</span><span class="o">),</span> <span class="o">(</span><span class="mi">2</span><span class="o">,</span><span class="mi">1</span><span class="o">)]</span>
 

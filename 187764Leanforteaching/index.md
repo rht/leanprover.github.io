@@ -4,7 +4,7 @@ title: Zulip Chat Archive
 permalink: archive/187764Leanforteaching/index.html
 ---
 
-## Stream: [Lean for teaching](http://127.0.0.1:4000/archive/187764Leanforteaching/index.html)
+## Stream: [Lean for teaching](https://rht.github.io/archive/187764Leanforteaching/index.html)
 ---
 
 ### Topics:

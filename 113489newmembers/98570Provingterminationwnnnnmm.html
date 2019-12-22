@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/98570Provingterminationwnnnnmm.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/98570Provingterminationwnnnnmm.html">Proving termination w/ (n' < n \/ (n' = n /\ m' < m))</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/98570Provingterminationwnnnnmm.html">Proving termination w/ (n' < n \/ (n' = n /\ m' < m))</a></h3>
 
 <hr>
 
@@ -16,20 +16,20 @@ permalink: archive/113489newmembers/98570Provingterminationwnnnnmm.html
 {% raw %}
 
 <a name="154824198"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20termination%20w/%20%28n%27%20%3C%20n%20%5C/%20%28n%27%20%3D%20n%20/%5C%20m%27%20%3C%20m%29%29/near/154824198" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> cbailey <a href="http://127.0.0.1:4000/archive/113489newmembers/98570Provingterminationwnnnnmm#154824198">(Jan 10 2019 at 08:33)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20termination%20w/%20%28n%27%20%3C%20n%20%5C/%20%28n%27%20%3D%20n%20/%5C%20m%27%20%3C%20m%29%29/near/154824198" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> cbailey <a href="https://rht.github.io/archive/113489newmembers/98570Provingterminationwnnnnmm#154824198">(Jan 10 2019 at 08:33)</a>:</h4>
 <p>Is there any way to convince Lean that a function  f (n : nat, m : nat) -&gt; T, where each recursive call satisfies ( n' &lt; n \/ ( n' = n /\ m' &lt; m ) ) is indeed terminating without explicitly adding a third parameter to represent (n + m) or gas?<br>
 Thank you!</p>
 
 
 
 <a name="154824668"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20termination%20w/%20%28n%27%20%3C%20n%20%5C/%20%28n%27%20%3D%20n%20/%5C%20m%27%20%3C%20m%29%29/near/154824668" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/98570Provingterminationwnnnnmm#154824668">(Jan 10 2019 at 08:44)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20termination%20w/%20%28n%27%20%3C%20n%20%5C/%20%28n%27%20%3D%20n%20/%5C%20m%27%20%3C%20m%29%29/near/154824668" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/98570Provingterminationwnnnnmm#154824668">(Jan 10 2019 at 08:44)</a>:</h4>
 <p>1. give us an example 2. custom well-founded tactic</p>
 
 
 
 <a name="154824899"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20termination%20w/%20%28n%27%20%3C%20n%20%5C/%20%28n%27%20%3D%20n%20/%5C%20m%27%20%3C%20m%29%29/near/154824899" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jeremy Avigad <a href="http://127.0.0.1:4000/archive/113489newmembers/98570Provingterminationwnnnnmm#154824899">(Jan 10 2019 at 08:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20termination%20w/%20%28n%27%20%3C%20n%20%5C/%20%28n%27%20%3D%20n%20/%5C%20m%27%20%3C%20m%29%29/near/154824899" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jeremy Avigad <a href="https://rht.github.io/archive/113489newmembers/98570Provingterminationwnnnnmm#154824899">(Jan 10 2019 at 08:50)</a>:</h4>
 <p>You can do arbitrary well-founded recursion in Lean, though it doesn't always work as smoothly as one would like. </p>
 <p><a href="https://leanprover.github.io/theorem_proving_in_lean/induction_and_recursion.html#well-founded-recursion-and-induction" target="_blank" title="https://leanprover.github.io/theorem_proving_in_lean/induction_and_recursion.html#well-founded-recursion-and-induction">https://leanprover.github.io/theorem_proving_in_lean/induction_and_recursion.html#well-founded-recursion-and-induction</a></p>
 <p>In your case, I think the equation compiler (the system that compiles your function specification down to a function expressed in terms of the foundational primitives) will guess that you want to use lexicographic order, and with luck you'll be able to convince it that the recursive call is decreasing (as described in TPIL).</p>
@@ -38,13 +38,13 @@ Thank you!</p>
 
 
 <a name="154826761"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20termination%20w/%20%28n%27%20%3C%20n%20%5C/%20%28n%27%20%3D%20n%20/%5C%20m%27%20%3C%20m%29%29/near/154826761" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/98570Provingterminationwnnnnmm#154826761">(Jan 10 2019 at 09:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20termination%20w/%20%28n%27%20%3C%20n%20%5C/%20%28n%27%20%3D%20n%20/%5C%20m%27%20%3C%20m%29%29/near/154826761" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/98570Provingterminationwnnnnmm#154826761">(Jan 10 2019 at 09:32)</a>:</h4>
 <p><a href="https://github.com/leanprover/mathlib/blob/master/docs/extras/well_founded_recursion.md" target="_blank" title="https://github.com/leanprover/mathlib/blob/master/docs/extras/well_founded_recursion.md">https://github.com/leanprover/mathlib/blob/master/docs/extras/well_founded_recursion.md</a></p>
 
 
 
 <a name="154827110"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20termination%20w/%20%28n%27%20%3C%20n%20%5C/%20%28n%27%20%3D%20n%20/%5C%20m%27%20%3C%20m%29%29/near/154827110" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> cbailey <a href="http://127.0.0.1:4000/archive/113489newmembers/98570Provingterminationwnnnnmm#154827110">(Jan 10 2019 at 09:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20termination%20w/%20%28n%27%20%3C%20n%20%5C/%20%28n%27%20%3D%20n%20/%5C%20m%27%20%3C%20m%29%29/near/154827110" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> cbailey <a href="https://rht.github.io/archive/113489newmembers/98570Provingterminationwnnnnmm#154827110">(Jan 10 2019 at 09:39)</a>:</h4>
 <p>Thank you for the links <span class="user-mention" data-user-id="110865">@Jeremy Avigad</span>  and <span class="user-mention" data-user-id="110038">@Kevin Buzzard</span> ,  this looks like exactly what I need.</p>
 <p><span class="user-mention" data-user-id="110064">@Kenny Lau</span>  I'm just using Euclid's algorithm. I'll try and put together a tactic with the reading material you guys referenced</p>
 <p>Thanks!</p>
@@ -52,7 +52,7 @@ Thank you!</p>
 
 
 <a name="155045083"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20termination%20w/%20%28n%27%20%3C%20n%20%5C/%20%28n%27%20%3D%20n%20/%5C%20m%27%20%3C%20m%29%29/near/155045083" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="http://127.0.0.1:4000/archive/113489newmembers/98570Provingterminationwnnnnmm#155045083">(Jan 13 2019 at 20:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20termination%20w/%20%28n%27%20%3C%20n%20%5C/%20%28n%27%20%3D%20n%20/%5C%20m%27%20%3C%20m%29%29/near/155045083" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Wojciech Nawrocki <a href="https://rht.github.io/archive/113489newmembers/98570Provingterminationwnnnnmm#155045083">(Jan 13 2019 at 20:24)</a>:</h4>
 <p>I found that definining the entire recursive function as an equation-compiler-expression and then ignoring some of the match variables in cases where they don't matter works best, e.g.:</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">rec_fn</span><span class="o">:</span> <span class="bp">ℕ</span> <span class="bp">→</span> <span class="bp">ℕ</span> <span class="bp">→</span> <span class="o">(</span><span class="bp">ℕ</span> <span class="bp">→</span> <span class="bp">ℕ</span><span class="o">)</span> <span class="bp">→</span> <span class="bp">ℕ</span> <span class="bp">→</span> <span class="bp">ℕ</span>
 <span class="bp">|</span> <span class="bp">_</span> <span class="n">b</span> <span class="n">f</span> <span class="mi">0</span> <span class="o">:=</span> <span class="n">f</span> <span class="n">b</span>

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/66707subsetswithinducedstructure.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/66707subsetswithinducedstructure.html">subsets with induced structure</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/66707subsetswithinducedstructure.html">subsets with induced structure</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/66707subsetswithinducedstructure.html
 {% raw %}
 
 <a name="147981000"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/subsets%20with%20induced%20structure/near/147981000" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jean Lo <a href="http://127.0.0.1:4000/archive/113489newmembers/66707subsetswithinducedstructure#147981000">(Nov 19 2018 at 17:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/subsets%20with%20induced%20structure/near/147981000" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jean Lo <a href="https://rht.github.io/archive/113489newmembers/66707subsetswithinducedstructure#147981000">(Nov 19 2018 at 17:30)</a>:</h4>
 <p>Given a set with some structure, I often would like to think about its subsets that also have a similar structure on it. This seems like a pretty common construction — what would be the idiomatic way to formulate such things in Lean?</p>
 <p>Here's a particular example encountered in an attempt to formalise some algebra notes:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">algebra</span><span class="bp">.</span><span class="n">group</span> <span class="n">data</span><span class="bp">.</span><span class="n">set</span><span class="bp">.</span><span class="n">basic</span>
@@ -57,20 +57,20 @@ permalink: archive/113489newmembers/66707subsetswithinducedstructure.html
 
 
 <a name="147981206"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/subsets%20with%20induced%20structure/near/147981206" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/66707subsetswithinducedstructure#147981206">(Nov 19 2018 at 17:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/subsets%20with%20induced%20structure/near/147981206" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/66707subsetswithinducedstructure#147981206">(Nov 19 2018 at 17:35)</a>:</h4>
 <p>I'm not sure how old your version of mathlib is but <code>is_subgroup</code> has been in <code>group_theory.subgroup</code> for long time <a href="https://github.com/leanprover/mathlib/blob/8ae3fb86f09daab0a48a4b81e19c1eee7552be10/group_theory/subgroup.lean" target="_blank" title="https://github.com/leanprover/mathlib/blob/8ae3fb86f09daab0a48a4b81e19c1eee7552be10/group_theory/subgroup.lean">https://github.com/leanprover/mathlib/blob/8ae3fb86f09daab0a48a4b81e19c1eee7552be10/group_theory/subgroup.lean</a></p>
 
 
 
 <a name="147981678"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/subsets%20with%20induced%20structure/near/147981678" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jean Lo <a href="http://127.0.0.1:4000/archive/113489newmembers/66707subsetswithinducedstructure#147981678">(Nov 19 2018 at 17:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/subsets%20with%20induced%20structure/near/147981678" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jean Lo <a href="https://rht.github.io/archive/113489newmembers/66707subsetswithinducedstructure#147981678">(Nov 19 2018 at 17:43)</a>:</h4>
 <p>oh, in <code>group_theory/</code>, of course! I've been having trouble with <code>helm-lean-definitions</code> and have been looking in <code>algebra/group.lean</code> this whole time. Sorry for that.</p>
 <p>So what are the differences between how <code>is_subgroup</code> and <code>submodule</code>are defined? when should one way of doing it be preferred over the other?</p>
 
 
 
 <a name="147981908"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/subsets%20with%20induced%20structure/near/147981908" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/66707subsetswithinducedstructure#147981908">(Nov 19 2018 at 17:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/subsets%20with%20induced%20structure/near/147981908" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/66707subsetswithinducedstructure#147981908">(Nov 19 2018 at 17:47)</a>:</h4>
 <p>Good question! I'm not sure how the new <code>submodule</code> stuff works myself.</p>
 
 

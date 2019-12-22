@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/29002autoparam.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/29002autoparam.html">auto_param</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/29002autoparam.html">auto_param</a></h3>
 
 <hr>
 
@@ -16,13 +16,13 @@ permalink: archive/113488general/29002autoparam.html
 {% raw %}
 
 <a name="171252444"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/auto_param/near/171252444" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/29002autoparam#171252444">(Jul 19 2019 at 12:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/auto_param/near/171252444" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/29002autoparam#171252444">(Jul 19 2019 at 12:23)</a>:</h4>
 <p>I have a really dumb-sounding question: how can I get Lean to automatically use auto_params? I have a lemma with assumption <code>(hconj : ∀ x₀ : α, tendsto (λ x: α, x₀*x*x₀⁻¹) 𝓝 1 𝓝 1 . prove_conj)</code> where <code>prove_conj</code> tries to prove the assumption using commutativity of multiplication. My idea was that would succeed when the relevant multiplication is commutative, and leave the hypothesis to prove otherwise. But clearly I misunderstood how this all works. I can only use it by writing <code>by apply_auto_param</code> where wants a proof of <code>hconj</code>.</p>
 
 
 
 <a name="171259417"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/auto_param/near/171259417" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/29002autoparam#171259417">(Jul 19 2019 at 13:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/auto_param/near/171259417" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113488general/29002autoparam#171259417">(Jul 19 2019 at 13:59)</a>:</h4>
 <p>That is how it works in general, with the exception that the goal left when the tactic fails is kind of ugly. Do you have a MWE?</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">my_fun</span> <span class="o">{</span><span class="n">α</span><span class="o">}</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">α</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span> <span class="bp">.</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">interactive</span><span class="bp">.</span><span class="n">reflexivity</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span> <span class="o">:=</span> <span class="n">h</span>
 
@@ -40,13 +40,13 @@ permalink: archive/113488general/29002autoparam.html
 
 
 <a name="171259837"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/auto_param/near/171259837" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/29002autoparam#171259837">(Jul 19 2019 at 14:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/auto_param/near/171259837" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/29002autoparam#171259837">(Jul 19 2019 at 14:04)</a>:</h4>
 <p>I think I'm starting to understand. The magic argument has to come last, right?</p>
 
 
 
 <a name="171259851"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/auto_param/near/171259851" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/29002autoparam#171259851">(Jul 19 2019 at 14:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/auto_param/near/171259851" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/29002autoparam#171259851">(Jul 19 2019 at 14:04)</a>:</h4>
 <p>This fails:</p>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">my_fun</span> <span class="o">{</span><span class="n">α</span><span class="o">}</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">α</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span> <span class="bp">.</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">interactive</span><span class="bp">.</span><span class="n">reflexivity</span><span class="o">)</span> <span class="o">(</span><span class="n">h&#39;</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span> <span class="o">:=</span> <span class="n">h</span>
 
@@ -56,7 +56,7 @@ permalink: archive/113488general/29002autoparam.html
 
 
 <a name="171259881"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/auto_param/near/171259881" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/29002autoparam#171259881">(Jul 19 2019 at 14:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/auto_param/near/171259881" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/29002autoparam#171259881">(Jul 19 2019 at 14:04)</a>:</h4>
 <p>which makes sense. But I was hoping to write:</p>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">my_fun</span> <span class="o">{</span><span class="n">α</span><span class="o">}</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">α</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span> <span class="bp">.</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">interactive</span><span class="bp">.</span><span class="n">reflexivity</span><span class="o">)</span> <span class="o">(</span><span class="n">h&#39;</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span> <span class="o">:=</span> <span class="n">h</span>
 

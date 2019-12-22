@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/20766monadforSort.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/20766monadforSort.html">monad for Sort?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/20766monadforSort.html">monad for Sort?</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/20766monadforSort.html
 {% raw %}
 
 <a name="158835464"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158835464" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113488general/20766monadforSort#158835464">(Feb 18 2019 at 23:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158835464" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113488general/20766monadforSort#158835464">(Feb 18 2019 at 23:07)</a>:</h4>
 <p>the <code>init.category</code> library has <code>Type u</code> instead of <code>Sort u</code> everywhere: I did some experiments and literally just changed <code>Type</code> to <code>Sort</code> and no problems were found:</p>
 <div class="codehilite"><pre><span></span><span class="c">/-</span><span class="cm"></span>
 <span class="cm">Copyright (c) Luke Nelson and Jared Roesch. All rights reserved.</span>
@@ -90,37 +90,37 @@ permalink: archive/113488general/20766monadforSort.html
 
 
 <a name="158835478"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158835478" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113488general/20766monadforSort#158835478">(Feb 18 2019 at 23:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158835478" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113488general/20766monadforSort#158835478">(Feb 18 2019 at 23:07)</a>:</h4>
 <p>So why was everything defined only over <code>Type u</code>?</p>
 
 
 
 <a name="158836297"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836297" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/20766monadforSort#158836297">(Feb 18 2019 at 23:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836297" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/20766monadforSort#158836297">(Feb 18 2019 at 23:22)</a>:</h4>
 <p><span class="user-mention" data-user-id="110024">@Sebastian Ullrich</span> Maybe you'd be able to enlighten us. My guess is that <code>Sort*</code> can make things more complicated when eliminating into <code>Type*</code>. It might have been necessary at some point and the decision was never reverted.</p>
 
 
 
 <a name="158836556"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836556" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastian Ullrich <a href="http://127.0.0.1:4000/archive/113488general/20766monadforSort#158836556">(Feb 18 2019 at 23:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836556" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastian Ullrich <a href="https://rht.github.io/archive/113488general/20766monadforSort#158836556">(Feb 18 2019 at 23:28)</a>:</h4>
 <p>I think most types in <code>Sort*</code> started in <code>Type*</code> until someone was able to come up with an example usage in <code>Prop</code></p>
 
 
 
 <a name="158836584"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836584" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastian Ullrich <a href="http://127.0.0.1:4000/archive/113488general/20766monadforSort#158836584">(Feb 18 2019 at 23:29)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836584" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastian Ullrich <a href="https://rht.github.io/archive/113488general/20766monadforSort#158836584">(Feb 18 2019 at 23:29)</a>:</h4>
 <p>Also this file may be older than <code>Sort</code>. Not sure.</p>
 
 
 
 <a name="158836601"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836601" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113488general/20766monadforSort#158836601">(Feb 18 2019 at 23:29)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836601" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113488general/20766monadforSort#158836601">(Feb 18 2019 at 23:29)</a>:</h4>
 <p>what about <code>nonempty</code> being a monad?</p>
 
 
 
 <a name="158836707"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836707" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113488general/20766monadforSort#158836707">(Feb 18 2019 at 23:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836707" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113488general/20766monadforSort#158836707">(Feb 18 2019 at 23:31)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">instance</span> <span class="o">:</span> <span class="n">monad</span> <span class="n">nonempty</span><span class="bp">.</span><span class="o">{</span><span class="n">u</span><span class="o">}</span> <span class="o">:=</span>
 <span class="o">{</span> <span class="n">pure</span> <span class="o">:=</span> <span class="bp">@</span><span class="n">nonempty</span><span class="bp">.</span><span class="n">intro</span><span class="o">,</span>
   <span class="n">bind</span> <span class="o">:=</span> <span class="bp">λ</span> <span class="n">α</span> <span class="n">β</span> <span class="bp">⟨</span><span class="n">x</span><span class="bp">⟩</span> <span class="n">f</span><span class="o">,</span> <span class="n">f</span> <span class="n">x</span> <span class="o">}</span>
@@ -129,13 +129,13 @@ permalink: archive/113488general/20766monadforSort.html
 
 
 <a name="158836719"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836719" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113488general/20766monadforSort#158836719">(Feb 18 2019 at 23:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836719" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113488general/20766monadforSort#158836719">(Feb 18 2019 at 23:32)</a>:</h4>
 <p>it works under my code</p>
 
 
 
 <a name="158836754"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836754" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113488general/20766monadforSort#158836754">(Feb 18 2019 at 23:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/monad%20for%20Sort%3F/near/158836754" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113488general/20766monadforSort#158836754">(Feb 18 2019 at 23:32)</a>:</h4>
 <p>yay, another PR to core</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/94871casesonmutuallyrecursivetypes.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/94871casesonmutuallyrecursivetypes.html">cases on mutually recursive types</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/94871casesonmutuallyrecursivetypes.html">cases on mutually recursive types</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/94871casesonmutuallyrecursivetypes.html
 {% raw %}
 
 <a name="173388108"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/cases%20on%20mutually%20recursive%20types/near/173388108" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jonathan Coates <a href="http://127.0.0.1:4000/archive/113489newmembers/94871casesonmutuallyrecursivetypes#173388108">(Aug 16 2019 at 16:40)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/cases%20on%20mutually%20recursive%20types/near/173388108" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jonathan Coates <a href="https://rht.github.io/archive/113489newmembers/94871casesonmutuallyrecursivetypes#173388108">(Aug 16 2019 at 16:40)</a>:</h4>
 <p>Sorry if this is the wrong place to ask this - just wanted to double check a couple of things before flying off to the issue tracker. I've been trying to use the <code>cases</code> tactic on mutually-recursive types, and hit a bit of a wall. Basically, consider the (somewhat absurd) type:</p>
 <div class="codehilite"><pre><span></span><span class="n">mutual</span> <span class="kn">inductive</span> <span class="n">mut</span><span class="o">,</span> <span class="n">aux</span>
 <span class="k">with</span> <span class="n">mut</span> <span class="o">:</span> <span class="kt">Type</span>
@@ -41,32 +41,32 @@ permalink: archive/113489newmembers/94871casesonmutuallyrecursivetypes.html
 
 
 <a name="173389753"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/cases%20on%20mutually%20recursive%20types/near/173389753" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/94871casesonmutuallyrecursivetypes#173389753">(Aug 16 2019 at 17:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/cases%20on%20mutually%20recursive%20types/near/173389753" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/94871casesonmutuallyrecursivetypes#173389753">(Aug 16 2019 at 17:03)</a>:</h4>
 <p>This is expected behavior. <code>cases</code> and <code>induction</code> only currently work on <em>actual</em> inductive types, which limits their usefulness when applied to mutual and nested inductives, which are compiled to simple inductive types. Try using the equation compiler instead, which respects these fake inductives</p>
 
 
 
 <a name="173389862"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/cases%20on%20mutually%20recursive%20types/near/173389862" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/94871casesonmutuallyrecursivetypes#173389862">(Aug 16 2019 at 17:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/cases%20on%20mutually%20recursive%20types/near/173389862" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/94871casesonmutuallyrecursivetypes#173389862">(Aug 16 2019 at 17:04)</a>:</h4>
 <p>But the real answer is that nested and mutual inductives are buggy and unstable so we avoid them when possible</p>
 
 
 
 <a name="173390324"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/cases%20on%20mutually%20recursive%20types/near/173390324" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jonathan Coates <a href="http://127.0.0.1:4000/archive/113489newmembers/94871casesonmutuallyrecursivetypes#173390324">(Aug 16 2019 at 17:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/cases%20on%20mutually%20recursive%20types/near/173390324" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jonathan Coates <a href="https://rht.github.io/archive/113489newmembers/94871casesonmutuallyrecursivetypes#173390324">(Aug 16 2019 at 17:11)</a>:</h4>
 <p>Ah that's good to know, thank you!</p>
 <p>I was originally using the equation compiler/<code>match</code> expressions, and then found myself rather wanting the constructor hypothesis that <code>cases</code> provides.</p>
 
 
 
 <a name="173391821"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/cases%20on%20mutually%20recursive%20types/near/173391821" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/94871casesonmutuallyrecursivetypes#173391821">(Aug 16 2019 at 17:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/cases%20on%20mutually%20recursive%20types/near/173391821" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/94871casesonmutuallyrecursivetypes#173391821">(Aug 16 2019 at 17:31)</a>:</h4>
 <p>you can get the hypothesis by doing the same trick that cases does: use <code>match t, rfl : \forall x : T, x = t -&gt; _ with ...</code></p>
 
 
 
 <a name="173399208"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/cases%20on%20mutually%20recursive%20types/near/173399208" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jonathan Coates <a href="http://127.0.0.1:4000/archive/113489newmembers/94871casesonmutuallyrecursivetypes#173399208">(Aug 16 2019 at 19:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/cases%20on%20mutually%20recursive%20types/near/173399208" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jonathan Coates <a href="https://rht.github.io/archive/113489newmembers/94871casesonmutuallyrecursivetypes#173399208">(Aug 16 2019 at 19:07)</a>:</h4>
 <p>Ahh, that's perfect. Thank you!</p>
 
 

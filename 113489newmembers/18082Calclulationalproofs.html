@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/18082Calclulationalproofs.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/18082Calclulationalproofs.html">Calclulational proofs</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/18082Calclulationalproofs.html">Calclulational proofs</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/18082Calclulationalproofs.html
 {% raw %}
 
 <a name="173099117"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173099117" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel <a href="http://127.0.0.1:4000/archive/113489newmembers/18082Calclulationalproofs#173099117">(Aug 13 2019 at 09:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173099117" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel <a href="https://rht.github.io/archive/113489newmembers/18082Calclulationalproofs#173099117">(Aug 13 2019 at 09:35)</a>:</h4>
 <p>Hey, I currently trying to learn Lean by reading the – very nice – “Theorem Proving in Lean” book.<br>
 While doing the exercises, I found something confusing;</p>
 <div class="codehilite"><pre><span></span><span class="kn">variables</span> <span class="o">(</span><span class="n">real</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">)</span> <span class="o">[</span><span class="n">ordered_ring</span> <span class="n">real</span><span class="o">]</span>
@@ -49,37 +49,37 @@ Why is that? Is there a rule-of-thumb for when I can omit <code>eq.symm</code> a
 
 
 <a name="173100071"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173100071" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113489newmembers/18082Calclulationalproofs#173100071">(Aug 13 2019 at 09:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173100071" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113489newmembers/18082Calclulationalproofs#173100071">(Aug 13 2019 at 09:53)</a>:</h4>
 <p>You need to understand each line is a separate small lemma. The first line prove one equality. Then rw rewrites at the first place it finds, which is probably in the right hand side.</p>
 
 
 
 <a name="173100222"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173100222" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113489newmembers/18082Calclulationalproofs#173100222">(Aug 13 2019 at 09:56)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173100222" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113489newmembers/18082Calclulationalproofs#173100222">(Aug 13 2019 at 09:56)</a>:</h4>
 <p>Actually it probably rewrited both occurrences</p>
 
 
 
 <a name="173100336"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173100336" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113489newmembers/18082Calclulationalproofs#173100336">(Aug 13 2019 at 09:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173100336" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113489newmembers/18082Calclulationalproofs#173100336">(Aug 13 2019 at 09:59)</a>:</h4>
 <p>Indeed rewriting using <code>exp_log_eq hx</code> from right to left is a bad idea since it will complexify any formula involving x.</p>
 
 
 
 <a name="173100491"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173100491" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113489newmembers/18082Calclulationalproofs#173100491">(Aug 13 2019 at 10:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173100491" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113489newmembers/18082Calclulationalproofs#173100491">(Aug 13 2019 at 10:02)</a>:</h4>
 <p>Also note from the section about rewrite: The notation ←t can be used to instruct the tactic to use the equality t in the reverse direction.</p>
 
 
 
 <a name="173100504"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173100504" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113489newmembers/18082Calclulationalproofs#173100504">(Aug 13 2019 at 10:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173100504" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113489newmembers/18082Calclulationalproofs#173100504">(Aug 13 2019 at 10:02)</a>:</h4>
 <p>This will get rid of eq.symm everywhere</p>
 
 
 
 <a name="173105550"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173105550" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel <a href="http://127.0.0.1:4000/archive/113489newmembers/18082Calclulationalproofs#173105550">(Aug 13 2019 at 11:40)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173105550" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel <a href="https://rht.github.io/archive/113489newmembers/18082Calclulationalproofs#173105550">(Aug 13 2019 at 11:40)</a>:</h4>
 <p>This is clear to me, but I don't see, why <code>rw</code> rewrites the statement as it did.<br>
 Maybe the following (failing example) makes my question clearer:</p>
 <div class="codehilite"><pre><span></span><span class="kn">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">real</span><span class="o">}</span> <span class="o">(</span><span class="n">hx</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">(</span><span class="n">hy</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span>
@@ -95,19 +95,19 @@ Maybe the following (failing example) makes my question clearer:</p>
 
 
 <a name="173105791"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173105791" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel <a href="http://127.0.0.1:4000/archive/113489newmembers/18082Calclulationalproofs#173105791">(Aug 13 2019 at 11:44)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173105791" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel <a href="https://rht.github.io/archive/113489newmembers/18082Calclulationalproofs#173105791">(Aug 13 2019 at 11:44)</a>:</h4>
 <p>My <em>expectation</em> would be that <code>log(x * y) = log(exp(log x) * exp (log y))</code> just by applying the equalities <code>x = exp (log x)</code> and <code>y = exp (log y)</code>, since applying <code>exp</code> to equal arguments must result in equal results.</p>
 
 
 
 <a name="173106278"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173106278" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113489newmembers/18082Calclulationalproofs#173106278">(Aug 13 2019 at 11:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173106278" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113489newmembers/18082Calclulationalproofs#173106278">(Aug 13 2019 at 11:54)</a>:</h4>
 <p>It does replace that <code>x</code>, it just also replaces the <code>x</code> on the right hand side of the equation as well, leaving you no closer to being finished</p>
 
 
 
 <a name="173115400"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173115400" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/113489newmembers/18082Calclulationalproofs#173115400">(Aug 13 2019 at 14:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173115400" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/113489newmembers/18082Calclulationalproofs#173115400">(Aug 13 2019 at 14:01)</a>:</h4>
 <p>As was said before, the <code>rw</code> tactic rewrites both the left hand side and the right hand side of an equation.</p>
 <p>If you want to rewrite only the left-hand side, you can use the following tactic: (which is a proof of your first <code>calc</code>-step)</p>
 <div class="codehilite"><pre><span></span>by conv_lhs { rw [← exp_log_eq hx, ← exp_log_eq hy] }
@@ -116,7 +116,7 @@ Maybe the following (failing example) makes my question clearer:</p>
 
 
 <a name="173117215"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173117215" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel <a href="http://127.0.0.1:4000/archive/113489newmembers/18082Calclulationalproofs#173117215">(Aug 13 2019 at 14:19)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173117215" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel <a href="https://rht.github.io/archive/113489newmembers/18082Calclulationalproofs#173117215">(Aug 13 2019 at 14:19)</a>:</h4>
 <p>Nice. So I can just use ← and it works as I expect it to :)<br>
 Replacing in both sides seemed a bit counterintuitive to me, since I want to show a particular equality in this step, namely that the left / previous term is equal to the current lines' term.<br>
 But I guess it is more useful when combining multiple steps in one <code>rw</code> command.</p>
@@ -124,7 +124,7 @@ But I guess it is more useful when combining multiple steps in one <code>rw</cod
 
 
 <a name="173117660"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173117660" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/18082Calclulationalproofs#173117660">(Aug 13 2019 at 14:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Calclulational%20proofs/near/173117660" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/18082Calclulationalproofs#173117660">(Aug 13 2019 at 14:23)</a>:</h4>
 <p>The way it works by default is that lean finds the first match, and then replaces every occurrence of the thing that matched exactly. There is a file called conv.md in mathlib which is a write-up of how to do more sophisticated rewrites.</p>
 
 

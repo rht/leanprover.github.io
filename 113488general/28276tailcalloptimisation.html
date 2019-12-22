@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/28276tailcalloptimisation.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/28276tailcalloptimisation.html">tail-call optimisation</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/28276tailcalloptimisation.html">tail-call optimisation</a></h3>
 
 <hr>
 
@@ -16,25 +16,25 @@ permalink: archive/113488general/28276tailcalloptimisation.html
 {% raw %}
 
 <a name="163454363"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tail-call%20optimisation/near/163454363" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="http://127.0.0.1:4000/archive/113488general/28276tailcalloptimisation#163454363">(Apr 16 2019 at 09:37)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tail-call%20optimisation/near/163454363" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="https://rht.github.io/archive/113488general/28276tailcalloptimisation#163454363">(Apr 16 2019 at 09:37)</a>:</h4>
 <p>Is Lean supporting tail-call optimisation?</p>
 
 
 
 <a name="163457398"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tail-call%20optimisation/near/163457398" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="http://127.0.0.1:4000/archive/113488general/28276tailcalloptimisation#163457398">(Apr 16 2019 at 10:34)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tail-call%20optimisation/near/163457398" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="https://rht.github.io/archive/113488general/28276tailcalloptimisation#163457398">(Apr 16 2019 at 10:34)</a>:</h4>
 <p><a href="#narrow/stream/113488-general/topic/Efficient.20modular.20fibonacci/near/161592306" title="#narrow/stream/113488-general/topic/Efficient.20modular.20fibonacci/near/161592306">This thread</a> is relevant.  I would summarise it as saying that Mario's approach persuades Lean to do the optimisation, but it does need persuasion.  But I am not an expert on these things, and others might disagree with that summary.</p>
 
 
 
 <a name="163457406"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tail-call%20optimisation/near/163457406" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/28276tailcalloptimisation#163457406">(Apr 16 2019 at 10:34)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tail-call%20optimisation/near/163457406" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/28276tailcalloptimisation#163457406">(Apr 16 2019 at 10:34)</a>:</h4>
 <p>See also <a href="#narrow/stream/113488-general/topic/Tail-call.20elimination.3F" title="#narrow/stream/113488-general/topic/Tail-call.20elimination.3F">https://leanprover.zulipchat.com/#narrow/stream/113488-general/topic/Tail-call.20elimination.3F</a></p>
 
 
 
 <a name="163457789"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tail-call%20optimisation/near/163457789" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/28276tailcalloptimisation#163457789">(Apr 16 2019 at 10:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tail-call%20optimisation/near/163457789" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/28276tailcalloptimisation#163457789">(Apr 16 2019 at 10:41)</a>:</h4>
 <p>I think the short answer is no because I would expect a TCO to optimise <code>rev_aux</code>.</p>
 <div class="codehilite"><pre><span></span><span class="kn">set_option</span> <span class="n">trace</span><span class="bp">.</span><span class="n">compiler</span><span class="bp">.</span><span class="n">code_gen</span> <span class="n">true</span>
 <span class="n">def</span> <span class="n">rev_aux</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">}</span> <span class="o">:</span> <span class="n">list</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">list</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">list</span> <span class="n">α</span>
@@ -69,7 +69,7 @@ permalink: archive/113488general/28276tailcalloptimisation.html
 
 
 <a name="163461028"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tail-call%20optimisation/near/163461028" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="http://127.0.0.1:4000/archive/113488general/28276tailcalloptimisation#163461028">(Apr 16 2019 at 11:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tail-call%20optimisation/near/163461028" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Kappelmann <a href="https://rht.github.io/archive/113488general/28276tailcalloptimisation#163461028">(Apr 16 2019 at 11:38)</a>:</h4>
 <blockquote>
 <p>If I'm not mistaken TCO would replace step <code>9</code> with a <code>goto 1</code> and also some register shuffling. I could also be misinterpreting what is going on here.</p>
 </blockquote>

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/90550contextwithinmatchexpression.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/90550contextwithinmatchexpression.html">context within match expression</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/90550contextwithinmatchexpression.html">context within match expression</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/90550contextwithinmatchexpression.html
 {% raw %}
 
 <a name="158535334"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/context%20within%20match%20expression/near/158535334" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Hans-Dieter Hiep <a href="http://127.0.0.1:4000/archive/113488general/90550contextwithinmatchexpression#158535334">(Feb 14 2019 at 15:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/context%20within%20match%20expression/near/158535334" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Hans-Dieter Hiep <a href="https://rht.github.io/archive/113488general/90550contextwithinmatchexpression#158535334">(Feb 14 2019 at 15:02)</a>:</h4>
 <p>Hi! I have a basic question about match expressions. It seems that part of the context is missing. Let me demonstrate by example:</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">test</span> <span class="o">(</span><span class="n">t</span> <span class="o">:</span> <span class="n">bool</span><span class="o">)</span> <span class="o">:</span> <span class="n">bool</span> <span class="o">:=</span>
   <span class="k">match</span> <span class="n">t</span> <span class="k">with</span>
@@ -38,7 +38,7 @@ _match : bool → bool
 
 
 <a name="158536100"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/context%20within%20match%20expression/near/158536100" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Hans-Dieter Hiep <a href="http://127.0.0.1:4000/archive/113488general/90550contextwithinmatchexpression#158536100">(Feb 14 2019 at 15:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/context%20within%20match%20expression/near/158536100" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Hans-Dieter Hiep <a href="https://rht.github.io/archive/113488general/90550contextwithinmatchexpression#158536100">(Feb 14 2019 at 15:09)</a>:</h4>
 <p>I have written this program now:</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">test2</span> <span class="o">(</span><span class="n">t</span> <span class="o">:</span> <span class="n">bool</span><span class="o">)</span> <span class="o">:</span> <span class="n">bool</span> <span class="o">:=</span>
   <span class="k">begin</span>
@@ -54,13 +54,13 @@ _match : bool → bool
 
 
 <a name="158536248"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/context%20within%20match%20expression/near/158536248" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Hans-Dieter Hiep <a href="http://127.0.0.1:4000/archive/113488general/90550contextwithinmatchexpression#158536248">(Feb 14 2019 at 15:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/context%20within%20match%20expression/near/158536248" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Hans-Dieter Hiep <a href="https://rht.github.io/archive/113488general/90550contextwithinmatchexpression#158536248">(Feb 14 2019 at 15:10)</a>:</h4>
 <p>Somehow, I expected a similar functionality for the match clause as is provided by the cases tactic. Something like <code>match (H : t) with</code>, but that is not syntactically valid, nor documented. Am I missing something?</p>
 
 
 
 <a name="158536288"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/context%20within%20match%20expression/near/158536288" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/90550contextwithinmatchexpression#158536288">(Feb 14 2019 at 15:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/context%20within%20match%20expression/near/158536288" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113488general/90550contextwithinmatchexpression#158536288">(Feb 14 2019 at 15:11)</a>:</h4>
 <p>Another option:</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">test</span> <span class="o">(</span><span class="n">t</span> <span class="o">:</span> <span class="n">bool</span><span class="o">)</span> <span class="o">:</span> <span class="n">bool</span> <span class="o">:=</span>
   <span class="k">match</span> <span class="bp">_</span><span class="o">,</span> <span class="n">rfl</span> <span class="o">:</span> <span class="bp">∀</span> <span class="n">b</span><span class="o">,</span> <span class="n">t</span> <span class="bp">=</span> <span class="n">b</span> <span class="bp">→</span> <span class="bp">_</span> <span class="k">with</span>
@@ -72,7 +72,7 @@ _match : bool → bool
 
 
 <a name="158536791"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/context%20within%20match%20expression/near/158536791" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Hans-Dieter Hiep <a href="http://127.0.0.1:4000/archive/113488general/90550contextwithinmatchexpression#158536791">(Feb 14 2019 at 15:16)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/context%20within%20match%20expression/near/158536791" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Hans-Dieter Hiep <a href="https://rht.github.io/archive/113488general/90550contextwithinmatchexpression#158536791">(Feb 14 2019 at 15:16)</a>:</h4>
 <p>Thanks! That is much neater than going into proof mode!</p>
 
 

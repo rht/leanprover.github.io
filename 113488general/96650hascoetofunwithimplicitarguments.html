@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/96650hascoetofunwithimplicitarguments.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/96650hascoetofunwithimplicitarguments.html">has_coe_to_fun with implicit arguments</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/96650hascoetofunwithimplicitarguments.html">has_coe_to_fun with implicit arguments</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/96650hascoetofunwithimplicitarguments.html
 {% raw %}
 
 <a name="170881798"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/has_coe_to_fun%20with%20implicit%20arguments/near/170881798" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="http://127.0.0.1:4000/archive/113488general/96650hascoetofunwithimplicitarguments#170881798">(Jul 15 2019 at 10:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/has_coe_to_fun%20with%20implicit%20arguments/near/170881798" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="https://rht.github.io/archive/113488general/96650hascoetofunwithimplicitarguments#170881798">(Jul 15 2019 at 10:46)</a>:</h4>
 <p>I am having trouble getting <code>has_coe_to_fun</code> to work with implicit arguments in the way that I would like.  Consider the following:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">rat</span><span class="bp">.</span><span class="n">basic</span> <span class="n">linear_algebra</span><span class="bp">.</span><span class="n">basic</span>
 
@@ -49,13 +49,13 @@ permalink: archive/113488general/96650hascoetofunwithimplicitarguments.html
 
 
 <a name="170882873"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/has_coe_to_fun%20with%20implicit%20arguments/near/170882873" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113488general/96650hascoetofunwithimplicitarguments#170882873">(Jul 15 2019 at 11:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/has_coe_to_fun%20with%20implicit%20arguments/near/170882873" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113488general/96650hascoetofunwithimplicitarguments#170882873">(Jul 15 2019 at 11:06)</a>:</h4>
 <p>Too many arguments is because a term of type <code>V →ₗ[ℚ] V</code> takes no arguments before it is coerced, so one argument is too many. I think  <code>def f3 (v : V) : V := (f : V -&gt; V) v</code> should work.</p>
 
 
 
 <a name="170883678"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/has_coe_to_fun%20with%20implicit%20arguments/near/170883678" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="http://127.0.0.1:4000/archive/113488general/96650hascoetofunwithimplicitarguments#170883678">(Jul 15 2019 at 11:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/has_coe_to_fun%20with%20implicit%20arguments/near/170883678" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Neil Strickland <a href="https://rht.github.io/archive/113488general/96650hascoetofunwithimplicitarguments#170883678">(Jul 15 2019 at 11:20)</a>:</h4>
 <p>In fact <code>def f3 (v : V) : V := (f : V → V) v</code> gives</p>
 <div class="codehilite"><pre><span></span><span class="n">invalid</span> <span class="n">type</span> <span class="n">ascription</span><span class="o">,</span> <span class="n">term</span> <span class="n">has</span> <span class="n">type</span>
   <span class="err">?</span><span class="n">m_1</span> <span class="bp">→</span><span class="err">ₗ</span><span class="o">[</span><span class="n">ℚ</span><span class="o">]</span> <span class="err">?</span><span class="n">m_1</span> <span class="o">:</span> <span class="kt">Type</span> <span class="err">?</span>
@@ -69,7 +69,7 @@ permalink: archive/113488general/96650hascoetofunwithimplicitarguments.html
 
 
 <a name="170891844"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/has_coe_to_fun%20with%20implicit%20arguments/near/170891844" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/96650hascoetofunwithimplicitarguments#170891844">(Jul 15 2019 at 13:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/has_coe_to_fun%20with%20implicit%20arguments/near/170891844" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/96650hascoetofunwithimplicitarguments#170891844">(Jul 15 2019 at 13:23)</a>:</h4>
 <p>One thing that always gave me trouble with <code>has_coe_to_fun</code> is when I would hope that the type of the argument would help infer some of the parameters of the type of the object being coerced to function. Would thing that would help is make <code>V</code> an explicit parameter and call <code>f</code> as <code>f V v</code></p>
 
 

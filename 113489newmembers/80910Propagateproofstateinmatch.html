@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/80910Propagateproofstateinmatch.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/80910Propagateproofstateinmatch.html">Propagate proof state in match?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/80910Propagateproofstateinmatch.html">Propagate proof state in match?</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/80910Propagateproofstateinmatch.html
 {% raw %}
 
 <a name="174035346"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174035346" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="http://127.0.0.1:4000/archive/113489newmembers/80910Propagateproofstateinmatch#174035346">(Aug 24 2019 at 11:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174035346" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="https://rht.github.io/archive/113489newmembers/80910Propagateproofstateinmatch#174035346">(Aug 24 2019 at 11:26)</a>:</h4>
 <p>As an exercise, I'm working on an red-black-tree. And I'm trying to show, that the re-balancing doesn't change the interpretation as a set. </p>
 <div class="codehilite"><pre><span></span>universes u
 variables α : Type u
@@ -82,43 +82,43 @@ end
 
 
 <a name="174036754"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174036754" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/80910Propagateproofstateinmatch#174036754">(Aug 24 2019 at 12:12)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174036754" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/80910Propagateproofstateinmatch#174036754">(Aug 24 2019 at 12:12)</a>:</h4>
 <p>Use <code>#print prefix balance</code> and look for the <code>_eqn_*</code> theorems to see the actual equations lean will rewrite with</p>
 
 
 
 <a name="174036761"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174036761" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/80910Propagateproofstateinmatch#174036761">(Aug 24 2019 at 12:13)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174036761" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/80910Propagateproofstateinmatch#174036761">(Aug 24 2019 at 12:13)</a>:</h4>
 <p>Most likely, lean has done an additional case split on one of the other variables, and you will have to do that same split in the proof of properties of it</p>
 
 
 
 <a name="174036832"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174036832" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/80910Propagateproofstateinmatch#174036832">(Aug 24 2019 at 12:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174036832" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/80910Propagateproofstateinmatch#174036832">(Aug 24 2019 at 12:15)</a>:</h4>
 <p>looks like lean did quite a lot of case splitting - there are 122 equations for the definition</p>
 
 
 
 <a name="174036885"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174036885" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/80910Propagateproofstateinmatch#174036885">(Aug 24 2019 at 12:16)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174036885" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/80910Propagateproofstateinmatch#174036885">(Aug 24 2019 at 12:16)</a>:</h4>
 <p>I suggest rewriting <code>balance</code> with explicit <code>cases</code> applications so that you don't get so many superfluous splits</p>
 
 
 
 <a name="174036889"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174036889" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/80910Propagateproofstateinmatch#174036889">(Aug 24 2019 at 12:16)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174036889" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/80910Propagateproofstateinmatch#174036889">(Aug 24 2019 at 12:16)</a>:</h4>
 <p>Or make an intermediate definition or two</p>
 
 
 
 <a name="174039902"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174039902" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="http://127.0.0.1:4000/archive/113489newmembers/80910Propagateproofstateinmatch#174039902">(Aug 24 2019 at 13:48)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174039902" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="https://rht.github.io/archive/113489newmembers/80910Propagateproofstateinmatch#174039902">(Aug 24 2019 at 13:48)</a>:</h4>
 <p>oh wow, that's a lot of equations. I'll look into reducing the number of them by the strategy suggested.</p>
 
 
 
 <a name="174040304"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174040304" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="http://127.0.0.1:4000/archive/113489newmembers/80910Propagateproofstateinmatch#174040304">(Aug 24 2019 at 14:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174040304" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="https://rht.github.io/archive/113489newmembers/80910Propagateproofstateinmatch#174040304">(Aug 24 2019 at 14:01)</a>:</h4>
 <p>this is interesting: when I change the definition of <code>balance</code> to one w.r.t. to <code>match</code>, it's much happier. Consider these two (I believe) equivalent formulations</p>
 <div class="codehilite"><pre><span></span>def balance {α} : color → node α → α → node α → node α
 :=
@@ -153,7 +153,7 @@ end
 
 
 <a name="174040682"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174040682" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="http://127.0.0.1:4000/archive/113489newmembers/80910Propagateproofstateinmatch#174040682">(Aug 24 2019 at 14:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Propagate%20proof%20state%20in%20match%3F/near/174040682" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Daniel Fabian <a href="https://rht.github.io/archive/113489newmembers/80910Propagateproofstateinmatch#174040682">(Aug 24 2019 at 14:14)</a>:</h4>
 <p>upon further investigation, the second version has about twice as many equations as the first one...</p>
 
 

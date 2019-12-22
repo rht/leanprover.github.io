@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/41517nameforandquestionaboutcomputationalprinciple.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/41517nameforandquestionaboutcomputationalprinciple.html">name for, and question about, computational principle</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/41517nameforandquestionaboutcomputationalprinciple.html">name for, and question about, computational principle</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/41517nameforandquestionaboutcomputationalprinci
 {% raw %}
 
 <a name="161647802"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/name%20for%2C%20and%20question%20about%2C%20computational%20principle/near/161647802" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/41517nameforandquestionaboutcomputationalprinciple#161647802">(Mar 25 2019 at 14:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/name%20for%2C%20and%20question%20about%2C%20computational%20principle/near/161647802" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/41517nameforandquestionaboutcomputationalprinciple#161647802">(Mar 25 2019 at 14:22)</a>:</h4>
 <p>In <a href="https://leanprover.github.io/theorem_proving_in_lean/axioms_and_computation.html#quotients" target="_blank" title="https://leanprover.github.io/theorem_proving_in_lean/axioms_and_computation.html#quotients">section 11.4 of TPIL</a> they talk about quotients. The computational principle is introduced with its <code>rfl</code> proof. </p>
 <div class="codehilite"><pre><span></span><span class="kn">theorem</span> <span class="n">thm</span> <span class="o">:</span> <span class="n">quot</span><span class="bp">.</span><span class="n">lift</span> <span class="n">f</span> <span class="n">h</span> <span class="o">(</span><span class="n">quot</span><span class="bp">.</span><span class="n">mk</span> <span class="n">r</span> <span class="n">a</span><span class="o">)</span> <span class="bp">=</span> <span class="n">f</span> <span class="n">a</span> <span class="o">:=</span> <span class="n">rfl</span>
 </pre></div>
@@ -34,13 +34,13 @@ permalink: archive/113488general/41517nameforandquestionaboutcomputationalprinci
 
 
 <a name="161648170"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/name%20for%2C%20and%20question%20about%2C%20computational%20principle/near/161648170" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113488general/41517nameforandquestionaboutcomputationalprinciple#161648170">(Mar 25 2019 at 14:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/name%20for%2C%20and%20question%20about%2C%20computational%20principle/near/161648170" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113488general/41517nameforandquestionaboutcomputationalprinciple#161648170">(Mar 25 2019 at 14:26)</a>:</h4>
 <p>I think it might be called <code>quot.lift_beta</code></p>
 
 
 
 <a name="161648821"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/name%20for%2C%20and%20question%20about%2C%20computational%20principle/near/161648821" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/41517nameforandquestionaboutcomputationalprinciple#161648821">(Mar 25 2019 at 14:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/name%20for%2C%20and%20question%20about%2C%20computational%20principle/near/161648821" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/41517nameforandquestionaboutcomputationalprinciple#161648821">(Mar 25 2019 at 14:32)</a>:</h4>
 <p>Oh indeed! I just looked in core lean and lo and behold it's not called <code>thm</code> after all :-) So should we call ours <code>lift_beta</code>? Johan called it <code>lift_eq</code> which I thought sounded much better.</p>
 
 

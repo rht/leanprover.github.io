@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/19157bugincongr.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/19157bugincongr.html">bug in congr'?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/19157bugincongr.html">bug in congr'?</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/19157bugincongr.html
 {% raw %}
 
 <a name="169180223"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/bug%20in%20congr%27%3F/near/169180223" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/19157bugincongr#169180223">(Jun 27 2019 at 22:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/bug%20in%20congr%27%3F/near/169180223" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/19157bugincongr#169180223">(Jun 27 2019 at 22:05)</a>:</h4>
 <p>I have been watching the lectures by Xavier Leroy <a href="https://www.college-de-france.fr/site/xavier-leroy/course-2018-2019.htm" target="_blank" title="https://www.college-de-france.fr/site/xavier-leroy/course-2018-2019.htm">https://www.college-de-france.fr/site/xavier-leroy/course-2018-2019.htm</a> on type theory. He defined well-founded trees via a cute inductive type and then showed how to make a variant of nat. I managed to prove it was the same as nat:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">equiv</span><span class="bp">.</span><span class="n">basic</span>
 
@@ -65,7 +65,7 @@ permalink: archive/113488general/19157bugincongr.html
 
 
 <a name="169180524"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/bug%20in%20congr%27%3F/near/169180524" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/19157bugincongr#169180524">(Jun 27 2019 at 22:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/bug%20in%20congr%27%3F/near/169180524" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/19157bugincongr#169180524">(Jun 27 2019 at 22:09)</a>:</h4>
 <p>In case anyone is trying to understand the code -- <code>W L A</code> is well-founded trees whose nodes each have a label (from L) and the exit edges from each node with label L form a type which is <code>A L</code>; the well-founded tree that each one corresponds to is given by <code>A lbl -&gt; W</code> in the constructor. For example, if <code>A lbl -&gt; W</code> is <code>(λ b, bool.rec empty unit b)</code> then we're saying that a vertex is either labelled with ff and has no children, or is labelled with <code>tt</code> and has exactly one; such well-founded trees are then sequences of <code>tt</code> followed by an <code>ff</code>, so this is <code>nat</code> by some other name.</p>
 
 

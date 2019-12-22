@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/116395maths/52642wellfoundedrecursionlexicographicordering.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/116395maths/index.html">maths</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/116395maths/52642wellfoundedrecursionlexicographicordering.html">well-founded recursion & lexicographic ordering ?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/116395maths/index.html">maths</a>
+<h3>Topic: <a href="https://rht.github.io/archive/116395maths/52642wellfoundedrecursionlexicographicordering.html">well-founded recursion & lexicographic ordering ?</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/116395maths/52642wellfoundedrecursionlexicographicordering.ht
 {% raw %}
 
 <a name="133941390"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941390" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jack Crawford <a href="http://127.0.0.1:4000/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941390">(Sep 14 2018 at 09:29)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941390" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jack Crawford <a href="https://rht.github.io/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941390">(Sep 14 2018 at 09:29)</a>:</h4>
 <p>Hi, I have a pleb question about how Lean infers whether recursion is well-founded or not.<br>
 I'm writing a recursive function whose first two arguments are of type <code>fin m</code> and <code>fin n</code>,  and my algorithm:<br>
  1) always decreases the size of my <code>fin n</code><br>
@@ -28,19 +28,19 @@ However, when I simply change the order that my arguments appear from <code>fin 
 
 
 <a name="133941463"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941463" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941463">(Sep 14 2018 at 09:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941463" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941463">(Sep 14 2018 at 09:31)</a>:</h4>
 <p>MWE</p>
 
 
 
 <a name="133941803"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941803" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941803">(Sep 14 2018 at 09:40)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941803" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941803">(Sep 14 2018 at 09:40)</a>:</h4>
 <p>By default Lean uses lexicographic ordering when trying to prove recursive functions are well-defined, so definitely the input order matters. The notes at <a href="https://github.com/leanprover/mathlib/blob/master/docs/extras/well_founded_recursion.md" target="_blank" title="https://github.com/leanprover/mathlib/blob/master/docs/extras/well_founded_recursion.md">https://github.com/leanprover/mathlib/blob/master/docs/extras/well_founded_recursion.md</a> probably tell you all you need to know</p>
 
 
 
 <a name="133941855"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941855" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jack Crawford <a href="http://127.0.0.1:4000/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941855">(Sep 14 2018 at 09:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941855" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jack Crawford <a href="https://rht.github.io/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941855">(Sep 14 2018 at 09:41)</a>:</h4>
 <p><span class="user-mention" data-user-id="110064">@Kenny Lau</span> <br>
 here's an MWE, compare the pair:</p>
 <div class="codehilite"><pre><span></span>def mwe_aux {m n : ℕ} : Π (i : fin m) (j : fin n), bool
@@ -67,19 +67,19 @@ end
 
 
 <a name="133941878"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941878" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941878">(Sep 14 2018 at 09:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941878" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941878">(Sep 14 2018 at 09:41)</a>:</h4>
 <p>the linked notes explain how to change the well-order on your input.</p>
 
 
 
 <a name="133941927"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941927" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jack Crawford <a href="http://127.0.0.1:4000/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941927">(Sep 14 2018 at 09:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941927" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jack Crawford <a href="https://rht.github.io/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941927">(Sep 14 2018 at 09:42)</a>:</h4>
 <p><span class="user-mention" data-user-id="110038">@Kevin Buzzard</span>  ah oops I didn't see that before I responded to Kenny, thanks, I'll have a look!</p>
 
 
 
 <a name="133941991"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941991" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941991">(Sep 14 2018 at 09:44)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/well-founded%20recursion%20%26%20lexicographic%20ordering%20%3F/near/133941991" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/116395maths/52642wellfoundedrecursionlexicographicordering#133941991">(Sep 14 2018 at 09:44)</a>:</h4>
 <p>well I mean, what are you trying to do, instead of MWE of the error</p>
 
 

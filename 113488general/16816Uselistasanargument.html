@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/16816Uselistasanargument.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument.html">Use list as an argument</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument.html">Use list as an argument</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/16816Uselistasanargument.html
 {% raw %}
 
 <a name="129458509"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129458509" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blair Shi <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129458509">(Jul 11 2018 at 08:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129458509" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blair Shi <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129458509">(Jul 11 2018 at 08:36)</a>:</h4>
 <p>I define a function which takes a list as a argument but I do not know why it always break when I use it in my other theorem or function.<br>
 my function no error:</p>
 <div class="codehilite"><pre><span></span>def f_span (l : list V) : set V :=
@@ -45,37 +45,37 @@ but is expected to have type
 
 
 <a name="129458841"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129458841" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129458841">(Jul 11 2018 at 08:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129458841" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129458841">(Jul 11 2018 at 08:46)</a>:</h4>
 <p>You have some variable <code>V</code> somewhere, I guess?</p>
 
 
 
 <a name="129458858"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129458858" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129458858">(Jul 11 2018 at 08:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129458858" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129458858">(Jul 11 2018 at 08:46)</a>:</h4>
 <p>If you look at what you wrote as the definition of <code>f_span</code> then it <em>looks</em> like it is expecting one input, namely <code>l</code> of type <code>list V</code></p>
 
 
 
 <a name="129458871"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129458871" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129458871">(Jul 11 2018 at 08:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129458871" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129458871">(Jul 11 2018 at 08:47)</a>:</h4>
 <p>But after the definition of <code>f_span</code>, if you write <code>#check f_span</code> you will probably see a different story!</p>
 
 
 
 <a name="129458902"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129458902" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129458902">(Jul 11 2018 at 08:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129458902" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129458902">(Jul 11 2018 at 08:47)</a>:</h4>
 <p>Probably <code>f_span</code> is also expecting you to input <code>V</code> itself. So that's my guess as to what your error is caused by -- you need <code>f_span V l_0</code></p>
 
 
 
 <a name="129458955"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129458955" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129458955">(Jul 11 2018 at 08:48)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129458955" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129458955">(Jul 11 2018 at 08:48)</a>:</h4>
 <p>The trick is to make <code>V</code> a <code>{}</code> variable; then <code>f_span</code> won't ask for it. I've got to run but that's the idea</p>
 
 
 
 <a name="129459298"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129459298" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sean Leather <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129459298">(Jul 11 2018 at 08:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129459298" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sean Leather <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129459298">(Jul 11 2018 at 08:59)</a>:</h4>
 <blockquote>
 <p>But after the definition of <code>f_span</code>, if you write <code>#check f_span</code> you will probably see a different story!</p>
 </blockquote>
@@ -84,19 +84,19 @@ but is expected to have type
 
 
 <a name="129459870"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129459870" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blair Shi <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129459870">(Jul 11 2018 at 09:17)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129459870" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blair Shi <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129459870">(Jul 11 2018 at 09:17)</a>:</h4>
 <p>I added more argument using <code>[]</code> and it works now. thank you !</p>
 
 
 
 <a name="129460007"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129460007" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sean Leather <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129460007">(Jul 11 2018 at 09:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129460007" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sean Leather <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129460007">(Jul 11 2018 at 09:21)</a>:</h4>
 <p><span class="user-mention" data-user-id="119876">@Blair Shi</span> Can you show us what it looks like now?</p>
 
 
 
 <a name="129460651"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129460651" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blair Shi <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129460651">(Jul 11 2018 at 09:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129460651" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blair Shi <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129460651">(Jul 11 2018 at 09:39)</a>:</h4>
 <div class="codehilite"><pre><span></span>def f_span (l : list V) : set V :=
 span {vc : V | vc ∈ l}
 def are_basis_equal (l₀ : list V) (l₁ : list V) : Prop :=
@@ -116,19 +116,19 @@ def are_basis_equal (l₀ : list V) (l₁ : list V) : Prop :=
 
 
 <a name="129460809"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129460809" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129460809">(Jul 11 2018 at 09:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129460809" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129460809">(Jul 11 2018 at 09:43)</a>:</h4>
 <p>Are you sure you're not duplicating stuff around <a href="https://github.com/leanprover/mathlib/blob/master/linear_algebra/basic.lean#L122" target="_blank" title="https://github.com/leanprover/mathlib/blob/master/linear_algebra/basic.lean#L122">https://github.com/leanprover/mathlib/blob/master/linear_algebra/basic.lean#L122</a>?</p>
 
 
 
 <a name="129461143"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129461143" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blair Shi <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129461143">(Jul 11 2018 at 09:52)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129461143" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blair Shi <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129461143">(Jul 11 2018 at 09:52)</a>:</h4>
 <p><span class="user-mention" data-user-id="110031">@Patrick Massot</span>  because the vector space in mathlib does not support finite dimensional vector space. I am currently working on finite dimensional vector space and in the definition of finite dimensional vector space, the basis is a list.</p>
 
 
 
 <a name="129461329"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129461329" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blair Shi <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129461329">(Jul 11 2018 at 09:57)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129461329" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blair Shi <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129461329">(Jul 11 2018 at 09:57)</a>:</h4>
 <p><span class="user-mention" data-user-id="110045">@Sean Leather</span> <br>
 I realized I have wrote the global variables and if I delete them the code does not work</p>
 <div class="codehilite"><pre><span></span>variables (k : Type u) (V : Type v)
@@ -141,31 +141,31 @@ include k
 
 
 <a name="129461449"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129461449" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129461449">(Jul 11 2018 at 10:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129461449" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129461449">(Jul 11 2018 at 10:00)</a>:</h4>
 <p>Ok. I remember we had this discussion about ordering basis elements here.</p>
 
 
 
 <a name="129461828"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129461828" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129461828">(Jul 11 2018 at 10:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129461828" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129461828">(Jul 11 2018 at 10:10)</a>:</h4>
 <p>You want <code>variables {k : Type u} {V : Type v}</code> in the first line</p>
 
 
 
 <a name="129462340"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129462340" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blair Shi <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129462340">(Jul 11 2018 at 10:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129462340" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blair Shi <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129462340">(Jul 11 2018 at 10:23)</a>:</h4>
 <p>I change it to be <code>{k : Type u} {V : Type v}</code>as you said. Now I delete all <code>k V</code> when I use the function:)</p>
 
 
 
 <a name="129462359"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129462359" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129462359">(Jul 11 2018 at 10:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129462359" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129462359">(Jul 11 2018 at 10:24)</a>:</h4>
 <p>ordering basis elements -- it's a funny situation! In the general case you seem to want a basis to be a set. But to prove the standard undergraduate theorems about linear maps = matrices you seem to want the basis to be a finite totally ordered set.</p>
 
 
 
 <a name="129462488"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129462488" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/16816Uselistasanargument#129462488">(Jul 11 2018 at 10:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Use%20list%20as%20an%20argument/near/129462488" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/16816Uselistasanargument#129462488">(Jul 11 2018 at 10:26)</a>:</h4>
 <p><span class="user-mention" data-user-id="119876">@Blair Shi</span> yes -- if you are doing vector spaces over a field field <code>k</code> then you don't want to have to keep mentioning <code>k</code>. If you're doing <code>k</code>-linear maps between vector spaces <code>V</code> and <code>W</code> then you probably want to mention <code>V</code> but if you're doing things with a fixed <code>V</code> like showing that sets of size less than dim(V) can't span then you might not even want to mention <code>V</code>. This is how those <code>{}</code> and <code>()</code> brackets that I talked about in my lecture on Monday work in practice. There are tricks to change the variable from <code>()</code> to <code>{}</code>and back in the middle of a file which I can tell you about later if you need them.</p>
 
 

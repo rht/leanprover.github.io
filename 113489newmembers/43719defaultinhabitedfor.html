@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/43719defaultinhabitedfor.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor.html">default / inhabited for ℚ, ℝ, ℂ</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor.html">default / inhabited for ℚ, ℝ, ℂ</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/43719defaultinhabitedfor.html
 {% raw %}
 
 <a name="132070075"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132070075" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132070075">(Aug 13 2018 at 20:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132070075" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132070075">(Aug 13 2018 at 20:32)</a>:</h4>
 <p>I'm going through <a href="https://leanprover.github.io/theorem_proving_in_lean/type_classes.html#type-classes-and-instances" target="_blank" title="https://leanprover.github.io/theorem_proving_in_lean/type_classes.html#type-classes-and-instances">TPIL's chapter on typeclasses</a> and while messing around tried the following:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">complex</span><span class="bp">.</span><span class="n">basic</span>
 <span class="bp">#</span><span class="n">reduce</span> <span class="n">default</span> <span class="n">ℚ</span> <span class="c1">-- no type class instance of inhabited ℚ</span>
@@ -37,32 +37,32 @@ permalink: archive/113489newmembers/43719defaultinhabitedfor.html
 
 
 <a name="132070230"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132070230" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132070230">(Aug 13 2018 at 20:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132070230" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132070230">(Aug 13 2018 at 20:35)</a>:</h4>
 <p>I suspect that <code>#reduce</code> fails on the last two because the reals and complexes are in general a pain to compute with -- they don't have decidable equality and they might well not even have an algorithm for printing out a real number. What would you expect  sqrt(2) to look like in Lean? Is it supposed to print out all the digits? :-)</p>
 <p>I would imagine that Q not being inhabited, if true, is an oversight.</p>
 
 
 
 <a name="132070343"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132070343" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132070343">(Aug 13 2018 at 20:37)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132070343" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132070343">(Aug 13 2018 at 20:37)</a>:</h4>
 <p>They time out because a real number is built from a Cauchy sequence, and making a Cauchy sequence requires a proof that the sequence is Cauchy. When you #reduce a real, it will try to unfold this proof to axioms, and this will be huge.</p>
 
 
 
 <a name="132070420"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132070420" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132070420">(Aug 13 2018 at 20:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132070420" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132070420">(Aug 13 2018 at 20:38)</a>:</h4>
 <p>Thanks, that makes sense! Out of curiosity, what would be the right way to get Lean to spit out the default elements for ℝ and ℂ then?</p>
 
 
 
 <a name="132070513"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132070513" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132070513">(Aug 13 2018 at 20:40)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132070513" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132070513">(Aug 13 2018 at 20:40)</a>:</h4>
 <p>The best way to check what they are is to look at the definition of the inhabited instance. Reals don't have decidable equality, so given a real, lean cannot tell if it equals zero or not.</p>
 
 
 
 <a name="132070886"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132070886" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132070886">(Aug 13 2018 at 20:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132070886" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132070886">(Aug 13 2018 at 20:47)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">real</span><span class="bp">.</span><span class="n">basic</span>
 
 <span class="kn">definition</span> <span class="n">d</span> <span class="o">:</span> <span class="n">inhabited</span> <span class="n">ℝ</span> <span class="o">:=</span> <span class="k">by</span> <span class="n">apply_instance</span>
@@ -84,13 +84,13 @@ permalink: archive/113489newmembers/43719defaultinhabitedfor.html
 
 
 <a name="132071991"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132071991" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132071991">(Aug 13 2018 at 21:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132071991" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132071991">(Aug 13 2018 at 21:07)</a>:</h4>
 <p>I only mention this because I know of no other way of figuring out the real number which was used other than by looking at the source. I don't know how to look at the definition of d directly, as it were.</p>
 
 
 
 <a name="132072791"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072791" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132072791">(Aug 13 2018 at 21:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072791" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132072791">(Aug 13 2018 at 21:22)</a>:</h4>
 <p>Ah, OK, so in general, <code>instance : typeclass something</code> can be accessed with <code>something.typeclass</code>. I must have read this somewhere...</p>
 <p>Knowing that I can just <code>#print real.inhabited</code> and read off <code>{default := 0}.</code></p>
 <p>As an aside, it seems that <code>rat</code> is missing a bunch of other stuff too, like <code>rat.ring</code>, <code>rat.add_group</code>, <code>rat.field</code>, etc. although they're all an easy <code>by apply_instance</code> away.</p>
@@ -98,19 +98,19 @@ permalink: archive/113489newmembers/43719defaultinhabitedfor.html
 
 
 <a name="132072805"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072805" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132072805">(Aug 13 2018 at 21:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072805" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132072805">(Aug 13 2018 at 21:23)</a>:</h4>
 <p>waitwaitwait. If <code>by apply_instance</code> works, it's there.</p>
 
 
 
 <a name="132072874"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072874" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132072874">(Aug 13 2018 at 21:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072874" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132072874">(Aug 13 2018 at 21:24)</a>:</h4>
 <p>A lot of these instances might be being inferred automatically. For example, Lean knows that any <code>field</code> is automatically a <code>comm_ring</code>, a <code>ring</code>, an <code>add_monoid</code> etc etc.</p>
 
 
 
 <a name="132072906"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072906" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132072906">(Aug 13 2018 at 21:25)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072906" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132072906">(Aug 13 2018 at 21:25)</a>:</h4>
 <blockquote>
 <p>waitwaitwait. If <code>by apply_instance</code> works, it's there.</p>
 </blockquote>
@@ -123,7 +123,7 @@ permalink: archive/113489newmembers/43719defaultinhabitedfor.html
 
 
 <a name="132072965"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072965" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132072965">(Aug 13 2018 at 21:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072965" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132072965">(Aug 13 2018 at 21:26)</a>:</h4>
 <p>Another way of discovering the name is<br>
  ```lean<br>
 def foo : inhabited real := by apply_instance<br>
@@ -134,19 +134,19 @@ def foo : inhabited real := by apply_instance<br>
 
 
 <a name="132072972"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072972" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132072972">(Aug 13 2018 at 21:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072972" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132072972">(Aug 13 2018 at 21:26)</a>:</h4>
 <p>Bryan, this is not a bug, this is what the type class system is about</p>
 
 
 
 <a name="132072982"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072982" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132072982">(Aug 13 2018 at 21:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132072982" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132072982">(Aug 13 2018 at 21:26)</a>:</h4>
 <p>You get cascading for free</p>
 
 
 
 <a name="132073073"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132073073" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132073073">(Aug 13 2018 at 21:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132073073" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132073073">(Aug 13 2018 at 21:28)</a>:</h4>
 <blockquote>
 <p>Bryan, this is not a bug, this is what the type class system is about</p>
 </blockquote>
@@ -155,13 +155,13 @@ def foo : inhabited real := by apply_instance<br>
 
 
 <a name="132073292"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132073292" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132073292">(Aug 13 2018 at 21:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132073292" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132073292">(Aug 13 2018 at 21:32)</a>:</h4>
 <p><a href="https://github.com/leanprover/mathlib/pull/254" target="_blank" title="https://github.com/leanprover/mathlib/pull/254">https://github.com/leanprover/mathlib/pull/254</a></p>
 
 
 
 <a name="132073578"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132073578" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132073578">(Aug 13 2018 at 21:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132073578" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132073578">(Aug 13 2018 at 21:38)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">rat</span>
 
 <span class="kn">definition</span> <span class="n">x</span> <span class="o">:</span> <span class="n">comm_ring</span> <span class="n">ℚ</span> <span class="o">:=</span> <span class="k">by</span> <span class="n">apply_instance</span>
@@ -183,7 +183,7 @@ def foo : inhabited real := by apply_instance<br>
 
 
 <a name="132073675"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132073675" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132073675">(Aug 13 2018 at 21:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132073675" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132073675">(Aug 13 2018 at 21:41)</a>:</h4>
 <blockquote>
 <p>Lean knows that the rationals are a commutative ring, but the instance is not called <code>rat.comm_ring</code>, it's called something else. </p>
 </blockquote>
@@ -192,25 +192,25 @@ def foo : inhabited real := by apply_instance<br>
 
 
 <a name="132073758"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132073758" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132073758">(Aug 13 2018 at 21:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132073758" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132073758">(Aug 13 2018 at 21:43)</a>:</h4>
 <p>I guess the term is <code>field.to_comm_ring ℚ</code> and there's no name for this term. On the other hand when <code>instance : foo bar  := blah </code> is run, Lean has a go at naming the instance itself using some vaguely sane algorithm.</p>
 
 
 
 <a name="132074255"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132074255" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132074255">(Aug 13 2018 at 21:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132074255" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132074255">(Aug 13 2018 at 21:54)</a>:</h4>
 <p>It looks like <code>field.to_comm_ring</code> itself is created automatically from <code>extends comm_ring</code> in the <code>class field</code> declaration.</p>
 
 
 
 <a name="132074504"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132074504" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132074504">(Aug 13 2018 at 22:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132074504" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132074504">(Aug 13 2018 at 22:01)</a>:</h4>
 <p>Yeah, that's a cool part of type class inference. The projectors get constructed automatically.</p>
 
 
 
 <a name="132074849"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132074849" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132074849">(Aug 13 2018 at 22:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132074849" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132074849">(Aug 13 2018 at 22:09)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">rat</span>
 
 <span class="kn">definition</span> <span class="n">d</span> <span class="o">:</span> <span class="n">comm_monoid</span> <span class="n">ℚ</span> <span class="o">:=</span> <span class="k">by</span> <span class="n">apply_instance</span>
@@ -234,7 +234,7 @@ def foo : inhabited real := by apply_instance<br>
 
 
 <a name="132075092"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132075092" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/43719defaultinhabitedfor#132075092">(Aug 13 2018 at 22:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/default%20/%20inhabited%20for%20%E2%84%9A%2C%20%E2%84%9D%2C%20%E2%84%82/near/132075092" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/43719defaultinhabitedfor#132075092">(Aug 13 2018 at 22:15)</a>:</h4>
 <p>It looks much more persistent than clever when I put on <code>set_option trace.class_instances true</code> <span class="emoji emoji-1f609" title="wink">:wink:</span></p>
 
 

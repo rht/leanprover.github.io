@@ -4,7 +4,7 @@ title: Zulip Chat Archive
 permalink: archive/141825kbb/index.html
 ---
 
-## Stream: [kbb](http://127.0.0.1:4000/archive/141825kbb/index.html)
+## Stream: [kbb](https://rht.github.io/archive/141825kbb/index.html)
 ---
 
 ### Topics:

@@ -4,7 +4,7 @@ title: Zulip Chat Archive
 permalink: archive/113486announce/index.html
 ---
 
-## Stream: [announce](http://127.0.0.1:4000/archive/113486announce/index.html)
+## Stream: [announce](https://rht.github.io/archive/113486announce/index.html)
 ---
 
 ### Topics:

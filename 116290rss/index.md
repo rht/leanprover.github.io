@@ -4,7 +4,7 @@ title: Zulip Chat Archive
 permalink: archive/116290rss/index.html
 ---
 
-## Stream: [rss](http://127.0.0.1:4000/archive/116290rss/index.html)
+## Stream: [rss](https://rht.github.io/archive/116290rss/index.html)
 ---
 
 ### Topics:

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/116395maths/71530Linearalgebra.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/116395maths/index.html">maths</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/116395maths/71530Linearalgebra.html">Linear algebra</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/116395maths/index.html">maths</a>
+<h3>Topic: <a href="https://rht.github.io/archive/116395maths/71530Linearalgebra.html">Linear algebra</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/116395maths/71530Linearalgebra.html
 {% raw %}
 
 <a name="179882322"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179882322" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/116395maths/71530Linearalgebra#179882322">(Nov 04 2019 at 22:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179882322" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="https://rht.github.io/archive/116395maths/71530Linearalgebra#179882322">(Nov 04 2019 at 22:09)</a>:</h4>
 <p>I need some bits of linear algebra, and I am really struggling. I had forgotten how hard it is to use a part of the library you are not familiar with! Anyway, I am sure everything is already there to get the following statement, but whenever I start with something I begin to unfold and unfold and I am sure I shouldn't (and I guess I am not even writing it in the correct way). </p>
 <div class="codehilite"><pre><span></span><span class="n">open_locale</span> <span class="n">classical</span>
 <span class="kn">lemma</span> <span class="n">linear_map</span><span class="bp">.</span><span class="n">pi_apply_eq</span> <span class="o">{</span><span class="n">ι</span> <span class="o">:</span> <span class="kt">Type</span> <span class="n">u</span><span class="o">}</span> <span class="o">[</span><span class="n">fintype</span> <span class="n">ι</span><span class="o">]</span> <span class="o">{</span><span class="err">𝕜</span> <span class="o">:</span> <span class="kt">Type</span> <span class="n">u</span><span class="o">}</span> <span class="o">[</span><span class="n">discrete_field</span> <span class="err">𝕜</span><span class="o">]</span>
@@ -31,37 +31,37 @@ permalink: archive/116395maths/71530Linearalgebra.html
 
 
 <a name="179884358"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179884358" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/116395maths/71530Linearalgebra#179884358">(Nov 04 2019 at 22:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179884358" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/116395maths/71530Linearalgebra#179884358">(Nov 04 2019 at 22:32)</a>:</h4>
 <p>imports?</p>
 
 
 
 <a name="179884508"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179884508" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/116395maths/71530Linearalgebra#179884508">(Nov 04 2019 at 22:34)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179884508" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/116395maths/71530Linearalgebra#179884508">(Nov 04 2019 at 22:34)</a>:</h4>
 <p>No, start with a copyright header</p>
 
 
 
 <a name="179884598"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179884598" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/116395maths/71530Linearalgebra#179884598">(Nov 04 2019 at 22:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179884598" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/116395maths/71530Linearalgebra#179884598">(Nov 04 2019 at 22:35)</a>:</h4>
 <p><code>import apache</code></p>
 
 
 
 <a name="179884800"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179884800" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/116395maths/71530Linearalgebra#179884800">(Nov 04 2019 at 22:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179884800" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/116395maths/71530Linearalgebra#179884800">(Nov 04 2019 at 22:38)</a>:</h4>
 <p>More seriously, I think you should first use linearity of <code>f</code> to reduce to the same statement without <code>f</code></p>
 
 
 
 <a name="179885230"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179885230" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/116395maths/71530Linearalgebra#179885230">(Nov 04 2019 at 22:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179885230" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/116395maths/71530Linearalgebra#179885230">(Nov 04 2019 at 22:45)</a>:</h4>
 <p>Then I don't know whether it is an existing lemma. It does seem to be <code>std_basis</code>-related somehow. Anyways, it doesn't look very difficult to prove using <code>sum_mul_boole</code> for example</p>
 
 
 
 <a name="179919991"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179919991" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/116395maths/71530Linearalgebra#179919991">(Nov 05 2019 at 10:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/179919991" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="https://rht.github.io/archive/116395maths/71530Linearalgebra#179919991">(Nov 05 2019 at 10:46)</a>:</h4>
 <p>I ended up doing the following, avoiding completely the linear algebra basis framework, which is a little bit sad. I would be very happy to see the proper way to write it, possibly replacing <code>λj, if i = j then 1 else 0</code> by something more idiomatic. Imports and header included :) Thanks for the reference to <code>sum_mul_boole</code>.</p>
 <div class="codehilite"><pre><span></span><span class="c">/-</span><span class="cm"> Nice Zulip header -/</span>
 
@@ -99,7 +99,7 @@ permalink: archive/116395maths/71530Linearalgebra.html
 
 
 <a name="180698098"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/180698098" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Miguel Raz Guzmán Macedo <a href="http://127.0.0.1:4000/archive/116395maths/71530Linearalgebra#180698098">(Nov 14 2019 at 03:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/180698098" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Miguel Raz Guzmán Macedo <a href="https://rht.github.io/archive/116395maths/71530Linearalgebra#180698098">(Nov 14 2019 at 03:58)</a>:</h4>
 <p><span class="user-mention" data-user-id="110038">@Kevin Buzzard</span> I believe Terence Tao is unwittingly giving Lean a shoutout...<br>
 <a href="https://twitter.com/InertialObservr/status/1194826080005148672" target="_blank" title="https://twitter.com/InertialObservr/status/1194826080005148672">https://twitter.com/InertialObservr/status/1194826080005148672</a></p>
 <div class="inline-preview-twitter"><div class="twitter-tweet"><a href="https://twitter.com/InertialObservr/status/1194826080005148672" target="_blank"><img class="twitter-avatar" src="https://pbs.twimg.com/profile_images/1145827188266033152/ycPVAOee_normal.jpg"></a><p>Apparently an equivalent result has been used/discovered before, but as Terry Tao states it was never published. 
@@ -109,7 +109,7 @@ permalink: archive/116395maths/71530Linearalgebra.html
 
 
 <a name="180700698"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/180700698" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/116395maths/71530Linearalgebra#180700698">(Nov 14 2019 at 05:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/180700698" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/116395maths/71530Linearalgebra#180700698">(Nov 14 2019 at 05:05)</a>:</h4>
 <p>More specifically, I guess you are referring to the following comment by Tao on his blog: <a href="https://terrytao.wordpress.com/2019/08/13/eigenvectors-from-eigenvalues/#comment-528704" target="_blank" title="https://terrytao.wordpress.com/2019/08/13/eigenvectors-from-eigenvalues/#comment-528704">https://terrytao.wordpress.com/2019/08/13/eigenvectors-from-eigenvalues/#comment-528704</a> where he writes:</p>
 <blockquote>
 <p>(It’s at times like this that I wish we had a good semantic search engine for mathematics – I am not sure how I would have discovered this preprint other than by publishing our own preprint and waiting for someone to notice the connection.)</p>
@@ -118,7 +118,7 @@ permalink: archive/116395maths/71530Linearalgebra.html
 
 
 <a name="180774158"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/180774158" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Miguel Raz Guzmán Macedo <a href="http://127.0.0.1:4000/archive/116395maths/71530Linearalgebra#180774158">(Nov 14 2019 at 20:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/Linear%20algebra/near/180774158" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Miguel Raz Guzmán Macedo <a href="https://rht.github.io/archive/116395maths/71530Linearalgebra#180774158">(Nov 14 2019 at 20:59)</a>:</h4>
 <p>Yup that same one <span class="user-mention" data-user-id="112680">@Johan Commelin</span></p>
 
 

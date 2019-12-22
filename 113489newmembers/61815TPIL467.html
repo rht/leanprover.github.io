@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/61815TPIL467.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/61815TPIL467.html">TPIL 4.6.7</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/61815TPIL467.html">TPIL 4.6.7</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/61815TPIL467.html
 {% raw %}
 
 <a name="180316324"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180316324" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="http://127.0.0.1:4000/archive/113489newmembers/61815TPIL467#180316324">(Nov 09 2019 at 14:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180316324" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="https://rht.github.io/archive/113489newmembers/61815TPIL467#180316324">(Nov 09 2019 at 14:54)</a>:</h4>
 <p>In TPIL 4.6.7 we're asked to prove the following:</p>
 <div class="codehilite"><pre><span></span>example (x : ℤ) : x * 0 = 0 := sorry
 </pre></div>
@@ -55,7 +55,7 @@ x*0 - x*0 = 0
 
 
 <a name="180316492"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180316492" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="http://127.0.0.1:4000/archive/113489newmembers/61815TPIL467#180316492">(Nov 09 2019 at 14:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180316492" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="https://rht.github.io/archive/113489newmembers/61815TPIL467#180316492">(Nov 09 2019 at 14:58)</a>:</h4>
 <p>I did enumerate the various applications of the identities with <code>x * 0</code>:</p>
 <div class="codehilite"><pre><span></span><span class="bp">#</span><span class="kn">check</span> <span class="n">add_zero</span>     <span class="o">(</span><span class="n">x</span> <span class="bp">*</span> <span class="mi">0</span><span class="o">)</span> <span class="c1">-- x * 0 + 0 = x * 0</span>
 <span class="bp">#</span><span class="kn">check</span> <span class="n">zero_add</span>     <span class="o">(</span><span class="n">x</span> <span class="bp">*</span> <span class="mi">0</span><span class="o">)</span> <span class="c1">-- 0 + x * 0 = x * 0</span>
@@ -70,7 +70,7 @@ x*0 - x*0 = 0
 
 
 <a name="180317035"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180317035" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/61815TPIL467#180317035">(Nov 09 2019 at 15:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180317035" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/61815TPIL467#180317035">(Nov 09 2019 at 15:11)</a>:</h4>
 <p>It might be easier to start from something like this instead:</p>
 <div class="codehilite"><pre><span></span><span class="kn">example</span> <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="bp">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">*</span> <span class="mi">0</span> <span class="bp">=</span> <span class="mi">0</span> <span class="o">:=</span>
 <span class="k">calc</span> <span class="n">x</span> <span class="bp">*</span> <span class="mi">0</span> <span class="bp">=</span> <span class="n">x</span> <span class="bp">*</span> <span class="o">(</span><span class="mi">1</span> <span class="bp">-</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:</span> <span class="n">sorry</span>
@@ -83,7 +83,7 @@ x*0 - x*0 = 0
 
 
 <a name="180317447"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180317447" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="http://127.0.0.1:4000/archive/113489newmembers/61815TPIL467#180317447">(Nov 09 2019 at 15:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180317447" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="https://rht.github.io/archive/113489newmembers/61815TPIL467#180317447">(Nov 09 2019 at 15:21)</a>:</h4>
 <p><span class="user-mention" data-user-id="123965">@Bryan Gin-ge Chen</span> Ah! OK... This seems to work:</p>
 <div class="codehilite"><pre><span></span><span class="kn">example</span> <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="bp">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">*</span> <span class="mi">0</span> <span class="bp">=</span> <span class="mi">0</span> <span class="o">:=</span>
     <span class="k">calc</span>
@@ -98,13 +98,13 @@ x*0 - x*0 = 0
 
 
 <a name="180317528"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180317528" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/61815TPIL467#180317528">(Nov 09 2019 at 15:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180317528" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/61815TPIL467#180317528">(Nov 09 2019 at 15:23)</a>:</h4>
 <p>Nice work! (and it looks like I had an unnecessary <code>mul_one</code> step in my "Spoiler", whoops)</p>
 
 
 
 <a name="180317967"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180317967" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="http://127.0.0.1:4000/archive/113489newmembers/61815TPIL467#180317967">(Nov 09 2019 at 15:34)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180317967" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="https://rht.github.io/archive/113489newmembers/61815TPIL467#180317967">(Nov 09 2019 at 15:34)</a>:</h4>
 <p>Here's a version which doesn't use rewrite:</p>
 <div class="codehilite"><pre><span></span><span class="kn">example</span> <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="bp">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">*</span> <span class="mi">0</span> <span class="bp">=</span> <span class="mi">0</span> <span class="o">:=</span>
     <span class="k">have</span> <span class="n">h1</span> <span class="o">:</span> <span class="o">(</span><span class="mi">0</span> <span class="o">:</span> <span class="bp">ℤ</span><span class="o">)</span> <span class="bp">=</span> <span class="mi">1</span> <span class="bp">-</span> <span class="mi">1</span><span class="o">,</span>              <span class="k">from</span> <span class="n">eq</span><span class="bp">.</span><span class="n">refl</span> <span class="bp">_</span><span class="o">,</span>
@@ -119,26 +119,26 @@ x*0 - x*0 = 0
 
 
 <a name="180318693"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180318693" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="http://127.0.0.1:4000/archive/113489newmembers/61815TPIL467#180318693">(Nov 09 2019 at 15:52)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180318693" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="https://rht.github.io/archive/113489newmembers/61815TPIL467#180318693">(Nov 09 2019 at 15:52)</a>:</h4>
 <p>As an aside, when I open your spoiler link to view your approach, I see errors in the Lean Web Editor:</p>
 <div class="message_inline_image"><a href="https://i.imgur.com/jZlA9Xe.png" target="_blank" title="https://i.imgur.com/jZlA9Xe.png"><img src="https://i.imgur.com/jZlA9Xe.png"></a></div>
 
 
 
 <a name="180318698"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180318698" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="http://127.0.0.1:4000/archive/113489newmembers/61815TPIL467#180318698">(Nov 09 2019 at 15:52)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180318698" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="https://rht.github.io/archive/113489newmembers/61815TPIL467#180318698">(Nov 09 2019 at 15:52)</a>:</h4>
 <p>Do I need to do something to get it to execute properly in there?</p>
 
 
 
 <a name="180318787"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180318787" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/61815TPIL467#180318787">(Nov 09 2019 at 15:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180318787" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/61815TPIL467#180318787">(Nov 09 2019 at 15:55)</a>:</h4>
 <p>Try clicking the (?) icon and then scroll down and click "Clear JS / wasm cache and refresh".</p>
 
 
 
 <a name="180321394"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180321394" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="http://127.0.0.1:4000/archive/113489newmembers/61815TPIL467#180321394">(Nov 09 2019 at 16:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/TPIL%204.6.7/near/180321394" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eduardo Cavazos <a href="https://rht.github.io/archive/113489newmembers/61815TPIL467#180321394">(Nov 09 2019 at 16:55)</a>:</h4>
 <p>I needed to click the 'Clear library cache and refresh' button as well as that one. Now it's loading fine. Thanks <span class="user-mention" data-user-id="123965">@Bryan Gin-ge Chen</span> !</p>
 
 

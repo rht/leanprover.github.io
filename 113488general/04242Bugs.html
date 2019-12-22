@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/04242Bugs.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/04242Bugs.html">Bugs</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/04242Bugs.html">Bugs</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/04242Bugs.html
 {% raw %}
 
 <a name="168514210"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Bugs/near/168514210" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/113488general/04242Bugs#168514210">(Jun 19 2019 at 14:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Bugs/near/168514210" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="https://rht.github.io/archive/113488general/04242Bugs#168514210">(Jun 19 2019 at 14:58)</a>:</h4>
 <p>I have the impression to meet more and more surprising behavior of Lean lately, and also that I am not the only one on this chat. Maybe because we are pushing Lean further than the way it has really been used before, and this is bound to uncover some suprises.</p>
 <p>Anyway, I just wanted to share with you the following funny fact (no MWE, this is deep inside a non-finished theory). I am not asking for help or whatever, as I have a workaround.</p>
 <div class="codehilite"><pre><span></span>      <span class="n">apply</span> <span class="n">mdifferentiable_at_atlas_to_fun</span> <span class="n">e&#39;_atlas</span><span class="o">,</span>
@@ -42,19 +42,19 @@ permalink: archive/113488general/04242Bugs.html
 
 
 <a name="168514470"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Bugs/near/168514470" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/04242Bugs#168514470">(Jun 19 2019 at 15:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Bugs/near/168514470" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/04242Bugs#168514470">(Jun 19 2019 at 15:01)</a>:</h4>
 <p>We might need to formalize the implementation of Lean and its tactics...</p>
 
 
 
 <a name="168514551"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Bugs/near/168514551" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/113488general/04242Bugs#168514551">(Jun 19 2019 at 15:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Bugs/near/168514551" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="https://rht.github.io/archive/113488general/04242Bugs#168514551">(Jun 19 2019 at 15:02)</a>:</h4>
 <p>If I move the offending <code>simp</code> two lines before, it's OK :)</p>
 
 
 
 <a name="168515506"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Bugs/near/168515506" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/113488general/04242Bugs#168515506">(Jun 19 2019 at 15:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Bugs/near/168515506" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="https://rht.github.io/archive/113488general/04242Bugs#168515506">(Jun 19 2019 at 15:10)</a>:</h4>
 <p>And I was just hit again by a <code>simp</code> bug by which it produces an incorrect proof, for which a MWE had been crafted by Rob Lewis as follows.</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">foo_rec</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">)</span> <span class="o">(</span><span class="n">k</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">)</span> <span class="o">[</span><span class="n">has_zero</span> <span class="n">k</span><span class="o">]</span>  <span class="o">:</span> <span class="kt">Prop</span> <span class="o">:=</span>
 <span class="n">nat</span><span class="bp">.</span><span class="n">rec_on</span> <span class="n">n</span> <span class="o">(</span><span class="n">true</span><span class="o">)</span> <span class="o">(</span><span class="bp">λ</span><span class="n">n</span> <span class="n">rec</span><span class="o">,</span> <span class="n">true</span><span class="o">)</span>
@@ -75,7 +75,7 @@ permalink: archive/113488general/04242Bugs.html
 
 
 <a name="168516454"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Bugs/near/168516454" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/113488general/04242Bugs#168516454">(Jun 19 2019 at 15:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/Bugs/near/168516454" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="https://rht.github.io/archive/113488general/04242Bugs#168516454">(Jun 19 2019 at 15:20)</a>:</h4>
 <p>This is beginning to become very amusing: the offending <code>simp</code> creating an incorrect proof (in a 100 line proof) is right at the place where I mentioned the first bug (where two orthogonal lines could not be swapped). So these are certainly two instances of the same problem.</p>
 
 

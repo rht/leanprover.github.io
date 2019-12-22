@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/21041lesubiffaddleerror.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror.html">le_sub_iff_add_le error</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror.html">le_sub_iff_add_le error</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/21041lesubiffaddleerror.html
 {% raw %}
 
 <a name="159148106"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148106" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148106">(Feb 22 2019 at 11:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148106" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148106">(Feb 22 2019 at 11:06)</a>:</h4>
 <p>I have following code, which gives an error on the last line:</p>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">limit_start_irrelevant</span> <span class="o">(</span><span class="n">a</span> <span class="o">:</span> <span class="bp">ℕ</span> <span class="bp">→</span> <span class="n">ℝ</span><span class="o">)</span> <span class="o">(</span><span class="n">k</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">)</span> <span class="o">(</span><span class="n">l</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">M1P1</span><span class="bp">.</span><span class="n">is_limit</span> <span class="o">(</span><span class="bp">λ</span> <span class="n">n</span><span class="o">,</span> <span class="n">a</span> <span class="o">(</span><span class="n">n</span><span class="bp">+</span><span class="n">k</span><span class="o">))</span> <span class="n">l</span><span class="o">)</span> <span class="o">:</span> <span class="n">M1P1</span><span class="bp">.</span><span class="n">is_limit</span> <span class="n">a</span> <span class="n">l</span> <span class="o">:=</span>
 <span class="k">begin</span>
@@ -49,13 +49,13 @@ permalink: archive/113489newmembers/21041lesubiffaddleerror.html
 
 
 <a name="159148144"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148144" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148144">(Feb 22 2019 at 11:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148144" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148144">(Feb 22 2019 at 11:07)</a>:</h4>
 <p>you wrote <code>le_sub_iff_add_le N k n</code> but it takes no explicit arguments</p>
 
 
 
 <a name="159148260"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148260" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148260">(Feb 22 2019 at 11:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148260" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148260">(Feb 22 2019 at 11:09)</a>:</h4>
 <p>Right, without arguments I get this error:</p>
 <div class="codehilite"><pre><span></span><span class="n">rewrite</span> <span class="n">tactic</span> <span class="n">failed</span><span class="o">,</span> <span class="n">did</span> <span class="n">not</span> <span class="n">find</span> <span class="kn">instance</span> <span class="n">of</span> <span class="n">the</span> <span class="n">pattern</span> <span class="k">in</span> <span class="n">the</span> <span class="n">target</span> <span class="n">expression</span>
   <span class="bp">_</span> <span class="bp">≤</span> <span class="err">?</span><span class="n">m_5</span>
@@ -78,67 +78,67 @@ permalink: archive/113489newmembers/21041lesubiffaddleerror.html
 
 
 <a name="159148427"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148427" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148427">(Feb 22 2019 at 11:13)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148427" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148427">(Feb 22 2019 at 11:13)</a>:</h4>
 <p>try <code>erw</code></p>
 
 
 
 <a name="159148436"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148436" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148436">(Feb 22 2019 at 11:13)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148436" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148436">(Feb 22 2019 at 11:13)</a>:</h4>
 <p>try <code>rw ge at Hn</code>?</p>
 
 
 
 <a name="159148445"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148445" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148445">(Feb 22 2019 at 11:13)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148445" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148445">(Feb 22 2019 at 11:13)</a>:</h4>
 <p>wait I know why</p>
 
 
 
 <a name="159148447"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148447" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148447">(Feb 22 2019 at 11:13)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148447" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148447">(Feb 22 2019 at 11:13)</a>:</h4>
 <p>you're dealing with natural numbers.</p>
 
 
 
 <a name="159148449"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148449" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148449">(Feb 22 2019 at 11:13)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148449" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148449">(Feb 22 2019 at 11:13)</a>:</h4>
 <p><span aria-label="face palm" class="emoji emoji-1f926" role="img" title="face palm">:face_palm:</span></p>
 
 
 
 <a name="159148503"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148503" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148503">(Feb 22 2019 at 11:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148503" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148503">(Feb 22 2019 at 11:14)</a>:</h4>
 <p>There are similar theorems explicitly for <code>nat</code></p>
 
 
 
 <a name="159148504"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148504" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148504">(Feb 22 2019 at 11:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148504" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148504">(Feb 22 2019 at 11:14)</a>:</h4>
 <p>you can't use the general theorem</p>
 
 
 
 <a name="159148509"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148509" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148509">(Feb 22 2019 at 11:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148509" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148509">(Feb 22 2019 at 11:14)</a>:</h4>
 <p>but it still won't match the <code>le</code> with <code>ge</code> I guess</p>
 
 
 
 <a name="159148513"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148513" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148513">(Feb 22 2019 at 11:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148513" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148513">(Feb 22 2019 at 11:14)</a>:</h4>
 <p>so you need to use <code>erw</code> or <code>replace Hn := _</code></p>
 
 
 
 <a name="159148542"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148542" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148542">(Feb 22 2019 at 11:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148542" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148542">(Feb 22 2019 at 11:15)</a>:</h4>
 <p>I think you want <code>replace Hn := nat.le_sub_right_of_add_le Hn</code></p>
 
 
 
 <a name="159148684"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148684" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="http://127.0.0.1:4000/archive/113489newmembers/21041lesubiffaddleerror#159148684">(Feb 22 2019 at 11:18)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/le_sub_iff_add_le%20error/near/159148684" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="https://rht.github.io/archive/113489newmembers/21041lesubiffaddleerror#159148684">(Feb 22 2019 at 11:18)</a>:</h4>
 <p>that worked. Thank you :)</p>
 
 

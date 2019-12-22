@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/04612missingtransitivitytags.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/04612missingtransitivitytags.html">missing transitivity tags</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/04612missingtransitivitytags.html">missing transitivity tags</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/04612missingtransitivitytags.html
 {% raw %}
 
 <a name="172510566"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/missing%20transitivity%20tags/near/172510566" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/04612missingtransitivitytags#172510566">(Aug 05 2019 at 14:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/missing%20transitivity%20tags/near/172510566" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/04612missingtransitivitytags#172510566">(Aug 05 2019 at 14:54)</a>:</h4>
 <p>Should all of these be tagged with <code>@[trans]</code>? Or is there a reason to only do that for sets?</p>
 <div class="codehilite"><pre><span></span>git grep <span class="s2">&quot;subset.trans&quot;</span> <span class="p">|</span> grep theorem
 src/data/finset.lean:theorem subset.trans <span class="o">{</span>s₁ s₂ s₃ : finset α<span class="o">}</span> : s₁ ⊆ s₂ → s₂ ⊆ s₃ → s₁ ⊆ s₃ :<span class="o">=</span> subset.trans
@@ -28,7 +28,7 @@ src/set_theory/lists.lean:theorem subset.trans <span class="o">{</span>l₁ l₂
 
 
 <a name="172514291"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/missing%20transitivity%20tags/near/172514291" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/04612missingtransitivitytags#172514291">(Aug 05 2019 at 15:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/missing%20transitivity%20tags/near/172514291" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/04612missingtransitivitytags#172514291">(Aug 05 2019 at 15:45)</a>:</h4>
 <p>This takes us back to Chris' point. If we just used <code>le</code> and make them partial orders then <code>le_trans</code> would kick in.</p>
 
 

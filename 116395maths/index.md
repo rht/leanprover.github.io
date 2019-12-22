@@ -4,7 +4,7 @@ title: Zulip Chat Archive
 permalink: archive/116395maths/index.html
 ---
 
-## Stream: [maths](http://127.0.0.1:4000/archive/116395maths/index.html)
+## Stream: [maths](https://rht.github.io/archive/116395maths/index.html)
 ---
 
 ### Topics:

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/07549Definingafunctionbyorelim.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim.html">Defining a function by or.elim</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim.html">Defining a function by or.elim</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/07549Definingafunctionbyorelim.html
 {% raw %}
 
 <a name="181608982"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181608982" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181608982">(Nov 22 2019 at 04:19)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181608982" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181608982">(Nov 22 2019 at 04:19)</a>:</h4>
 <p>I'm trying to define a function which has the hypothesis <code>r ≤ n</code>, and it's defined differently if <code>r = n</code> compared to <code>r &lt; n</code>, but <code>or.elim</code> doesn't work since the result isn't a Prop, any help appreciated. (Simplified example - the definition of <code>rset</code> shouldn't matter at all, but it has type <code>rset : ℕ → Π (X : Type u_2) [_inst_3 : fintype X], Type u_2</code>):</p>
 <div class="codehilite"><pre><span></span><span class="kn">constant</span> <span class="n">f1</span> <span class="o">(</span><span class="n">r</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">)</span> <span class="o">(</span><span class="n">A</span> <span class="o">:</span> <span class="n">finset</span> <span class="o">(</span><span class="n">finset</span> <span class="n">X</span><span class="o">))</span> <span class="o">:</span> <span class="n">finset</span> <span class="o">(</span><span class="n">rset</span> <span class="n">r</span> <span class="n">X</span><span class="o">)</span>
 <span class="kn">constant</span> <span class="n">f2</span> <span class="o">{</span><span class="n">r</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">B</span> <span class="o">:</span> <span class="n">finset</span> <span class="o">(</span><span class="n">rset</span> <span class="o">(</span><span class="n">r</span><span class="bp">+</span><span class="mi">1</span><span class="o">)</span> <span class="n">X</span><span class="o">))</span> <span class="o">:</span> <span class="n">finset</span> <span class="o">(</span><span class="n">rset</span> <span class="n">r</span> <span class="n">X</span><span class="o">)</span>
@@ -31,31 +31,31 @@ permalink: archive/113489newmembers/07549Definingafunctionbyorelim.html
 
 
 <a name="181609042"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181609042" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181609042">(Nov 22 2019 at 04:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181609042" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181609042">(Nov 22 2019 at 04:20)</a>:</h4>
 <p><code>If then else</code> doesn't work for me, since in the <code>then</code> part I lose the proof that <code>r = n</code>, which I need to make it typecheck</p>
 
 
 
 <a name="181609058"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181609058" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181609058">(Nov 22 2019 at 04:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181609058" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181609058">(Nov 22 2019 at 04:21)</a>:</h4>
 <p>Ooh <code>dite</code> looks about right...</p>
 
 
 
 <a name="181614581"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181614581" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181614581">(Nov 22 2019 at 07:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181614581" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181614581">(Nov 22 2019 at 07:01)</a>:</h4>
 <p>Indeed <code>dite</code> is or elimination into type. I remember the day this dawned on me :-)</p>
 
 
 
 <a name="181619685"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181619685" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181619685">(Nov 22 2019 at 08:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181619685" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181619685">(Nov 22 2019 at 08:58)</a>:</h4>
 <p>Let's also repeat that you can write if ... then ... else... also keeping the assumption, using <code>if h : ... then ... else ...</code>.</p>
 
 
 
 <a name="181630190"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181630190" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181630190">(Nov 22 2019 at 11:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181630190" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181630190">(Nov 22 2019 at 11:43)</a>:</h4>
 <p>I'm struggling with this definition still - there seems to be a couple of factors making this awkward... It's kind of defined inductively downward, starting from r=n and going down to r=0. So I'm trying first to define a flipped version, with <code>k = n-r</code>:</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">decompose&#39;</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">A</span> <span class="o">:</span> <span class="n">finset</span> <span class="o">(</span><span class="n">finset</span> <span class="n">X</span><span class="o">))</span> <span class="o">:</span> <span class="bp">Π</span> <span class="o">(</span><span class="n">k</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">),</span> <span class="n">k</span> <span class="bp">≤</span> <span class="n">n</span> <span class="bp">→</span> <span class="n">finset</span> <span class="o">(</span><span class="n">rset</span> <span class="o">(</span><span class="n">n</span><span class="bp">-</span><span class="n">k</span><span class="o">)</span> <span class="n">X</span><span class="o">)</span>
 <span class="bp">|</span> <span class="mi">0</span> <span class="bp">_</span> <span class="o">:=</span> <span class="n">f1</span> <span class="n">n</span> <span class="n">A</span>
@@ -81,44 +81,44 @@ but is expected to have type
 
 
 <a name="181633786"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181633786" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181633786">(Nov 22 2019 at 12:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181633786" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181633786">(Nov 22 2019 at 12:47)</a>:</h4>
 <p>I feel like doing a cast in the above definition is unavoidable since <code>(n-k) != (n - (k+1) + 1) </code> when <code>n=k</code>, which is fine because <code>hk : k+1 &lt;= n</code> but still requires reasoning.</p>
 
 
 
 <a name="181633894"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181633894" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181633894">(Nov 22 2019 at 12:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181633894" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181633894">(Nov 22 2019 at 12:49)</a>:</h4>
 <p>That's true and that suggests to me that your types are overly dependent. You might want to separate them into types that you don't have to rewrite so much and a proposition on those types that adds the nuances that you now encode with dependent types.</p>
 
 
 
 <a name="181634006"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181634006" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181634006">(Nov 22 2019 at 12:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181634006" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181634006">(Nov 22 2019 at 12:50)</a>:</h4>
 <p>It's pretty disheartening that dependent types seem to cause more problems than they solve in situations like this.</p>
 
 
 
 <a name="181634228"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181634228" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181634228">(Nov 22 2019 at 12:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181634228" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181634228">(Nov 22 2019 at 12:53)</a>:</h4>
 <p>You might be able to write it out as upward induction by using wf induction with the size being <code>n - r</code>.</p>
 
 
 
 <a name="181634342"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181634342" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181634342">(Nov 22 2019 at 12:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181634342" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181634342">(Nov 22 2019 at 12:55)</a>:</h4>
 <p>is this really an issue with dependent types, though?<br>
 i feel like carrying around an invariant everywhere you go like <code>rset</code> seems to do is rarely the right thing to do anyways because you always need to ensure that it is maintained.</p>
 
 
 
 <a name="181634582"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181634582" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181634582">(Nov 22 2019 at 12:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181634582" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181634582">(Nov 22 2019 at 12:58)</a>:</h4>
 <p>this is usually easy when you already have a full interface that maintains the invariant for you (e.g. as is the case for <code>finset</code>) but even then it can be cumbersome if you need to work harder in order to use the interface (e.g. mapping over a finset requires injectivity)</p>
 
 
 
 <a name="181634814"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181634814" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181634814">(Nov 22 2019 at 13:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181634814" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181634814">(Nov 22 2019 at 13:01)</a>:</h4>
 <blockquote>
 <p>this is usually easy when you already have a full interface that maintains the invariant for you (e.g. as is the case for <code>finset</code>) </p>
 </blockquote>
@@ -131,13 +131,13 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181635212"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181635212" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181635212">(Nov 22 2019 at 13:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181635212" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181635212">(Nov 22 2019 at 13:06)</a>:</h4>
 <p>I would attempt to show you how to fix the issue in this case but there are so many undefined variables that I can't cut and paste easily :-/</p>
 
 
 
 <a name="181635234"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181635234" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181635234">(Nov 22 2019 at 13:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181635234" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181635234">(Nov 22 2019 at 13:06)</a>:</h4>
 <blockquote>
 <p>welll ... <code>finset</code> has <code>image</code> which does not require infectivity. Some apis aren't great to work with but I think this one does a great job.</p>
 </blockquote>
@@ -146,13 +146,13 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181635334"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181635334" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181635334">(Nov 22 2019 at 13:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181635334" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181635334">(Nov 22 2019 at 13:08)</a>:</h4>
 <p>i did not know about <code>image</code>. <code>finset</code> is definitely not a good example to choose (edit: for me quibbling about it being hard to maintain invariants).</p>
 
 
 
 <a name="181635814"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181635814" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181635814">(Nov 22 2019 at 13:13)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181635814" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181635814">(Nov 22 2019 at 13:13)</a>:</h4>
 <blockquote>
 <p>You might be able to write it out as upward induction by using wf induction with the size being <code>n - r</code>.</p>
 </blockquote>
@@ -161,7 +161,7 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181635890"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181635890" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181635890">(Nov 22 2019 at 13:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181635890" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181635890">(Nov 22 2019 at 13:14)</a>:</h4>
 <blockquote>
 <p>I would attempt to show you how to fix the issue in this case but there are so many undefined variables that I can't cut and paste easily :-/</p>
 </blockquote>
@@ -170,7 +170,7 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181635896"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181635896" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181635896">(Nov 22 2019 at 13:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181635896" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181635896">(Nov 22 2019 at 13:14)</a>:</h4>
 <blockquote>
 <p>i did not know about <code>image</code>. <code>finset</code> is definetly not a good example to choose.</p>
 </blockquote>
@@ -179,7 +179,7 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181636171"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181636171" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181636171">(Nov 22 2019 at 13:17)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181636171" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181636171">(Nov 22 2019 at 13:17)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">finset</span>
 <span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">fintype</span>
 
@@ -206,13 +206,13 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181636472"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181636472" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181636472">(Nov 22 2019 at 13:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181636472" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181636472">(Nov 22 2019 at 13:20)</a>:</h4>
 <p>What is the definition of <code>rset</code>?</p>
 
 
 
 <a name="181636504"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181636504" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181636504">(Nov 22 2019 at 13:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181636504" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181636504">(Nov 22 2019 at 13:21)</a>:</h4>
 <p>Other attempt which also doesn't work:</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">decompose</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">}</span> <span class="o">:</span> <span class="bp">Π</span> <span class="o">(</span><span class="n">A</span> <span class="o">:</span> <span class="n">finset</span> <span class="o">(</span><span class="n">finset</span> <span class="n">X</span><span class="o">))</span> <span class="o">(</span><span class="n">r</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">),</span> <span class="n">r</span> <span class="bp">≤</span> <span class="n">n</span> <span class="bp">→</span> <span class="n">finset</span> <span class="o">(</span><span class="n">rset</span> <span class="n">r</span> <span class="n">X</span><span class="o">)</span> <span class="o">:=</span>
 <span class="bp">λ</span> <span class="n">A</span> <span class="n">r</span> <span class="n">hr</span><span class="o">,</span> <span class="n">dite</span> <span class="o">(</span><span class="n">r</span><span class="bp">=</span><span class="n">n</span><span class="o">)</span> <span class="o">(</span><span class="bp">λ</span> <span class="bp">_</span><span class="o">,</span> <span class="n">f1</span> <span class="n">r</span> <span class="n">A</span><span class="o">)</span> <span class="err">$</span>
@@ -224,7 +224,7 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181636534"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181636534" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181636534">(Nov 22 2019 at 13:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181636534" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181636534">(Nov 22 2019 at 13:21)</a>:</h4>
 <p>I don't believe it should matter for this, but </p>
 <div class="codehilite"><pre><span></span><span class="bp">@</span><span class="o">[</span><span class="kn">reducible</span><span class="o">]</span> <span class="n">def</span> <span class="n">rset</span> <span class="o">(</span><span class="n">r</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">)</span> <span class="o">(</span><span class="n">X</span><span class="o">)</span> <span class="o">[</span><span class="n">fintype</span> <span class="n">X</span><span class="o">]</span> <span class="o">:=</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">finset</span> <span class="n">X</span> <span class="bp">//</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">finset</span><span class="bp">.</span><span class="n">powerset_len</span> <span class="n">r</span> <span class="o">(</span><span class="n">elems</span> <span class="n">X</span><span class="o">)}</span>
 </pre></div>
@@ -235,13 +235,13 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181637206"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181637206" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181637206">(Nov 22 2019 at 13:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181637206" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181637206">(Nov 22 2019 at 13:30)</a>:</h4>
 <p>oh sorry! I missed the earlier part of the discussion</p>
 
 
 
 <a name="181638141"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638141" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181638141">(Nov 22 2019 at 13:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638141" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181638141">(Nov 22 2019 at 13:43)</a>:</h4>
 <p>What if you broke down this definition into two parts:</p>
 <div class="codehilite"><pre><span></span><span class="kn">constant</span> <span class="n">f1</span> <span class="o">(</span><span class="n">A</span> <span class="o">:</span> <span class="n">finset</span> <span class="o">(</span><span class="n">finset</span> <span class="n">X</span><span class="o">))</span> <span class="o">:</span> <span class="n">finset</span> <span class="o">(</span><span class="n">finset</span> <span class="n">X</span><span class="o">)</span>
 <span class="kn">constant</span> <span class="n">f2</span> <span class="o">(</span><span class="n">B</span> <span class="o">:</span> <span class="n">finset</span> <span class="o">(</span><span class="n">finset</span> <span class="n">X</span><span class="o">))</span> <span class="o">:</span> <span class="n">finset</span> <span class="o">(</span><span class="n">finset</span> <span class="n">X</span><span class="o">)</span>
@@ -260,85 +260,85 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181638300"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638300" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181638300">(Nov 22 2019 at 13:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638300" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181638300">(Nov 22 2019 at 13:45)</a>:</h4>
 <p>The alternative, as <span class="user-mention" data-user-id="121918">@Edward Ayers</span> noted is to use cast but this is only pushing the problem further down the line. When you use your definition for rewriting, you're going to find that you have <code>cast</code> popping up in inconvenient locations.</p>
 
 
 
 <a name="181638333"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638333" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181638333">(Nov 22 2019 at 13:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638333" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181638333">(Nov 22 2019 at 13:45)</a>:</h4>
 <p>So you're suggesting to change the types of <code>f1</code> and <code>f2</code> as well?</p>
 
 
 
 <a name="181638404"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638404" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181638404">(Nov 22 2019 at 13:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638404" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181638404">(Nov 22 2019 at 13:46)</a>:</h4>
 <p>If possible I'd really prefer not to change the type of <code>f2</code>, it's kind of fundamental to the problem at hand</p>
 
 
 
 <a name="181638410"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638410" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181638410">(Nov 22 2019 at 13:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638410" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181638410">(Nov 22 2019 at 13:46)</a>:</h4>
 <p>Yes or at least provide a version without the <code>rset</code>.</p>
 
 
 
 <a name="181638414"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638414" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181638414">(Nov 22 2019 at 13:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638414" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181638414">(Nov 22 2019 at 13:46)</a>:</h4>
 <p>Oh!</p>
 
 
 
 <a name="181638437"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638437" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181638437">(Nov 22 2019 at 13:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638437" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181638437">(Nov 22 2019 at 13:46)</a>:</h4>
 <p>I see, and provide a lemma saying that if the source has the restricted type then the target does too</p>
 
 
 
 <a name="181638469"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638469" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181638469">(Nov 22 2019 at 13:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638469" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181638469">(Nov 22 2019 at 13:47)</a>:</h4>
 <p><code>f2</code> looks a bit more challenging to change than <code>f1</code> but I can't say for sure. I don't have the definition</p>
 
 
 
 <a name="181638477"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638477" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181638477">(Nov 22 2019 at 13:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638477" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181638477">(Nov 22 2019 at 13:47)</a>:</h4>
 <p>That's right</p>
 
 
 
 <a name="181638636"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638636" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181638636">(Nov 22 2019 at 13:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638636" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181638636">(Nov 22 2019 at 13:49)</a>:</h4>
 <p>Changing this is gonna mean changing a lot of stuff :(</p>
 
 
 
 <a name="181638661"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638661" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181638661">(Nov 22 2019 at 13:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638661" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181638661">(Nov 22 2019 at 13:49)</a>:</h4>
 <p>(the details are here: <a href="https://github.com/b-mehta/lean-experiments/blob/master/src/kruskal_katona.lean#L155" target="_blank" title="https://github.com/b-mehta/lean-experiments/blob/master/src/kruskal_katona.lean#L155">https://github.com/b-mehta/lean-experiments/blob/master/src/kruskal_katona.lean#L155</a>. <code>f2</code> is the same as <code>shadow</code>)</p>
 
 
 
 <a name="181638812"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638812" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181638812">(Nov 22 2019 at 13:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181638812" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181638812">(Nov 22 2019 at 13:51)</a>:</h4>
 <p>But I think I see the general design principle here: definitions and functions shouldn't have restricted types, and we instead move the restrictions to the lemmas about our definitions and functions. Is this about right?</p>
 
 
 
 <a name="181639141"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639141" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181639141">(Nov 22 2019 at 13:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639141" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181639141">(Nov 22 2019 at 13:54)</a>:</h4>
 <p>That's a bit oversimplified. One time the restrictions are helpful is when the constraints don't change much throughout your formula. A take away lesson I'd rather give is: understand the ups and down of intrinsic invariant (dependent types and subtypes) versus extrinsic constraints and consider using one when the other is leading to painful proofs</p>
 
 
 
 <a name="181639490"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639490" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181639490">(Nov 22 2019 at 13:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639490" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181639490">(Nov 22 2019 at 13:58)</a>:</h4>
 <p>I think the restrictions are helpful in my case, then - the proofs using <code>f2</code> weren't particularly painful</p>
 
 
 
 <a name="181639558"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639558" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181639558">(Nov 22 2019 at 13:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639558" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181639558">(Nov 22 2019 at 13:59)</a>:</h4>
 <blockquote>
 <p>I would attempt to show you how to fix the issue in this case but there are so many undefined variables that I can't cut and paste easily :-/</p>
 </blockquote>
@@ -376,62 +376,62 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181639722"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639722" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181639722">(Nov 22 2019 at 14:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639722" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181639722">(Nov 22 2019 at 14:00)</a>:</h4>
 <p><code>noncomputable</code>! But this thing should be computable</p>
 
 
 
 <a name="181639783"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639783" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181639783">(Nov 22 2019 at 14:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639783" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181639783">(Nov 22 2019 at 14:01)</a>:</h4>
 <p>Is that because of the instance I added? I couldn't get union to work</p>
 
 
 
 <a name="181639786"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639786" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181639786">(Nov 22 2019 at 14:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639786" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181639786">(Nov 22 2019 at 14:01)</a>:</h4>
 <p><span class="user-mention" data-user-id="110038">@Kevin Buzzard</span> Are you using a recent mathlib? Seul fixed some of the issues with coaxing omega last month.</p>
 
 
 
 <a name="181639861"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639861" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181639861">(Nov 22 2019 at 14:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639861" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181639861">(Nov 22 2019 at 14:02)</a>:</h4>
 <p>I hope so because I just submitted a PR</p>
 
 
 
 <a name="181639868"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639868" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181639868">(Nov 22 2019 at 14:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639868" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181639868">(Nov 22 2019 at 14:02)</a>:</h4>
 <p>Oh the union should work without an instance I think</p>
 
 
 
 <a name="181639937"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639937" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181639937">(Nov 22 2019 at 14:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181639937" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181639937">(Nov 22 2019 at 14:03)</a>:</h4>
 <p>Sorry I think that's my fault</p>
 
 
 
 <a name="181640400"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181640400" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181640400">(Nov 22 2019 at 14:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181640400" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181640400">(Nov 22 2019 at 14:07)</a>:</h4>
 <p>Okay yeah that was my fault, since I abstracted away what <code>rset</code> was, it couldn't automatically derive <code>decidable_eq</code> for it, and so <code>finset (rset _ _)</code> didn't have <code>has_union</code></p>
 
 
 
 <a name="181640443"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181640443" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181640443">(Nov 22 2019 at 14:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181640443" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181640443">(Nov 22 2019 at 14:07)</a>:</h4>
 <p>Changing the <code>constant rset</code> line to:<br>
 <code>def rset (r : ℕ) (X) [fintype X] := {x : finset X // x ∈ finset.powerset_len r (fintype.elems X)}</code> should make <code>has_union</code> work</p>
 
 
 
 <a name="181645928"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181645928" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181645928">(Nov 22 2019 at 15:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181645928" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181645928">(Nov 22 2019 at 15:07)</a>:</h4>
 <p><span class="user-mention" data-user-id="110038">@Kevin Buzzard</span> The stupid triangle only works to rewrite inside a Prop</p>
 
 
 
 <a name="181646524"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181646524" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181646524">(Nov 22 2019 at 15:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181646524" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181646524">(Nov 22 2019 at 15:14)</a>:</h4>
 <p><span class="user-mention" data-user-id="246273">@Bhavik Mehta</span> I think the easiest approach is to define something along the lines of</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">rset</span><span class="bp">.</span><span class="n">cast</span> <span class="o">{</span><span class="n">X</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">}</span> <span class="o">{</span><span class="n">r</span> <span class="n">r&#39;</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">r</span> <span class="bp">=</span> <span class="n">r&#39;</span><span class="o">)</span> <span class="o">(</span><span class="n">A</span> <span class="o">:</span> <span class="n">rset</span> <span class="n">r</span> <span class="n">X</span><span class="o">)</span> <span class="o">:</span> <span class="n">rset</span> <span class="n">r&#39;</span> <span class="n">X</span> <span class="o">:=</span>
 <span class="bp">⟨</span><span class="n">A</span><span class="bp">.</span><span class="n">val</span><span class="o">,</span> <span class="n">h</span> <span class="bp">▸</span> <span class="n">A</span><span class="bp">.</span><span class="n">property</span><span class="bp">⟩</span>
@@ -443,19 +443,19 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181646619"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181646619" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181646619">(Nov 22 2019 at 15:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181646619" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181646619">(Nov 22 2019 at 15:15)</a>:</h4>
 <p>If you use <code>rw</code>, or equivalently <code>cast</code>/<code>eq.rec</code>, you'll be in for a world of pain later when you want to get out the actual <code>finset</code>.</p>
 
 
 
 <a name="181646636"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181646636" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181646636">(Nov 22 2019 at 15:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181646636" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181646636">(Nov 22 2019 at 15:15)</a>:</h4>
 <p>By the way, writing <code>x ∈ finset.powerset_len r (fintype.elems X)</code> as the property rather than <code>x.card = r</code> looks rather awkward to me.</p>
 
 
 
 <a name="181646923"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181646923" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181646923">(Nov 22 2019 at 15:18)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181646923" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181646923">(Nov 22 2019 at 15:18)</a>:</h4>
 <blockquote>
 <p><span class="user-mention silent" data-user-id="246273">Bhavik Mehta</span> I think the easiest approach is to define something along the lines of</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">rset</span><span class="bp">.</span><span class="n">cast</span> <span class="o">{</span><span class="n">X</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">}</span> <span class="o">{</span><span class="n">r</span> <span class="n">r&#39;</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">r</span> <span class="bp">=</span> <span class="n">r&#39;</span><span class="o">)</span> <span class="o">(</span><span class="n">A</span> <span class="o">:</span> <span class="n">rset</span> <span class="n">r</span> <span class="n">X</span><span class="o">)</span> <span class="o">:</span> <span class="n">rset</span> <span class="n">r&#39;</span> <span class="n">X</span> <span class="o">:=</span>
@@ -470,25 +470,25 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181647111"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181647111" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181647111">(Nov 22 2019 at 15:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181647111" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181647111">(Nov 22 2019 at 15:21)</a>:</h4>
 <p>I think Reid's definition looks better than mine because he's only using eq.rec in Prop land</p>
 
 
 
 <a name="181647969"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181647969" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181647969">(Nov 22 2019 at 15:29)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181647969" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181647969">(Nov 22 2019 at 15:29)</a>:</h4>
 <p>Oh yes, the definition is different</p>
 
 
 
 <a name="181648187"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181648187" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181648187">(Nov 22 2019 at 15:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181648187" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181648187">(Nov 22 2019 at 15:31)</a>:</h4>
 <p>This is not the first time I've seen this issue and I should perhaps have been wise enough by now to come up with Reid's definition. <span class="user-mention" data-user-id="246273">@Bhavik Mehta</span> I once wrote such a function when working with quotient groups -- I needed a map from <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi mathvariant="normal">/</mi><mi>H</mi></mrow><annotation encoding="application/x-tex">G/H</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">G</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span></span></span></span> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi mathvariant="normal">/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">G/K</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">G</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span></span></span></span> when I had a proof that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">H=K</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span></span></span></span> and I did it in the same way that Reid suggested above.</p>
 
 
 
 <a name="181716660"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181716660" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181716660">(Nov 23 2019 at 13:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181716660" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181716660">(Nov 23 2019 at 13:50)</a>:</h4>
 <blockquote>
 <p><span class="user-mention silent" data-user-id="246273">Bhavik Mehta</span> I think the easiest approach is to define something along the lines of</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">rset</span><span class="bp">.</span><span class="n">cast</span> <span class="o">{</span><span class="n">X</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">}</span> <span class="o">{</span><span class="n">r</span> <span class="n">r&#39;</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">r</span> <span class="bp">=</span> <span class="n">r&#39;</span><span class="o">)</span> <span class="o">(</span><span class="n">A</span> <span class="o">:</span> <span class="n">rset</span> <span class="n">r</span> <span class="n">X</span><span class="o">)</span> <span class="o">:</span> <span class="n">rset</span> <span class="n">r&#39;</span> <span class="n">X</span> <span class="o">:=</span>
@@ -503,7 +503,7 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181716670"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181716670" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181716670">(Nov 23 2019 at 13:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181716670" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181716670">(Nov 23 2019 at 13:51)</a>:</h4>
 <blockquote>
 <p>By the way, writing <code>x ∈ finset.powerset_len r (fintype.elems X)</code> as the property rather than <code>x.card = r</code> looks rather awkward to me.</p>
 </blockquote>
@@ -512,13 +512,13 @@ i feel like carrying around an invariant everywhere you go like <code>rset</code
 
 
 <a name="181716717"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181716717" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#181716717">(Nov 23 2019 at 13:52)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/181716717" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#181716717">(Nov 23 2019 at 13:52)</a>:</h4>
 <p>I'd made <code>rset_mk (A : finset X) (H : finset.card A = r) : rset r X </code> instead to get around this, but your way is a lot cleaner</p>
 
 
 
 <a name="182571191"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/182571191" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="http://127.0.0.1:4000/archive/113489newmembers/07549Definingafunctionbyorelim#182571191">(Dec 04 2019 at 16:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Defining%20a%20function%20by%20or.elim/near/182571191" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bhavik Mehta <a href="https://rht.github.io/archive/113489newmembers/07549Definingafunctionbyorelim#182571191">(Dec 04 2019 at 16:20)</a>:</h4>
 <p><span class="user-mention" data-user-id="110026">@Simon Hudon</span> <span class="user-mention" data-user-id="110032">@Reid Barton</span> I finally got around to rewriting everything with your suggestions, and managed to finish the main proof this was for! This was very instructive, thanks both</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/22316tactics.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/22316tactics.html">tactics</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/22316tactics.html">tactics</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/22316tactics.html
 {% raw %}
 
 <a name="183147411"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183147411" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/113488general/22316tactics#183147411">(Dec 11 2019 at 11:19)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183147411" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="https://rht.github.io/archive/113488general/22316tactics#183147411">(Dec 11 2019 at 11:19)</a>:</h4>
 <p>I am struggling to write a super-basic tactic (see <a href="https://github.com/leanprover-community/mathlib/issues/1792" target="_blank" title="https://github.com/leanprover-community/mathlib/issues/1792">#1792</a>). Given a string <code>e</code> of the form <code>"simp [-one_div_eq_inv, hx, hy] with field_simps"</code>, say, is there a command to convert it to something one can execute? (I tried <code>[``e]</code> and variations of this, to no avail). </p>
 <p>It may well be an instance of an XY problem, so here is a little bit more context: I want <code>field_simp [hx]</code> to call <code>simp [-one_eq_div_inv, hx] with field_simps</code> (and I don't want to fiddle with <code>simp</code>parsing options are there are just too many of them). My current attempt looks like</p>
 <div class="codehilite"><pre><span></span><span class="kn">namespace</span> <span class="n">tactic</span>
@@ -37,25 +37,25 @@ permalink: archive/113488general/22316tactics.html
 
 
 <a name="183149325"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183149325" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Gabriel Ebner <a href="http://127.0.0.1:4000/archive/113488general/22316tactics#183149325">(Dec 11 2019 at 11:48)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183149325" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Gabriel Ebner <a href="https://rht.github.io/archive/113488general/22316tactics#183149325">(Dec 11 2019 at 11:48)</a>:</h4>
 <p>(deleted)</p>
 
 
 
 <a name="183149445"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183149445" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Gabriel Ebner <a href="http://127.0.0.1:4000/archive/113488general/22316tactics#183149445">(Dec 11 2019 at 11:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183149445" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Gabriel Ebner <a href="https://rht.github.io/archive/113488general/22316tactics#183149445">(Dec 11 2019 at 11:51)</a>:</h4>
 <p>I don't think there's any way to parse a string into an expression inside a tactic.  I think you should just call <code>tactic.interactive.simp</code> directly (it's just a regular function after all).</p>
 
 
 
 <a name="183149624"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183149624" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/22316tactics#183149624">(Dec 11 2019 at 11:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183149624" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113488general/22316tactics#183149624">(Dec 11 2019 at 11:54)</a>:</h4>
 <p><span class="user-mention" data-user-id="110050">@Sebastien Gouezel</span> I was hoping to find time to try the field_simp tactic today -- it should only take a few lines of code. Not 100% sure I'll have a chance, but if not, I can do it tomorrow. As Gabriel says, the easiest way to do it is just to put together the right information to give to <code>tactic.interactive.simp</code>, or maybe using the definition of <code>tactic.interactive.simp</code> with very minor changes.</p>
 
 
 
 <a name="183155798"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183155798" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/22316tactics#183155798">(Dec 11 2019 at 13:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183155798" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113488general/22316tactics#183155798">(Dec 11 2019 at 13:24)</a>:</h4>
 <p>Okay, here's a sketch of how it would look:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">core</span>
 <span class="kn">open</span> <span class="n">tactic</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">interactive</span>
@@ -87,13 +87,13 @@ permalink: archive/113488general/22316tactics.html
 
 
 <a name="183155849"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183155849" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/22316tactics#183155849">(Dec 11 2019 at 13:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183155849" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113488general/22316tactics#183155849">(Dec 11 2019 at 13:24)</a>:</h4>
 <p>I removed the option to write <code>simp_with only [...]</code> because I'm not sure how <code>simp only [-badsimp]</code> behaves. It's probably fine and you could add it back.</p>
 
 
 
 <a name="183157179"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183157179" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="http://127.0.0.1:4000/archive/113488general/22316tactics#183157179">(Dec 11 2019 at 13:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/tactics/near/183157179" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sebastien Gouezel <a href="https://rht.github.io/archive/113488general/22316tactics#183157179">(Dec 11 2019 at 13:41)</a>:</h4>
 <p>Thanks!</p>
 
 

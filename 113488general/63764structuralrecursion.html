@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/63764structuralrecursion.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/63764structuralrecursion.html">structural recursion</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/63764structuralrecursion.html">structural recursion</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/63764structuralrecursion.html
 {% raw %}
 
 <a name="132971116"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/structural%20recursion/near/132971116" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/63764structuralrecursion#132971116">(Aug 29 2018 at 01:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/structural%20recursion/near/132971116" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/63764structuralrecursion#132971116">(Aug 29 2018 at 01:59)</a>:</h4>
 <p>I have the following code for which Lean cannot prove termination because it's trying to use well-founded recursion:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">equiv</span><span class="bp">.</span><span class="n">basic</span>
 
@@ -49,7 +49,7 @@ permalink: archive/113488general/63764structuralrecursion.html
 
 
 <a name="132974185"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/structural%20recursion/near/132974185" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/63764structuralrecursion#132974185">(Aug 29 2018 at 03:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/structural%20recursion/near/132974185" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/63764structuralrecursion#132974185">(Aug 29 2018 at 03:35)</a>:</h4>
 <p>Here's my fix:</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">get_m</span><span class="bp">.</span><span class="n">up&#39;</span> <span class="o">:</span> <span class="bp">Π</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="kt">Type</span> <span class="n">u</span><span class="o">}</span> <span class="o">{</span><span class="n">β</span> <span class="o">:</span> <span class="kt">Type</span><span class="bp">.</span><span class="o">{</span><span class="n">max</span> <span class="n">u</span> <span class="n">v</span><span class="o">}}</span> <span class="o">(</span><span class="n">Heq</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">β</span><span class="o">),</span> <span class="n">get_m</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">get_m</span> <span class="n">β</span> <span class="o">:=</span>
 <span class="bp">λ</span> <span class="n">α</span> <span class="n">β</span> <span class="n">f</span> <span class="n">x</span><span class="o">,</span> <span class="o">(</span><span class="bp">@</span><span class="n">get_m</span><span class="bp">.</span><span class="n">rec_on</span> <span class="o">(</span><span class="bp">λ</span> <span class="n">α</span> <span class="bp">_</span><span class="o">,</span> <span class="bp">Π</span> <span class="n">β</span><span class="o">,</span> <span class="o">(</span><span class="n">α</span> <span class="bp">→</span> <span class="n">β</span><span class="o">)</span> <span class="bp">→</span> <span class="n">get_m</span> <span class="n">β</span><span class="o">)</span> <span class="n">α</span> <span class="n">x</span>

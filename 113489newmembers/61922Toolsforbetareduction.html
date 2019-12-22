@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/61922Toolsforbetareduction.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction.html">Tools for beta reduction</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction.html">Tools for beta reduction</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/61922Toolsforbetareduction.html
 {% raw %}
 
 <a name="159222707"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159222707" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction#159222707">(Feb 23 2019 at 09:49)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159222707" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction#159222707">(Feb 23 2019 at 09:49)</a>:</h4>
 <p>I have following code:</p>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">limit_start_irrelevant</span> <span class="o">(</span><span class="n">a</span> <span class="o">:</span> <span class="bp">ℕ</span> <span class="bp">→</span> <span class="n">ℝ</span><span class="o">)</span> <span class="o">(</span><span class="n">k</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">)</span> <span class="o">{</span><span class="n">l</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">is_limit</span> <span class="o">(</span><span class="bp">λ</span> <span class="n">n</span><span class="o">,</span> <span class="n">a</span> <span class="o">(</span><span class="n">n</span><span class="bp">+</span><span class="n">k</span><span class="o">))</span> <span class="n">l</span><span class="o">)</span> <span class="o">:</span> <span class="n">is_limit</span> <span class="n">a</span> <span class="n">l</span> <span class="o">:=</span>
 <span class="k">begin</span>
@@ -67,31 +67,31 @@ H : |a (n - k + k) - l| &lt; ε
 
 
 <a name="159222755"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159222755" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction#159222755">(Feb 23 2019 at 09:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159222755" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction#159222755">(Feb 23 2019 at 09:50)</a>:</h4>
 <p>I see that I can use convert H as well, but this also feels like overkill.</p>
 
 
 
 <a name="159223145"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159223145" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction#159223145">(Feb 23 2019 at 10:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159223145" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction#159223145">(Feb 23 2019 at 10:04)</a>:</h4>
 <p>you could use <code>dsimp only</code> as well</p>
 
 
 
 <a name="159223165"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159223165" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction#159223165">(Feb 23 2019 at 10:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159223165" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction#159223165">(Feb 23 2019 at 10:05)</a>:</h4>
 <p>If you play with the options you can get it to simplify almost nothing except beta reduction, but there isn't a dedicated command for it</p>
 
 
 
 <a name="159223266"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159223266" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction#159223266">(Feb 23 2019 at 10:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159223266" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction#159223266">(Feb 23 2019 at 10:08)</a>:</h4>
 <p>If you want to change H to something definitionally equal, you can just write "change [thing you want] at H"</p>
 
 
 
 <a name="159226619"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159226619" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction#159226619">(Feb 23 2019 at 11:58)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159226619" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction#159226619">(Feb 23 2019 at 11:58)</a>:</h4>
 <p>As Kevin wrote, you can use change to force rewriting to something definitionaly equivalent. But in this case you want to use <code>convert</code> anyway, because you also want to make Lean realize you need <code>n-k+k=n</code> or something like that. What is it you don't like in my version:</p>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">limit_start_irrelevant</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="bp">ℕ</span> <span class="bp">→</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">k</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">)</span> <span class="o">{</span><span class="n">l</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">M1P1</span><span class="bp">.</span><span class="n">is_limit</span> <span class="o">(</span><span class="bp">λ</span> <span class="n">n</span><span class="o">,</span> <span class="n">a</span> <span class="o">(</span><span class="n">k</span><span class="bp">+</span><span class="n">n</span><span class="o">))</span> <span class="n">l</span><span class="o">)</span> <span class="o">:</span> <span class="n">M1P1</span><span class="bp">.</span><span class="n">is_limit</span> <span class="n">a</span> <span class="n">l</span> <span class="o">:=</span>
 <span class="k">begin</span>
@@ -110,25 +110,25 @@ H : |a (n - k + k) - l| &lt; ε
 
 
 <a name="159230282"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159230282" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction#159230282">(Feb 23 2019 at 13:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159230282" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction#159230282">(Feb 23 2019 at 13:54)</a>:</h4>
 <p>I like your version much better, but I wont learn anything if I just copy-paste it into my file. I was comparing my code to yours and rewriting it in the process.</p>
 
 
 
 <a name="159230433"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159230433" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction#159230433">(Feb 23 2019 at 13:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159230433" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction#159230433">(Feb 23 2019 at 13:59)</a>:</h4>
 <p>Also, speaking about your code, The last line: <code> repeat { linarith }, </code> seems to remove 3 goals. Why is that?</p>
 
 
 
 <a name="159230514"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159230514" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction#159230514">(Feb 23 2019 at 14:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159230514" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction#159230514">(Feb 23 2019 at 14:01)</a>:</h4>
 <p>The last goal is instantly solved by one of the hypothesis, so does linarith (or repeat?) just try the hypothesis on the next goal to see if it works?</p>
 
 
 
 <a name="159231931"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159231931" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction#159231931">(Feb 23 2019 at 14:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159231931" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction#159231931">(Feb 23 2019 at 14:45)</a>:</h4>
 <p><span class="user-mention" data-user-id="132603">@Calle Sönne</span> <code>repeat {linarith},</code> is just the same as</p>
 <div class="codehilite"><pre><span></span><span class="n">linarith</span><span class="o">,</span>
 <span class="n">linarith</span><span class="o">,</span>
@@ -141,7 +141,7 @@ H : |a (n - k + k) - l| &lt; ε
 
 
 <a name="159232076"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159232076" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction#159232076">(Feb 23 2019 at 14:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159232076" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction#159232076">(Feb 23 2019 at 14:50)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">private</span> <span class="n">meta</span> <span class="n">def</span> <span class="n">repeat_aux</span> <span class="o">(</span><span class="n">t</span> <span class="o">:</span> <span class="n">tactic</span> <span class="n">unit</span><span class="o">)</span> <span class="o">:</span> <span class="n">list</span> <span class="n">expr</span> <span class="bp">→</span> <span class="n">list</span> <span class="n">expr</span> <span class="bp">→</span> <span class="n">tactic</span> <span class="n">unit</span>
 <span class="bp">|</span> <span class="o">[]</span>      <span class="n">r</span> <span class="o">:=</span> <span class="n">set_goals</span> <span class="n">r</span><span class="bp">.</span><span class="n">reverse</span>
 <span class="bp">|</span> <span class="o">(</span><span class="n">g</span><span class="bp">::</span><span class="n">gs</span><span class="o">)</span> <span class="n">r</span> <span class="o">:=</span> <span class="n">do</span>
@@ -164,13 +164,13 @@ H : |a (n - k + k) - l| &lt; ε
 
 
 <a name="159232668"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159232668" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction#159232668">(Feb 23 2019 at 15:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159232668" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Calle Sönne <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction#159232668">(Feb 23 2019 at 15:06)</a>:</h4>
 <p>Ah, for some reason I thought it meant reapeat once.</p>
 
 
 
 <a name="159232840"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159232840" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/61922Toolsforbetareduction#159232840">(Feb 23 2019 at 15:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Tools%20for%20beta%20reduction/near/159232840" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/61922Toolsforbetareduction#159232840">(Feb 23 2019 at 15:11)</a>:</h4>
 <p>that would be <code>iterate 2</code></p>
 
 

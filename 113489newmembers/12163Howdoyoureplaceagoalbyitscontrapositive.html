@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive.html">How do you replace a goal by its contrapositive?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive.html">How do you replace a goal by its contrapositive?</a></h3>
 
 <hr>
 
@@ -16,14 +16,14 @@ permalink: archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive
 {% raw %}
 
 <a name="179440831"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179440831" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Quantum Horizon <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179440831">(Oct 30 2019 at 15:02)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179440831" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Quantum Horizon <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179440831">(Oct 30 2019 at 15:02)</a>:</h4>
 <p>For eg:  Your goal is to show a=b =&gt; c=d. How do you replace this goal to c!=d =&gt; a!=b? <br>
 Thank You!</p>
 
 
 
 <a name="179441395"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179441395" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179441395">(Oct 30 2019 at 15:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179441395" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179441395">(Oct 30 2019 at 15:07)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">library_search</span>
 
 <span class="kn">example</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">[</span><span class="n">decidable</span> <span class="n">P</span><span class="o">]</span> <span class="o">[</span><span class="n">decidable</span> <span class="n">Q</span><span class="o">]:</span> <span class="o">(</span><span class="bp">¬</span> <span class="n">Q</span> <span class="bp">→</span> <span class="bp">¬</span> <span class="n">P</span><span class="o">)</span> <span class="bp">→</span> <span class="o">(</span><span class="n">P</span> <span class="bp">→</span> <span class="n">Q</span><span class="o">)</span> <span class="o">:=</span> <span class="k">by</span> <span class="n">library_search</span> <span class="c1">-- fails</span>
@@ -36,25 +36,25 @@ Thank You!</p>
 
 
 <a name="179441422"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179441422" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179441422">(Oct 30 2019 at 15:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179441422" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179441422">(Oct 30 2019 at 15:07)</a>:</h4>
 <p>You can also try <a href="https://github.com/leanprover-community/mathlib/blob/master/docs/tactics.md#contrapose" target="_blank" title="https://github.com/leanprover-community/mathlib/blob/master/docs/tactics.md#contrapose">the <code>contrapose</code> tactic</a> in mathlib.</p>
 
 
 
 <a name="179441513"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179441513" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179441513">(Oct 30 2019 at 15:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179441513" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179441513">(Oct 30 2019 at 15:08)</a>:</h4>
 <p>Does this tactic only do the other way to the OP though?</p>
 
 
 
 <a name="179441552"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179441552" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179441552">(Oct 30 2019 at 15:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179441552" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179441552">(Oct 30 2019 at 15:08)</a>:</h4>
 <p>Oh no it's exactly the right way</p>
 
 
 
 <a name="179441999"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179441999" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179441999">(Oct 30 2019 at 15:12)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179441999" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179441999">(Oct 30 2019 at 15:12)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">tactic</span><span class="bp">.</span><span class="n">push_neg</span>
 
 <span class="kn">example</span> <span class="o">(</span><span class="n">X</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">)</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="n">d</span> <span class="o">:</span> <span class="n">X</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">c</span> <span class="bp">≠</span> <span class="n">d</span> <span class="bp">→</span> <span class="n">a</span> <span class="bp">≠</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span> <span class="bp">→</span> <span class="n">c</span> <span class="bp">=</span> <span class="n">d</span> <span class="o">:=</span>
@@ -68,7 +68,7 @@ Thank You!</p>
 
 
 <a name="179442852"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179442852" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Quantum Horizon <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179442852">(Oct 30 2019 at 15:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179442852" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Quantum Horizon <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179442852">(Oct 30 2019 at 15:20)</a>:</h4>
 <blockquote>
 <p>You can also try <a href="https://github.com/leanprover-community/mathlib/blob/master/docs/tactics.md#contrapose" target="_blank" title="https://github.com/leanprover-community/mathlib/blob/master/docs/tactics.md#contrapose">the <code>contrapose</code> tactic</a> in mathlib.</p>
 </blockquote>
@@ -78,19 +78,19 @@ I am trying to solve level 13, World 2 on the number theory game: <a href="http:
 
 
 <a name="179445009"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179445009" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179445009">(Oct 30 2019 at 15:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179445009" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179445009">(Oct 30 2019 at 15:39)</a>:</h4>
 <p>Those levels are not properly documented. Some of the lemmas are stated in an inconvenient manner, and I have not properly explained the key point that computer scientists think that <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span></span></span> is a function and they think that <code>≠ </code> is a function as well.</p>
 
 
 
 <a name="179445085"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179445085" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179445085">(Oct 30 2019 at 15:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179445085" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179445085">(Oct 30 2019 at 15:39)</a>:</h4>
 <p>I am in the process of working on proper documentation right now. I would be interested to know if you had had any difficulty with levels 3-1 to 3-8 and 4-1 to 4-7.</p>
 
 
 
 <a name="179446076"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179446076" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Giovanni Mascellani <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179446076">(Oct 30 2019 at 15:48)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179446076" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Giovanni Mascellani <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179446076">(Oct 30 2019 at 15:48)</a>:</h4>
 <blockquote>
 <p>I am in the process of working on proper documentation right now. I would be interested to know if you had had any difficulty with levels 3-1 to 3-8 and 4-1 to 4-7.</p>
 </blockquote>
@@ -100,13 +100,13 @@ I am trying to solve level 13, World 2 on the number theory game: <a href="http:
 
 
 <a name="179447411"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179447411" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179447411">(Oct 30 2019 at 15:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179447411" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179447411">(Oct 30 2019 at 15:59)</a>:</h4>
 <p>Documenting destructing inequality is what I will be working on within an hour. I had not realised until today that you can solve all of world 4 including all prerequisites without ever using the <code>intro</code> tactic. Everyone is complaining that this is what they don't know how to do and I'm trying to fix it ASAP.</p>
 
 
 
 <a name="179449081"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179449081" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Quantum Horizon <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179449081">(Oct 30 2019 at 16:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179449081" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Quantum Horizon <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179449081">(Oct 30 2019 at 16:14)</a>:</h4>
 <blockquote>
 <p>Those levels are not properly documented. Some of the lemmas are stated in an inconvenient manner, and I have not properly explained the key point that computer scientists think that <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span></span></span> is a function and they think that <code>≠ </code> is a function as well.</p>
 </blockquote>
@@ -115,7 +115,7 @@ I am trying to solve level 13, World 2 on the number theory game: <a href="http:
 
 
 <a name="179449513"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179449513" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Quantum Horizon <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179449513">(Oct 30 2019 at 16:18)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179449513" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Quantum Horizon <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179449513">(Oct 30 2019 at 16:18)</a>:</h4>
 <blockquote>
 <p>I am in the process of working on proper documentation right now. I would be interested to know if you had had any difficulty with levels 3-1 to 3-8 and 4-1 to 4-7.</p>
 </blockquote>
@@ -124,7 +124,7 @@ I am trying to solve level 13, World 2 on the number theory game: <a href="http:
 
 
 <a name="179450274"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179450274" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tim Baanen <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179450274">(Oct 30 2019 at 16:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179450274" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tim Baanen <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179450274">(Oct 30 2019 at 16:26)</a>:</h4>
 <blockquote>
 <p>It says a!=0 implies b!=0 implies ab!=0. It should be a!=0 'and' b!=0.</p>
 </blockquote>
@@ -133,19 +133,19 @@ I am trying to solve level 13, World 2 on the number theory game: <a href="http:
 
 
 <a name="179450310"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179450310" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tim Baanen <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179450310">(Oct 30 2019 at 16:27)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179450310" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tim Baanen <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179450310">(Oct 30 2019 at 16:27)</a>:</h4>
 <p>Computer scientists think that the form with two implications is the correct way to state theorems with two assumptions, and I'm inclined to agree with them :)</p>
 
 
 
 <a name="179451190"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179451190" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tim Baanen <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179451190">(Oct 30 2019 at 16:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179451190" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tim Baanen <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179451190">(Oct 30 2019 at 16:36)</a>:</h4>
 <p>AFAICT, it's the first level with two assumptions, so I would suggest to explain what's going on there</p>
 
 
 
 <a name="179456430"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179456430" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179456430">(Oct 30 2019 at 17:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/179456430" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#179456430">(Oct 30 2019 at 17:32)</a>:</h4>
 <blockquote>
 <p>There is a problem with level 9, world 3. It says a!=0 <strong>implies </strong>b!=0 implies ab!=0. It should be a!=0 '<strong>and</strong>' b!=0.</p>
 </blockquote>
@@ -154,13 +154,13 @@ I am trying to solve level 13, World 2 on the number theory game: <a href="http:
 
 
 <a name="180024734"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/180024734" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris B <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#180024734">(Nov 06 2019 at 12:00)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/180024734" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris B <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#180024734">(Nov 06 2019 at 12:00)</a>:</h4>
 <p><span class="user-mention" data-user-id="110038">@Kevin Buzzard</span> You may be way ahead of me, but having an example that focuses on doing something fun with or exploits currying/partial application might be helpful for readers.</p>
 
 
 
 <a name="180026111"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/180026111" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#180026111">(Nov 06 2019 at 12:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/How%20do%20you%20replace%20a%20goal%20by%20its%20contrapositive%3F/near/180026111" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/12163Howdoyoureplaceagoalbyitscontrapositive#180026111">(Nov 06 2019 at 12:20)</a>:</h4>
 <p>I am writing some levels now which might be very appropriate for this sort of thing. Thanks!</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/49562reduceXYfails.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/49562reduceXYfails.html">#reduce "X"++"Y" fails</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/49562reduceXYfails.html">#reduce "X"++"Y" fails</a></h3>
 
 <hr>
 
@@ -16,25 +16,25 @@ permalink: archive/113488general/49562reduceXYfails.html
 {% raw %}
 
 <a name="133264218"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133264218" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="http://127.0.0.1:4000/archive/113488general/49562reduceXYfails#133264218">(Sep 03 2018 at 14:37)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133264218" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="https://rht.github.io/archive/113488general/49562reduceXYfails#133264218">(Sep 03 2018 at 14:37)</a>:</h4>
 <p>Evaluating this expression in Lean (VSCode is what I'm using) hangs for a while then reports deep recursion detected, increase stack space. Not very undergraduate-student-friendly. Bug or feature?</p>
 
 
 
 <a name="133264296"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133264296" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/49562reduceXYfails#133264296">(Sep 03 2018 at 14:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133264296" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/49562reduceXYfails#133264296">(Sep 03 2018 at 14:38)</a>:</h4>
 <p>As usual, <code>#eval</code> succeeds here</p>
 
 
 
 <a name="133264323"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133264323" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="http://127.0.0.1:4000/archive/113488general/49562reduceXYfails#133264323">(Sep 03 2018 at 14:39)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133264323" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="https://rht.github.io/archive/113488general/49562reduceXYfails#133264323">(Sep 03 2018 at 14:39)</a>:</h4>
 <p>Why this failure?</p>
 
 
 
 <a name="133265394"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133265394" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="http://127.0.0.1:4000/archive/113488general/49562reduceXYfails#133265394">(Sep 03 2018 at 15:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133265394" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="https://rht.github.io/archive/113488general/49562reduceXYfails#133265394">(Sep 03 2018 at 15:03)</a>:</h4>
 <p>Also note that #eval also fails in ways guaranteed to be confusing to new students. Try this (posted previously).</p>
 <p>theorem t : true := true.intro<br>
 #check t<br>
@@ -45,25 +45,25 @@ permalink: archive/113488general/49562reduceXYfails.html
 
 
 <a name="133265406"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133265406" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/49562reduceXYfails#133265406">(Sep 03 2018 at 15:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133265406" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113488general/49562reduceXYfails#133265406">(Sep 03 2018 at 15:03)</a>:</h4>
 <p>Even just <code>#reduce 'X'</code> is asking the kernel to normalize a proof of <code>88 &lt; 55296</code>. This normalizes to 55207 nested applications of <code>nat.less_than_or_equal.step</code>. And this is a subproblem of what you're asking.</p>
 
 
 
 <a name="133265477"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133265477" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="http://127.0.0.1:4000/archive/113488general/49562reduceXYfails#133265477">(Sep 03 2018 at 15:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133265477" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rob Lewis <a href="https://rht.github.io/archive/113488general/49562reduceXYfails#133265477">(Sep 03 2018 at 15:05)</a>:</h4>
 <p><code>#eval</code> is useful for computing values, it will ignore <code>Prop</code>-valued terms.</p>
 
 
 
 <a name="133266004"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133266004" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/49562reduceXYfails#133266004">(Sep 03 2018 at 15:17)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133266004" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/49562reduceXYfails#133266004">(Sep 03 2018 at 15:17)</a>:</h4>
 <p>My simple rule is to choose <code>#eval</code></p>
 
 
 
 <a name="133266225"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133266225" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="http://127.0.0.1:4000/archive/113488general/49562reduceXYfails#133266225">(Sep 03 2018 at 15:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/%23reduce%20%22X%22%2B%2B%22Y%22%20fails/near/133266225" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="https://rht.github.io/archive/113488general/49562reduceXYfails#133266225">(Sep 03 2018 at 15:22)</a>:</h4>
 <p>Thanks.</p>
 
 

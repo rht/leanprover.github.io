@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/09163calculatewithmod.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/09163calculatewithmod.html">calculate with mod</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/09163calculatewithmod.html">calculate with mod</a></h3>
 
 <hr>
 
@@ -16,50 +16,50 @@ permalink: archive/113488general/09163calculatewithmod.html
 {% raw %}
 
 <a name="161256631"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161256631" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jeremy Avigad <a href="http://127.0.0.1:4000/archive/113488general/09163calculatewithmod#161256631">(Mar 20 2019 at 15:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161256631" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jeremy Avigad <a href="https://rht.github.io/archive/113488general/09163calculatewithmod#161256631">(Mar 20 2019 at 15:14)</a>:</h4>
 <p>What is the best way to prove <code>(m * n) % n = 0</code> on <code>nat</code>? IIRC, the library used to have rules like these for calculating with <code>mod</code>, but now I can't find them. Am I missing something?</p>
 
 
 
 <a name="161257340"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161257340" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113488general/09163calculatewithmod#161257340">(Mar 20 2019 at 15:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161257340" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113488general/09163calculatewithmod#161257340">(Mar 20 2019 at 15:21)</a>:</h4>
 <p><code>nat.mul_mod_left</code></p>
 
 
 
 <a name="161257529"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161257529" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113488general/09163calculatewithmod#161257529">(Mar 20 2019 at 15:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161257529" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113488general/09163calculatewithmod#161257529">(Mar 20 2019 at 15:23)</a>:</h4>
 <p>In general, the files, <code>data.nat.modeq</code> and <code>data.zmod.basic</code> might help with this stuff.</p>
 
 
 
 <a name="161257689"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161257689" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jeremy Avigad <a href="http://127.0.0.1:4000/archive/113488general/09163calculatewithmod#161257689">(Mar 20 2019 at 15:25)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161257689" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jeremy Avigad <a href="https://rht.github.io/archive/113488general/09163calculatewithmod#161257689">(Mar 20 2019 at 15:25)</a>:</h4>
 <p>Thanks!</p>
 
 
 
 <a name="161293514"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161293514" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/09163calculatewithmod#161293514">(Mar 20 2019 at 21:34)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161293514" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/09163calculatewithmod#161293514">(Mar 20 2019 at 21:34)</a>:</h4>
 <p><code>by library_search</code> agrees: <code>mul_mod_left m n</code> :-) </p>
 <p>I've actually run into some robustness problems (works on lots of examples, mysteriously fails in some cases, in every fix I try breaks something else...) but hopefully coming soon.</p>
 
 
 
 <a name="161294078"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161294078" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113488general/09163calculatewithmod#161294078">(Mar 20 2019 at 21:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161294078" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113488general/09163calculatewithmod#161294078">(Mar 20 2019 at 21:42)</a>:</h4>
 <p>You are great at writing teasers!</p>
 
 
 
 <a name="161295787"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161295787" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/09163calculatewithmod#161295787">(Mar 20 2019 at 22:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161295787" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/09163calculatewithmod#161295787">(Mar 20 2019 at 22:03)</a>:</h4>
 <p>Sorry.. life keeps intervening. :-)</p>
 
 
 
 <a name="161295875"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161295875" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/09163calculatewithmod#161295875">(Mar 20 2019 at 22:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/calculate%20with%20mod/near/161295875" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/09163calculatewithmod#161295875">(Mar 20 2019 at 22:04)</a>:</h4>
 <p>It occurred to me on the bike ride in that I should split <code>library_search</code> into a few PRs. I should be able to do one that covers 95% of cases that is nice and simple. Then I can later add the full on "let's do backwards reasoning with clever choices of the search pattern", if I ever get that to be robust. :-)</p>
 
 

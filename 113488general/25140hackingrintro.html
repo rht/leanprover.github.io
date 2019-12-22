@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/25140hackingrintro.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/25140hackingrintro.html">hacking `rintro`</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/25140hackingrintro.html">hacking `rintro`</a></h3>
 
 <hr>
 
@@ -16,19 +16,19 @@ permalink: archive/113488general/25140hackingrintro.html
 {% raw %}
 
 <a name="133395571"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/hacking%20%60rintro%60/near/133395571" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/25140hackingrintro#133395571">(Sep 05 2018 at 19:01)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/hacking%20%60rintro%60/near/133395571" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/25140hackingrintro#133395571">(Sep 05 2018 at 19:01)</a>:</h4>
 <p>Sometimes I would like to intro a hypothesis and simultaneously change its type to a defeq type. I don't think this can be done with intro. But could it be done with <code>rintro</code>? I just tried <code>rintro ⟨y,Hy,(Hyx : the_prop_I_want)⟩</code> but it doesn't work (at least it didn't for me). Is this the kind of thing that could be made to work with hackery or do I just have to put up with it?</p>
 
 
 
 <a name="133395951"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/hacking%20%60rintro%60/near/133395951" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="http://127.0.0.1:4000/archive/113488general/25140hackingrintro#133395951">(Sep 05 2018 at 19:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/hacking%20%60rintro%60/near/133395951" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Simon Hudon <a href="https://rht.github.io/archive/113488general/25140hackingrintro#133395951">(Sep 05 2018 at 19:07)</a>:</h4>
 <p>I think <code>assume</code> allows you to do that: <code>assume x : my_defeq_type</code></p>
 
 
 
 <a name="133421542"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/hacking%20%60rintro%60/near/133421542" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="http://127.0.0.1:4000/archive/113488general/25140hackingrintro#133421542">(Sep 06 2018 at 04:40)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/hacking%20%60rintro%60/near/133421542" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Scott Morrison <a href="https://rht.github.io/archive/113488general/25140hackingrintro#133421542">(Sep 06 2018 at 04:40)</a>:</h4>
 <p>Yes: <code>assume</code> works great for this (as I only recently learnt from seeing Reid using it).</p>
 
 

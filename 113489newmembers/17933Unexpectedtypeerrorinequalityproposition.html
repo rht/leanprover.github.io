@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition.html">Unexpected type error in equality proposition</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition.html">Unexpected type error in equality proposition</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/17933Unexpectedtypeerrorinequalitypropositio
 {% raw %}
 
 <a name="159255865"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159255865" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="http://127.0.0.1:4000/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159255865">(Feb 24 2019 at 02:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159255865" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="https://rht.github.io/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159255865">(Feb 24 2019 at 02:28)</a>:</h4>
 <p>set_option pp.all true<br>
 #reduce eq.refl 0 <br>
 #reduce eq.refl (1-1)<br>
@@ -27,31 +27,31 @@ permalink: archive/113489newmembers/17933Unexpectedtypeerrorinequalitypropositio
 
 
 <a name="159259178"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159259178" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="http://127.0.0.1:4000/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159259178">(Feb 24 2019 at 04:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159259178" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="https://rht.github.io/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159259178">(Feb 24 2019 at 04:15)</a>:</h4>
 <p>this also works: <code>#check (eq.refl (0)) = (eq.refl ((1 - 1):ℕ))</code></p>
 
 
 
 <a name="159259220"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159259220" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="http://127.0.0.1:4000/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159259220">(Feb 24 2019 at 04:16)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159259220" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="https://rht.github.io/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159259220">(Feb 24 2019 at 04:16)</a>:</h4>
 <p>Unfortunately I don't know why it needs a type ascription</p>
 
 
 
 <a name="159267578"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159267578" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159267578">(Feb 24 2019 at 08:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159267578" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159267578">(Feb 24 2019 at 08:43)</a>:</h4>
 <p>Is it because Lean doesn't know what that zero is? It's just <code>has_zero.zero</code> until you tell it that it's nat's zero</p>
 
 
 
 <a name="159281431"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159281431" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="http://127.0.0.1:4000/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159281431">(Feb 24 2019 at 16:13)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159281431" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="https://rht.github.io/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159281431">(Feb 24 2019 at 16:13)</a>:</h4>
 <p>Or that it doesn't know what that (1-1) is? The preceding lines seem to indicate that all the terms really are equal, so this result is a bit mystifying.</p>
 
 
 
 <a name="159282646"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159282646" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159282646">(Feb 24 2019 at 16:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159282646" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159282646">(Feb 24 2019 at 16:50)</a>:</h4>
 <p>It's an elaborator order problem, as usual. For <code>eq.refl a = eq.refl b</code> to typecheck, <code>a</code> and <code>b</code> must be defeq. These both work:</p>
 <div class="codehilite"><pre><span></span>#check (eq.refl 0) = (eq.refl 0)
 #check (eq.refl (1-1)) = (eq.refl (1-1))
@@ -64,19 +64,19 @@ permalink: archive/113489newmembers/17933Unexpectedtypeerrorinequalitypropositio
 
 
 <a name="159282705"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159282705" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159282705">(Feb 24 2019 at 16:52)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159282705" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159282705">(Feb 24 2019 at 16:52)</a>:</h4>
 <p>The moral of the story: don't trust nat defaulting. It's a convenience so that <code>#eval 1 + 1</code> does what you expect. You should really think of these terms as having unknown type.</p>
 
 
 
 <a name="159282721"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159282721" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159282721">(Feb 24 2019 at 16:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159282721" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159282721">(Feb 24 2019 at 16:54)</a>:</h4>
 <p>I think the correct answer is, what on earth are you doing with <code>(eq.refl 0) = (eq.refl (1-1))</code></p>
 
 
 
 <a name="159444767"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159444767" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="http://127.0.0.1:4000/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159444767">(Feb 26 2019 at 18:19)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Unexpected%20type%20error%20in%20equality%20proposition/near/159444767" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Sullivan <a href="https://rht.github.io/archive/113489newmembers/17933Unexpectedtypeerrorinequalityproposition#159444767">(Feb 26 2019 at 18:19)</a>:</h4>
 <p>Mario, Thank you very much.  That's was a very helpful answer. I had to read it a few times, but now I understand. </p>
 <p>Kenny, Ha ha. I'm teaching early undergraduates students (400 of them) discrete math using Lean. One of them was dutifully exploring applications of the various principles I've taught them, tried out the example here, and was mystified by the answer.</p>
 

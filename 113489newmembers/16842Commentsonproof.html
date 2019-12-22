@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/16842Commentsonproof.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/16842Commentsonproof.html">Comments on proof</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/16842Commentsonproof.html">Comments on proof</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/16842Commentsonproof.html
 {% raw %}
 
 <a name="181165049"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181165049" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Luis O'Shea <a href="http://127.0.0.1:4000/archive/113489newmembers/16842Commentsonproof#181165049">(Nov 19 2019 at 23:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181165049" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Luis O'Shea <a href="https://rht.github.io/archive/113489newmembers/16842Commentsonproof#181165049">(Nov 19 2019 at 23:22)</a>:</h4>
 <p>Below is my first proof after the natural number game. I have a few questions:</p>
 <ol>
 <li>Is it idiomatic? (Especially to a mathematician rather than a computer scientist)</li>
@@ -42,13 +42,13 @@ permalink: archive/113489newmembers/16842Commentsonproof.html
 
 
 <a name="181166692"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181166692" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="http://127.0.0.1:4000/archive/113489newmembers/16842Commentsonproof#181166692">(Nov 19 2019 at 23:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181166692" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Ashworth <a href="https://rht.github.io/archive/113489newmembers/16842Commentsonproof#181166692">(Nov 19 2019 at 23:46)</a>:</h4>
 <p>Most end up reviewing TPIL, in order to be a competent user you will need to have an understanding of the underlying type theory; especially how to read and debug type errors. Knowing how to construct terms by hand is also very useful when trying to construct definitions, and I know Kevin is not very excited about Lean's term mode but I can't imagine not knowing how to use it, at least.</p>
 
 
 
 <a name="181167814"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181167814" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/16842Commentsonproof#181167814">(Nov 20 2019 at 00:03)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181167814" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/16842Commentsonproof#181167814">(Nov 20 2019 at 00:03)</a>:</h4>
 <p>1) (Speaking generally, I haven't tried to "golf" your proof) there is some basic style advice in <a href="https://github.com/leanprover-community/mathlib/blob/master/docs/contribute/style.md" target="_blank" title="https://github.com/leanprover-community/mathlib/blob/master/docs/contribute/style.md">this file</a>; in particular we usually use curly brackets to separate the proofs of individual goals. Also, using <code>simp</code> in the middle of a proof (a "non-terminal simp") is generally discouraged since such proofs can break if the simp lemmas change (which can happen depending on what files you have imported). </p>
 <p>2) There are  a few options that let you see the steps that the simplifier tries, see <a href="https://github.com/leanprover-community/mathlib/blob/master/docs/extras/simp.md#simp" target="_blank" title="https://github.com/leanprover-community/mathlib/blob/master/docs/extras/simp.md#simp">this doc</a>. It can be quite verbose though.</p>
 <p>Somewhat related: you can try replacing <code>simp</code> with <code>squeeze_simp</code>. It will return a message with a roughly equivalent <code>simp only</code> statement that has a (partial) list of used lemmas. It's not perfect though - it might miss some lemmas or have some extra ones.</p>
@@ -57,7 +57,7 @@ permalink: archive/113489newmembers/16842Commentsonproof.html
 
 
 <a name="181171362"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181171362" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Luis O'Shea <a href="http://127.0.0.1:4000/archive/113489newmembers/16842Commentsonproof#181171362">(Nov 20 2019 at 01:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181171362" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Luis O'Shea <a href="https://rht.github.io/archive/113489newmembers/16842Commentsonproof#181171362">(Nov 20 2019 at 01:09)</a>:</h4>
 <p>Below is the new proof with suggestions (1) and (2) applied (thanks for <code>squeeze_simp</code> -- that was very helpful). The problem I now have is that having removed <code>simp</code> the long string of rewrites seems hard to read (to me). Is this really idiomatic?</p>
 <div class="codehilite"><pre><span></span><span class="kn">theorem</span> <span class="n">nat_sum</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="bp">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="n">sum</span><span class="o">(</span><span class="n">range</span> <span class="n">n</span><span class="o">)</span> <span class="bp">=</span> <span class="o">(</span><span class="n">n</span> <span class="bp">-</span> <span class="mi">1</span><span class="o">)</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">/</span> <span class="mi">2</span> <span class="o">:=</span>
 <span class="k">begin</span>
@@ -74,19 +74,19 @@ permalink: archive/113489newmembers/16842Commentsonproof.html
 
 
 <a name="181186196"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181186196" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/16842Commentsonproof#181186196">(Nov 20 2019 at 07:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181186196" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/16842Commentsonproof#181186196">(Nov 20 2019 at 07:53)</a>:</h4>
 <p>I feel a bit bad that I didn't introduce the <code>{ }</code> convention in the natural number game. It was because it was always induction on nat, and the base case was usually trivial. There is some talk about this in TPIL, there are several conventions for this sort of thing and I always thought of them as equal but mathlib seems to have chosen one and hence this should probably be the one I'm promoting.</p>
 
 
 
 <a name="181187406"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181187406" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/16842Commentsonproof#181187406">(Nov 20 2019 at 08:18)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181187406" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/16842Commentsonproof#181187406">(Nov 20 2019 at 08:18)</a>:</h4>
 <p>The long string of rewrites is hiding a triviality. To be honest I would have been too scared to approach this sum because integer division is hard to work with (5/2=2 etc). I would have been tempted to either prove 2*sum = ... or to work with rationals.</p>
 
 
 
 <a name="181188076"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181188076" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/16842Commentsonproof#181188076">(Nov 20 2019 at 08:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181188076" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/16842Commentsonproof#181188076">(Nov 20 2019 at 08:31)</a>:</h4>
 <p>Here's my effort.</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">list</span><span class="bp">.</span><span class="n">basic</span>  <span class="n">tactic</span><span class="bp">.</span><span class="n">ring</span>
 <span class="kn">open</span> <span class="n">list</span> <span class="n">nat</span>
@@ -111,7 +111,7 @@ permalink: archive/113489newmembers/16842Commentsonproof.html
 
 
 <a name="181188083"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181188083" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/16842Commentsonproof#181188083">(Nov 20 2019 at 08:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Comments%20on%20proof/near/181188083" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/16842Commentsonproof#181188083">(Nov 20 2019 at 08:31)</a>:</h4>
 <p>My philosophy is that if what you're doing is clear you can just try and kill the result quickly with tactics and hang readibility, just add comments</p>
 
 

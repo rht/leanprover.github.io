@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/03027wellfoundedrecursion.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/03027wellfoundedrecursion.html">well_founded recursion</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/03027wellfoundedrecursion.html">well_founded recursion</a></h3>
 
 <hr>
 
@@ -16,19 +16,19 @@ permalink: archive/113488general/03027wellfoundedrecursion.html
 {% raw %}
 
 <a name="151874709"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151874709" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> petercommand <a href="http://127.0.0.1:4000/archive/113488general/03027wellfoundedrecursion#151874709">(Dec 16 2018 at 10:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151874709" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> petercommand <a href="https://rht.github.io/archive/113488general/03027wellfoundedrecursion#151874709">(Dec 16 2018 at 10:20)</a>:</h4>
 <p>Given that a relation <code>R : a -&gt; a -&gt; Prop</code> satisfies <code>{ f : stream a // forall n, R (f (n + 1)) (f n)} -&gt; false</code>, is it possible to get <code>well_founded R</code>?</p>
 
 
 
 <a name="151874716"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151874716" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> petercommand <a href="http://127.0.0.1:4000/archive/113488general/03027wellfoundedrecursion#151874716">(Dec 16 2018 at 10:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151874716" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> petercommand <a href="https://rht.github.io/archive/113488general/03027wellfoundedrecursion#151874716">(Dec 16 2018 at 10:21)</a>:</h4>
 <p>i.e. translate the traditional no infinite chain condition to well_founded in lean</p>
 
 
 
 <a name="151876319"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151876319" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113488general/03027wellfoundedrecursion#151876319">(Dec 16 2018 at 11:16)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151876319" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113488general/03027wellfoundedrecursion#151876319">(Dec 16 2018 at 11:16)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">example</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="kt">Type</span><span class="bp">*</span><span class="o">}</span> <span class="o">(</span><span class="n">r</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">α</span> <span class="bp">→</span> <span class="kt">Prop</span><span class="o">)</span>
   <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="bp">Π</span> <span class="n">f</span> <span class="o">:</span> <span class="bp">ℕ</span> <span class="bp">→</span> <span class="n">α</span><span class="o">,</span> <span class="bp">∃</span> <span class="n">n</span><span class="o">,</span> <span class="bp">¬</span><span class="n">r</span> <span class="o">(</span><span class="n">f</span> <span class="o">(</span><span class="n">n</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">))</span> <span class="o">(</span><span class="n">f</span> <span class="n">n</span><span class="o">))</span> <span class="o">:</span>
   <span class="n">well_founded</span> <span class="n">r</span> <span class="o">:=</span>
@@ -50,37 +50,37 @@ permalink: archive/113488general/03027wellfoundedrecursion.html
 
 
 <a name="151876769"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151876769" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> petercommand <a href="http://127.0.0.1:4000/archive/113488general/03027wellfoundedrecursion#151876769">(Dec 16 2018 at 11:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151876769" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> petercommand <a href="https://rht.github.io/archive/113488general/03027wellfoundedrecursion#151876769">(Dec 16 2018 at 11:32)</a>:</h4>
 <p>Thanks!</p>
 
 
 
 <a name="151878820"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151878820" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113488general/03027wellfoundedrecursion#151878820">(Dec 16 2018 at 12:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151878820" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113488general/03027wellfoundedrecursion#151878820">(Dec 16 2018 at 12:42)</a>:</h4>
 <p>PRed <a href="https://github.com/leanprover/mathlib/issues/519" target="_blank" title="https://github.com/leanprover/mathlib/issues/519">#519</a></p>
 
 
 
 <a name="151879289"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151879289" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113488general/03027wellfoundedrecursion#151879289">(Dec 16 2018 at 12:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151879289" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113488general/03027wellfoundedrecursion#151879289">(Dec 16 2018 at 12:59)</a>:</h4>
 <p>maybe we should prove the axiom of dependent choice</p>
 
 
 
 <a name="151879296"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151879296" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113488general/03027wellfoundedrecursion#151879296">(Dec 16 2018 at 12:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151879296" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113488general/03027wellfoundedrecursion#151879296">(Dec 16 2018 at 12:59)</a>:</h4>
 <p>What is that?</p>
 
 
 
 <a name="151887313"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151887313" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/03027wellfoundedrecursion#151887313">(Dec 16 2018 at 16:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151887313" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/03027wellfoundedrecursion#151887313">(Dec 16 2018 at 16:51)</a>:</h4>
 <p>There's also <code>well_founded_iff_no_descending_seq</code> already although the formulation is slightly different.</p>
 
 
 
 <a name="151887541"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151887541" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/03027wellfoundedrecursion#151887541">(Dec 16 2018 at 16:57)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151887541" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/03027wellfoundedrecursion#151887541">(Dec 16 2018 at 16:57)</a>:</h4>
 <blockquote>
 <p>What is that?</p>
 </blockquote>
@@ -89,13 +89,13 @@ permalink: archive/113488general/03027wellfoundedrecursion.html
 
 
 <a name="151887609"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151887609" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/03027wellfoundedrecursion#151887609">(Dec 16 2018 at 16:59)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151887609" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/03027wellfoundedrecursion#151887609">(Dec 16 2018 at 16:59)</a>:</h4>
 <p>Aah. To get a non-increasing sequence you could use countable dependent choice.</p>
 
 
 
 <a name="151888044"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151888044" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/03027wellfoundedrecursion#151888044">(Dec 16 2018 at 17:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/well_founded%20recursion/near/151888044" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/03027wellfoundedrecursion#151888044">(Dec 16 2018 at 17:11)</a>:</h4>
 <p><a href="https://gist.github.com/rwbarton/7bd5b3b19d930f577355a596a5ed8b4d" target="_blank" title="https://gist.github.com/rwbarton/7bd5b3b19d930f577355a596a5ed8b4d">https://gist.github.com/rwbarton/7bd5b3b19d930f577355a596a5ed8b4d</a> is basically dependent choice, without the choice part (but you could use choice in the inductive step)</p>
 
 

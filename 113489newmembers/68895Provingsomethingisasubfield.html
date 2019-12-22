@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/68895Provingsomethingisasubfield.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield.html">Proving something is a subfield</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield.html">Proving something is a subfield</a></h3>
 
 <hr>
 
@@ -16,19 +16,19 @@ permalink: archive/113489newmembers/68895Provingsomethingisasubfield.html
 {% raw %}
 
 <a name="154872747"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154872747" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154872747">(Jan 10 2019 at 21:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154872747" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154872747">(Jan 10 2019 at 21:21)</a>:</h4>
 <p>I'm trying to prove that the intersection of two subfields is a subfield -- the problem with using <code>subfield.mk</code>, or just using <code>{...}</code> directly, is that <code>subfield</code> is defined using <code>extends</code>, so I need to prove that it's a subring -- and by extension that it is an additive subgroup and a submonoid. What's the notation for this?</p>
 
 
 
 <a name="154872763"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154872763" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154872763">(Jan 10 2019 at 21:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154872763" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154872763">(Jan 10 2019 at 21:21)</a>:</h4>
 <p>This is what I have:</p>
 
 
 
 <a name="154872773"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154872773" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154872773">(Jan 10 2019 at 21:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154872773" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154872773">(Jan 10 2019 at 21:21)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">algebra</span><span class="bp">.</span><span class="n">field</span>
 <span class="kn">import</span> <span class="n">field_theory</span><span class="bp">.</span><span class="n">subfield</span>
 <span class="kn">theorem</span> <span class="n">field_intersect</span> <span class="o">(</span><span class="n">F1</span> <span class="n">F2</span> <span class="o">:</span> <span class="n">set</span> <span class="n">K</span><span class="o">)</span> <span class="o">[</span><span class="n">h1</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="n">F1</span><span class="o">]</span> <span class="o">[</span><span class="n">h2</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="n">F2</span><span class="o">]</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="o">(</span><span class="n">F1</span> <span class="err">∩</span> <span class="n">F2</span><span class="o">)</span> <span class="o">:=</span>
@@ -40,19 +40,19 @@ permalink: archive/113489newmembers/68895Provingsomethingisasubfield.html
 
 
 <a name="154874067"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154874067" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154874067">(Jan 10 2019 at 21:37)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154874067" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154874067">(Jan 10 2019 at 21:37)</a>:</h4>
 <p>Got it, it's <code>to_is_subring</code>.</p>
 
 
 
 <a name="154876299"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154876299" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154876299">(Jan 10 2019 at 22:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154876299" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154876299">(Jan 10 2019 at 22:10)</a>:</h4>
 <p>Ok, I suppose one could do without that, too.</p>
 
 
 
 <a name="154876309"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154876309" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154876309">(Jan 10 2019 at 22:10)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154876309" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154876309">(Jan 10 2019 at 22:10)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">theorem</span> <span class="n">field_intersect</span> <span class="o">(</span><span class="n">F1</span> <span class="n">F2</span> <span class="o">:</span> <span class="n">set</span> <span class="n">K</span><span class="o">)</span> <span class="o">[</span><span class="n">h1</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="n">F1</span><span class="o">]</span> <span class="o">[</span><span class="n">h2</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="n">F2</span><span class="o">]</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="o">(</span><span class="n">F1</span> <span class="err">∩</span> <span class="n">F2</span><span class="o">)</span> <span class="o">:=</span> <span class="o">{</span>
     <span class="n">zero_mem</span> <span class="o">:=</span> <span class="n">and</span><span class="bp">.</span><span class="n">intro</span> <span class="n">h1</span><span class="bp">.</span><span class="n">zero_mem</span> <span class="n">h2</span><span class="bp">.</span><span class="n">zero_mem</span><span class="o">,</span>
     <span class="n">one_mem</span> <span class="o">:=</span> <span class="n">and</span><span class="bp">.</span><span class="n">intro</span> <span class="n">h1</span><span class="bp">.</span><span class="n">one_mem</span> <span class="n">h2</span><span class="bp">.</span><span class="n">one_mem</span><span class="o">,</span>
@@ -72,13 +72,13 @@ permalink: archive/113489newmembers/68895Provingsomethingisasubfield.html
 
 
 <a name="154876361"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154876361" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154876361">(Jan 10 2019 at 22:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154876361" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154876361">(Jan 10 2019 at 22:11)</a>:</h4>
 <p>I got confused because Lean doesn't point out which fields are to be provided when something extends something.</p>
 
 
 
 <a name="154876596"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154876596" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154876596">(Jan 10 2019 at 22:14)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154876596" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154876596">(Jan 10 2019 at 22:14)</a>:</h4>
 <p>On a related note, why doesn't this work?</p>
 <div class="codehilite"><pre><span></span><span class="kn">theorem</span> <span class="n">field_intersect</span> <span class="o">(</span><span class="n">F1</span> <span class="n">F2</span> <span class="o">:</span> <span class="n">set</span> <span class="n">K</span><span class="o">)</span> <span class="o">[</span><span class="n">h1</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="n">F1</span><span class="o">]</span> <span class="o">[</span><span class="n">h2</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="n">F2</span><span class="o">]</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="o">(</span><span class="n">F1</span> <span class="err">∩</span> <span class="n">F2</span><span class="o">)</span> <span class="o">:=</span> <span class="o">{</span>
     <span class="n">zero_mem</span> <span class="o">:=</span> <span class="n">and</span><span class="bp">.</span><span class="n">intro</span> <span class="n">h1</span><span class="bp">.</span><span class="n">zero_mem</span> <span class="n">h2</span><span class="bp">.</span><span class="n">zero_mem</span><span class="o">,</span>
@@ -108,13 +108,13 @@ permalink: archive/113489newmembers/68895Provingsomethingisasubfield.html
 
 
 <a name="154876635"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154876635" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154876635">(Jan 10 2019 at 22:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154876635" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154876635">(Jan 10 2019 at 22:15)</a>:</h4>
 <p>What exactly did you write the first time? with <code>to_is_subring</code></p>
 
 
 
 <a name="154876664"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154876664" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154876664">(Jan 10 2019 at 22:15)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154876664" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154876664">(Jan 10 2019 at 22:15)</a>:</h4>
 <p>Oh, I just nested them all in:</p>
 <div class="codehilite"><pre><span></span><span class="kn">theorem</span> <span class="n">field_intersect</span> <span class="o">(</span><span class="n">F1</span> <span class="n">F2</span> <span class="o">:</span> <span class="n">set</span> <span class="n">K</span><span class="o">)</span> <span class="o">[</span><span class="n">h1</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="n">F1</span><span class="o">]</span> <span class="o">[</span><span class="n">h2</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="n">F2</span><span class="o">]</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="o">(</span><span class="n">F1</span> <span class="err">∩</span> <span class="n">F2</span><span class="o">)</span> <span class="o">:=</span> <span class="o">{</span>
     <span class="n">to_is_subring</span> <span class="o">:=</span> <span class="o">{</span>
@@ -143,31 +143,31 @@ permalink: archive/113489newmembers/68895Provingsomethingisasubfield.html
 
 
 <a name="154877108"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877108" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877108">(Jan 10 2019 at 22:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877108" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877108">(Jan 10 2019 at 22:22)</a>:</h4>
 <p><code>@h1.neg_mem</code> doesn't work because you can't mix field notation and <code>@</code> notation</p>
 
 
 
 <a name="154877121"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877121" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877121">(Jan 10 2019 at 22:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877121" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877121">(Jan 10 2019 at 22:22)</a>:</h4>
 <p>you have to write <code>@neg_mem h1</code></p>
 
 
 
 <a name="154877252"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877252" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877252">(Jan 10 2019 at 22:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877252" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877252">(Jan 10 2019 at 22:24)</a>:</h4>
 <p>also you shouldn't project out of a typeclass argument, because it's implicit</p>
 
 
 
 <a name="154877259"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877259" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877259">(Jan 10 2019 at 22:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877259" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877259">(Jan 10 2019 at 22:24)</a>:</h4>
 <p>Re:(@,.) -- I thought so, but I tried that and it doesn't work either -- it just doesn't find <code>is_subfield.neg_mem</code></p>
 
 
 
 <a name="154877297"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877297" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877297">(Jan 10 2019 at 22:25)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877297" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877297">(Jan 10 2019 at 22:25)</a>:</h4>
 <blockquote>
 <p>also you shouldn't project out of a typeclass argument, because it's implicit</p>
 </blockquote>
@@ -176,37 +176,37 @@ permalink: archive/113489newmembers/68895Provingsomethingisasubfield.html
 
 
 <a name="154877317"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877317" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877317">(Jan 10 2019 at 22:25)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877317" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877317">(Jan 10 2019 at 22:25)</a>:</h4>
 <p>what do you get when you try it?</p>
 
 
 
 <a name="154877398"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877398" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877398">(Jan 10 2019 at 22:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877398" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877398">(Jan 10 2019 at 22:26)</a>:</h4>
 <p><code>unknown identifier 'is_subfield.add_mem'</code></p>
 
 
 
 <a name="154877407"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877407" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877407">(Jan 10 2019 at 22:26)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877407" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877407">(Jan 10 2019 at 22:26)</a>:</h4>
 <p>that means it's not called that</p>
 
 
 
 <a name="154877424"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877424" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877424">(Jan 10 2019 at 22:27)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877424" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877424">(Jan 10 2019 at 22:27)</a>:</h4>
 <p>what is the def of <code>is_subfield</code>?</p>
 
 
 
 <a name="154877432"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877432" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877432">(Jan 10 2019 at 22:27)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877432" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877432">(Jan 10 2019 at 22:27)</a>:</h4>
 <p>I tried with <code>is_add_submonoid</code> too.</p>
 
 
 
 <a name="154877442"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877442" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877442">(Jan 10 2019 at 22:27)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877442" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877442">(Jan 10 2019 at 22:27)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="n">type</span> <span class="n">mismatch</span> <span class="n">at</span> <span class="n">application</span>
   <span class="n">is_add_submonoid</span><span class="bp">.</span><span class="n">add_mem</span>
 <span class="n">term</span>
@@ -220,19 +220,19 @@ permalink: archive/113489newmembers/68895Provingsomethingisasubfield.html
 
 
 <a name="154877453"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877453" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877453">(Jan 10 2019 at 22:27)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877453" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877453">(Jan 10 2019 at 22:27)</a>:</h4>
 <p>you don't pass in <code>h1</code> at all</p>
 
 
 
 <a name="154877513"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877513" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877513">(Jan 10 2019 at 22:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877513" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877513">(Jan 10 2019 at 22:28)</a>:</h4>
 <p>I did.</p>
 
 
 
 <a name="154877517"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877517" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877517">(Jan 10 2019 at 22:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877517" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877517">(Jan 10 2019 at 22:28)</a>:</h4>
 <p>This is what I'm trying:</p>
 <div class="codehilite"><pre><span></span><span class="kn">theorem</span> <span class="n">field_intersect</span> <span class="o">(</span><span class="n">F1</span> <span class="n">F2</span> <span class="o">:</span> <span class="n">set</span> <span class="n">K</span><span class="o">)</span> <span class="o">[</span><span class="n">h1</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="n">F1</span><span class="o">]</span> <span class="o">[</span><span class="n">h2</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="n">F2</span><span class="o">]</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="o">(</span><span class="n">F1</span> <span class="err">∩</span> <span class="n">F2</span><span class="o">)</span> <span class="o">:=</span> <span class="o">{</span>
     <span class="n">zero_mem</span> <span class="o">:=</span> <span class="n">and</span><span class="bp">.</span><span class="n">intro</span> <span class="n">h1</span><span class="bp">.</span><span class="n">zero_mem</span> <span class="n">h2</span><span class="bp">.</span><span class="n">zero_mem</span><span class="o">,</span>
@@ -247,97 +247,97 @@ permalink: archive/113489newmembers/68895Provingsomethingisasubfield.html
 
 
 <a name="154877518"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877518" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877518">(Jan 10 2019 at 22:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877518" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877518">(Jan 10 2019 at 22:28)</a>:</h4>
 <p>i know, stop</p>
 
 
 
 <a name="154877523"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877523" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877523">(Jan 10 2019 at 22:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877523" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877523">(Jan 10 2019 at 22:28)</a>:</h4>
 <p>just call it without passing in <code>h1</code></p>
 
 
 
 <a name="154877543"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877543" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877543">(Jan 10 2019 at 22:29)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877543" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877543">(Jan 10 2019 at 22:29)</a>:</h4>
 <p>Ah.</p>
 
 
 
 <a name="154877546"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877546" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877546">(Jan 10 2019 at 22:29)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877546" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877546">(Jan 10 2019 at 22:29)</a>:</h4>
 <p>like <code>is_add_submonoid.add_mem ha1 hb1</code></p>
 
 
 
 <a name="154877642"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877642" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877642">(Jan 10 2019 at 22:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877642" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877642">(Jan 10 2019 at 22:30)</a>:</h4>
 <p>I see, yes this works.</p>
 
 
 
 <a name="154877652"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877652" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877652">(Jan 10 2019 at 22:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877652" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877652">(Jan 10 2019 at 22:30)</a>:</h4>
 <p>But why? What's wrong with trying to feed Lean the class?</p>
 
 
 
 <a name="154877684"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877684" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877684">(Jan 10 2019 at 22:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877684" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877684">(Jan 10 2019 at 22:31)</a>:</h4>
 <p>the class is implicit, you aren't supposed to give it, lean finds it by typeclass inference</p>
 
 
 
 <a name="154877696"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877696" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877696">(Jan 10 2019 at 22:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877696" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877696">(Jan 10 2019 at 22:31)</a>:</h4>
 <p>you can give it if you use <code>@</code></p>
 
 
 
 <a name="154877758"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877758" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877758">(Jan 10 2019 at 22:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877758" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877758">(Jan 10 2019 at 22:32)</a>:</h4>
 <p>Yes, why wasn't that working?</p>
 
 
 
 <a name="154877771"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877771" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877771">(Jan 10 2019 at 22:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877771" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877771">(Jan 10 2019 at 22:32)</a>:</h4>
 <p>Using <code>@</code> and feeding the class?</p>
 
 
 
 <a name="154877782"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877782" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877782">(Jan 10 2019 at 22:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877782" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877782">(Jan 10 2019 at 22:32)</a>:</h4>
 <p>that should work, you just need a few more arguments that way, like the types</p>
 
 
 
 <a name="154877802"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877802" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877802">(Jan 10 2019 at 22:33)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877802" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877802">(Jan 10 2019 at 22:33)</a>:</h4>
 <p>I guess it looks something like <code>@is_add_submonoid.add_mem F1 h1 a b ha1 hb1</code></p>
 
 
 
 <a name="154877891"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877891" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877891">(Jan 10 2019 at 22:34)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877891" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877891">(Jan 10 2019 at 22:34)</a>:</h4>
 <p>oh wait, no it should be something more complicated than just <code>h1</code> there</p>
 
 
 
 <a name="154877921"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877921" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154877921">(Jan 10 2019 at 22:35)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154877921" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154877921">(Jan 10 2019 at 22:35)</a>:</h4>
 <p>because <code>h1</code> is a <code>is_subfield</code> and it needs a <code>is_add_monoid</code>, it does some typeclass inference to fill the gap</p>
 
 
 
 <a name="154878002"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154878002" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#154878002">(Jan 10 2019 at 22:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/154878002" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#154878002">(Jan 10 2019 at 22:36)</a>:</h4>
 <p>Oh ok. I think I see why it's best to leave things to Lean's class inference.</p>
 
 
 
 <a name="155280441"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155280441" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#155280441">(Jan 16 2019 at 19:28)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155280441" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#155280441">(Jan 16 2019 at 19:28)</a>:</h4>
 <p>I'm proving a similar theorem and having the same problem again, except this time just leaving Lean to do its type class inference doesn't work (only <code>zero_mem</code> and <code>one_mem</code> work):</p>
 <div class="codehilite"><pre><span></span><span class="kn">variables</span> <span class="o">{</span><span class="n">K</span> <span class="n">L</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">}</span> <span class="o">[</span><span class="n">discrete_field</span> <span class="n">K</span><span class="o">]</span> <span class="o">[</span><span class="n">discrete_field</span> <span class="n">L</span><span class="o">]</span> <span class="o">(</span><span class="n">f</span> <span class="o">:</span> <span class="n">K</span> <span class="bp">→</span> <span class="n">L</span><span class="o">)</span>
 <span class="kn">theorem</span> <span class="n">field_intersect&#39;</span> <span class="o">(</span><span class="n">PL</span> <span class="o">:</span> <span class="n">set</span> <span class="o">(</span><span class="n">set</span> <span class="n">L</span><span class="o">))</span> <span class="o">[</span><span class="n">H</span> <span class="o">:</span> <span class="bp">∀</span> <span class="n">J</span> <span class="err">∈</span> <span class="n">PL</span><span class="o">,</span> <span class="n">is_subfield</span> <span class="n">J</span><span class="o">]</span> <span class="o">:</span> <span class="n">is_subfield</span> <span class="o">(</span><span class="n">set</span><span class="bp">.</span><span class="n">sInter</span> <span class="n">PL</span><span class="o">)</span> <span class="o">:=</span>
@@ -363,19 +363,19 @@ permalink: archive/113489newmembers/68895Provingsomethingisasubfield.html
 
 
 <a name="155281908"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155281908" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#155281908">(Jan 16 2019 at 19:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155281908" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#155281908">(Jan 16 2019 at 19:46)</a>:</h4>
 <p>Can you post working code so I can cut and paste?</p>
 
 
 
 <a name="155281909"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155281909" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#155281909">(Jan 16 2019 at 19:46)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155281909" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#155281909">(Jan 16 2019 at 19:46)</a>:</h4>
 <p>PS this "simp, ..." style is discouraged. There are always ways around it.</p>
 
 
 
 <a name="155282381"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155282381" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#155282381">(Jan 16 2019 at 19:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155282381" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#155282381">(Jan 16 2019 at 19:53)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">algebra</span><span class="bp">.</span><span class="n">field</span>
 <span class="kn">import</span> <span class="n">field_theory</span><span class="bp">.</span><span class="n">subfield</span>
 <span class="kn">import</span> <span class="n">data</span><span class="bp">.</span><span class="n">polynomial</span>
@@ -392,13 +392,13 @@ permalink: archive/113489newmembers/68895Provingsomethingisasubfield.html
 
 
 <a name="155282401"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155282401" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#155282401">(Jan 16 2019 at 19:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155282401" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#155282401">(Jan 16 2019 at 19:53)</a>:</h4>
 <p>Doesn't that work (for copy-pasting, I mean)?</p>
 
 
 
 <a name="155283329"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155283329" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#155283329">(Jan 16 2019 at 20:04)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155283329" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#155283329">(Jan 16 2019 at 20:04)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">field_theory</span><span class="bp">.</span><span class="n">subfield</span>
 
 <span class="kn">variables</span> <span class="o">{</span><span class="n">K</span> <span class="n">L</span> <span class="o">:</span> <span class="kt">Type</span><span class="o">}</span> <span class="o">[</span><span class="n">discrete_field</span> <span class="n">K</span><span class="o">]</span> <span class="o">[</span><span class="n">discrete_field</span> <span class="n">L</span><span class="o">]</span> <span class="o">(</span><span class="n">f</span> <span class="o">:</span> <span class="n">K</span> <span class="bp">→</span> <span class="n">L</span><span class="o">)</span>
@@ -418,25 +418,25 @@ permalink: archive/113489newmembers/68895Provingsomethingisasubfield.html
 
 
 <a name="155283540"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155283540" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#155283540">(Jan 16 2019 at 20:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155283540" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#155283540">(Jan 16 2019 at 20:07)</a>:</h4>
 <p>Yeah, the <code>simp</code> was a legacy from my code for <code>field_intersect</code> with indexed subsets.</p>
 
 
 
 <a name="155283598"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155283598" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#155283598">(Jan 16 2019 at 20:07)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155283598" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Abhimanyu Pallavi Sudhir <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#155283598">(Jan 16 2019 at 20:07)</a>:</h4>
 <p>Interesting that the <code>let ... in</code> thing works, though -- I did notice that going <code>have</code> the <code>add_mem</code> statement (without feeding it any parameters) in tactic mode worked.</p>
 
 
 
 <a name="155285644"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155285644" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#155285644">(Jan 16 2019 at 20:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155285644" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#155285644">(Jan 16 2019 at 20:30)</a>:</h4>
 <p>This is pretty weird. A more understandable solution would be <code>λ a b ha hb J HJ, by haveI := H J HJ ; exact is_add_submonoid.add_mem (ha J HJ) (hb J HJ),</code></p>
 
 
 
 <a name="155285877"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155285877" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="http://127.0.0.1:4000/archive/113489newmembers/68895Provingsomethingisasubfield#155285877">(Jan 16 2019 at 20:33)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Proving%20something%20is%20a%20subfield/near/155285877" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Patrick Massot <a href="https://rht.github.io/archive/113489newmembers/68895Provingsomethingisasubfield#155285877">(Jan 16 2019 at 20:33)</a>:</h4>
 <p>Of course you can also use the ugly direct term <code>@is_add_submonoid.add_mem _ _ _ (H J HJ).to_is_add_submonoid _ _ (ha J HJ) (hb J HJ)</code></p>
 
 

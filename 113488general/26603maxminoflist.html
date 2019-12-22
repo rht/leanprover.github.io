@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/26603maxminoflist.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/26603maxminoflist.html">max/min of list</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/26603maxminoflist.html">max/min of list</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/26603maxminoflist.html
 {% raw %}
 
 <a name="125938032"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/max/min%20of%20list/near/125938032" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113488general/26603maxminoflist#125938032">(May 01 2018 at 10:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/max/min%20of%20list/near/125938032" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113488general/26603maxminoflist#125938032">(May 01 2018 at 10:09)</a>:</h4>
 <p>maybe you'll find this useful:</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">list</span><span class="bp">.</span><span class="n">max</span> <span class="o">:</span> <span class="n">α</span> <span class="o">:=</span>
 <span class="n">list</span><span class="bp">.</span><span class="n">foldr</span> <span class="n">max</span> <span class="o">(</span><span class="n">inhabited</span><span class="bp">.</span><span class="n">default</span> <span class="bp">_</span><span class="o">)</span> <span class="n">L</span>
@@ -40,19 +40,19 @@ permalink: archive/113488general/26603maxminoflist.html
 
 
 <a name="125938092"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/max/min%20of%20list/near/125938092" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/26603maxminoflist#125938092">(May 01 2018 at 10:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/max/min%20of%20list/near/125938092" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/26603maxminoflist#125938092">(May 01 2018 at 10:11)</a>:</h4>
 <p>I'll take look. First it's lunch time...</p>
 
 
 
 <a name="126002895"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/max/min%20of%20list/near/126002895" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113488general/26603maxminoflist#126002895">(May 02 2018 at 17:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/max/min%20of%20list/near/126002895" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113488general/26603maxminoflist#126002895">(May 02 2018 at 17:06)</a>:</h4>
 <p><span class="user-mention" data-user-id="110064">@Kenny Lau</span>  That doesn't take the max, it takes the max of the list and the default value. You won't be able to prove <code>L.max \in L</code> You should define it as default for nil, and then list.foldr max L.head otherwise.</p>
 
 
 
 <a name="126003001"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/max/min%20of%20list/near/126003001" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113488general/26603maxminoflist#126003001">(May 02 2018 at 17:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/max/min%20of%20list/near/126003001" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113488general/26603maxminoflist#126003001">(May 02 2018 at 17:08)</a>:</h4>
 <p>aha</p>
 
 

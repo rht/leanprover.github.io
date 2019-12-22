@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/54219letIetc.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/54219letIetc.html">letI etc</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/54219letIetc.html">letI etc</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113488general/54219letIetc.html
 {% raw %}
 
 <a name="159987835"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/159987835" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/54219letIetc#159987835">(Mar 05 2019 at 09:17)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/159987835" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/54219letIetc#159987835">(Mar 05 2019 at 09:17)</a>:</h4>
 <p>Q) Why does <code>refl</code> fail to finish the proof of <code>Spv.refl</code> in the code below? </p>
 <p>I am about to write a bunch of API for a type <code>Spv</code> and I am going to have to get the hang of <code>letI</code>, <code>exactI</code> etc. I feel like my understanding of type class inference is now better than it was, and that I could do with a clearer picture of what is going on. Here's some documented minimised fully working code. Writing it has made me understand stuff better but I don't see why <code>refl</code> fails below.</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">order</span><span class="bp">.</span><span class="n">bounded_lattice</span> <span class="c1">-- for with_bot</span>
@@ -84,7 +84,7 @@ permalink: archive/113488general/54219letIetc.html
 
 
 <a name="159987938"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/159987938" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/54219letIetc#159987938">(Mar 05 2019 at 09:19)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/159987938" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/54219letIetc#159987938">(Mar 05 2019 at 09:19)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">lemma</span> <span class="n">Spv</span><span class="bp">.</span><span class="n">refl</span> <span class="o">(</span><span class="n">R</span> <span class="o">:</span> <span class="kt">Type</span> <span class="n">u₀</span><span class="o">)</span> <span class="o">(</span><span class="n">v</span> <span class="o">:</span> <span class="n">Spv</span> <span class="n">R</span><span class="o">)</span> <span class="o">:</span> <span class="n">reflexive</span> <span class="n">v</span><span class="bp">.</span><span class="mi">1</span> <span class="o">:=</span> <span class="bp">λ</span> <span class="n">r</span><span class="o">,</span>
 <span class="k">begin</span>
   <span class="n">rcases</span> <span class="n">v</span><span class="bp">.</span><span class="mi">2</span> <span class="k">with</span> <span class="bp">⟨</span><span class="err">Γ</span><span class="o">,</span> <span class="n">h</span><span class="err">Γ</span><span class="o">,</span> <span class="n">v0</span><span class="o">,</span> <span class="n">h</span><span class="bp">⟩</span><span class="o">,</span>
@@ -99,7 +99,7 @@ permalink: archive/113488general/54219letIetc.html
 
 
 <a name="159988510"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/159988510" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/54219letIetc#159988510">(Mar 05 2019 at 09:29)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/159988510" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/54219letIetc#159988510">(Mar 05 2019 at 09:29)</a>:</h4>
 <p>Independent issue:</p>
 <div class="codehilite"><pre><span></span><span class="n">attribute</span> <span class="o">[</span><span class="n">refl</span><span class="o">]</span> <span class="n">Spv</span><span class="bp">.</span><span class="n">refl</span>
 <span class="c">/-</span><span class="cm"></span>
@@ -113,14 +113,14 @@ permalink: archive/113488general/54219letIetc.html
 
 
 <a name="160024356"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160024356" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="http://127.0.0.1:4000/archive/113488general/54219letIetc#160024356">(Mar 05 2019 at 17:56)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160024356" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://rht.github.io/archive/113488general/54219letIetc#160024356">(Mar 05 2019 at 17:56)</a>:</h4>
 <p>Do you know about <code>resetI</code>? <code>resetI</code> means "make everything in the context available for type class resolution". Of course things "to the left of the colon" were already available, so the point is to add things bound by a lambda, or by <code>rcases</code>, etc.--in particular your <code>hΓ</code>, I'm guessing.<br>
 <code>exactI</code> is <code>resetI</code> followed by <code>exact</code>.</p>
 
 
 
 <a name="160025024"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160025024" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/54219letIetc#160025024">(Mar 05 2019 at 18:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160025024" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/54219letIetc#160025024">(Mar 05 2019 at 18:05)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="n">order</span><span class="bp">.</span><span class="n">bounded_lattice</span> <span class="c1">-- for with_bot</span>
 
 <span class="n">universes</span> <span class="n">u₀</span> <span class="n">u₁</span>
@@ -168,31 +168,31 @@ permalink: archive/113488general/54219letIetc.html
 
 
 <a name="160025595"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160025595" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/113488general/54219letIetc#160025595">(Mar 05 2019 at 18:13)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160025595" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/113488general/54219letIetc#160025595">(Mar 05 2019 at 18:13)</a>:</h4>
 <p>It just seems to be an issue with <code>refl</code>. <code>exact le_refl _</code> works fine.</p>
 
 
 
 <a name="160028328"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160028328" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/54219letIetc#160028328">(Mar 05 2019 at 18:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160028328" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/54219letIetc#160028328">(Mar 05 2019 at 18:42)</a>:</h4>
 <p>The issue with <code>attribute [refl] Spv.refl</code> is that the type of <code>Spv.refl</code> isn't asserting reflexivity of anything, it's proving <code>reflexive bla</code>. Lean is expecting a proof of <code>my_rel bla x x</code></p>
 
 
 
 <a name="160028461"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160028461" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/54219letIetc#160028461">(Mar 05 2019 at 18:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160028461" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/54219letIetc#160028461">(Mar 05 2019 at 18:43)</a>:</h4>
 <p>I think if you just unfold <code>reflexive</code> in the statement lean will accept it... but then the relation you are proving reflexive is <code>subtype.val</code> which is a bit weird</p>
 
 
 
 <a name="160028596"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160028596" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/54219letIetc#160028596">(Mar 05 2019 at 18:44)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160028596" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/54219letIetc#160028596">(Mar 05 2019 at 18:44)</a>:</h4>
 <p>You should probably hide the implementation details of <code>Spv</code> by using something other than <code>.1</code> to extract the relation from an Spv</p>
 
 
 
 <a name="160028717"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160028717" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/54219letIetc#160028717">(Mar 05 2019 at 18:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/letI%20etc/near/160028717" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/54219letIetc#160028717">(Mar 05 2019 at 18:45)</a>:</h4>
 <p>like define <code>Spv.rel : Spv R -&gt; R -&gt; R -&gt; Prop := subtype.val</code> and then you can prove <code>Spv.refl : Spv.rel v x x</code> and mark it <code>@[refl]</code></p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/116395maths/40670categorytheoryuniverses.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/116395maths/index.html">maths</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/116395maths/40670categorytheoryuniverses.html">category theory universes</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/116395maths/index.html">maths</a>
+<h3>Topic: <a href="https://rht.github.io/archive/116395maths/40670categorytheoryuniverses.html">category theory universes</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/116395maths/40670categorytheoryuniverses.html
 {% raw %}
 
 <a name="183543692"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183543692" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/40670categorytheoryuniverses#183543692">(Dec 16 2019 at 12:20)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183543692" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/40670categorytheoryuniverses#183543692">(Dec 16 2019 at 12:20)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="n">universes</span> <span class="n">v</span> <span class="n">u</span> <span class="n">w</span>
 <span class="kn">variables</span> <span class="o">{</span><span class="n">C</span> <span class="o">:</span> <span class="kt">Type</span> <span class="n">u</span><span class="o">}</span> <span class="o">[</span><span class="err">𝒞</span> <span class="o">:</span> <span class="n">category</span><span class="bp">.</span><span class="o">{</span><span class="n">v</span><span class="o">}</span> <span class="n">C</span><span class="o">]</span>
 <span class="kn">variables</span> <span class="o">{</span><span class="n">X</span> <span class="o">:</span> <span class="kt">Type</span> <span class="n">w</span><span class="o">}</span> <span class="o">[</span><span class="n">topological_space</span> <span class="n">X</span><span class="o">]</span>
@@ -43,13 +43,13 @@ but is expected to have type
 
 
 <a name="183544355"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183544355" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/40670categorytheoryuniverses#183544355">(Dec 16 2019 at 12:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183544355" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/40670categorytheoryuniverses#183544355">(Dec 16 2019 at 12:31)</a>:</h4>
 <p>Oh this is a nightmare. The morphisms have type <code>max v w</code>. Maybe I should just make a category :-/</p>
 
 
 
 <a name="183560205"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183560205" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/40670categorytheoryuniverses#183560205">(Dec 16 2019 at 15:37)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183560205" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/40670categorytheoryuniverses#183560205">(Dec 16 2019 at 15:37)</a>:</h4>
 <p>I am back in hell</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">XYZ</span><span class="o">:</span> <span class="n">has_coe_to_fun</span> <span class="o">(</span><span class="n">topological_space</span><span class="bp">.</span><span class="n">presheaf</span> <span class="n">X</span> <span class="n">C</span><span class="o">)</span> <span class="o">:=</span>
 <span class="k">by</span> <span class="n">exact</span> <span class="n">topological_space</span><span class="bp">.</span><span class="n">presheaf</span><span class="bp">.</span><span class="n">has_coe_to_fun</span>
@@ -74,25 +74,25 @@ C : Type u,
 
 
 <a name="183560282"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183560282" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/40670categorytheoryuniverses#183560282">(Dec 16 2019 at 15:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183560282" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/40670categorytheoryuniverses#183560282">(Dec 16 2019 at 15:38)</a>:</h4>
 <p>a little bit of type in type never hurt anyone.</p>
 
 
 
 <a name="183560997"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183560997" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/116395maths/40670categorytheoryuniverses#183560997">(Dec 16 2019 at 15:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183560997" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/116395maths/40670categorytheoryuniverses#183560997">(Dec 16 2019 at 15:45)</a>:</h4>
 <p>I don't remember exactly, but this might have been one of the reasons why the category lib stopped using coercions for functors.</p>
 
 
 
 <a name="183561652"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183561652" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/40670categorytheoryuniverses#183561652">(Dec 16 2019 at 15:50)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183561652" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/40670categorytheoryuniverses#183561652">(Dec 16 2019 at 15:50)</a>:</h4>
 <p>the computer scientists want us to be polymorphic and I just want sheaves of rings and I'll do anything they say about universes, as long as it works when stuff is Type 0 (sets) or Type 1 (classes) and the ZFC people will be happy. Why am I getting these obscure errors?</p>
 
 
 
 <a name="183561804"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183561804" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/40670categorytheoryuniverses#183561804">(Dec 16 2019 at 15:52)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183561804" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/40670categorytheoryuniverses#183561804">(Dec 16 2019 at 15:52)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="n">type</span> <span class="n">mismatch</span> <span class="n">at</span> <span class="n">application</span>
   <span class="n">presheaf</span><span class="bp">.</span><span class="n">res&#39;</span><span class="bp">.</span><span class="o">{</span><span class="err">?</span><span class="n">l_1</span> <span class="err">?</span><span class="n">l_2</span><span class="o">}</span> <span class="n">ℱ</span>
 <span class="n">term</span>
@@ -109,31 +109,31 @@ C : Type u,
 
 
 <a name="183561934"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183561934" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/40670categorytheoryuniverses#183561934">(Dec 16 2019 at 15:53)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183561934" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/40670categorytheoryuniverses#183561934">(Dec 16 2019 at 15:53)</a>:</h4>
 <p>I think I will try again with v, the universe of the morphisms in C being equal to w, the universe of the topological space X. In reality v and w are always sets so I'd even happily set v=w=0.</p>
 
 
 
 <a name="183561944"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183561944" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/116395maths/40670categorytheoryuniverses#183561944">(Dec 16 2019 at 15:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183561944" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/116395maths/40670categorytheoryuniverses#183561944">(Dec 16 2019 at 15:54)</a>:</h4>
 <p>Looks like swapping all your <code>w</code>s to <code>v</code>s might help.</p>
 
 
 
 <a name="183562030"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183562030" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/40670categorytheoryuniverses#183562030">(Dec 16 2019 at 15:54)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183562030" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/40670categorytheoryuniverses#183562030">(Dec 16 2019 at 15:54)</a>:</h4>
 <p>I'm letting w = v and it's working much better</p>
 
 
 
 <a name="183562086"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183562086" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/40670categorytheoryuniverses#183562086">(Dec 16 2019 at 15:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183562086" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/40670categorytheoryuniverses#183562086">(Dec 16 2019 at 15:55)</a>:</h4>
 <p>w=v corresponds to the fact that mathematicians know that topological spaces and sets of morphisms are sets.</p>
 
 
 
 <a name="183562103"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183562103" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="http://127.0.0.1:4000/archive/116395maths/40670categorytheoryuniverses#183562103">(Dec 16 2019 at 15:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/category%20theory%20universes/near/183562103" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kevin Buzzard <a href="https://rht.github.io/archive/116395maths/40670categorytheoryuniverses#183562103">(Dec 16 2019 at 15:55)</a>:</h4>
 <p>so they can live in the same universe</p>
 
 

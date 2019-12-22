@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/116395maths/44943localrings.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/116395maths/index.html">maths</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/116395maths/44943localrings.html">local rings</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/116395maths/index.html">maths</a>
+<h3>Topic: <a href="https://rht.github.io/archive/116395maths/44943localrings.html">local rings</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/116395maths/44943localrings.html
 {% raw %}
 
 <a name="160025227"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/local%20rings/near/160025227" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/116395maths/44943localrings#160025227">(Mar 05 2019 at 18:08)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/local%20rings/near/160025227" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/116395maths/44943localrings#160025227">(Mar 05 2019 at 18:08)</a>:</h4>
 <p><span class="user-mention" data-user-id="110049">@Mario Carneiro</span> Is there a reason why you are not using the type class system for <code>is_local_ring</code> here?</p>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">nonunits_ideal</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">is_local_ring</span> <span class="n">α</span><span class="o">)</span> <span class="o">:</span> <span class="n">ideal</span> <span class="n">α</span> <span class="o">:=</span>
 <span class="o">{</span> <span class="n">carrier</span> <span class="o">:=</span> <span class="n">nonunits</span> <span class="n">α</span><span class="o">,</span>
@@ -38,25 +38,25 @@ permalink: archive/116395maths/44943localrings.html
 
 
 <a name="160032040"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/local%20rings/near/160032040" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/116395maths/44943localrings#160032040">(Mar 05 2019 at 19:22)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/local%20rings/near/160032040" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/116395maths/44943localrings#160032040">(Mar 05 2019 at 19:22)</a>:</h4>
 <p>is <code>is_local_ring</code> a class? I don't think it was when I wrote that</p>
 
 
 
 <a name="160032097"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/local%20rings/near/160032097" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/116395maths/44943localrings#160032097">(Mar 05 2019 at 19:23)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/local%20rings/near/160032097" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/116395maths/44943localrings#160032097">(Mar 05 2019 at 19:23)</a>:</h4>
 <p>actually it might be one of those "not really a class" classes like <code>nat.prime</code></p>
 
 
 
 <a name="160032172"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/local%20rings/near/160032172" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/116395maths/44943localrings#160032172">(Mar 05 2019 at 19:24)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/local%20rings/near/160032172" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/116395maths/44943localrings#160032172">(Mar 05 2019 at 19:24)</a>:</h4>
 <p>it's only used instance implicit when it needs to be for some other instance</p>
 
 
 
 <a name="160179385"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/local%20rings/near/160179385" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/116395maths/44943localrings#160179385">(Mar 07 2019 at 08:51)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/116395-maths/topic/local%20rings/near/160179385" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/116395maths/44943localrings#160179385">(Mar 07 2019 at 08:51)</a>:</h4>
 <p><span class="user-mention" data-user-id="110049">@Mario Carneiro</span> Hmmm, I see. What is the objection to treating this a an "actually really a class" class?</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/09109whatisthetypeoffst.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/09109whatisthetypeoffst.html">what is the type of fst?</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/09109whatisthetypeoffst.html">what is the type of fst?</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/09109whatisthetypeoffst.html
 {% raw %}
 
 <a name="178746731"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178746731" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> agro1986 <a href="http://127.0.0.1:4000/archive/113489newmembers/09109whatisthetypeoffst#178746731">(Oct 22 2019 at 11:41)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178746731" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> agro1986 <a href="https://rht.github.io/archive/113489newmembers/09109whatisthetypeoffst#178746731">(Oct 22 2019 at 11:41)</a>:</h4>
 <p>Hi everyone! The tutorial <a href="https://leanprover.github.io/theorem_proving_in_lean/dependent_type_theory.html#function-abstraction-and-evaluation" target="_blank" title="https://leanprover.github.io/theorem_proving_in_lean/dependent_type_theory.html#function-abstraction-and-evaluation">https://leanprover.github.io/theorem_proving_in_lean/dependent_type_theory.html#function-abstraction-and-evaluation</a> gives example of function fst and snd: "If we have p : nat × nat, then we have fst p : nat"</p>
 <p>I tried to "guess" the type of fst so I made fst' (I finished the chapter so I could do an educated guess):<br>
 constant fst': Π {α: Type u} {β: Type v}, α × β → α<br>
@@ -33,13 +33,13 @@ constant fst': Π {α: Type u} {β: Type v}, α × β → α<br>
 
 
 <a name="178747171"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178747171" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/09109whatisthetypeoffst#178747171">(Oct 22 2019 at 11:48)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178747171" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/09109whatisthetypeoffst#178747171">(Oct 22 2019 at 11:48)</a>:</h4>
 <p>It's called <code>prod.fst</code>; presumably the tutorial had the <code>prod</code> namespace open</p>
 
 
 
 <a name="178762367"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178762367" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/09109whatisthetypeoffst#178762367">(Oct 22 2019 at 14:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178762367" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/09109whatisthetypeoffst#178762367">(Oct 22 2019 at 14:42)</a>:</h4>
 <p>The first mention of namespaces in TPiL is in section 2.7, but this question is about the sentence at the beginning of 2.3:</p>
 <blockquote>
 <p>Conversely, if we have <code>p : nat × nat</code>, then we have <code>fst p : nat</code> and <code>snd p : nat</code>.</p>
@@ -49,25 +49,25 @@ constant fst': Π {α: Type u} {β: Type v}, α × β → α<br>
 
 
 <a name="178762799"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178762799" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113489newmembers/09109whatisthetypeoffst#178762799">(Oct 22 2019 at 14:47)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178762799" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113489newmembers/09109whatisthetypeoffst#178762799">(Oct 22 2019 at 14:47)</a>:</h4>
 <p><span class="user-mention" data-user-id="244890">@agro1986</span> In case this wasn't obvious from what Mario said, the type you gave for <code>fst'</code> is correct. You can check it against what Lean uses with <code>#check @prod.fst</code>.</p>
 
 
 
 <a name="178773243"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178773243" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jeremy Avigad <a href="http://127.0.0.1:4000/archive/113489newmembers/09109whatisthetypeoffst#178773243">(Oct 22 2019 at 16:43)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178773243" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jeremy Avigad <a href="https://rht.github.io/archive/113489newmembers/09109whatisthetypeoffst#178773243">(Oct 22 2019 at 16:43)</a>:</h4>
 <p>Thanks, Bryan. I will fix this.</p>
 
 
 
 <a name="178777371"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178777371" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="http://127.0.0.1:4000/archive/113489newmembers/09109whatisthetypeoffst#178777371">(Oct 22 2019 at 17:33)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178777371" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="https://rht.github.io/archive/113489newmembers/09109whatisthetypeoffst#178777371">(Oct 22 2019 at 17:33)</a>:</h4>
 <p>(deleted)</p>
 
 
 
 <a name="178784853"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178784853" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> agro1986 <a href="http://127.0.0.1:4000/archive/113489newmembers/09109whatisthetypeoffst#178784853">(Oct 22 2019 at 18:56)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/what%20is%20the%20type%20of%20fst%3F/near/178784853" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> agro1986 <a href="https://rht.github.io/archive/113489newmembers/09109whatisthetypeoffst#178784853">(Oct 22 2019 at 18:56)</a>:</h4>
 <p><span class="user-mention" data-user-id="110049">@Mario Carneiro</span> <span class="user-mention" data-user-id="123965">@Bryan Gin-ge Chen</span> Wow thanks a lot!!!</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113489newmembers/39001Thinkingaboutlistsbackwards.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113489newmembers/index.html">new members</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113489newmembers/39001Thinkingaboutlistsbackwards.html">Thinking about lists backwards</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113489newmembers/index.html">new members</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113489newmembers/39001Thinkingaboutlistsbackwards.html">Thinking about lists backwards</a></h3>
 
 <hr>
 
@@ -16,7 +16,7 @@ permalink: archive/113489newmembers/39001Thinkingaboutlistsbackwards.html
 {% raw %}
 
 <a name="174694384"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174694384" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="http://127.0.0.1:4000/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174694384">(Sep 02 2019 at 06:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174694384" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="https://rht.github.io/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174694384">(Sep 02 2019 at 06:31)</a>:</h4>
 <p>I have a simple question, and then a follow up philosophy question.</p>
 <p>If I have a list, and a statement that it is not empty, is there an existing mechanism for extracting all but the last element (the equivalent of python's <code>mylist[:-1]</code>.  In particular, one that is "supported" in terms of lemmas about its length etc.</p>
 <p>My philosophical question is how to deal with the back of lists.  Since lists are defined inductively "from the front", it is easy to talk about their heads, tails and such forth.  It seems less simple to talk about their last element and the preceding sublist.  How should one treat the back of a list, or operations done to the back?  Should one reverse the list and then talk about the reversed head and then reverse again if necessary?  Is it possible to _neatly_ do the opposite to</p>
@@ -35,19 +35,19 @@ permalink: archive/113489newmembers/39001Thinkingaboutlistsbackwards.html
 
 
 <a name="174694727"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174694727" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174694727">(Sep 02 2019 at 06:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174694727" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174694727">(Sep 02 2019 at 06:38)</a>:</h4>
 <p>There are a few variants on <code>last</code> available, but I guess <code>init</code> was not defined, or I missed it in the initial pass (although <code>inits</code> is there)</p>
 
 
 
 <a name="174694732"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174694732" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174694732">(Sep 02 2019 at 06:38)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174694732" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174694732">(Sep 02 2019 at 06:38)</a>:</h4>
 <p>It is of course easy to define</p>
 
 
 
 <a name="174694891"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174694891" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174694891">(Sep 02 2019 at 06:42)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174694891" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174694891">(Sep 02 2019 at 06:42)</a>:</h4>
 <div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">init</span> <span class="o">{</span><span class="n">α</span><span class="o">}</span> <span class="o">:</span> <span class="n">list</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">list</span> <span class="n">α</span>
 <span class="bp">|</span> <span class="o">[]</span>     <span class="o">:=</span> <span class="o">[]</span>
 <span class="bp">|</span> <span class="o">[</span><span class="n">a</span><span class="o">]</span>    <span class="o">:=</span> <span class="o">[]</span>
@@ -60,19 +60,19 @@ permalink: archive/113489newmembers/39001Thinkingaboutlistsbackwards.html
 
 
 <a name="174694979"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174694979" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="http://127.0.0.1:4000/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174694979">(Sep 02 2019 at 06:45)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174694979" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="https://rht.github.io/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174694979">(Sep 02 2019 at 06:45)</a>:</h4>
 <p>Right.  That is sort of what I thought.  Thanks.</p>
 
 
 
 <a name="174695389"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174695389" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="http://127.0.0.1:4000/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174695389">(Sep 02 2019 at 06:55)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174695389" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Robert Spencer <a href="https://rht.github.io/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174695389">(Sep 02 2019 at 06:55)</a>:</h4>
 <p>Ah, no I've found <code>init</code> in the library.  It doesn't have much more than a definition that I can see though.</p>
 
 
 
 <a name="174696076"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174696076" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="http://127.0.0.1:4000/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174696076">(Sep 02 2019 at 07:12)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113489-new%20members/topic/Thinking%20about%20lists%20backwards/near/174696076" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Chris Hughes <a href="https://rht.github.io/archive/113489newmembers/39001Thinkingaboutlistsbackwards#174696076">(Sep 02 2019 at 07:12)</a>:</h4>
 <p>There's also <code>list.reverse_rec_on</code> (might be called something slightly different)</p>
 
 

@@ -4,8 +4,8 @@ title: Zulip Chat Archive
 permalink: archive/113488general/95720unicode.html
 ---
 
-<h2>Stream: <a href="http://127.0.0.1:4000/archive/113488general/index.html">general</a>
-<h3>Topic: <a href="http://127.0.0.1:4000/archive/113488general/95720unicode.html">unicode</a></h3>
+<h2>Stream: <a href="https://rht.github.io/archive/113488general/index.html">general</a>
+<h3>Topic: <a href="https://rht.github.io/archive/113488general/95720unicode.html">unicode</a></h3>
 
 <hr>
 
@@ -16,19 +16,19 @@ permalink: archive/113488general/95720unicode.html
 {% raw %}
 
 <a name="124443168"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/124443168" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="http://127.0.0.1:4000/archive/113488general/95720unicode#124443168">(Mar 31 2018 at 05:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/124443168" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenny Lau <a href="https://rht.github.io/archive/113488general/95720unicode#124443168">(Mar 31 2018 at 05:05)</a>:</h4>
 <p>Does every symbol have a non-unicode equivalent?</p>
 
 
 
 <a name="124443263"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/124443263" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/95720unicode#124443263">(Mar 31 2018 at 05:09)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/124443263" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/95720unicode#124443263">(Mar 31 2018 at 05:09)</a>:</h4>
 <p>No. Most do, but the strict policy on this was dropped a while ago and new features have crept in with no non-unicode equivalents. Basically no one uses lean without unicode anymore (if they ever did), so it wasn't felt necessary to continue to support.</p>
 
 
 
 <a name="124443307"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/124443307" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="http://127.0.0.1:4000/archive/113488general/95720unicode#124443307">(Mar 31 2018 at 05:11)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/124443307" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mario Carneiro <a href="https://rht.github.io/archive/113488general/95720unicode#124443307">(Mar 31 2018 at 05:11)</a>:</h4>
 <p>Here's one:</p>
 <div class="codehilite"><pre><span></span>theorem «a strange-identifier!» : true := trivial
 </pre></div>
@@ -39,25 +39,25 @@ permalink: archive/113488general/95720unicode.html
 
 
 <a name="168191956"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168191956" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/95720unicode#168191956">(Jun 15 2019 at 05:05)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168191956" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/95720unicode#168191956">(Jun 15 2019 at 05:05)</a>:</h4>
 <p>I thought it might be a good idea to use <code>p̌</code> (p breve) as a variable. But Lean says "unexpected token". I thought Lean has full unicode support. What is going on?</p>
 
 
 
 <a name="168192871"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168192871" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="http://127.0.0.1:4000/archive/113488general/95720unicode#168192871">(Jun 15 2019 at 05:32)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168192871" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bryan Gin-ge Chen <a href="https://rht.github.io/archive/113488general/95720unicode#168192871">(Jun 15 2019 at 05:32)</a>:</h4>
 <p>From some brief googling it looks like the accent mark is created by <a href="https://en.wikipedia.org/wiki/Caron#Unicode" target="_blank" title="https://en.wikipedia.org/wiki/Caron#Unicode">a "modifier" unicode character</a> acting on p and so I guess that modifier character isn't allowed by Lean. <span class="user-mention" data-user-id="121918">@Edward Ayers</span> has <a href="https://github.com/EdAyers/mathlib/blob/fb5c2ffe917049959597b0a93b872e91f4004922/docs/unicode.md" target="_blank" title="https://github.com/EdAyers/mathlib/blob/fb5c2ffe917049959597b0a93b872e91f4004922/docs/unicode.md">a page on Unicode in Lean</a> and in the section on accents he warns "It's an absolute minefield." <span aria-label="shrug" class="emoji emoji-1f937" role="img" title="shrug">:shrug:</span></p>
 
 
 
 <a name="168192970"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168192970" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="http://127.0.0.1:4000/archive/113488general/95720unicode#168192970">(Jun 15 2019 at 05:36)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168192970" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Johan Commelin <a href="https://rht.github.io/archive/113488general/95720unicode#168192970">(Jun 15 2019 at 05:36)</a>:</h4>
 <p>Ok, thanks for the info!</p>
 
 
 
 <a name="168198851"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168198851" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/113488general/95720unicode#168198851">(Jun 15 2019 at 08:30)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168198851" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/113488general/95720unicode#168198851">(Jun 15 2019 at 08:30)</a>:</h4>
 <p>They cannot be used in identifiers, but they can be used as notation. For example in Flypitch: <a href="https://github.com/flypitch/flypitch/blob/64d2bc25e033fb294c7e8d1c3dfba3d26f60b4a8/src/bvm.lean#L1281" target="_blank" title="https://github.com/flypitch/flypitch/blob/64d2bc25e033fb294c7e8d1c3dfba3d26f60b4a8/src/bvm.lean#L1281">https://github.com/flypitch/flypitch/blob/64d2bc25e033fb294c7e8d1c3dfba3d26f60b4a8/src/bvm.lean#L1281</a></p>
 <div class="codehilite"><pre><span></span><span class="kn">postfix</span> <span class="bp">`</span><span class="err">̌</span> <span class="bp">`</span><span class="o">:</span><span class="mi">90</span> <span class="o">:=</span> <span class="kn">check</span>
 <span class="kn">lemma</span> <span class="n">check_type</span> <span class="o">{</span><span class="n">α</span> <span class="o">:</span> <span class="kt">Type</span> <span class="n">u</span><span class="o">}</span> <span class="o">{</span><span class="n">A</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">pSet</span><span class="o">}</span> <span class="o">:</span> <span class="n">bSet</span><span class="bp">.</span><span class="n">type</span> <span class="o">((</span><span class="n">pSet</span><span class="bp">.</span><span class="n">mk</span> <span class="n">α</span> <span class="n">A</span><span class="o">)</span><span class="err">̌</span>  <span class="o">:</span> <span class="n">bSet</span> <span class="err">𝔹</span><span class="o">)</span> <span class="bp">=</span> <span class="n">α</span> <span class="o">:=</span> <span class="n">rfl</span>
@@ -70,13 +70,13 @@ permalink: archive/113488general/95720unicode.html
 
 
 <a name="168198866"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168198866" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="http://127.0.0.1:4000/archive/113488general/95720unicode#168198866">(Jun 15 2019 at 08:31)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168198866" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Floris van Doorn <a href="https://rht.github.io/archive/113488general/95720unicode#168198866">(Jun 15 2019 at 08:31)</a>:</h4>
 <p>I'm not sure why Zulip is displaying <code>x̌</code> once as two separate characters, and once as a <code>x</code> with a check on top of it...</p>
 
 
 
 <a name="168215873"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168215873" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> matt rice <a href="http://127.0.0.1:4000/archive/113488general/95720unicode#168215873">(Jun 15 2019 at 17:16)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168215873" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> matt rice <a href="https://rht.github.io/archive/113488general/95720unicode#168215873">(Jun 15 2019 at 17:16)</a>:</h4>
 <p><span class="user-mention" data-user-id="121918">@Edward Ayers</span> here is some more supercripts/subscripts (not all of which i have tried in lean)<br>
 greek, caps, and some more latin letters scattered about<br>
 <a href="https://github.com/ratmice/lumpy-leandoc/blob/master/src/tex_gen.rs#L366-L373" target="_blank" title="https://github.com/ratmice/lumpy-leandoc/blob/master/src/tex_gen.rs#L366-L373">https://github.com/ratmice/lumpy-leandoc/blob/master/src/tex_gen.rs#L366-L373</a></p>
@@ -84,13 +84,13 @@ greek, caps, and some more latin letters scattered about<br>
 
 
 <a name="168215996"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168215996" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="http://127.0.0.1:4000/archive/113488general/95720unicode#168215996">(Jun 15 2019 at 17:21)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168215996" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Marc Huisinga <a href="https://rht.github.io/archive/113488general/95720unicode#168215996">(Jun 15 2019 at 17:21)</a>:</h4>
 <p>if you're looking for the corresponding lean vscode shortcuts for some of these symbols, here's a list: <a href="https://github.com/leanprover/vscode-lean/blob/master/translations.json" target="_blank" title="https://github.com/leanprover/vscode-lean/blob/master/translations.json">https://github.com/leanprover/vscode-lean/blob/master/translations.json</a></p>
 
 
 
 <a name="168267829"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168267829" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/95720unicode#168267829">(Jun 16 2019 at 21:06)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168267829" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/95720unicode#168267829">(Jun 16 2019 at 21:06)</a>:</h4>
 <p>Lean (quite sensibly, imo) doesn't let you use arbitrary unicode characters in identifiers. The rules for what characters Lean allows are in <code>src/util/name.cpp</code>. Which is:<br>
  - Any alphanumeric letter (no starting with numbers though)<br>
  - lowercase greek except lambda  <code>α β γ δ ε ζ η θ ι κ μ ν ξ ο π ρ ς σ τ υ φ χ ψ ω</code><br>
@@ -105,13 +105,13 @@ greek, caps, and some more latin letters scattered about<br>
 
 
 <a name="168268169"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168268169" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/95720unicode#168268169">(Jun 16 2019 at 21:16)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168268169" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/95720unicode#168268169">(Jun 16 2019 at 21:16)</a>:</h4>
 <p>In addition, if it's not at the head of the identifier you can use numbers and <code>ⁿ₀₁₂₃₄₅₆₇₈₉ₐₑₒₓₔₕₖₗₘₙₚₛₜᵢᵣᵤᵥᵦᵧᵨᵩᵪ</code>.</p>
 
 
 
 <a name="168268429"></a>
-<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168268429" class="zl"><img src="http://127.0.0.1:4000/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="http://127.0.0.1:4000/archive/113488general/95720unicode#168268429">(Jun 16 2019 at 21:25)</a>:</h4>
+<h4><a href="https://leanprover.zulipchat.com#narrow/stream/113488-general/topic/unicode/near/168268429" class="zl"><img src="https://rht.github.io/leanprover.github.io/assets/img/zulip2.png" alt="view this post on Zulip"></a> Edward Ayers <a href="https://rht.github.io/archive/113488general/95720unicode#168268429">(Jun 16 2019 at 21:25)</a>:</h4>
 <p>The basic problems with unicode accents are: <br>
   - they are rendered inconsistently depending on font and platform (eg sometimes the accent is hidden behind the character). Often they will be rendered in the wrong place (as evidenced by zulip).<br>
   - there are multiple sequences of unicode characters which look the same or very similar on the screen but which Lean will read differently.<br>
